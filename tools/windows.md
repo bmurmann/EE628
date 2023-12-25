@@ -4,7 +4,7 @@ How to install the EE 628 design tools on a Windows 10/11 computer
 1) Install Linux on Windows using the "Windows Subsystem for Linux (WSL) feature." Follow the instructions here:
 https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps. The default Linux distribution is Ubuntu, which is perfect for our use case.
 
-2) Restart and click the WSL icon. This will open a shell that prompts you to set your UNIX user name and password. You now see your Linux command prompt and you can run any command from here.
+2) Restart andddd click the WSL icon. This will open a shell that prompts you to set your UNIX user name and password. You now see your Linux command prompt and you can run any command from here.
 
 3) Install git on WSL. $ sudo apt install git-all
 
