@@ -1,1 +1,1 @@
-Follow the instructions for Windows starting from step 3.
+Follow the instructions for Windows, starting from step 3.
