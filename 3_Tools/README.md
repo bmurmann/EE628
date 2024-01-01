@@ -1,3 +1,4 @@
+<img src="flow.png" width="600" />
 
 There are numerous ways in which you can install the open-source chip design tools for this course. The simplest, "default" method is to use the pre-packaged Docker container provided by Harald Pretl's lab:
 
