@@ -3,7 +3,7 @@ There are numerous ways in which you can install the open-source chip design too
 
 * IIC-OSIC-TOOLS: https://github.com/iic-jku/iic-osic-tools
 
-EE 628 installation instructions by computer platform:  
+Here are the EE 628 installation instructions by computer platform:  
 * [Windows](win.md)  
 * [Linux](linux.md)  
 * [Mac](mac.md)  
