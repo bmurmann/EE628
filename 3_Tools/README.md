@@ -22,8 +22,6 @@ https://web02.gonzaga.edu/faculty/talarico/vlsi/vlsi.html
 Regardless of how you install the tools, you will occasionally need to look at their documentation. Here is a list of useful links.
 
 * Xschem: http://repo.hu/projects/xschem/xschem_man/xschem_man.html
-
 * Ngspice: https://ngspice.sourceforge.io/docs.html
-
 * KLayout: https://www.klayout.de/
 
