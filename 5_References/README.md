@@ -17,4 +17,5 @@ https://ieeexplore.ieee.org/document/1284742
 https://ieeexplore.ieee.org/document/9264222
 
 7\. Raymond Yang and Yaqing Xia, "12-bit 10-KSPS Incremental Delta-Sigma ADC in Skywater 130 nm," Stanford EE 372 Project.  
-https://priyanka-raina.github.io/ee372-spring2022/
+https://priyanka-raina.github.io/ee372-spring2022/  
+
