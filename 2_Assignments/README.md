@@ -1,5 +1,5 @@
 **Week 1**
-* Take notes as you work through the items below and submit them as your weekly report. The report does not need to be pretty, but it should document what you have done, what worked/didn't, things you don't understand etc. You can also suggest topics that should be covered in future lectures.
+* Take notes as you work through the items below and submit them as your weekly report. The report does not need to be pretty, but it should document what you have done, what worked/didn't, things you don't understand, etc. You can also suggest topics that should be covered in future lectures.
 * Read the following two papers:  
 https://ieeexplore.ieee.org/document/10224621  
 https://ieeexplore.ieee.org/document/9805608  
@@ -9,3 +9,4 @@ https://ieeexplore.ieee.org/document/5641589
 https://priyanka-raina.github.io/ee372-spring2022/  
 * Think about your project topic. Do you have a specific idea or do you want to follow the template project?
 * Network with your peers and join a team of 3-4 students. Of course, each team must work on the same project topic. The idea is to split the work and help each other toward delivering one common chip design per team.
+* Begin installing the design tools on your computer. Follow the instructions under "Tools." No worries if you can't finish due to some issues; the idea is just to get started.
