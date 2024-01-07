@@ -10,12 +10,15 @@ https://ieeexplore.ieee.org/document/5641589
 4\. Shanthi Pavan; Richard Schreier; Gabor C. Temes, "Incremental Analog‐to‐Digital Converters," in Understanding Delta-Sigma Data Converters , IEEE, 2017, pp.407-423, doi: 10.1002/9781119258308.ch12.  
 https://ieeexplore.ieee.org/document/7906298
 
-5\. J. Markus, J. Silva and G. C. Temes, "Theory and applications of incremental /spl Delta//spl Sigma/ converters," in IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 51, no. 4, pp. 678-690, April 2004, doi: 10.1109/TCSI.2004.826202.  
+5\. R. van de Plassche and R. E. J. van Der Grift, "A five-digit analog-digital converter," in IEEE Journal of Solid-State Circuits, vol. 12, no. 6, pp. 656-662, Dec. 1977, doi: 10.1109/JSSC.1977.1050975.  
+https://ieeexplore.ieee.org/document/1050975
+
+6\. J. Markus, J. Silva and G. C. Temes, "Theory and applications of incremental /spl Delta//spl Sigma/ converters," in IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 51, no. 4, pp. 678-690, April 2004, doi: 10.1109/TCSI.2004.826202.  
 https://ieeexplore.ieee.org/document/1284742
 
-6\. Z. Tan, C. -H. Chen, Y. Chae and G. C. Temes, "Incremental Delta-Sigma ADCs: A Tutorial Review," in IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 67, no. 12, pp. 4161-4173, Dec. 2020, doi: 10.1109/TCSI.2020.3033458.  
+7\. Z. Tan, C. -H. Chen, Y. Chae and G. C. Temes, "Incremental Delta-Sigma ADCs: A Tutorial Review," in IEEE Transactions on Circuits and Systems I: Regular Papers, vol. 67, no. 12, pp. 4161-4173, Dec. 2020, doi: 10.1109/TCSI.2020.3033458.  
 https://ieeexplore.ieee.org/document/9264222
 
-7\. Raymond Yang and Yaqing Xia, "12-bit 10-KSPS Incremental Delta-Sigma ADC in Skywater 130 nm," Stanford EE 372 Project.  
+8\. Raymond Yang and Yaqing Xia, "12-bit 10-KSPS Incremental Delta-Sigma ADC in Skywater 130 nm," Stanford EE 372 Project.  
 https://priyanka-raina.github.io/ee372-spring2022/  
 
