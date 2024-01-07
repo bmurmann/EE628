@@ -1,6 +1,6 @@
 | Date  | Day  | Lecture  | Comments  |
 |---|---|---|---|
-|Jan 08	|M |[Lec 01: Intro](/pdf/LEC01.pdf)   |   |
+|Jan 08	|M |[Lec 01: Intro](/1_Schedule/pdf/LEC01.pdf)   |   |
 |Jan 10	|W |Lec 02   |   |
 |Jan 15	|M |Holiday  |   |
 |Jan 17	|W |Lec 03   |   |
