@@ -4,6 +4,6 @@
 
 <img align="right" width="250" height="250" src="/img/voltmeter.jpeg">
 
-Learn mixed-signal circuit design using open-source tools by creating your own voltmeter chip!
+Learn mixed-signal circuit design using open-source tools and create your own voltmeter chip!
 
 This course is devloped in collaboration with the Microelectronics Commons [California-Pacific-Northwest AI Hub](https://microelectronicscommons.org/connect/california-pacific-northwest-ai-hardware-hub-northwest-ai-hub/).
