@@ -9,5 +9,5 @@ https://priyanka-raina.github.io/ee372-spring2022/
 * Think about your project topic. Do you have a specific idea or do you want to follow the template project?
 * Network with your peers and join a team of 3-4 students. Of course, each team must work on the same project topic. The idea is to split the work and help each other toward delivering one common chip design per team.
 * Begin installing the design tools on your computer. Follow the instructions under "Tools." No worries if you can't finish due to some issues; the idea is just to get started.
-* If you will be working on the template project, read section II.A of the following paper and try to replicate the results shown in Fig.1 using Scilab (or Simulink).
+* If you will be working on the template project, read Section II.A of the following paper and try to replicate the results shown in Fig.1 using Scilab (or Simulink).
 https://ieeexplore.ieee.org/document/1284742 
