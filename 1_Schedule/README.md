@@ -1,7 +1,7 @@
 | Date  | Day  | Lecture  | Comments  |
 |---|---|---|---|
 |Jan 08	|M |Lec 01: [Intro](/1_Schedule/pdf/LEC01.pdf)   |   |
-|Jan 10	|W |Lec 02   |   |
+|Jan 10	|W |Lec 02: [Incremental Delta-Sigma Modulators](/1_Schedule/pdf/LEC02.pdf)   |   |
 |Jan 15	|M |Holiday  |   |
 |Jan 17	|W |Lec 03   |   |
 |Jan 22	|M |Lec 04   |   |
