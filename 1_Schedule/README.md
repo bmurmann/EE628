@@ -12,7 +12,7 @@
 |Feb 07	|W |Lec 09   |   |
 |Feb 12	|M |Lec 10   |   |
 |Feb 14	|W |Lec 11   |   |
-|Feb 19	|M | Holiday |   |
+|Feb 19	|M |Holiday  |   |
 |Feb 21	|W |Lec 11   |   |
 |Feb 26	|M |Lec 13   |   |
 |Feb 28	|W |Lec 14   |   |
