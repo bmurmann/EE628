@@ -22,3 +22,6 @@ https://ieeexplore.ieee.org/document/9264222
 8\. Raymond Yang and Yaqing Xia, "12-bit 10-KSPS Incremental Delta-Sigma ADC in Skywater 130 nm," Stanford EE 372 Project.  
 https://priyanka-raina.github.io/ee372-spring2022/  
 
+9\. Fath, P., Moser, M., Zachl, G. et al. Open-source design of integrated circuits. Elektrotech. Inftech. (2024).  
+https://doi.org/10.1007/s00502-023-01195-5
+
