@@ -2,5 +2,5 @@ Basic simulink models for system-level simulation of the template project. Simil
 
 
 <p align="center">
-   <img src="./img/idsm2.png" width="600" />
+   <img src="./img/idsm2.png" width="900" />
 </p>  
