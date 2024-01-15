@@ -1,3 +1,15 @@
+**Week 2**
+* Take notes as you work through the items below and submit them as your weekly report.  
+* Verify the simulation results for the second order modulator shown in lecture 2. Replace the ideal integrators (in the analog part) with leaky integrators. Determine how much leakage ($\alpha$) can be tolerated before the peak quantization error doubles.
+* Finish the tool installation and be sure to resolve any issues that you encountered last  week.
+* Create your first schematic and simulation as described here (of course, skip the installation step):
+https://xschem.sourceforge.io/stefan/xschem_man/tutorial_run_simulation.html
+* For the above simulation example, go to Simulation-Edit Netlist in Xschem and inspect the circuit's netlist. Try to make sense fo the format and look for "spice netlist syntax" on Google. You will need to understand the format and meaning of the various netlist elements for debugging. The Ngspice manual is another reference that you will need to consult frequently when setting up & debugging simulations.
+* Inspect the idealized IDSM1 Xschem circuit discussed in lecture 3. Try to explain how the subtraction between the input and the feedback pulse is achieved. The charge conservation analysis presented in class may be useful for this (with a small modification).
+* Enter your teaming details and project topic in the spreadsheet linked below (UH log in required):  
+https://docs.google.com/spreadsheets/d/1z1Zx_is34Pi1zjUItV7z7-M_nO--g01z7KPxaFLhrG8
+
+
 **Week 1**
 * Take notes as you work through the items below and submit them as your weekly report. The report does not need to be pretty, but it should document what you have done, what worked/didn't, things you don't understand, etc. You can also suggest topics that should be covered in future lectures.
 * Read the following papers about Columbia's course:  
