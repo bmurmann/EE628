@@ -1,7 +1,7 @@
 **Week 2**
 * Take notes as you work through the items below and submit them as your weekly report.  
 * Verify the simulation results for the second order modulator shown in lecture 2. Replace the ideal integrators (in the analog part) with leaky integrators. Determine how much leakage ($\alpha$) can be tolerated before the peak quantization error doubles.
-* Finish the tool installation and be sure to resolve any issues that you encountered last  week.
+* Finish the tool installation and be sure to resolve any issues that you encountered last week.
 * Create your first schematic and simulation as described here (of course, skip the installation step):
 https://xschem.sourceforge.io/stefan/xschem_man/tutorial_run_simulation.html
 * For the above simulation example, go to Simulation-Edit Netlist in Xschem to inspect the circuit's netlist. Try to make sense of the format and look for "spice netlist syntax" on Google. You will need to understand the format and meaning of the various netlist elements for debugging. The Ngspice manual is another reference that you will need to consult frequently when setting up & debugging simulations.
