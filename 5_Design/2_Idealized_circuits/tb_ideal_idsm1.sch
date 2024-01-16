@@ -122,7 +122,9 @@ x1   p1  vcmp q  qn   resb     VDD GND sg13g2_dfrbp_1
 save all 
 tran 10n 64u
 plot vo q
-write tb_ideal_integ.raw
+set wr_singlescale
+set wr_vecnames
+wrdata tb_ideal_idsm1.txt vo q p1 p2
 .endc
 "}
 C {devices/gnd.sym} -1150 -610 0 0 {name=l2 lab=GND}
