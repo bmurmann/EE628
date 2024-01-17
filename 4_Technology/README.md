@@ -12,7 +12,7 @@ The figures below show the testbench setup in Xschem. For the $g_m/I_D$-related 
 * Read the raw output data (txt) into Matlab
 * Combine some of the data into the desired parameters (e.g., $CGG = cgg+cgsol  +cgdol$)
 * Save each parameter set (NMOS, PMOS) in mat file format as used in the [Book-on-gm-ID-design](https://github.com/bmurmann/Book-on-gm-ID-design) repo
-* Use the look_up function to read the data and generate the example plots
+* Use the look_up function to read the mat file data and generate the example plots
 * The generated mat files can of course be used for other purposes, such as circuit sizing scripts
 
 The transmission gate simulation data is read into Matlab and plotted directly  
@@ -21,7 +21,6 @@ The transmission gate simulation data is read into Matlab and plotted directly
 <p align="center">
    <img src="./img/tb_sg13_lv_nmos.png" width="800" />
 </p>
-
 <p align="center">
    <img src="./img/tb_sg13_lv_tgate.png" width="800" />
 </p>
