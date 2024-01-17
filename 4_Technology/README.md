@@ -10,10 +10,10 @@ This folder contains some basic (low-voltage) MOSFET characterization data that 
 The figures below show the testbench setup in Xschem. The Ngspice output (text) data was read into Matlab to generate mat files as used in the "Book-on-gm-ID-design" repo (https://github.com/bmurmann/Book-on-gm-ID-design). The employed schematics, auxiliary files and output data are available in this folder.
 
 <p align="center">
-   <img src="./img/tb_sg13_lv_nmos.png" width="600" />
+   <img src="./img/tb_sg13_lv_nmos.png" width="800" />
 </p>
 
 <p align="center">
-   <img src="./img/tb_sg13_lv_tgate.png" width="600" />
+   <img src="./img/tb_sg13_lv_tgate.png" width="800" />
 </p>
 
