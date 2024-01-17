@@ -1,4 +1,4 @@
-EE 628 uses the 130nm BiCMOS Open Source PDK available here: https://github.com/IHP-GmbH/IHP-Open-PDK.  
+EE 628 uses the IHP 130nm BiCMOS Open Source PDK available here: https://github.com/IHP-GmbH/IHP-Open-PDK.  
 
 This folder contains some basic (low-voltage) MOSFET characterization data that is useful for analog/mixed-signal design. The subfolder contain the following plots:  
 * $g_m/I_D$ and $f_T$ versus gate bias and minimum channel length. This is useful as an overview and for NMOS vs. PMOS comparison.
