@@ -2,13 +2,13 @@
    <img src="../img/gm_ID-VGS.svg" width="600" />
 </p>
 
-In the above plot, $f_T$ is computed as $1/2\pi \cdot g_m/CGG$, where $CGG = cgg+cgsol+cgdol$. The lower case variables are capacitances reported by Ngspice.
+In the above plot, $f_T=1/2\pi \cdot g_m/CGG$, where $CGG = cgg+cgsol+cgdol$. The lower case variables are capacitances reported by Ngspice.
 
 For mixed-signal design $f_T$ is a measure of how much transconductance the designer gets per invested (total) gate capacitance. In other words, it is not meant to represent the physical unity gain frequency, which is harder to compute. Similarly, $g_m/I_D$ quantifies how much transconductance the designer gets per invested current.
 
-The initial slope of the NMOS $f_T$ (in weak/moderate inversion) does not look particularly smooth. Closer inspection reveals that that there is an odd "kink" in the intrinsic $cgg$ computed by Ngspice. The only reason why this kink does not show up more clearly is that the devices are modeled to have very large (constant) overlap capacitances ($cgsol$, $cgdol$).
+The initial slope of the NMOS $f_T$ (in weak/moderate inversion) does not look particularly smooth. Closer inspection reveals that that there is an odd "kink" in the intrinsic $cgg$ computed by Ngspice. The only reason why this kink does not show up more clearly is that the devices are modeled to have relatively large overlap capacitances ($cgsol$, $cgdol$).
 
-To see the potential issue with the values of the overlap capacitances, consider the op output appended below. The overlap capacitance per width is $cgdol/W = 3.02492\cdot 10^{-15} F /5\mu m = 0.605 fF/\mu m$. The current [Process Specification Rev. 1.1](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf) states a target value for "Miller Capacitance NMOS" as $0.36fF/\mu m$   
+To see the potential issue with the values of the overlap capacitances, consider the op output appended below. The overlap capacitance per width is $cgdol/W = 3.02492\cdot 10^{-15} F /5\mu m = 0.605 fF/\mu m$. The current [Process Specification Rev. 1.1](https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf) states a target value for "Miller Capacitance NMOS" as $0.36fF/\mu m$, which is in fact well aligned with values seen for comparable CMOS technologies.
 
 
 
