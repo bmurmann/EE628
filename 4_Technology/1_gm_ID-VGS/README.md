@@ -2,7 +2,7 @@
    <img src="../img/gm_ID-VGS.svg" width="600" />
 </p>
 
-In the above plot, $f_T=1/2\pi \cdot g_m/CGG$, where $CGG = cgg+cgsol+cgdol$. The lower case variables are capacitances reported by Ngspice.
+In the above plot, $f_T=1/2\pi \cdot g_m/C_{gg}$, where $C_{gg} = cgg+cgsol+cgdol$. The lower case variables are capacitances reported by Ngspice.
 
 For mixed-signal design $f_T$ is a measure of how much transconductance the designer gets per invested (total) gate capacitance. In other words, it is not meant to represent the physical unity gain frequency, which is harder to compute. Similarly, $g_m/I_D$ quantifies how much transconductance the designer gets per invested current.
 

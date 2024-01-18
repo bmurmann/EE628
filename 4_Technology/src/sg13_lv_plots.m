@@ -67,6 +67,19 @@ grid;
 legend('lv_pmos', 'location', 'northeast', 'interpreter','none')
 saveas(gcf, 'fT-gm_ID_p.svg')
 
+% Drain capacitance
+cdd_w_n = 1e15*look_up(nch, 'CDD', 'VDS', nch.VDS, 'VGS', 0.6, 'L', 0.13)/nch.W;
+cdd_w_p = 1e15*look_up(pch, 'CDD', 'VDS', nch.VDS, 'VGS', 0.6, 'L', 0.13)/nch.W;
+
+figure;
+plot(nch.VDS, cdd_w_n, pch.VDS, cdd_w_p)
+title('L=0.13mum, V_G_S=0.6V')
+xlabel('V_D_S (V)')
+ylabel('C_d_d (fF/\mum)')
+grid;
+legend('lv_nmos', 'lv_pmos', 'location', 'northeast', 'interpreter','none')
+saveas(gcf, 'Cdd_W-VDS.svg')
+
 % gm/gds versus gm/ID
 gmid_n = look_up(nch, 'GM_ID', 'VDS', 1.2, 'VGS', nch.VGS, 'L', nch.L);
 gmid_p = look_up(pch, 'GM_ID', 'VDS', 1.2, 'VGS', pch.VGS, 'L', pch.L);
