@@ -2,7 +2,7 @@ EE 628 uses the [IHP 130nm BiCMOS Open Source PDK](https://github.com/IHP-GmbH/I
 
 This directory contains basic LV MOSFET characterization data that is useful for analog/mixed-signal design. The subdirectories contain the following plots:  
 * $g_m/I_D$ and $f_T$ versus gate bias and minimum channel length. This is useful as an overview and for NMOS vs. PMOS comparison.
-* $f_T$ vs. $g_m/I_D$ tradeoff plot for various channel lengths.
+* $f_T$ vs. $g_m/I_D$ tradeoff plot for various channel lengths, as well as a plot of the product $g_m/I_D \cdot f_T$. 
 * $g_m/g_{ds}$ (intrinsic gain) vs. $g_m/I_D$ for various channel lengths.
 * $I_D/W$ (current density) vs. $g_m/I_D$ for various channel lengths. This plot is useful for device sizing.
 * $V_t$ vs. $L$. This is useful for looking at the reverse short chanel effect (RSCE).
