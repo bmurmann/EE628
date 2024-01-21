@@ -3,8 +3,8 @@
 |Jan 08	|M |Lec 01: [Intro](/1_Schedule/pdf/LEC01.pdf)   |   |
 |Jan 10	|W |Lec 02: [Incremental Delta-Sigma Modulators](/1_Schedule/pdf/LEC02.pdf)   |   |
 |Jan 15	|M |Holiday  |   |
-|Jan 17	|W |Lec 03: [IDSM Circuit Model](/1_Schedule/pdf/LEC03.pdf)      |   |
-|Jan 22	|M |Lec 04   |   |
+|Jan 17	|W |Lec 03: [IDSM1 Circuit Model](/1_Schedule/pdf/LEC03.pdf)      |   |
+|Jan 22	|M |Lec 04: [IDSM2 Circuit Model](/1_Schedule/pdf/LEC04.pdf)   |   |
 |Jan 24	|W |Lec 05   |   |
 |Jan 29	|M |Lec 06   |Boris traveling   |
 |Jan 31	|W |Lec 07   |Boris traveling   |
