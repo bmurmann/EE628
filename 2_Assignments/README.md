@@ -4,7 +4,7 @@
 * Create a symbol for the integrator (including its switch circuitry) used in the "tb_ideal_idsm1" schematic. The schematic is in the design directory of this repo and also shown on slide 10 of LEC02.
 * Use the symbol to create a more compact schematic of "tb_ideal_idsm1" and verify that it still works as expected.
 * Expand the circuit by adding a second integrator as shown in LEC04, slide 7 (but using your integrator symbol). Simulate the circuit and look into why the int2 output does not match the Simulink result.
-* In Wednesday's lecture we will talk about the performance specifications for the template project. Based on that discussion, meet with your teammates to discuss your design goals and summarize them in your report.   
+* In Wednesday's lecture we will talk about the performance specifications for the template project. Based on that discussion, meet with your teammates to discuss your design goals and state them in your report.   
 
 **Week 2**
 * Take notes as you work through the items below and submit them as your weekly report.  
