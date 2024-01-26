@@ -25,3 +25,7 @@ https://priyanka-raina.github.io/ee372-spring2022/
 9\. Fath, P., Moser, M., Zachl, G. et al. Open-source design of integrated circuits. Elektrotech. Inftech. (2024).  
 https://doi.org/10.1007/s00502-023-01195-5
 
+10\. Y. Chae and G. Han, "Low Voltage, Low Power, Inverter-Based Switched-Capacitor Delta-Sigma Modulator," in IEEE Journal of Solid-State Circuits, vol. 44, no. 2, pp. 458-472, Feb. 2009.  
+https://ieeexplore.ieee.org/abstract/document/4768910 
+
+
