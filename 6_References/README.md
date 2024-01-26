@@ -26,6 +26,11 @@ https://priyanka-raina.github.io/ee372-spring2022/
 https://doi.org/10.1007/s00502-023-01195-5
 
 10\. Y. Chae and G. Han, "Low Voltage, Low Power, Inverter-Based Switched-Capacitor Delta-Sigma Modulator," in IEEE Journal of Solid-State Circuits, vol. 44, no. 2, pp. 458-472, Feb. 2009.  
-https://ieeexplore.ieee.org/abstract/document/4768910 
+https://ieeexplore.ieee.org/abstract/document/4768910  
+
+11\. B. Razavi, "The StrongARM Latch [A Circuit for All Seasons]," in IEEE Solid-State Circuits Magazine, Spring 2015.  
+https://ieeexplore.ieee.org/abstract/document/7130773
+
+
 
 
