@@ -1,3 +1,7 @@
+**Week 4**
+* Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
+* Drawing good schematics is an art. Watch [this presentation](https://us06web.zoom.us/rec/share/QyU62ylOnBq1S3ej3gGK09xlF0TCBLU9ON1OTLsRgSwePeAH8aJKv5Jx_isrKeif.PiihL4kSIy2GuBtG) by Kevin Zheng on how you can be become a circuit artist. Skipping the first 5 minutes will get you to the beginning of the presentation. Watch for as long as you like (the presentation lasts for over an hour).
+
 **Week 3**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Read through the Xschem tutorial on creating symbols: https://xschem.sourceforge.io/stefan/xschem_man/creating_symbols.html  
