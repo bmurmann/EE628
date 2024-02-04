@@ -31,6 +31,9 @@ https://ieeexplore.ieee.org/abstract/document/4768910
 11\. B. Razavi, "The StrongARM Latch [A Circuit for All Seasons]," in IEEE Solid-State Circuits Magazine, Spring 2015.  
 https://ieeexplore.ieee.org/abstract/document/7130773
 
+12\. K. Nagaraj, T. Viswanathan, K. Singhal and J. Vlach, "Switched-capacitor circuits with reduced sensitivity to amplifier gain," in IEEE Transactions on Circuits and Systems, vol. 34, no. 5, pp. 571-574, May 1987.  
+https://ieeexplore.ieee.org/document/1086170 
+
 
 
 
