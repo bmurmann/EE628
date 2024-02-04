@@ -1,3 +1,10 @@
+**Week 5**
+* Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
+* Enter an inverter in Xschem (NMOS: 4/0.13, PMOS: 10/0.13) and simulate its DC transfer characteristic. Plot the derivative to measure the peak gain near the middle of the transfer function.
+* What is the new peak gain after doubling the channel lengths?
+* Skim through the following paper (I will explain the main idea in class): https://ieeexplore.ieee.org/document/1086170
+* More to come, stay tuned...
+
 **Week 4**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Drawing good schematics is an art. Watch [this presentation](https://us06web.zoom.us/rec/share/QyU62ylOnBq1S3ej3gGK09xlF0TCBLU9ON1OTLsRgSwePeAH8aJKv5Jx_isrKeif.PiihL4kSIy2GuBtG) by Kevin Zheng on how you can be become a circuit artist. Skipping the first 5 minutes will get you to the beginning of the presentation. Watch for as long as you like (the presentation lasts for over an hour).
