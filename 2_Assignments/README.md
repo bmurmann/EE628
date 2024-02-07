@@ -3,7 +3,8 @@
 * Enter an inverter in Xschem (NMOS: 4/0.13, PMOS: 10/0.13) and simulate its DC transfer characteristic. Plot the derivative to measure the peak gain near the middle of the transfer function.
 * What is the new peak gain after doubling the channel lengths?
 * Skim through the following paper (I will explain the main idea in class): https://ieeexplore.ieee.org/document/1086170
-* More to come, stay tuned...
+* Duplicate the simulation shown on slide 4 of lecture 9. To which value do we need to increase the amplifier gain in the bottom circuit to achieve the same integrator response? We can call this gain the "effective gain" of the amplifier in the top circuit.
+* Build a testbench similar to the above, but now using an inverter as the amplifier in top circuit. As discussed in class, use relatively long L, e.g. 1.5 um. Experiment with this circuit and try to get it to work.
 
 **Week 4**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
