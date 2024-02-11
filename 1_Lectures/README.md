@@ -8,9 +8,9 @@
 |Jan 24	|W |Lec 05: [Project Specifications](/1_Lectures/pdf/LEC05.pdf)   |   |
 |Jan 29	|M |Lec 06: [Comparator](/1_Lectures/pdf/LEC05.pdf) (No class, watch recording on Laulima)   |Boris traveling   |
 |Jan 31	|W |Lec 07: Class meetup & troubleshooting session   |Boris traveling   |
-|Feb 05	|M |Lec 08: [Amplifier](/1_Lectures/pdf/LEC08.pdf   |   |
-|Feb 07	|W |Lec 09: [Amplifier](/1_Lectures/pdf/LEC09.pdf   |   |
-|Feb 12	|M |Lec 10: [Inverter-Based Integrator](/1_Lectures/pdf/LEC10.pdf |   |
+|Feb 05	|M |Lec 08: [Amplifier](/1_Lectures/pdf/LEC08.pdf)   |   |
+|Feb 07	|W |Lec 09: [Amplifier](/1_Lectures/pdf/LEC09.pdf)   |   |
+|Feb 12	|M |Lec 10: [Inverter-Based Integrator](/1_Lectures/pdf/LEC10.pdf) |   |
 |Feb 14	|W |Lec 11   |   |
 |Feb 19	|M |Holiday  |   |
 |Feb 21	|W |Lec 11   |   |
