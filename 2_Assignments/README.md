@@ -1,10 +1,18 @@
+**Week 6**
+* Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
+* Enter the inverter-based integrator on slide 8 of lecture 10 in Xschem and verify its functionality. Vary the P/N ration (of both inverters) slightly slightly to see how this affects vmid. We want vmid to be close to 0.6 V.
+* Read the first few paragraphs (or as much as like) of the paper linked below (we will talk about thermal noise in lecture 11): https://ieeexplore.ieee.org/document/6218338
+* Replicate the simple thermal noise simulation of a resistor, shown on slide 24 of lecture 11. Vary the resistor value and observe that the total integrated noise does not change.
+* Try to set up the simulation shown on slide 16 of lecture 11 to determine the $\gamma$ factor of an NMOS device in our technology. Use $V_{GS}=V_{DS}=0.6V$ and $L=0.13\mu m, 1.5 \mu m$.
+
+
 **Week 5**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Enter an inverter in Xschem (NMOS: 4/0.13, PMOS: 10/0.13) and simulate its DC transfer characteristic. Plot the derivative to measure the peak gain near the middle of the transfer function.
 * What is the new peak gain after doubling the channel lengths?
 * Skim through the following paper (I will explain the main idea in class): https://ieeexplore.ieee.org/document/1086170
 * Duplicate the simulation shown on slide 4 of lecture 9. To which value do we need to increase the amplifier gain in the bottom circuit to achieve the same integrator response? We can call this gain the "effective gain" of the amplifier in the top circuit.
-* Build a testbench similar to the above, but now using an inverter as the amplifier in top circuit. As discussed in class, use relatively long L, e.g. 1.5 um. Experiment with this circuit and try to get it to work.
+* Build a testbench similar to the above, but now using an inverter as the amplifier in the top circuit. As discussed in class, use relatively long L, e.g. 1.5 um. Experiment with this circuit and try to get it to work.
 
 **Week 4**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
