@@ -1,3 +1,11 @@
+**Week 7**
+* Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
+* Design an integrator stage using the capacitor and inverter sizing discussed at teh end of lecture 11. Verify functionality through a transient simulation.
+* Now implement the switches using the sizing discussed in lecture 12
+* Build the clock generator shown on slide 36 of lecture 12. While doing this, investigate the various logic gate sizes available in the standard cell library. Use 2x NAND and 4x inverters for the time being; we can re-size these later as needed. Run a transient analysis and measure the non-overlap delay as well as the delay between the early and delayed clocks.
+* Time permitting, try putting all of the above together and verify functionality through a transient simulation.
+* Document any issues that you observed in the above steps and bring them to the next class meeting for discussion and resolution.
+
 **Week 6**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Enter the inverter-based integrator on slide 8 of lecture 10 in Xschem and verify its functionality. Vary the P/N ration (of both inverters) slightly slightly to see how this affects vmid. We want vmid to be close to 0.6 V.
