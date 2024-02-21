@@ -13,7 +13,7 @@
 |Feb 12	|M |Lec 10: [Inverter-Based Integrator](/1_Lectures/pdf/LEC10.pdf) |   |
 |Feb 14	|W |Lec 11: [Noise](/1_Lectures/pdf/LEC11.pdf)    |   |
 |Feb 19	|M |Holiday  |   |
-|Feb 21	|W |Lec 12: : [Switches](/1_Lectures/pdf/LEC12.pdf)   |   |
+|Feb 21	|W |Lec 12: [Switches](/1_Lectures/pdf/LEC12.pdf)   |   |
 |Feb 26	|M |Lec 13   |   |
 |Feb 28	|W |Lec 14   |   |
 |Mar 04	|M |Lec 15   |   |
