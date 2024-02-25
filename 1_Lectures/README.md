@@ -14,7 +14,7 @@
 |Feb 14	|W |Lec 11: [Noise](/1_Lectures/pdf/LEC11.pdf)    |   |
 |Feb 19	|M |Holiday  |   |
 |Feb 21	|W |Lec 12: [Switches](/1_Lectures/pdf/LEC12.pdf)   |   |
-|Feb 26	|M |Lec 13   |   |
+|Feb 26	|M |Lec 13: [Transistorized Integrator](/1_Lectures/pdf/LEC13.pdf)   |   |
 |Feb 28	|W |Lec 14   |   |
 |Mar 04	|M |Lec 15   |   |
 |Mar 06	|W |Lec 16   |   |
