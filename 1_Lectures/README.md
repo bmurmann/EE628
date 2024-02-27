@@ -15,13 +15,13 @@
 |Feb 19	|M |Holiday  |   |
 |Feb 21	|W |Lec 12: [Switches](/1_Lectures/pdf/LEC12.pdf)   |   |
 |Feb 26	|M |Lec 13: [Transistorized Integrator](/1_Lectures/pdf/LEC13.pdf)   |   |
-|Feb 28	|W |Lec 14   |   |
+|Feb 28	|W |Lec 14: Introduction to layout   |   |
 |Mar 04	|M |Lec 15   |   |
 |Mar 06	|W |Lec 16   |   |
 |Mar 11	|M |Lec 17   |   |
 |Mar 13	|W |Lec 18   |   |
-|Mar 18	|M |Lec 19   |   |
-|Mar 20	|W |Lec 20   |   |
+|Mar 18	|M |Spring break   |   |
+|Mar 20	|W |Spring break   |   |
 |Mar 25	|M |Lec 21   |   |
 |Mar 27	|W |Lec 22   |   |
 |Apr 01	|M |Lec 23   |   |
