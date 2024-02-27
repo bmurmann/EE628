@@ -1,3 +1,9 @@
+**Week 8**
+* Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
+* Continue to work toward a fully transistorized version of the delta-sigma modulator. Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
+* In preparation for the layout phase of our project, watch the Klayout tutorial videos at https://www.youtube.com/@qnfcf6093/videos. As mentioned in class, you can skip the installation part and simply run `klayout -e` from the Linux prompt inside the tool container. These are the most important videos to watch: 0, 1, 2, 3, 4, 6, 7. I recommend that you duplicate all the shown work in your own Klayout window.
+
+
 **Week 7**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Design an integrator stage using the capacitor and inverter sizing discussed at the end of lecture 11. Verify functionality through a transient simulation.
