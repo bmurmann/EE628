@@ -23,7 +23,6 @@ https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps. The default Li
 6\. You will now see a terminal with the prompt `foss/design`. This is your working directory where all your design data goes. You can also see this directory in your Linux terminal as `~/eda/designs`. Even if you update or uninstall the container, the files in the `foss` folder will stay on your machine.
 
 7\. Type `iic-pdk sg13g2` to switch to the IHP PDK that we will use in this course. To skip typing this command every time, create a `.designinit` text file in your design directory with the following lines:  
-
 ```
 PDK_ROOT=/foss/pdks
 PDK=sg13g2
@@ -31,3 +30,16 @@ PDKPATH=/foss/pdks/sg13g2
 ```
 
 8\. Type `xschem` to see the schematic editor showing simulation testbenches for various components. Left-click "dc_lv_nmos" then right-click "descend schematic". Click netlist, then simulate and CTRL-click "load waves" to see the simulation output.
+
+9\. Create a subdirectory for your layout work.
+```
+cd /foss/designs
+mkdir layout
+cd layout
+```
+
+10\. To start Klayout with the proper technology setup, first set the KLAYOUT_HOME environment variable, then launch using the -e option (edit mode). You'll need to set the environment variable each time you start the container (this will be fixed in a future release).
+```
+export KLAYOUT_HOME=$PDKPATH/libs.tech/klayout
+klayout -e & 
+```
