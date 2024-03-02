@@ -31,15 +31,27 @@ PDKPATH=/foss/pdks/sg13g2
 
 8\. Type `xschem` to see the schematic editor showing simulation testbenches for various components. Left-click "dc_lv_nmos" then right-click "descend schematic". Click netlist, then simulate and CTRL-click "load waves" to see the simulation output.
 
-9\. Create a subdirectory for your layout work.
+9\. Create a configuration directory for KLayout and populate it as detailed below. We will copy one of the technology files (instead of creating a symbolic link) to fix a typo in the current PDK release (change grid to 5 nm).
+```
+cd /foss/designs
+mkdir .klayout
+mkdir .klayout/libraries
+ln -s $PDKPATH/libs.ref/sg13g2_pr/gds/sg13g2_pr.gds ./.klayout/libraries
+ln -s $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds ./.klayout/libraries
+ln -s $PDKPATH/libs.tech/klayout/python ./.klayout/
+cp -r $PDKPATH/libs.tech/klayout/tech ./.klayout/
+sed -i 's:<dbu>0.001</dbu>:<dbu>0.005</dbu>:g' ./.klayout/tech/sg13g2.lyt
+```
+
+10\. Create a subdirectory for your layout work.
 ```
 cd /foss/designs
 mkdir layout
 cd layout
 ```
 
-10\. To start Klayout with the proper technology setup, first set the KLAYOUT_HOME environment variable, then launch using the -e option (edit mode). You'll need to set the environment variable each time you start the container (this will be fixed in a future release).
+11\. To start KLayout with the proper technology setup, set the KLAYOUT_HOME environment variable, then launch using the -e option (edit mode). The environment variable must be set each time the container is started (this will be fixed in a future release, which will automatically set the proper environment variable for KLayout).
 ```
-export KLAYOUT_HOME=$PDKPATH/libs.tech/klayout
+export KLAYOUT_HOME=/foss/designs/.klayout
 klayout -e & 
 ```
