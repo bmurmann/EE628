@@ -16,9 +16,9 @@
 |Feb 21	|W |Lec 12: [Switches](/1_Lectures/pdf/LEC12.pdf)   |   |
 |Feb 26	|M |Lec 13: [Transistorized Integrator](/1_Lectures/pdf/LEC13.pdf)   |   |
 |Feb 28	|W |Lec 14: [Introduction to layout](/1_Lectures/pdf/LEC14.pdf)   |   |
-|Mar 04	|M |Lec 15: Layout   |   |
-|Mar 06	|W |Lec 16: Layout   |   |
-|Mar 11	|M |Lec 17: Layout   |   |
+|Mar 04	|M |Lec 15: [Parasitics](/1_Lectures/pdf/LEC15.pdf)   |   |
+|Mar 06	|W |Lec 16:    |   |
+|Mar 11	|M |Lec 17:    |   |
 |Mar 13	|W |Lec 18: Team presentations   |   |
 |Mar 18	|M |Spring break   |   |
 |Mar 20	|W |Spring break   |   |
