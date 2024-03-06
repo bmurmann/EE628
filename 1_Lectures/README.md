@@ -17,7 +17,7 @@
 |Feb 26	|M |Lec 13: [Transistorized Integrator](/1_Lectures/pdf/LEC13.pdf)   |   |
 |Feb 28	|W |Lec 14: [Introduction to layout](/1_Lectures/pdf/LEC14.pdf)   |   |
 |Mar 04	|M |Lec 15: [Parasitics](/1_Lectures/pdf/LEC15.pdf)   |   |
-|Mar 06	|W |Lec 16:    |   |
+|Mar 06	|W |Lec 16: [Guard Rings](/1_Lectures/pdf/LEC16.pdf)   |   |
 |Mar 11	|M |Lec 17:    |   |
 |Mar 13	|W |Lec 18: Team presentations   |   |
 |Mar 18	|M |Spring break   |   |
