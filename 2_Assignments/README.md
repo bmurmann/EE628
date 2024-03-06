@@ -1,5 +1,6 @@
 **Week 9**
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
+* Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
 * Work on your team presentation for March 13. See lecture 14 for a suggested outline.
 * Configure KLayout as shown in the (updated) tools section. This will allow you to use IHP PyCells as well as the standard cell and primitive layout libraries going forward.
 * Create a DRC-clean layout of an inverter in IHP technology. You can watch this video if you need some guidance: https://www.youtube.com/watch?v=MwwiYSQ2JX8. Note that this example uses a different technology, but the steps will be similar. A few suggestions:
