@@ -18,7 +18,7 @@
 |Feb 28	|W |Lec 14: [Introduction to layout](/1_Lectures/pdf/LEC14.pdf)   |   |
 |Mar 04	|M |Lec 15: [Parasitics](/1_Lectures/pdf/LEC15.pdf)   |   |
 |Mar 06	|W |Lec 16: [Guard Rings](/1_Lectures/pdf/LEC16.pdf)   |   |
-|Mar 11	|M |Lec 17:    |   |
+|Mar 11	|M |Lec 17: [Schematic Review](/1_Lectures/pdf/LEC17.pdf) |   |
 |Mar 13	|W |Lec 18: Team presentations   |   |
 |Mar 18	|M |Spring break   |   |
 |Mar 20	|W |Spring break   |   |
