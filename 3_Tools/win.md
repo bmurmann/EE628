@@ -31,16 +31,15 @@ PDKPATH=/foss/pdks/sg13g2
 
 8\. Type `xschem` to see the schematic editor showing simulation testbenches for various components. Left-click "dc_lv_nmos" then right-click "descend schematic". Click netlist, then simulate and CTRL-click "load waves" to see the simulation output.
 
-9\. Create a configuration directory for KLayout and populate it as detailed below. We copy the tech directory (instead of creating a symbolic link) to fix a typo in the current PDK release (change grid to 5 nm).
+9\. Create a configuration directory for KLayout and populate it as detailed below. We copy the python directory (instead of creating a symbolic link) to fix a typo in the current PDK release (change contact size to 160nm in NMOS PyCell).
 ```
 cd /foss/designs
 mkdir .klayout
 mkdir .klayout/libraries
 ln -s $PDKPATH/libs.ref/sg13g2_pr/gds/sg13g2_pr.gds ./.klayout/libraries
 ln -s $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds ./.klayout/libraries
-ln -s $PDKPATH/libs.tech/klayout/python ./.klayout/
-cp -r $PDKPATH/libs.tech/klayout/tech ./.klayout/
-sed -i 's:<dbu>0.001</dbu>:<dbu>0.005</dbu>:g' ./.klayout/tech/sg13g2.lyt
+ln -s $PDKPATH/libs.tech/klayout/tech ./.klayout/
+cp -r $PDKPATH/libs.tech/klayout/python ./.klayout/
 ```
 
 10\. Create a subdirectory for your layout work.
