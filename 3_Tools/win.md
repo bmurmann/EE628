@@ -42,16 +42,19 @@ mkdir temp
 git clone https://github.com/IHP-GmbH/IHP-Open-PDK.git temp
 cp -r ./temp/ihp-sg13g2/libs.tech/klayout/python/ ./.klayout/
 cp -r ./temp/ihp-sg13g2/libs.tech/klayout/tech/ ./.klayout/
+cd .klayout/python/sg13g2_pycell_lib/ihp/
+mv pmos_code.py pmos_code_bak.py
+curl -o pmos_code.py https://raw.githubusercontent.com/bmurmann/EE628/main/3_Tools/python/pmos_code.py
+cd /foss/designs
 ```
 
 10\. Create a subdirectory for your layout work.
 ```
-cd /foss/designs
 mkdir layout
 cd layout
 ```
 
-11\. To start KLayout with the proper technology setup, set the KLAYOUT_HOME environment variable, then launch using the -e option (edit mode). The environment variable must be set each time the container is started (this will be fixed in a future release, which will automatically set the proper environment variable for KLayout).
+11\. To start KLayout with the proper technology setup, set the KLAYOUT_HOME environment variable, then launch using the -e option (edit mode). The environment variable must be set each time the container is started (this will be fixed in a future release, which will automatically set the proper environment variable for KLayout). Save your layouts as oas files (not gds).
 ```
 export KLAYOUT_HOME=/foss/designs/.klayout
 klayout -e & 
