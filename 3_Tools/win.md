@@ -31,7 +31,7 @@ PDKPATH=/foss/pdks/sg13g2
 
 8\. Type `xschem` to see the schematic editor showing simulation testbenches for various components. Left-click "dc_lv_nmos" then right-click "descend schematic". Click netlist, then simulate and CTRL-click "load waves" to see the simulation output.
 
-9\. Create a configuration directory for KLayout and populate it as detailed below. We copy the python directory (instead of creating a symbolic link) to fix a typo in the current PDK release (change contact size to 160nm in NMOS PyCell).
+9\. Create a configuration directory for KLayout and populate it as detailed below. We copy the python directory (instead of creating a symbolic link) to fix a problem with the current PMOS PyCell).
 ```
 cd /foss/designs
 mkdir .klayout
@@ -40,6 +40,9 @@ ln -s $PDKPATH/libs.ref/sg13g2_pr/gds/sg13g2_pr.gds ./.klayout/libraries
 ln -s $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds ./.klayout/libraries
 ln -s $PDKPATH/libs.tech/klayout/tech ./.klayout/
 cp -r $PDKPATH/libs.tech/klayout/python ./.klayout/
+cd .klayout/python/sg13g2_pycell_lib/ihp/
+mv pmos_code.py pmos_code_bak.py
+curl -o pmos_code.py https://raw.githubusercontent.com/bmurmann/EE628/main/3_Tools/python/pmos_code.py
 ```
 
 10\. Create a subdirectory for your layout work.
