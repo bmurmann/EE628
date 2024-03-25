@@ -22,7 +22,7 @@
 |Mar 13	|W |Lec 18: Team presentations   |   |
 |Mar 18	|M |Spring break   |   |
 |Mar 20	|W |Spring break   |   |
-|Mar 25	|M |Lec 19   |   |
+|Mar 25	|M |Lec 19: [Chip I/O](/1_Lectures/pdf/LEC19.pdf)    |   |
 |Mar 27	|W |Lec 20   |   |
 |Apr 01	|M |Lec 21   |   |
 |Apr 03	|W |Lec 22   |   |
