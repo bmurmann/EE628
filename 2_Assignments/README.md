@@ -1,25 +1,42 @@
+**Week 12**
+
+* Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own. 
+* Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
+* Configure KLayout as shown in the (updated) tools section. This fixes all known bugs to date.
+* Complete a "significant" piece of layout (e.g., the clock generator cell) this week and fix all DRC errors (except for density rules).
+* Continue to work toward your final set schematics and evaluation of your design's top-level performance. For the latter, create a suitable Jupyter notebook that computes the decimated digital output for at least five input voltages and assess your converter's linearity.
+* Skim through the following paper on ESD protection: https://ieeexplore.ieee.org/document/10320105 (read as much as you like).
+
+**Week 11**
+
+* Spring break.
+
 **Week 10**
+
 * Submit your team presentation as this week's deliverable (no other deliverables).
 * Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
 
 **Week 9**
+
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
 * Work on your team presentation for March 13. See lecture 14 for a suggested outline.
 * Configure KLayout as shown in the (updated) tools section. This will allow you to use IHP PyCells as well as the standard cell and primitive layout libraries going forward.
 * Create a DRC-clean layout of an inverter in IHP technology. You can watch this video if you need some guidance: https://www.youtube.com/watch?v=MwwiYSQ2JX8. Note that this example uses a different technology, but the steps will be similar. A few suggestions:
- * I'd use paths instead of boxes to connect the transistors.
- * The pcells used in this example automatically  generate P and N bulk taps. The IHP PyCells don't do this (yet). You can daw the taps manually or use the ptap/ntap cells from the primitives library.
+    - I'd use paths instead of boxes to connect the transistors.
+    - The pcells used in this example automatically  generate P and N bulk taps. The IHP PyCells don't do this (yet). You can daw the taps manually or use the ptap/ntap cells from the primitives library.
 * As a next exercise, try to create a DRC-clean layout of your clock generator using standard cells.
 
 **Week 8**
+
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Continue to work toward a fully transistorized version of the delta-sigma modulator. Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
-* In preparation for the layout phase of our project, watch the Klayout tutorial videos at https://www.youtube.com/@qnfcf6093/videos. As mentioned in class, you can skip the installation part and simply run `klayout -e` from the Linux prompt inside the tool container. These are the most important videos to watch: 0, 1, 2, 3, 4, 6, 7. I recommend that you duplicate all the shown work in your own Klayout window.
-* For additional resources on Klayout, browse the tool's doc page: https://www.klayout.de/doc.html. You can also consider watching this longer tutorial by the creator of Klayout: https://www.youtube.com/watch?v=5t78kJ991js.  
+* In preparation for the layout phase of our project, watch the KLayout tutorial videos at https://www.youtube.com/@qnfcf6093/videos. As mentioned in class, you can skip the installation part and simply run `klayout -e` from the Linux prompt inside the tool container. These are the most important videos to watch: 0, 1, 2, 3, 4, 6, 7. I recommend that you duplicate all the shown work in your own KLayout window.
+* For additional resources on KLayout, browse the tool's doc page: https://www.klayout.de/doc.html. You can also consider watching this longer tutorial by the creator of KLayout: https://www.youtube.com/watch?v=5t78kJ991js.  
 
 
 **Week 7**
+
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Design an integrator stage using the capacitor and inverter sizing discussed at the end of lecture 11. Verify functionality through a transient simulation.
 * Now implement the switches using the sizing discussed in lecture 12.
@@ -28,6 +45,7 @@
 * Document any issues that you observed in the above steps and bring them to the next class meeting for discussion and resolution.
 
 **Week 6**
+
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Enter the inverter-based integrator on slide 8 of lecture 10 in Xschem and verify its functionality. Vary the P/N ration (of both inverters) slightly slightly to see how this affects vmid. We want vmid to be close to 0.6 V.
 * Read the first few paragraphs (or as much as like) of the paper linked below (we will talk about thermal noise in lecture 11): https://ieeexplore.ieee.org/document/6218338
@@ -36,6 +54,7 @@
 
 
 **Week 5**
+
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Enter an inverter in Xschem (NMOS: 4/0.13, PMOS: 10/0.13) and simulate its DC transfer characteristic. Plot the derivative to measure the peak gain near the middle of the transfer function.
 * What is the new peak gain after doubling the channel lengths?
@@ -44,6 +63,7 @@
 * Build a testbench similar to the above, but now using an inverter as the amplifier in the top circuit. As discussed in class, use relatively long L, e.g. 1.5 um. Experiment with this circuit and try to get it to work.
 
 **Week 4**
+
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Drawing good schematics is an art. Watch [this presentation](https://us06web.zoom.us/rec/share/QyU62ylOnBq1S3ej3gGK09xlF0TCBLU9ON1OTLsRgSwePeAH8aJKv5Jx_isrKeif.PiihL4kSIy2GuBtG) by Kevin Zheng on how you can be become a circuit artist. Skipping the first 5 minutes will get you to the beginning of the presentation. Watch for as long as you like (the presentation lasts for over an hour).
 * Enter the comparator schematic shown in lecture 6 and duplicate the simulation results.
@@ -52,14 +72,16 @@
 * Read the following paper to learn more about comparators: https://ieeexplore.ieee.org/abstract/document/7130773
 
 **Week 3**
+
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.
 * Read through the Xschem tutorial on creating symbols: https://xschem.sourceforge.io/stefan/xschem_man/creating_symbols.html  
 * Create a symbol for the integrator (including its switch circuitry) used in the "tb_ideal_idsm1" schematic. The schematic is in the design directory of this repo and also shown on slide 10 of LEC02.
 * Use the symbol to create a more compact schematic of "tb_ideal_idsm1" and verify that it still works as expected.
 * Expand the circuit by adding a second integrator as shown in LEC04, slide 7 (but using your integrator symbol). Simulate the circuit and look into why the int2 output does not match the Simulink result.
-* In Wednesday's lecture we will talk about the performance specifications for the template project. Based on that discussion, meet with your teammates to discuss your design goals and state them in your report.   
+* In Wednesday's lecture we will talk about the performance specifications for the template project. Based on that discussion, meet with your teammates to discuss your design goals and state them in your report.
 
 **Week 2**
+
 * Take notes as you work through the items below and submit them as your weekly report.  
 * Verify the simulation results for the second order modulator shown in lecture 2. Replace the ideal integrators (in the analog part) with leaky integrators. Determine how much leakage ($\alpha$) can be tolerated before the peak quantization error doubles.
 * Finish the tool installation and be sure to resolve any issues that you encountered last week.
@@ -72,6 +94,7 @@ https://docs.google.com/spreadsheets/d/1z1Zx_is34Pi1zjUItV7z7-M_nO--g01z7KPxaFLh
 
 
 **Week 1**
+
 * Take notes as you work through the items below and submit them as your weekly report. The report does not need to be pretty, but it should document what you have done, what worked/didn't, things you don't understand, etc. You can also suggest topics that should be covered in future lectures.
 * Read the following papers about Columbia's course:  
 https://ieeexplore.ieee.org/document/10224621   
