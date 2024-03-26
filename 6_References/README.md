@@ -34,6 +34,6 @@ https://ieeexplore.ieee.org/abstract/document/7130773
 12\. K. Nagaraj, T. Viswanathan, K. Singhal and J. Vlach, "Switched-capacitor circuits with reduced sensitivity to amplifier gain," in IEEE Transactions on Circuits and Systems, vol. 34, no. 5, pp. 571-574, May 1987.  
 https://ieeexplore.ieee.org/document/1086170 
 
-
-
+13\. A. Concannon, "Evolution of ESD Robust IC Design: How ESD design and ESD control have changed our industry," in IEEE Solid-State Circuits Magazine, vol. 15, no. 4, pp. 58-63, Fall 2023.
+https://ieeexplore.ieee.org/document/10320105
 
