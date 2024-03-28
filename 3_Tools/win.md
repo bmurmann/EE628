@@ -20,7 +20,7 @@ https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps. The default Li
 
 5\. Type `./start_x.sh` to run the container. On first use, this downloads end extracts all the files (~18 GB or so), which will take time. Make sure that you have a fast internet connection!
 
-6\. You will now see a terminal with the prompt `foss/design`. This is your working directory where all your design data goes. You can also see this directory in your Linux terminal as `~/eda/designs`. Even if you update or uninstall the container, the files in the `foss` folder will stay on your machine.
+6\. You will now see a terminal with the prompt `/foss/design`. This is your working directory where all your design data goes. You can also see this directory in your Linux terminal as `~/eda/designs`. Even if you update or uninstall the container, the files in the `foss` folder will stay on your machine.
 
 7\. Type `iic-pdk sg13g2` to switch to the IHP PDK that we will use in this course. To skip typing this command every time, create a `.designinit` text file in your design directory with the following lines. The last line sets a variable that we will need for local KLayout setup files. 
 ```
@@ -32,7 +32,25 @@ export KLAYOUT_HOME=/foss/designs/.klayout
 
 8\. Type `xschem` to see the schematic editor showing simulation testbenches for various components. Left-click "dc_lv_nmos" then right-click "descend schematic". Click netlist, then simulate and CTRL-click "load waves" to see the simulation output.
 
-9\. Create a configuration directory for KLayout and populate it as detailed below. We fetch the latest versions of the python and tech directories directly from the IHP github instead of copying them form within the container (this fixes some bugs).
+9\. The digital standard cell symbols in the container's `2023.12` version have the wrong spice pin order. To fix the problem, enter the container as root (from the WSL command line)
+```
+docker exec -u root -t -i iic-osic-tools_xserver_uid_1000 /bin/bash
+```
+Go to directory containing the IHP standard cell symbols
+```
+cd /foss/pdks/sg13g2/libs.tech/xschem/sg13g2_stdcells
+```
+Run the following command to fix the symbols’ pin order (courtesy Mitch Bailey)
+```
+sed -i  \
+-e 's/@VGND @VNB @VPB @VPWR/@VDD @VSS/' \
+-e 's/VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR/VDD=VDD VSS=VSS/' \
+-e 's/VGND VNB VPB VPWR/VDD VSS/' \
+-e 's/@VDD @VSS @@Q @@Q_N/@@Q @@Q_N @VDD @VSS/' \
+-e 's/\(@@RESET.*\)@@Q @@Q_N /@@Q @@Q_N \1/' *.sym
+```
+
+10\. From within the container's command line, create a configuration directory for KLayout and populate it as detailed below. We fetch the latest versions of the python and tech directories directly from the IHP github instead of copying them form within the container (this fixes some bugs).
 ```
 cd /foss/designs
 mkdir ./.klayout
@@ -49,14 +67,12 @@ curl -o pmos_code.py https://raw.githubusercontent.com/bmurmann/EE628/main/3_Too
 cd /foss/designs
 ```
 
-10\. Create a subdirectory for your layout work.
+11\. Create a subdirectory for your layout work.
 ```
 mkdir layout
 cd layout
 ```
-
-11\. To start KLayout with the proper technology setup, set the KLAYOUT_HOME environment variable, then launch using the -e option (edit mode). The environment variable must be set each time the container is started (this will be fixed in a future release, which will automatically set the proper environment variable for KLayout). Save your layouts as oas files (not gds).
+Start KLayout using the -e option (edit mode). Save your layouts as oas files (not gds).
 ```
-export KLAYOUT_HOME=/foss/designs/.klayout
 klayout -e & 
 ```
