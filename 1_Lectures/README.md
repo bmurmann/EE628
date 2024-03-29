@@ -19,18 +19,18 @@
 |Mar 04	|M |Lec 15: [Parasitics](/1_Lectures/pdf/LEC15.pdf)   |   |
 |Mar 06	|W |Lec 16: [Guard Rings](/1_Lectures/pdf/LEC16.pdf)   |   |
 |Mar 11	|M |Lec 17: [Schematic Review](/1_Lectures/pdf/LEC17.pdf) |   |
-|Mar 13	|W |Lec 18: Team presentations   |   |
+|Mar 13	|W |Lec 18: Design status presentations   |   |
 |Mar 18	|M |Spring break   |   |
 |Mar 20	|W |Spring break   |   |
 |Mar 25	|M |Lec 19: [Chip I/O](/1_Lectures/pdf/LEC19.pdf)   |   |
 |Mar 27	|W |Lec 20: [Schematic & Layout Deliberations](/1_Lectures/pdf/LEC20.pdf) |   |
-|Apr 01	|M |Lec 21   |   |
+|Apr 01	|M |Lec 21: [Schematic & Layout Deliberations](/1_Lectures/pdf/LEC21.pdf)|   |
 |Apr 03	|W |Lec 22   |   |
 |Apr 08	|M |Lec 23   |   |
 |Apr 10	|W |Lec 24   |   |
 |Apr 15	|M |Lec 25   |   |
-|Apr 17	|W |Lec 26   |   |
+|Apr 17	|W |Lec 26: Design status presentations   |   |
 |Apr 22	|M |Lec 27   |   |
 |Apr 24	|W |Lec 28   |   |
 |Apr 29	|M |Lec 29   |   |
-|May 01	|W |Lec 30   |   |
+|May 01	|W |Lec 30: Final presentations   |   |
