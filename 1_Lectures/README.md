@@ -28,7 +28,7 @@
 |Apr 03	|W |Lec 22   |   |
 |Apr 08	|M |Lec 23   |   |
 |Apr 10	|W |Lec 24   |   |
-|Apr 15	|M |Lec 25   |   |
+|Apr 15	|M |Lec 25: Guest lecture by Calvin Lee   |   |
 |Apr 17	|W |Lec 26: Design status presentations   |   |
 |Apr 22	|M |Lec 27   |   |
 |Apr 24	|W |Lec 28   |   |

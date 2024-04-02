@@ -1,3 +1,11 @@
+**Week 13**
+
+* Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own. 
+* Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
+* Complete a second "significant" piece of layout (e.g., the stage cell) this week and fix all DRC errors (except for density rules).
+* Think about the overall floor plan of your design. How will the individual cells be placed and how will they connect to each other?
+* Continue working toward your final schematics & testbenches and duplicate the various simulations that were discussed in class. For example, sweep the input to determine your design's linearity and usable input range. Measure the current consumption, etc.
+
 **Week 12**
 
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own. 
