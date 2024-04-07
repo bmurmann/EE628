@@ -25,8 +25,8 @@
 |Mar 25	|M |Lec 19: [Chip I/O](/1_Lectures/pdf/LEC19.pdf)   |   |
 |Mar 27	|W |Lec 20: [Schematic & Layout Deliberations](/1_Lectures/pdf/LEC20.pdf) |   |
 |Apr 01	|M |Lec 21: [Schematic & Layout Deliberations](/1_Lectures/pdf/LEC21.pdf)|   |
-|Apr 03	|W |Lec 22   |   |
-|Apr 08	|M |Lec 23   |   |
+|Apr 03	|W |Lec 22: [Schematic & Layout Deliberations](/1_Lectures/pdf/LEC22.pdf)   |   |
+|Apr 08	|M |Lec 23: [Schematic & Layout Deliberations](/1_Lectures/pdf/LEC23.pdf)   |   |
 |Apr 10	|W |Lec 24   |   |
 |Apr 15	|M |Lec 25: Guest lecture by Calvin Lee   |   |
 |Apr 17	|W |Lec 26: Design status presentations   |   |
