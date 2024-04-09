@@ -1,0 +1,46 @@
+** sch_path: /foss/designs/EE628/5_Design/2_Idealized_circuits/tb_ideal_idsm1.sch
+**.subckt tb_ideal_idsm1
+Vp1 p1 GND dc 0 pulse(0, {vdd}, 5n, 100p, 100p, {per/2-5n}, {per})
+E1 vo GND vx GND -10000
+S1 net1 vi p1 GND mysw
+Vp2 p2 GND dc {vdd} pulse({vdd}, 0, 0, 100p, 100p, {per/2+5n}, {per})
+Vin vi GND dc 0.075
+C1 net1 net3 1p m=1
+S2 vx net3 p2 GND mysw
+C2 vx vo 1p m=1
+S3 net1 net2 p2 GND mysw
+S4 net3 GND p1 GND mysw
+E2 vcmp GND TABLE {V(vo,0)} = (-0.1mV, 0V) (0.1mV, {vdd})
+Vsup VDD GND dc {vdd}
+E3 net2 GND q GND {1/vdd}
+Vresb resb GND dc 0 pwl(0, 0, {per/2}, 0, {per/2+100p} {vdd}
+* noconn q
+**** begin user architecture code
+
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
+.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+
+
+*DFF CLK D    Q  Q_N  RESET_B  VDD VSS
+x1   p1  vcmp q  qn   resb     VDD GND sg13g2_dfrbp_1
+.param temp=27 vdd=1.2 per=1u
+.model mysw SW vt={vdd/2} ron=10k roff=10gig
+.option method=gear reltol=1e-4
+
+.control
+save all
+tran 10n 64u
+plot vo q
+set wr_singlescale
+set wr_vecnames
+wrdata tb_ideal_idsm1.txt vo q p1 p2
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end
