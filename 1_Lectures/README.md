@@ -6,7 +6,7 @@
 |Jan 17	|W |Lec 03: [IDSM1 Circuit Model](/1_Lectures/pdf/LEC03.pdf) |   |
 |Jan 22	|M |Lec 04: [IDSM2 Circuit Model](/1_Lectures/pdf/LEC04.pdf) |   |
 |Jan 24	|W |Lec 05: [Project Specifications](/1_Lectures/pdf/LEC05.pdf)   |   |
-|Jan 29	|M |Lec 06: [Comparator](/1_Lectures/pdf/LEC05.pdf) (No class, watch recording on Laulima)   |Boris traveling   |
+|Jan 29	|M |Lec 06: [Comparator](/1_Lectures/pdf/LEC06.pdf) (No class, watch recording on Laulima)   |Boris traveling   |
 |Jan 31	|W |Lec 07: Class meetup & troubleshooting session   |Boris traveling   |
 |Feb 05	|M |Lec 08: [Amplifier](/1_Lectures/pdf/LEC08.pdf)   |   |
 |Feb 07	|W |Lec 09: [Amplifier](/1_Lectures/pdf/LEC09.pdf)   |   |
