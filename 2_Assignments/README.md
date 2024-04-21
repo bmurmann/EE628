@@ -1,8 +1,15 @@
+**Week 15**
+  
+* Continue working toward your final schematics & layout.
+* Document any issues that you observe and add your questions [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
+* Complete your team presentation for Wednesday's class meeting and submit is as your weekly report.
+
 **Week 14**
 
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.  
 * Document any issues that you observe and add your questions for the next class meeting [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
 * Complete first versions of all your block layouts and combine them according to your floor plan. Iterate as needed.
+* Submit test layout pull request to the course repo (one per team) as described in lecture 24.
 * Begin preparing next week's team presentations.
 
 **Week 13**
