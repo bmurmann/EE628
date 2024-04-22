@@ -30,7 +30,7 @@
 |Apr 10	|W |Lec 24: [Schematic & Layout Deliberations](/1_Lectures/pdf/LEC24.pdf)   |   |
 |Apr 15	|M |Lec 25: Guest lecture by Calvin Lee   |   |
 |Apr 17	|W |Lec 26: Design status presentations   |   |
-|Apr 22	|M |Lec 27: Finishing up   |   |
-|Apr 24	|W |Lec 28: Finishing up   |   |
-|Apr 29	|M |Lec 29: Final presentations   |   |
-|May 01	|W |Lec 30: Final presentations   |   |
+|Apr 22	|M |Lec 27: [Finishing Up](/1_Lectures/pdf/LEC27.pdf)   |   |
+|Apr 24	|W |Lec 28: Finishing Up   |   |
+|Apr 29	|M |Lec 29: Final Presentations   |   |
+|May 01	|W |Lec 30: Final Presentations   |   |
