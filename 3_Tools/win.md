@@ -142,4 +142,6 @@ Open sg13_lv_nmos.gds in KLayout. In the SG13G2 PDK menu, set the LVS option "De
 2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : ==========================================
 2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : LVS Total Run time 2.082649 seconds
 ```
-Note: The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
+You can inspect the results more closely using Tools/Netlist Browser. Under Cross Reference, you can see how the LVS matched up the layout with the provided netlist (called "reference" in that sub-window). Under devices, you can see the MOSFETs that match between the layout and the reference. Under Nets, you see some warnings, since this particular layout does not have any pin labels. These can be added using text on Metal1.label (or Metal2.label, etc.).  
+
+Final note: The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
