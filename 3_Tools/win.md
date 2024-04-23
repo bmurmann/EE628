@@ -86,4 +86,60 @@ cd /foss/designs
 /bin/cp -fr ./temp/ihp-sg13g2/libs.tech/klayout/python/ ./.klayout/
 /bin/cp -fr ./temp/ihp-sg13g2/libs.tech/klayout/tech/ ./.klayout/
 ```
-When you launch KLayout, you will now see a menu item saying "SG13G2 PDK." Click on "Load PDK options" which creates a new menu item "KLayout LVS Options." Everything should now be ready to use as described [here](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/dev/ihp-sg13g2/libs.tech/klayout/tech/lvs). The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
+When you launch KLayout, you will now see a menu item saying "SG13G2 PDK." Click on "Load PDK options" which creates a new menu item "KLayout LVS Options." Everything should now be ready to use as described [here](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/dev/ihp-sg13g2/libs.tech/klayout/tech/lvs). You can test the LVS setup using an example layout & netlist test case as follows:
+```
+cd /foss/designs/layout
+cp ../temp/ihp-sg13g2/libs.tech/klayout/tech/lvs/testing/testcases/extraction_checking/sg13_lv_nmos.* .
+```
+Open sg13_lv_nmos.gds in KLayout. In the SG13G2 PDK menu, set the LVS option "Devices combine." Run the LVS and you will see the following output (abbreviated): 
+```
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Starting running SG13G2 Klayout LVS runset on 
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Ruby Version for klayout: 3.0.2
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Loading database to memory is complete.
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : SG13G2 Klayout LVS runset output at default location: sg13_lv_nmos.lvsdb
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Evaluate switches.
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Substrate name used: sub!
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Extracted netlist with net names: false
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Extracted netlist with comments in details: false
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Selected SCH_SIMPLE option: true
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Selected NET_ONLY option: false
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Selected TOP_LVL_PINS option: true
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Selected COMBINE option: true
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Selected PURGE option: false
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Selected PURGE_NETS option: false
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Selected NETLIST_SIMPLIFY option: false
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Verbose mode: false
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : deep  mode is enabled.
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Netlist file: /foss/designs/layout/sg13_lv_nmos.cdl
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : SG13G2 Klayout LVS extracted netlist file at: sg13_lv_nmos_extracted.cir
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : Read in polygons from layers.
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : activ_drw has 35 polygons
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : gatpoly_drw has 15 polygons
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : cont_drw has 38 polygons
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : metal1_drw has 69 polygons
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : metal1_pin has 40 polygons
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : metal2_drw has 4 polygons
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : via1_drw has 4 polygons
+...
+2024-04-23 22:12:13 +0200: Memory Usage (1086048K) : heattrans_drw has 15 polygons
+...
+2024-04-23 22:12:14 +0200: Memory Usage (1086048K) : Total no. of polygons in the design is 220
+2024-04-23 22:12:14 +0200: Memory Usage (1086048K) : Starting SG13G2 LVS runset
+...
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : Starting Taps EXTRACTION
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : Extracting ntap1 device
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : Extracting ptap1 device
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : Starting SG13G2 LVS comparison section
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : ==========================================
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : INFO : Congratulations! Netlists match.
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : ==========================================
+2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : LVS Total Run time 2.082649 seconds
+```
+Note: The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
