@@ -67,12 +67,23 @@ curl -o pmos_code.py https://raw.githubusercontent.com/bmurmann/EE628/main/3_Too
 cd /foss/designs
 ```
 
-11\. Create a subdirectory for your layout work.
+11\. Create a subdirectory for your layout work and launch KLayout.
 ```
 mkdir layout
 cd layout
 ```
-Start KLayout using the -e option (edit mode). Save your layouts as oas files (not gds).
+You can now start KLayout using the -e option (edit mode). Save your layouts as oas files (not gds).
 ```
 klayout -e & 
 ```
+
+12\. Add LVS scripts (released on 4/23/2024). We will make use of the PDK clone that we created in step 10 above (in the temp folder) to copy the latest version of the KLayout scripts from the dev branch.
+```
+cd /foss/designs/temp
+git pull
+git checkout dev
+cd /foss/designs
+/bin/cp -fr ./temp/ihp-sg13g2/libs.tech/klayout/python/ ./.klayout/
+/bin/cp -fr ./temp/ihp-sg13g2/libs.tech/klayout/tech/ ./.klayout/
+```
+When you launch KLayout, you will now see a menu item saying "SG13G2 PDK." Click on "Load PDK options" which creates a new menu item "KLayout LVS Options." Everything should now be ready to use as described [here](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/dev/ihp-sg13g2/libs.tech/klayout/tech/lvs). The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
