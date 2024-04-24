@@ -1,0 +1,92 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/padring.sch
+**.subckt padring vref ck1 vldo ck2 ck3 vref_c ck1_c ck3_c ck2_c out1 in1 out1_c in1_c in2 out2 out2_c vdd in3 out3_c out3 iovdd
+*+ avdd vhi iovss avss vlo in4_c out4 in4 out4_c out5 in5_c out5_c in5 out6 in6 in6_c out6_c res_c iref_c ck6_c ck5_c ck4_c ck6 ck5 ck4
+*+ res iref
+*.ipin in1
+*.ipin in2
+*.ipin in3
+*.iopin vhi
+*.iopin vlo
+*.ipin in4
+*.ipin in5
+*.ipin in6
+*.opin out1
+*.opin out2
+*.opin out3
+*.opin out4
+*.opin out5
+*.opin out6
+*.ipin iref
+*.ipin res
+*.ipin ck4
+*.ipin ck5
+*.ipin ck6
+*.ipin vref
+*.ipin ck3
+*.ipin ck2
+*.ipin ck1
+*.opin in1_c
+*.opin in1_c
+*.opin in1_c
+*.opin in4_c
+*.opin in5_c
+*.opin in6_c
+*.opin iref_c
+*.opin res_c
+*.opin ck4_c
+*.opin ck5_c
+*.opin ck6_c
+*.ipin out1_c
+*.ipin out2_c
+*.ipin out3_c
+*.ipin out4_c
+*.ipin out5_c
+*.ipin out6_c
+*.opin vref_c
+*.opin ck3_c
+*.opin ck2_c
+*.opin ck1_c
+*.iopin vldo
+*.iopin avdd
+*.iopin avss
+*.iopin iovss
+*.iopin iovdd
+*.iopin iovss
+*.iopin vdd
+xp1 avss avdd avss avdd in1 in1_c sg13g2_IOPadAnalog
+xp26 iovss vdd iovss iovdd ck1_c ck1 sg13g2_IOPadIn
+xp24 iovss vdd iovss iovdd out1_c out1 sg13g2_IOPadOut16mA
+xp32 avss avdd avss avdd sg13g2_IOPadVdd
+xp9 avss avdd avss avdd sg13g2_IOPadVss
+xp2 avss avdd avss avdd in2 in1_c sg13g2_IOPadAnalog
+xp3 avss avdd avss avdd in3 in1_c sg13g2_IOPadAnalog
+xp4 avss avdd avss avdd vhi net1 sg13g2_IOPadAnalog
+xp5 avss avdd avss avdd vlo net2 sg13g2_IOPadAnalog
+xp6 net3 avdd avss avdd in4 in4_c sg13g2_IOPadAnalog
+xp7 avss avdd net4 avdd in5 in5_c sg13g2_IOPadAnalog
+xp8 avss avdd avss avdd in6 in6_c sg13g2_IOPadAnalog
+xp23 iovss vdd iovss iovdd out2_c out2 sg13g2_IOPadOut16mA
+xp22 iovss vdd iovss iovdd out3_c out3 sg13g2_IOPadOut16mA
+xp21 iovss vdd iovss iovdd sg13g2_IOPadIOVdd
+xp20 iovss vdd iovss iovdd sg13g2_IOPadIOVss
+xp19 iovss vdd iovss iovdd out4_c out4 sg13g2_IOPadOut16mA
+xp18 iovss vdd iovss iovdd out5_c out5 sg13g2_IOPadOut16mA
+xp17 iovss vdd iovss iovdd out6_c out6 sg13g2_IOPadOut16mA
+xp25 iovss vdd iovss iovdd sg13g2_IOPadVdd
+xp16 iovss vdd iovss iovdd sg13g2_IOPadVss
+xp27 iovss vdd iovss iovdd ck2_c ck2 sg13g2_IOPadIn
+xp28 iovss vdd iovss iovdd ck3_c ck3 sg13g2_IOPadIn
+xp29 iovss vdd iovss iovdd sg13g2_IOPadIOVdd
+xp30 avss avdd avss avdd vldo net5 sg13g2_IOPadAnalog
+xp31 avss avdd avss avdd vref vref_c sg13g2_IOPadAnalog
+xp15 iovss vdd iovss iovdd ck6_c ck6 sg13g2_IOPadIn
+xp14 iovss vdd iovss iovdd ck5_c ck5 sg13g2_IOPadIn
+xp13 iovss vdd iovss iovdd ck4_c ck4 sg13g2_IOPadIn
+xp12 iovss vdd iovss iovdd sg13g2_IOPadIOVss
+xp11 iovss vdd iovss iovdd res_c res sg13g2_IOPadIn
+xp10 avss avdd avss avdd iref iref_c sg13g2_IOPadAnalog
+* noconn #net1
+* noconn #net2
+* noconn #net5
+**.ends
+.end
