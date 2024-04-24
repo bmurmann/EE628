@@ -161,6 +161,6 @@ You can inspect the results more closely using Tools/Netlist Browser. Under Cros
     <source>8/1</source>
   </properties>
 ```
-The `valid` property should be set to `true` (and it's also good to change the `marked` property to `true`, so that you can see the text origins forn this layer).
+The `valid` property should be set to `true` (and it's also good to change the `marked` property to `true`, so that you can see the text origins for this layer).
 
 Final note: The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
