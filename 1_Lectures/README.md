@@ -31,6 +31,6 @@
 |Apr 15	|M |Lec 25: Guest lecture by Calvin Lee   |   |
 |Apr 17	|W |Lec 26: Design status presentations   |   |
 |Apr 22	|M |Lec 27: [Finishing Up](/1_Lectures/pdf/LEC27.pdf)   |   |
-|Apr 24	|W |Lec 28: Finishing Up   |   |
+|Apr 24	|W |Lec 28: [Finishing Up](/1_Lectures/pdf/LEC28.pdf)   |   |
 |Apr 29	|M |Lec 29: Final Design status presentations   |   |
 |May 01	|W |Lec 30: Final Design status presentations   |   |
