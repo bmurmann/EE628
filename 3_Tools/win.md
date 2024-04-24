@@ -142,6 +142,25 @@ Open sg13_lv_nmos.gds in KLayout. In the SG13G2 PDK menu, set the LVS option "De
 2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : ==========================================
 2024-04-23 22:12:15 +0200: Memory Usage (1086048K) : LVS Total Run time 2.082649 seconds
 ```
-You can inspect the results more closely using Tools/Netlist Browser. Under Cross Reference, you can see how the LVS matched up the layout with the provided netlist (called "reference" in that sub-window). Under devices, you can see the MOSFETs that match between the layout and the reference. Under Nets, you see some warnings, since this particular layout does not have any pin labels. These can be added using text on Metal1.label (or Metal2.label, etc.).  
+You can inspect the results more closely using Tools/Netlist Browser. Under Cross Reference, you can see how the LVS matched up the layout with the provided netlist (called "reference" in that sub-window). Under devices, you can see the MOSFETs that match between the layout and the reference. Under Nets, you see some warnings, since this particular layout does not have any pin labels. These can be added using text on Metal1.label (or Metal2.label, etc.). Speaking of the Metal1.label, there seems to a typo in the layer definition file `/foss/designs/.klayout/tech/sg13g2.lyp`:
+```
+<properties>
+    <frame-color>#39bfff</frame-color>
+    <fill-color>#39bfff</fill-color>
+    <frame-brightness>0</frame-brightness>
+    <fill-brightness>0</fill-brightness>
+    <dither-pattern>C1</dither-pattern>
+    <line-style>C0</line-style>
+    <valid>false</valid>
+    <visible>true</visible>
+    <transparent>false</transparent>
+    <width>1</width>
+    <marked>false</marked>
+    <animation>0</animation>
+    <name>Metal1.label</name>
+    <source>8/1</source>
+  </properties>
+```
+The `valid` property should be set to `true` (and it's also good to change the `marked` property to `true`, so that you can see the text origins forn this layer).
 
 Final note: The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
