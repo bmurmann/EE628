@@ -1,1 +1,1 @@
-This folder contains various design files for the course's template project.
+This folder contains various design files for the course project.
