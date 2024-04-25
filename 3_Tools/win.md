@@ -163,4 +163,7 @@ You can inspect the results more closely using Tools/Netlist Browser. Under Cros
 ```
 The `valid` property should be set to `true` (and it's also good to change the `marked` property to `true`, so that you can see the text origins for this layer).
 
-Final note: The documentation says that KLayout 0.28.14+ is required, but we are currently running version 0.28.13. We may need to update our tool container if any issues arise.
+As of 4/25, the LVS still requires the "heattrans" layer to recognize MOSFETs. This is problematic since this layer does not exist in the standard cells (and it is anyway not required for our purposes). To fix this problem, run the following sed command:
+```
+sed -i 's/.and(heattrans_drw)//g' /foss/designs/.klayout/tech/lvs/rule_decks/mos_derivations.lvs
+```
