@@ -16,7 +16,6 @@
 *.opin out4
 *.opin out5
 *.opin out6
-*.ipin iref
 *.ipin res
 *.ipin ck4
 *.ipin ck5
@@ -26,12 +25,11 @@
 *.ipin ck2
 *.ipin ck1
 *.opin in1_c
-*.opin in1_c
-*.opin in1_c
+*.opin in2_c
+*.opin in3_c
 *.opin in4_c
 *.opin in5_c
 *.opin in6_c
-*.opin iref_c
 *.opin res_c
 *.opin ck4_c
 *.opin ck5_c
@@ -58,8 +56,8 @@ xp26 iovss vdd iovss iovdd ck1_c ck1 sg13g2_IOPadIn
 xp24 iovss vdd iovss iovdd out1_c out1 sg13g2_IOPadOut16mA
 xp32 avss avdd avss avdd sg13g2_IOPadVdd
 xp9 avss avdd avss avdd sg13g2_IOPadVss
-xp2 avss avdd avss avdd in2 in1_c sg13g2_IOPadAnalog
-xp3 avss avdd avss avdd in3 in1_c sg13g2_IOPadAnalog
+xp2 avss avdd avss avdd in2 in2_c sg13g2_IOPadAnalog
+xp3 avss avdd avss avdd in3 in3_c sg13g2_IOPadAnalog
 xp4 avss avdd avss avdd vhi net1 sg13g2_IOPadAnalog
 xp5 avss avdd avss avdd vlo net2 sg13g2_IOPadAnalog
 xp6 net3 avdd avss avdd in4 in4_c sg13g2_IOPadAnalog
@@ -84,7 +82,7 @@ xp14 iovss vdd iovss iovdd ck5_c ck5 sg13g2_IOPadIn
 xp13 iovss vdd iovss iovdd ck4_c ck4 sg13g2_IOPadIn
 xp12 iovss vdd iovss iovdd sg13g2_IOPadIOVss
 xp11 iovss vdd iovss iovdd res_c res sg13g2_IOPadIn
-xp10 avss avdd avss avdd iref iref_c sg13g2_IOPadAnalog
+xp10 avss avdd avss avdd sg13g2_IOPadVss
 * noconn #net1
 * noconn #net2
 * noconn #net5

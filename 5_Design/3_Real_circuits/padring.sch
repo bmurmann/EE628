@@ -38,7 +38,8 @@ out5
 
 out6} 2150 -670 2 0 1 1 {}
 T {avdd   vref  vldo   iovdd   ck3   ck2   ck1   vdd} 560 -2030 0 0 0.8 0.8 {}
-T {avss   iref    res    iovss   ck4    ck5   ck6   vss} 570 -170 0 0 0.8 0.8 {}
+T {avss   avss    res    iovss   ck4    ck5   ck6   vss} 570 -170 0 0 0.8 0.8 {}
+T {(downbond)} 510 -200 0 0 0.5 0.5 {}
 N 460 -1520 600 -1520 {
 lab=avdd}
 N 600 -760 600 -680 {
@@ -567,7 +568,7 @@ C {sg13g2_IOPadIn.sym} 1240 -380 1 1 {name=xp14}
 C {sg13g2_IOPadIn.sym} 1120 -380 1 1 {name=xp13}
 C {sg13g2_IOPadIOVss.sym} 1000 -380 1 1 {name=xp12}
 C {sg13g2_IOPadIn.sym} 880 -380 1 1 {name=xp11}
-C {sg13g2_IOPadAnalog.sym} 740 -380 1 1 {name=xp10}
+C {sg13g2_IOPadVss.sym} 740 -380 1 1 {name=xp10}
 C {devices/ipin.sym} 160 -1540 0 0 {name=p1 lab=in1}
 C {devices/ipin.sym} 160 -1420 0 0 {name=p2 lab=in2}
 C {devices/ipin.sym} 160 -1300 0 0 {name=p3 lab=in3}
@@ -582,7 +583,6 @@ C {devices/opin.sym} 1920 -1300 0 0 {name=p11 lab=out3}
 C {devices/opin.sym} 1920 -940 0 0 {name=p12 lab=out4}
 C {devices/opin.sym} 1920 -820 0 0 {name=p13 lab=out5}
 C {devices/opin.sym} 1920 -700 0 0 {name=p14 lab=out6}
-C {devices/ipin.sym} 780 -230 3 0 {name=p15 lab=iref}
 C {devices/ipin.sym} 920 -230 3 0 {name=p16 lab=res}
 C {devices/ipin.sym} 1160 -230 3 0 {name=p17 lab=ck4}
 C {devices/ipin.sym} 1280 -230 3 0 {name=p18 lab=ck5}
@@ -597,7 +597,6 @@ C {devices/opin.sym} 460 -1300 0 0 {name=p27 lab=in3_c}
 C {devices/opin.sym} 460 -940 0 0 {name=p28 lab=in4_c}
 C {devices/opin.sym} 460 -820 0 0 {name=p29 lab=in5_c}
 C {devices/opin.sym} 460 -700 0 0 {name=p30 lab=in6_c}
-C {devices/opin.sym} 780 -530 3 0 {name=p31 lab=iref_c}
 C {devices/opin.sym} 920 -530 3 0 {name=p32 lab=res_c}
 C {devices/opin.sym} 1160 -530 3 0 {name=p33 lab=ck4_c}
 C {devices/opin.sym} 1280 -530 3 0 {name=p34 lab=ck5_c}
