@@ -118,20 +118,20 @@ lab=#net2}
 N -90 -390 -90 -200 {
 lab=#net1}
 N -130 -370 -70 -370 {
-lab=dd}
+lab=dout}
 C {devices/title.sym} -1160 -40 0 0 {name=l5 author="Boris Murmann"}
-C {/foss/designs/clkgen.sym} -1240 -170 0 0 {name=x4}
+C {template_clkgen.sym} -1240 -170 0 0 {name=x4}
 C {devices/lab_wire.sym} -1040 -160 0 0 {name=p7 sig_type=std_logic lab=p2}
 C {devices/lab_wire.sym} -1040 -180 0 0 {name=p8 sig_type=std_logic lab=p1}
 C {devices/lab_wire.sym} -1040 -200 0 0 {name=p9 sig_type=std_logic lab=p1e}
-C {/foss/designs/stage.sym} -960 -390 0 0 {name=x1}
+C {template_stage.sym} -960 -390 0 0 {name=x1}
 C {devices/ipin.sym} -1420 -200 0 0 {name=p1 lab=clkin}
 C {devices/ipin.sym} -1420 -260 0 0 {name=p2 lab=res}
 C {devices/ipin.sym} -1420 -400 0 0 {name=p3 lab=vin}
-C {/foss/designs/stage.sym} -620 -390 0 0 {name=x2}
+C {template_stage.sym} -620 -390 0 0 {name=x2}
 C {devices/lab_wire.sym} -1040 -140 0 0 {name=p4 sig_type=std_logic lab=p2e}
 C {devices/lab_wire.sym} -780 -400 0 0 {name=p5 sig_type=std_logic lab=vout1}
-C {/foss/designs/comp.sym} -280 -390 0 0 {name=x3}
+C {template_comp.sym} -280 -390 0 0 {name=x3}
 C {devices/lab_wire.sym} -440 -400 0 0 {name=p6 sig_type=std_logic lab=vout2}
 C {devices/lab_wire.sym} -440 -380 0 0 {name=p10 sig_type=std_logic lab=vmid2}
 C {devices/opin.sym} -70 -370 0 0 {name=p11 lab=dout}
