@@ -1,0 +1,15 @@
+Team6 pin list:
+
+Name	Type	Purpose
+------------------------------------------------------
+vin	input	Analog input of ADC
+dout 	output 	Digital output of ADC
+res 	input 	Digital reset signal (active high)
+vdda 	supply 	Analog supply voltage
+vssa 	supply 	ground
+vhi	input	Digital high signal
+vlo	input	Digital low signal
+clk	input	Clock signal
+
+Current status:
+These are the final files
