@@ -1,3 +1,12 @@
+
+**Week 15**
+  
+* Continue working toward your final schematics & layout.
+* Document any issues that you observe and add your questions [here](https://docs.google.com/document/d/1sxiMK8YySP9BN6mlV8Gm9bcBho1SJc_OXievlb69DG8/edit?usp=sharing).
+* Complete your preliminary pull request as detailed in lecture 27.
+* Work on your final design status presentations for next week (Mon: Teams 2, 5, 6; Wed: Teams 1, 3, 4).
+* There is no need to submit a report for this week.
+
 **Week 14**
 
 * Take notes as you work through the items below and submit them as your weekly report. If you are not working on the template project, you need to define suitable tasks on your own.  
