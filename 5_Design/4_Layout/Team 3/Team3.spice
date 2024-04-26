@@ -1,0 +1,130 @@
+** sch_path: /foss/designs/IDSM2.sch
+**.subckt IDSM2 v_high v_DDa res dd v_in v_low v_SSa clock_in
+*.ipin v_high
+*.ipin v_DDa
+*.ipin v_SSa
+*.ipin v_in
+*.ipin clock_in
+*.ipin res
+*.ipin v_low
+*.opin dd
+x2 dd res P1_early P1 P2 v_high v_DDa v_out1 v_in v_SSa net3 v_low stage
+x3 net2 res P2_early P2 P1 v_high v_DDa v_out2 v_out1 v_SSa net1 v_low stage
+x4 v_DDa P2 net2 dd res net1 v_SSa P1 v_out2 comp_latch_new
+x1 P1_early P1 clock_in P2 P2_early new_clock_gen
+**.ends
+
+* expanding   symbol:  /foss/designs/stage.sym # of pins=12
+** sym_path: /foss/designs/stage.sym
+** sch_path: /foss/designs/stage.sch
+.subckt stage d res P1e P1 P2 v_high V_DDa v_out v_in V_SSa V_mid v_low
+*.ipin res
+*.ipin P1
+*.ipin P2
+*.ipin v_in
+*.iopin V_DDa
+*.opin v_out
+*.iopin V_SSa
+*.iopin v_high
+*.iopin v_low
+*.opin V_mid
+*.ipin P1e
+*.ipin d
+Xmn1 v_out net4 V_SSa V_SSa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+Xmp1 v_out net4 V_DDa V_DDa sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+Xmn2 v_out res net3 V_SSa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+Xmn3 net3 P1 net4 V_SSa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+Xmn4 net3 P2 net2 V_SSa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+Xmn5 net2 P1 V_mid V_SSa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+Xmp2 net1 net5 v_in V_DDa sg13_lv_pmos W=6u L=0.13u ng=3 m=1
+Xmn6 net1 gn v_low V_SSa sg13_lv_nmos W=0.5u L=0.13u ng=1 m=1
+Xmn7 net1 P1 v_in V_SSa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+x1 P1 VDD VSS net5 sg13g2_inv_1
+Xmp3 net1 net6 v_high V_DDa sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
+x2 d P2 VDD VSS net6 sg13g2_nand2b_1
+x3 P2 d VDD VSS gn sg13g2_and2_1
+Xmn8 V_mid V_mid V_SSa V_SSa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+Xmp4 V_mid V_mid V_DDa V_DDa sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XC4 net2 net1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+XC1 net4 net2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+XC2 v_out net3 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_latch_new.sym # of pins=9
+** sym_path: /foss/designs/comp_latch_new.sym
+** sch_path: /foss/designs/comp_latch_new.sch
+.subckt comp_latch_new VDD_a p2 d dd res V_in_p VSS_a p1 V_in_m
+*.ipin V_in_p
+*.iopin VSS_a
+*.iopin VDD_a
+*.ipin p2
+*.ipin V_in_m
+*.ipin p1
+*.ipin res
+*.opin dd
+*.opin d
+XM1 d1p V_in_p VSS_a VSS_a sg13_lv_nmos W=2.0u L=1u ng=1 m=1
+XM2 d2p p2 d1p VSS_a sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM3 out_1m out_1p d2p VSS_a sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM4 out_1m out_1p VDD_a VDD_a sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM5 out_1m p2 VDD_a VDD_a sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM6 out_1p out_1m VDD_a VDD_a sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM7 out_1p out_1m d2m VSS_a sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM8 d2m p2 d1m VSS_a sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM9 d1m v_in_m_samp VSS_a VSS_a sg13_lv_nmos W=2.0u L=1u ng=1 m=1
+XM10 out_1p p2 VDD_a VDD_a sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM11 net2 out_1p VSS VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM12 net1 out_1m VSS VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM13 net4 net3 net2 VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM14 net3 net4 net1 VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM15 net4 net3 VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM16 net4 out_1p VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM17 net3 out_1m VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM18 net3 net4 VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM19 v_in_m_samp p1 V_in_m VSS_a sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM20 v_in_m_samp net5 V_in_m VDD_a sg13_lv_pmos W=6u L=0.13u ng=3 m=1
+x1 p1 VDD VSS net5 sg13g2_inv_1
+XC1 v_in_m_samp VSS_a cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+x2 res VDD VSS net6 sg13g2_inv_1
+x3 p1 net3 dd net7 net6 VDD VSS sg13g2_dfrbp_2
+x4 net3 VDD VSS d sg13g2_buf_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/new_clock_gen.sym # of pins=5
+** sym_path: /foss/designs/new_clock_gen.sym
+** sch_path: /foss/designs/new_clock_gen.sch
+.subckt new_clock_gen p1_early p1 clk_in p2 p2_early
+*.ipin clk_in
+*.opin p1_early
+*.opin p1
+*.opin p2
+*.opin p2_early
+x1 clk_in VDD VSS clk_in_b sg13g2_inv_2
+x2 clk_in_b VDD VSS clk_in_bb sg13g2_inv_2
+x3 clk_in_bb b_2 VDD VSS net11 sg13g2_nand2_2
+x6 net8 VDD VSS net1 sg13g2_inv_4
+x7 net1 VDD VSS a_1 sg13g2_inv_4
+x10 net10 VDD VSS net3 sg13g2_inv_4
+x11 net3 VDD VSS a_2 sg13g2_inv_4
+x12 clk_in_b b_1 VDD VSS net12 sg13g2_nand2_2
+x13 a_1 VDD VSS p1_early sg13g2_inv_4
+x14 p1_early VDD VSS b_1 sg13g2_inv_4
+x15 a_2 VDD VSS p2_early sg13g2_inv_4
+x16 p2_early VDD VSS b_2 sg13g2_inv_4
+x17 a_1 b_1 VDD VSS net5 sg13g2_nand2_2
+x18 a_2 b_2 VDD VSS net6 sg13g2_nand2_2
+x19 net5 VDD VSS net2 sg13g2_inv_4
+x20 net6 VDD VSS net4 sg13g2_inv_4
+x21 net2 VDD VSS p1 sg13g2_inv_8
+x22 net4 VDD VSS p2 sg13g2_inv_8
+x4 net11 VDD VSS net7 sg13g2_inv_4
+x5 net7 VDD VSS net8 sg13g2_inv_4
+x8 net12 VDD VSS net9 sg13g2_inv_4
+x9 net9 VDD VSS net10 sg13g2_inv_4
+.ends
+
+.GLOBAL VSS
+.GLOBAL VDD
+.end

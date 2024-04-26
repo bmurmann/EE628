@@ -1,0 +1,13 @@
+Team 3 Pin List: 
+
+Name	Type		Purpose
+----------------------------------------
+V_in	input		Analog input of ADC
+dd	output		Digital output of ADC
+res	input		Digital reset signal 
+V_DDa	supply		Analog supply voltage
+V_SSa	supply		Analog supply voltage 
+
+
+Current status:
+These files are final. Still waiting on the draft of the final layout (.oas).
