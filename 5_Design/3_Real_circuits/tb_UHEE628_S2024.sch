@@ -70,31 +70,31 @@ lab=GND}
 N 1040 -310 1040 -260 {
 lab=GND}
 N 1040 -500 1040 -370 {
-lab=#net1}
+lab=iovdd}
 N 1100 -310 1100 -260 {
 lab=GND}
 N 1100 -580 1100 -370 {
-lab=#net2}
+lab=vdd}
 N 1100 -600 1100 -580 {
-lab=#net2}
+lab=vdd}
 N 920 -310 920 -260 {
 lab=GND}
 N 980 -310 980 -260 {
 lab=GND}
 N 920 -460 920 -370 {
-lab=#net3}
+lab=vlo}
 N 490 -460 920 -460 {
-lab=#net3}
+lab=vlo}
 N 490 -480 980 -480 {
-lab=#net4}
+lab=vhi}
 N 980 -480 980 -370 {
-lab=#net4}
+lab=vhi}
 N 490 -500 1040 -500 {
-lab=#net1}
+lab=iovdd}
 N 490 -580 1100 -580 {
-lab=#net2}
+lab=vdd}
 N 490 -600 1100 -600 {
-lab=#net2}
+lab=vdd}
 N 490 -340 520 -340 {
 lab=GND}
 N 490 -360 520 -360 {
@@ -102,17 +102,17 @@ lab=GND}
 N 490 -440 520 -440 {
 lab=GND}
 N 490 -380 580 -380 {
-lab=#net5}
+lab=out6}
 N 580 -380 580 -350 {
-lab=#net5}
+lab=out6}
 N 490 -400 630 -400 {
-lab=#net6}
+lab=out5}
 N 630 -400 630 -350 {
-lab=#net6}
+lab=out5}
 N 490 -420 680 -420 {
-lab=#net7}
+lab=out4}
 N 680 -420 680 -350 {
-lab=#net7}
+lab=out4}
 N 630 -270 680 -270 {
 lab=GND}
 N 520 -340 520 -270 {
@@ -138,17 +138,17 @@ lab=GND}
 N 730 -290 730 -270 {
 lab=GND}
 N 490 -520 730 -520 {
-lab=#net8}
+lab=out3}
 N 730 -520 730 -350 {
-lab=#net8}
+lab=out3}
 N 490 -540 780 -540 {
-lab=#net9}
+lab=out2}
 N 780 -540 780 -350 {
-lab=#net9}
+lab=out2}
 N 490 -560 830 -560 {
-lab=#net10}
+lab=out1}
 N 830 -560 830 -350 {
-lab=#net10}
+lab=out1}
 N 680 -270 730 -270 {
 lab=GND}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
@@ -204,10 +204,23 @@ value="
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 .inc /foss/pdks/sg13g2/libs.tech/ngspice/models/diodes.lib
+.inc \\"../../4_Layout/Team 3/Team3_sim.spice\\"
+.inc \\"../../4_Layout/Team 6/Team6_sim.spice\\"
 .inc ../sg13g2_stdcell.spice
 .inc ../sg13g2_io.spi
-.options gmin=1e-8
+.options gmin=1e-8 keepopinfo
 
 .control
-tran 1n 60n
+optran 0 0 0 100p 2n 0
+op
 .endc"}
+C {devices/lab_wire.sym} 600 -560 0 0 {name=p1 sig_type=std_logic lab=out1}
+C {devices/lab_wire.sym} 600 -540 0 0 {name=p2 sig_type=std_logic lab=out2}
+C {devices/lab_wire.sym} 600 -520 0 0 {name=p3 sig_type=std_logic lab=out3}
+C {devices/lab_wire.sym} 600 -420 0 0 {name=p4 sig_type=std_logic lab=out4}
+C {devices/lab_wire.sym} 600 -400 0 0 {name=p5 sig_type=std_logic lab=out5}
+C {devices/lab_wire.sym} 570 -380 0 0 {name=p6 sig_type=std_logic lab=out6}
+C {devices/lab_wire.sym} 600 -580 0 0 {name=p7 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 600 -500 0 0 {name=p8 sig_type=std_logic lab=iovdd}
+C {devices/lab_wire.sym} 600 -480 0 0 {name=p9 sig_type=std_logic lab=vhi}
+C {devices/lab_wire.sym} 600 -460 0 0 {name=p10 sig_type=std_logic lab=vlo}

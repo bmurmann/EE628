@@ -285,7 +285,8 @@ N 2200 -560 2200 -490 {
 lab=dd}
 N 2170 -560 2200 -560 {
 lab=dd}
-N 2320 -490 2360 -490 {}
+N 2320 -490 2360 -490 {
+lab=dout}
 C {devices/title.sym} 170 -50 0 0 {name=l1 author="Boris Murmann"}
 C {sg13g2_pr/sg13_lv_nmos.sym} 720 -740 2 1 {name=M3m
 L=0.13u
@@ -485,3 +486,4 @@ C {devices/ipin.sym} 100 -540 0 0 {name=p29 lab=vinp}
 C {devices/lab_pin.sym} 1850 -700 0 0 {name=p4 sig_type=std_logic lab=dint}
 C {sg13g2_stdcells/sg13g2_inv_2.sym} 2280 -490 0 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {devices/opin.sym} 2360 -490 0 0 {name=p30 lab=dout}
+C {devices/noconn.sym} 2170 -540 0 1 {name=l4}
