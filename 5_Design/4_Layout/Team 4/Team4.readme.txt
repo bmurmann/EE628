@@ -1,0 +1,29 @@
+Team 4 Top-Level Pin List:
+
+Name	Type		Purpose
+---------------------------------------------
+vhi	supply		High supply voltage
+vlo	supply		Low supply voltage
+vdda	supply		Analog supply voltage
+vssa	supply		Analog reference voltage
+vin	input		Analog input of ADC
+res	input		Square input reset signal
+clkin	input		Square input clock signa
+dout	output		digital output of ADC
+----------------------------------------------
+
+Internal Pin List (Non-I/O Pins):
+Name	Component	Purpose
+----------------------------------------------
+p1	clkgen + stage	Stage 1 samples, stage 2 redistributes
+p2	clkgen + stage	Stage 2 samples, stage 1 redistributes
+p1e	clkgen + stage	Early p1
+p2e	clkgen		Early p2
+ps	comp		Analagous to p1
+pc	comp		Analagous to p2
+d	stage + comp	Digital bitstream output
+----------------------------------------------
+
+
+Current Status:
+These are the final files
