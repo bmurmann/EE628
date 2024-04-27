@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/Kate1/IDSM2.sch
-**.subckt IDSM2 vhi vlo vdda vssa vin dout res clk
+.subckt Team6 vhi vlo vdda vssa vin dout res clk
 *.ipin vlo
 *.ipin vdda
 *.ipin vssa
@@ -12,7 +12,7 @@ x1 res p1e p1 p2 vhi vdda vin vout1 vssa net3 net2 vlo stage_T6
 x2 res p2e p2 p1 vhi vdda vout1 vout2 vssa vmid2 net1 vlo stage_T6
 x4 p1e p1 clk p2 p2e clkgen_T6
 x3 vdda p2 net1 vmid2 vssa net2 dout p1 vout2 res comparator_T6
-**.ends
+.ends
 
 * expanding   symbol:  /foss/designs/Kate1/stage_T6.sym # of pins=12
 ** sym_path: /foss/designs/Kate1/stage_T6.sym

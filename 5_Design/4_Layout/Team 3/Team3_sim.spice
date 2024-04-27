@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/IDSM2.sch
-**.subckt IDSM2 v_high v_DDa res dd v_in v_low v_SSa clock_in
+.subckt Team3 v_high v_DDa res dd v_in v_low v_SSa clock_in
 *.ipin v_high
 *.ipin v_DDa
 *.ipin v_SSa
@@ -12,7 +12,7 @@ x2 dd res P1_early P1 P2 v_high v_DDa v_out1 v_in v_SSa net3 v_low stage
 x3 net2 res P2_early P2 P1 v_high v_DDa v_out2 v_out1 v_SSa net1 v_low stage
 x4 v_DDa P2 net2 res dd v_SSa net1 P1 v_out2 comp_latch_new
 x1 P1_early P1 clock_in P2 P2_early new_clock_gen
-**.ends
+.ends
 
 * expanding   symbol:  /foss/designs/stage.sym # of pins=12
 ** sym_path: /foss/designs/stage.sym

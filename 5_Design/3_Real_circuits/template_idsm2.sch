@@ -139,3 +139,4 @@ C {devices/ipin.sym} -1420 -530 0 0 {name=p12 lab=vssa}
 C {devices/ipin.sym} -1420 -550 0 0 {name=p13 lab=vdda}
 C {devices/ipin.sym} -1420 -570 0 0 {name=p14 lab=vlo}
 C {devices/ipin.sym} -1420 -590 0 0 {name=p15 lab=vhi}
+C {devices/noconn.sym} -810 -380 0 1 {name=l1}
