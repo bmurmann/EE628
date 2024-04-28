@@ -58,13 +58,24 @@ Xpgate_levelup vdd iovdd vss pgate_core pgate sg13g2_LevelUp
 .ends sg13g2_GuardRing_N1324W456HTF
 
 .subckt sg13g2_SecondaryProtection iovdd iovss pad core
-R1 pad core rppd l=2.0um w=1.0um
-Xguard1 iovss sg13g2_GuardRing_P576W948HFF
-DN iovss core dantenna l=3.1um w=0.64um
-Xguard2 iovss sg13g2_GuardRing_P456W948HFF
-DP core iovdd dpantenna l=0.64um w=4.98um
-Xguard3 iovdd sg13g2_GuardRing_N1324W456HTF
+R1 core pad res_rppd l=2.0um w=1.0um m=1
+
+*Xguard1 iovss sg13g2_GuardRing_P576W948HFF
+
+*DN iovss core dantenna l=3.1um w=0.64um a=1.984p p=7.48u
+DN core iovss dantenna l=3.1um w=0.64um a=1.984p p=7.48u
+
+*Xguard2 iovss sg13g2_GuardRing_P456W948HFF
+
+*DP core iovdd dpantenna l=0.64um w=4.98um a=3.1872p p=11.24u
+DP iovdd core dpantenna l=0.64um w=4.98um a=3.1872p p=11.24u
+
+*Xguard3 iovdd sg13g2_GuardRing_N1324W456HTF
 .ends sg13g2_SecondaryProtection
+
+
+
+
 
 .subckt sg13g2_LevelDown vdd vss iovdd iovss pad core
 Mn_hvinv vss padres padres_n vss sg13_hv_nmos l=0.45um w=2.65um
