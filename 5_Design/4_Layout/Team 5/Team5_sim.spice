@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/Team5.sch
-**.subckt Team5 vhi vlo vdda vssa vin dd res clkin
+.subckt Team5 vhi vlo vdda vssa vin res dd clkin
 *.ipin vhi
 *.ipin vlo
 *.ipin vdda
@@ -12,7 +12,7 @@ x3 res p1e p1 p2 vhi vdda vout1 vin vssa dd vlo net2 integ_5
 x2 res p2e p2 p1 vhi vdda vout2 vout1 vssa net1 vlo vmid2 integ_5
 x4 p1e p1 clkin p2 p2e clock_5
 x1 vdda p2 net1 dd vmid2 vssa res p1 vout2 comp_5
-**.ends
+.ends
 
 * expanding   symbol:  /foss/designs/integ_5.sym # of pins=12
 ** sym_path: /foss/designs/integ_5.sym
@@ -82,13 +82,6 @@ x2 clkinbb b2 VDD VSS net1 sg13g2_nand2_2
 x10 b1 clkinb VDD VSS net7 sg13g2_nand2_2
 x14 a1 b1 VDD VSS net5 sg13g2_nand2_2
 x15 b2 a2 VDD VSS net11 sg13g2_nand2_2
-**** begin user architecture code
-
-
-.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
-
-
-**** end user architecture code
 .ends
 
 
