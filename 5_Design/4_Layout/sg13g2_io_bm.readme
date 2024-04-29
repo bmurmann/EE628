@@ -1,5 +1,0 @@
-Modifications made to IO cells:
-
-IOPadAnalog/SecondaryProtection
-* Added HeatRes and PolyRes to RPPD (for LVS)
-
