@@ -204,6 +204,7 @@ value="
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 .inc /foss/pdks/sg13g2/libs.tech/ngspice/models/diodes.lib
+.inc \\"../../4_Layout/Team 1/Team1_sim.spice\\"
 .inc \\"../../4_Layout/Team 3/Team3_sim.spice\\"
 .inc \\"../../4_Layout/Team 6/Team6_sim.spice\\"
 .inc ../sg13g2_stdcell.spice

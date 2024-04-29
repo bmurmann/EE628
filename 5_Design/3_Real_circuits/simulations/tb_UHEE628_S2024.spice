@@ -23,6 +23,7 @@ C6 out1 GND 1p m=1
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 .inc /foss/pdks/sg13g2/libs.tech/ngspice/models/diodes.lib
+.inc "../../4_Layout/Team 1/Team1_sim.spice"
 .inc "../../4_Layout/Team 3/Team3_sim.spice"
 .inc "../../4_Layout/Team 6/Team6_sim.spice"
 .inc ../sg13g2_stdcell.spice
@@ -75,7 +76,7 @@ op
 x10 vref ck3 vldo ck1 ck2 ck1_c ck3_c net1 ck2_c out1_c in1 out1 in2 out2 out2_c in2_c VDD out3 in3_c in3 out3_c avdd iovdd vhi
 + iovss avss vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS
 + padring
-x1 vhi vlo avdd avss in1_c out1_c res_c ck1_c template_idsm2
+x1 vhi vlo avdd avss in1_c out1_c res_c ck1_c Team1
 x2 vhi vlo avdd avss in2_c out2_c res_c ck2_c template_idsm2
 x4 vhi vlo avdd avss in4_c out4_c res_c ck4_c template_idsm2
 x5 vhi vlo avdd avss in5_c out5_c res_c ck5_c template_idsm2
@@ -207,28 +208,28 @@ x3 vdda p2 net2 p1 net1 vout2 vmid2 vssa res dout template_comp
 *.opin p1
 *.opin p2
 *.opin p2e
-xn1 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
-xi7 net6 VDD VSS net9 sg13g2_inv_4
-xi1 clkin VDD VSS clkinb sg13g2_inv_2
-xi2 clkinb VDD VSS clkinbb sg13g2_inv_2
-xn2 clkinb b1 VDD VSS net12 sg13g2_nand2_2
-xi13 p1e VDD VSS b1 sg13g2_inv_4
-xi8 net8 VDD VSS net10 sg13g2_inv_4
-xi14 p2e VDD VSS b2 sg13g2_inv_4
-xn3 a1 b1 VDD VSS net1 sg13g2_nand2_2
-xn4 a2 b2 VDD VSS net3 sg13g2_nand2_2
-xi11 a1 VDD VSS p1e sg13g2_inv_4
-xi9 net9 VDD VSS a1 sg13g2_inv_4
-x12 a2 VDD VSS p2e sg13g2_inv_4
-xi10 net10 VDD VSS a2 sg13g2_inv_4
-xi15 net1 VDD VSS net2 sg13g2_inv_4
-xi17 net2 VDD VSS p1 sg13g2_inv_8
-xi16 net3 VDD VSS net4 sg13g2_inv_4
-xi18 net4 VDD VSS p2 sg13g2_inv_8
-xi3 net11 VDD VSS net5 sg13g2_inv_4
-xi5 net5 VDD VSS net6 sg13g2_inv_4
-xi4 net12 VDD VSS net7 sg13g2_inv_4
-xi6 net7 VDD VSS net8 sg13g2_inv_4
+xn1 clkinbb b2 VGND VNB VPB VPWR net11 sg13g2_nand2_2
+xi7 net6 VGND VNB VPB VPWR net9 sg13g2_inv_4
+xi1 clkin VGND VNB VPB VPWR clkinb sg13g2_inv_2
+xi2 clkinb VGND VNB VPB VPWR clkinbb sg13g2_inv_2
+xn2 clkinb b1 VGND VNB VPB VPWR net12 sg13g2_nand2_2
+xi13 p1e VGND VNB VPB VPWR b1 sg13g2_inv_4
+xi8 net8 VGND VNB VPB VPWR net10 sg13g2_inv_4
+xi14 p2e VGND VNB VPB VPWR b2 sg13g2_inv_4
+xn3 a1 b1 VGND VNB VPB VPWR net1 sg13g2_nand2_2
+xn4 a2 b2 VGND VNB VPB VPWR net3 sg13g2_nand2_2
+xi11 a1 VGND VNB VPB VPWR p1e sg13g2_inv_4
+xi9 net9 VGND VNB VPB VPWR a1 sg13g2_inv_4
+x12 a2 VGND VNB VPB VPWR p2e sg13g2_inv_4
+xi10 net10 VGND VNB VPB VPWR a2 sg13g2_inv_4
+xi15 net1 VGND VNB VPB VPWR net2 sg13g2_inv_4
+xi17 net2 VGND VNB VPB VPWR p1 sg13g2_inv_8
+xi16 net3 VGND VNB VPB VPWR net4 sg13g2_inv_4
+xi18 net4 VGND VNB VPB VPWR p2 sg13g2_inv_8
+xi3 net11 VGND VNB VPB VPWR net5 sg13g2_inv_4
+xi5 net5 VGND VNB VPB VPWR net6 sg13g2_inv_4
+xi4 net12 VGND VNB VPB VPWR net7 sg13g2_inv_4
+xi6 net7 VGND VNB VPB VPWR net8 sg13g2_inv_4
 .ends
 
 
@@ -260,9 +261,9 @@ XMn2 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XMn6 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XMn7 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
 XMp2 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
-x2 pr d VDD VSS gn sg13g2_and2_1
+x2 pr d VGND VNB VPB VPWR gn sg13g2_and2_1
 XMp3 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
-x3 d pr VDD VSS gp sg13g2_nand2b_1
+x3 d pr VGND VNB VPB VPWR gp sg13g2_nand2b_1
 XC1 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
 XC2 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
 XC3 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
@@ -301,14 +302,14 @@ XM32p net2 dint net3 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XM42p net2 dint VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
 XM8 net2 out1p VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
 XM21p net3 out1p VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-x1 ps dint dd net5 net4 VDD VSS sg13g2_dfrbp_2
-x2 dint VDD VSS d sg13g2_buf_2
+x1 ps dint net4 VGND VNB VPB VPWR dd net5 sg13g2_dfrbp_2
+x2 dint VGND VNB VPB VPWR d sg13g2_buf_2
 x3 res VDD VSS net4 sg13g2_inv_1
 XMp1 vinm_samp psb vinm vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
 XMn5 vinm_samp ps vinm vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XC1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
 x4 ps VDD VSS psb sg13g2_inv_1
-x5 dd VDD VSS dout sg13g2_inv_2
+x5 dd VGND VNB VPB VPWR dout sg13g2_inv_2
 * noconn #net5
 .ends
 

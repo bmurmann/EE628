@@ -170,7 +170,7 @@ lab=vhi}
 N 80 -890 80 -860 {
 lab=vhi}
 N 240 -970 260 -970 {
-lab=#net1}
+lab=in3_c}
 N 260 -1070 800 -1070 {
 lab=in2_c}
 N 260 -1070 260 -1050 {
@@ -324,18 +324,20 @@ lab=res_c}
 N 480 -1050 480 -950 {
 lab=res_c}
 N 260 -930 800 -930 {
-lab=#net1}
+lab=in3_c}
 N 260 -970 260 -930 {
-lab=#net1}
-N 420 -910 800 -910 {}
+lab=in3_c}
+N 420 -910 800 -910 {
+lab=vlo}
 N 420 -1130 420 -910 {
 lab=vlo}
-N 460 -890 800 -890 {}
+N 460 -890 800 -890 {
+lab=avss}
 N 460 -1090 460 -890 {
 lab=avss}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {padring.sym} 130 -200 0 0 {name=x10}
-C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -1250 0 0 {name=x1}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 1/Team1.sym} 950 -1250 0 0 {name=x1}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -1090 0 0 {name=x2}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -770 0 0 {name=x4}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -610 0 0 {name=x5}
