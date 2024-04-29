@@ -30,3 +30,19 @@ diode_exclude = gatpoly_drw.join(nsd_drw)
 dpantenna_p = pactiv.and(antenna_d_mk)
 dpantenna_n = nwell_drw.and(antenna_d_mk).covering(dpantenna_p)
 ```
+
+* Changed `rppd` derivation (res_derivations.lvs). Why not allow it on nwell?
+```
+#polyres_exclude = activ_drw.join(nwell_drw).join(pwell_block)
+#                    .join(nsd_block).join(nbulay_drw).join(thickgateox_drw)
+#                    .join(heattrans_drw).join(trans_drw).join(emwind_drw)
+#                    .join(emwihv_drw).join(mim_drw).join(activ_mask)
+#                    .join(recog_diode).join(recog_esd).join(ind_drw)
+#                    .join(ind_pin).join(substrate_drw)
+polyres_exclude = activ_drw.join(pwell_block)
+                    .join(nsd_block).join(nbulay_drw).join(thickgateox_drw)
+                    .join(heattrans_drw).join(trans_drw).join(emwind_drw)
+                    .join(emwihv_drw).join(mim_drw).join(activ_mask)
+                    .join(recog_diode).join(recog_esd).join(ind_drw)
+                    .join(ind_pin).join(substrate_drw)
+```
