@@ -318,24 +318,24 @@ res_fing[4] conn_3_4 conn_4_5 res_rppd l=20.0um w=1.0um
 res_fing[5] conn_4_5 conn_5_6 res_rppd l=20.0um w=1.0um
 res_fing[6] conn_5_6 conn_6_7 res_rppd l=20.0um w=1.0um
 res_fing[7] conn_6_7 conn_7_8 res_rppd l=20.0um w=1.0um
-res_fing[8] conn_7_8 conn_8_9 res_rpp l=20.0um w=1.0um
-res_fing[9] conn_8_9 conn_9_10 res_rpp l=20.0um w=1.0um
-res_fing[10] conn_9_10 conn_10_11 res_rpp l=20.0um w=1.0um
-res_fing[11] conn_10_11 conn_11_12 res_rpp l=20.0um w=1.0um
-res_fing[12] conn_11_12 conn_12_13 res_rpp l=20.0um w=1.0um
-res_fing[13] conn_12_13 conn_13_14 res_rpp l=20.0um w=1.0um
-res_fing[14] conn_13_14 conn_14_15 res_rpp l=20.0um w=1.0um
-res_fing[15] conn_14_15 conn_15_16 res_rpp l=20.0um w=1.0um
-res_fing[16] conn_15_16 conn_16_17 res_rpp l=20.0um w=1.0um
-res_fing[17] conn_16_17 conn_17_18 res_rpp l=20.0um w=1.0um
-res_fing[18] conn_17_18 conn_18_19 res_rpp l=20.0um w=1.0um
-res_fing[19] conn_18_19 conn_19_20 res_rpp l=20.0um w=1.0um
-res_fing[20] conn_19_20 conn_20_21 res_rpp l=20.0um w=1.0um
-res_fing[21] conn_20_21 conn_21_22 res_rpp l=20.0um w=1.0um
-res_fing[22] conn_21_22 conn_22_23 res_rpp l=20.0um w=1.0um
-res_fing[23] conn_22_23 conn_23_24 res_rpp l=20.0um w=1.0um
-res_fing[24] conn_23_24 conn_24_25 res_rpp l=20.0um w=1.0um
-res_fing[25] conn_24_25 pin2 res_rpp l=20.0um w=1.0um
+res_fing[8] conn_7_8 conn_8_9 res_rppd l=20.0um w=1.0um
+res_fing[9] conn_8_9 conn_9_10 res_rppd l=20.0um w=1.0um
+res_fing[10] conn_9_10 conn_10_11 res_rppd l=20.0um w=1.0um
+res_fing[11] conn_10_11 conn_11_12 res_rppd l=20.0um w=1.0um
+res_fing[12] conn_11_12 conn_12_13 res_rppd l=20.0um w=1.0um
+res_fing[13] conn_12_13 conn_13_14 res_rppd l=20.0um w=1.0um
+res_fing[14] conn_13_14 conn_14_15 res_rppd l=20.0um w=1.0um
+res_fing[15] conn_14_15 conn_15_16 res_rppd l=20.0um w=1.0um
+res_fing[16] conn_15_16 conn_16_17 res_rppd l=20.0um w=1.0um
+res_fing[17] conn_16_17 conn_17_18 res_rppd l=20.0um w=1.0um
+res_fing[18] conn_17_18 conn_18_19 res_rppd l=20.0um w=1.0um
+res_fing[19] conn_18_19 conn_19_20 res_rppd l=20.0um w=1.0um
+res_fing[20] conn_19_20 conn_20_21 res_rppd l=20.0um w=1.0um
+res_fing[21] conn_20_21 conn_21_22 res_rppd l=20.0um w=1.0um
+res_fing[22] conn_21_22 conn_22_23 res_rppd l=20.0um w=1.0um
+res_fing[23] conn_22_23 conn_23_24 res_rppd l=20.0um w=1.0um
+res_fing[24] conn_23_24 conn_24_25 res_rppd l=20.0um w=1.0um
+res_fing[25] conn_24_25 pin2 res_rppd l=20.0um w=1.0um
 .ends sg13g2_RCClampResistor
 
 .subckt sg13g2_GuardRing_P16000W4466HFT conn
@@ -697,7 +697,7 @@ mclamp_g18 iovss off pad iovss sg13_hv_nmos l=0.6um w=4.4um
 mclamp_g19 pad off iovss iovss sg13_hv_nmos l=0.6um w=4.4um
 XOuterRing iovdd sg13g2_GuardRing_N16000W1980HFF
 XInnerRing iovss sg13g2_GuardRing_P15280W1260HFF
-Roff iovss off res_rpp l=3.54um w=0.5um
+Roff iovss off res_rppd l=3.54um w=0.5um
 .ends sg13g2_Clamp_N20N0D
 
 .subckt sg13g2_Clamp_P20N0D iovss iovdd pad
@@ -743,7 +743,7 @@ mclamp_g19_r0 pad off iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 mclamp_g19_r1 pad off iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 XOuterRing iovss sg13g2_GuardRing_P16000W3852HFF
 XInnerRing iovdd sg13g2_GuardRing_N15280W3132HTF
-Roff iovdd off res_rpp l=12.9um w=0.5um
+Roff iovdd off res_rppd l=12.9um w=0.5um
 .ends sg13g2_Clamp_P20N0D
 
 .subckt sg13g2_Gallery vdd vss iovdd iopadin_pad iopadout4ma_pad iopadout16ma_pad iopadout30ma_pad iopadtriout4ma_pad iopadtriout16ma_pad iopadtriout30ma_pad iopadinout4ma_pad iopadinout16ma_pad iopadinout30ma_pad iopadin_p2c iopadinout4ma_p2c iopadinout16ma_p2c iopadinout30ma_p2c iopadout4ma_c2p iopadout16ma_c2p iopadout30ma_c2p iopadtriout4ma_c2p iopadtriout16ma_c2p iopadtriout30ma_c2p iopadinout4ma_c2p iopadinout16ma_c2p iopadinout30ma_c2p iopadtriout4ma_c2p_en iopadtriout16ma_c2p_en iopadtriout30ma_c2p_en iopadinout4ma_c2p_en iopadinout16ma_c2p_en iopadinout30ma_c2p_en ana_out ana_outres

@@ -18,5 +18,10 @@ sg13g2_io_bm.cdl
   * Added required `heatres` and `polyres` layers to RPPD layout
   * Deleted `substrate` layer (to avoid unmatched PTAP1 instances in LVS)
 
+* In oas file, IOPadAnalog/Clamp_N20N0D
+  * Added required `heatres` and `polyres` layers to RPPD layout
+  * Added `heattrans` layer on NMOS HV devices; this seems to be used to distinguish between NMOS and NMOS RF for HV devices. Without this layer, the LVS finds both types.
 
-
+  * In oas file, IOPadAnalog/Clamp_P20N0D
+  * Added required `heatres` and `polyres` layers to RPPD layout
+  * Added `heatrans` layer on PMOS HV devices; this seems to be used to distinguish between PMOS and PMOS RF for HV devices. Without this layer, the LVS finds both types.

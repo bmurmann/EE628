@@ -1,0 +1,9 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 29/04/2024 05:41
+
+* cell sg13g2_Clamp_P20N0D
+* pin iovdd
+* pin pad
+.SUBCKT sg13g2_Clamp_P20N0D iovdd pad
+* device instance $1 r0 *1 25.52,13.18 sg13_hv_pmos
+M$1 iovdd \$6 pad iovdd sg13_hv_pmos W=266.3999999999999 L=0.5999999999999999
+.ENDS sg13g2_Clamp_P20N0D

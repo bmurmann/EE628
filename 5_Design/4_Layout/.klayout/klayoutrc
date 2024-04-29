@@ -57,7 +57,7 @@
  <edit-hier-copy-mode>-1</edit-hier-copy-mode>
  <edit-inst-angle>0</edit-inst-angle>
  <edit-inst-array>false</edit-inst-array>
- <edit-inst-cell-name>ptap1</edit-inst-cell-name>
+ <edit-inst-cell-name>rfnmosHV</edit-inst-cell-name>
  <edit-inst-column_x>0</edit-inst-column_x>
  <edit-inst-column_y>0</edit-inst-column_y>
  <edit-inst-columns>1</edit-inst-columns>
@@ -77,10 +77,10 @@
  <edit-path-ext-var-end>0.0</edit-path-ext-var-end>
  <edit-path-width>0.1</edit-path-width>
  <edit-pcell-show-parameter-names>false</edit-pcell-show-parameter-names>
- <edit-recent-inst-param>LIB,ptap1,'0',false,'1',false,'1','0','0','1','0','0','',;LIB,ptap,'0',false,'1',false,'1','0','0','1','0','0','',;SG13_dev,rppd,'0',false,'1',false,'1','0','0','1','0','0','!',;LIB,dpantenna,'0',false,'1',false,'1','0','0','1','0','0','',;Team6_logo,art2,'0',false,'1',false,'1','0','0','1','0','0','',;Team4,TOP,'0',false,'1',false,'1','0','0','1','0','0','',;Team6,Final1,'0',false,'1',false,'1','0','0','1','0','0','',;Team1,IDSM2,'0',false,'1',false,'1','0','0','1','0','0','',;padring,padring,'0',false,'1',false,'1','0','0','1','0','0','',;'',sg13g2_IOPadAnalog,'0',false,'1',false,'1','0','0','1','0','0','',;LIB,bondpad,'0',false,'1',false,'1','0','0','1','0','0','',</edit-recent-inst-param>
- <edit-recent-path-param>'8/0','0.1',flush,'0.0','0.0',</edit-recent-path-param>
- <edit-recent-shape-param>'HeatTrans (51/0)',;'52/0',;'6/0',;'8/0',;'1/0',;'14/0',;'31/0',;'99/31',</edit-recent-shape-param>
- <edit-recent-text-param>'8/1',ABC,'0',left,bottom,</edit-recent-text-param>
+ <edit-recent-inst-param>LIB,rfnmosHV,'0',false,'1',false,'1','0','0','1','0','0','',;LIB,nmosHV,'0',false,'1',false,'1','0','0','1','0','0','',;LIB,ptap1,'0',false,'1',false,'1','0','0','1','0','0','',;LIB,ptap,'0',false,'1',false,'1','0','0','1','0','0','',;SG13_dev,rppd,'0',false,'1',false,'1','0','0','1','0','0','!',;LIB,dpantenna,'0',false,'1',false,'1','0','0','1','0','0','',;Team6_logo,art2,'0',false,'1',false,'1','0','0','1','0','0','',;Team4,TOP,'0',false,'1',false,'1','0','0','1','0','0','',;Team6,Final1,'0',false,'1',false,'1','0','0','1','0','0','',;Team1,IDSM2,'0',false,'1',false,'1','0','0','1','0','0','',;padring,padring,'0',false,'1',false,'1','0','0','1','0','0','',;'',sg13g2_IOPadAnalog,'0',false,'1',false,'1','0','0','1','0','0','',;LIB,bondpad,'0',false,'1',false,'1','0','0','1','0','0','',</edit-recent-inst-param>
+ <edit-recent-path-param>'10/0','0.1',flush,'0.0','0.0',;'1/0','0.1',flush,'0.0','0.0',;'8/0','0.1',flush,'0.0','0.0',</edit-recent-path-param>
+ <edit-recent-shape-param>'5/0',;'52/0',;'',;'128/0',;'51/0',;'14/0',;'HeatTrans (51/0)',;'6/0',;'8/0',;'1/0',;'31/0',;'99/31',</edit-recent-shape-param>
+ <edit-recent-text-param>'10/1',ABC,'0',left,bottom,;'',ABC,'0',left,bottom,;'8/0',ABC,'0',left,bottom,;'8/1',ABC,'0',left,bottom,</edit-recent-text-param>
  <edit-show-shapes-of-instances>true</edit-show-shapes-of-instances>
  <edit-snap-objects-to-grid>true</edit-snap-objects-to-grid>
  <edit-snap-to-objects>false</edit-snap-to-objects>
@@ -138,7 +138,7 @@
  <l2ndb-show-all>true</l2ndb-show-all>
  <l2ndb-window-dim>1.0</l2ndb-window-dim>
  <l2ndb-window-mode>fit-net</l2ndb-window-mode>
- <l2ndb-window-state>NetlistBrowserDialog="AdnQywADAAAAAAPxAAAC9wAACykAAAWAAAAEFwAAAzIAAAsDAAAFWgAAAAAAAAAAFAAAAAQXAAADMgAACwMAAAVa";splitter_3="AAAA/wAAAAEAAAACAAAARgAAAEYB/////wEAAAABAA==";sch_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAAASwAAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAlgAAAAEAAAAAAAAD6AEAAACW";sch_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAAZAAAAAEAAAAAAAAD6AEAAABk";log_view="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABs0AAAABAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAABAAAGzQAAAAEAAAAAAAAD6AAAAABk";splitter="AAAA/wAAAAEAAAACAAABAAAAAQAB/////wEAAAABAA==";nl_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAABckAAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAFMwAAAAEAAAAAAAAD6AEAAACW";nl_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAA/gAAAAEAAAAAAAAD6AEAAABk";splitter_4="AAAA/wAAAAEAAAACAAABAAAAAQAB/////wEAAAABAA==";xref_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABckAAAAEAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAAEAAAAlgAAAAEAAAAAAAAAGQAAAAEAAAAAAAAAlgAAAAEAAAAAAAAEhAAAAAEAAAAAAAAD6AEAAACW";xref_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAACAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAACAAAAZAAAAAEAAAAAAAAAmgAAAAEAAAAAAAAD6AEAAAAZ";</l2ndb-window-state>
+ <l2ndb-window-state>NetlistBrowserDialog="AdnQywADAAAAAACTAAADBgAACRUAAAeoAAAAuQAAA0EAAAjvAAAHggAAAAAAAAAAFAAAAAC5AAADQQAACO8AAAeC";log_view="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABHoAAAABAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAABAAAEegAAAAEAAAAAAAAD6AAAAABk";splitter_4="AAAA/wAAAAEAAAACAAABAAAAAQAB/////wEAAAABAA==";xref_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxMAAAAEAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAAEAAACcwAAAAEAAAAAAAAAGQAAAAEAAAAAAAACnQAAAAEAAAAAAAAB6gAAAAEAAAAAAAAD6AEAAACW";xref_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAACAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAACAAAAZAAAAAEAAAAAAAAAmgAAAAEAAAAAAAAD6AEAAAAZ";splitter_3="AAAA/wAAAAEAAAACAAAARgAAAEYB/////wEAAAABAA==";sch_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAAB80AAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAHNwAAAAEAAAAAAAAD6AEAAACW";sch_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAAZAAAAAEAAAAAAAAD6AEAAABk";splitter="AAAA/wAAAAEAAAACAAABAAAAAQAB/////wEAAAABAA==";nl_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAABxMAAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAGfQAAAAEAAAAAAAAD6AEAAACW";nl_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAA/gAAAAEAAAAAAAAD6AEAAABk";</l2ndb-window-state>
  <layer-visibility-follows-selection>false</layer-visibility-follows-selection>
  <layers-always-show-layout-index>false</layers-always-show-layout-index>
  <layers-always-show-ld>true</layers-always-show-ld>
@@ -166,7 +166,7 @@
  <menu-items-hidden/>
  <min-inst-label-size>16</min-inst-label-size>
  <mouse-wheel-mode>0</mouse-wheel-mode>
- <mru>'/foss/designs/.klayout/libraries/sg13g2_io.gds'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/UHEE628_S2024.oas'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/Team 6/Comparator.oas'@'sg13g2' '/foss/designs/layout/testcases/unit/diode_devices/layout/dantenna.gds'@'sg13g2' '/foss/designs/layout/testcases/unit/res_devices/layout/res_rppd.gds'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/lvs_test.oas'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/sg13g2_io_bm.oas'@'sg13g2'</mru>
+ <mru>'/foss/designs/.klayout/libraries/sg13g2_io.gds'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/UHEE628_S2024.oas'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/Team 6/Comparator.oas'@'sg13g2' '/foss/designs/layout/testcases/unit/diode_devices/layout/dantenna.gds'@'sg13g2' '/foss/designs/layout/testcases/unit/res_devices/layout/res_rppd.gds'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/lvs_test.oas'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/.klayout/tech/lvs/testing/testcases/unit/mos_devices/layout/sg13_hv_nmos.gds'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/.klayout/tech/lvs/testing/testcases/unit/rfmos_devices/layout/rfnmoshv.gds'@'sg13g2' '/foss/designs/EE628/5_Design/4_Layout/sg13g2_io_bm.oas'@'sg13g2'</mru>
  <mru-bookmarks/>
  <mru-layer-properties>'/foss/designs/.klayout/tech/sg13g2.lyp'</mru-layer-properties>
  <mru-sessions/>
@@ -284,11 +284,11 @@
  <text-lazy-rendering>true</text-lazy-rendering>
  <text-point-mode>false</text-point-mode>
  <text-visible>true</text-visible>
- <tip-window-hidden>only-top-level-shown-by-default=3,hide-empty-layers=4,hide-empty-layers=0,editor-mode=4,editor-mode=0</tip-window-hidden>
+ <tip-window-hidden>only-top-level-shown-by-default=3,hide-empty-layers=4,hide-empty-layers=0,editor-mode=4,editor-mode=0,drawing-on-invisible-layer=4,drawing-on-invisible-layer=0</tip-window-hidden>
  <tracking-cursor-color>auto</tracking-cursor-color>
  <tracking-cursor-enabled>true</tracking-cursor-enabled>
- <window-geometry>AdnQywADAAAAAAEMAAABbwAACKUAAAYyAAABMgAAAaoAAAh/AAAGDAAAAAAAAAAAFAAAAAEyAAABqgAACH8AAAYM</window-geometry>
- <window-state>AAAA/wAAAAD9AAAAAgAAAAAAAAGqAAAD//wCAAAABPsAAAAqAG4AYQB2AGkAZwBhAHQAbwByAF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAjQD////7AAAAHABoAHAAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAAATgAAAmsAAAATAP////sAAAAgAGwAaQBiAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAACvwAAAY4AAAATAP////sAAAAcAGUAbwBfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAAAAAO3AAAAlgAAAJYA////AAAAAQAAAO8AAAP//AIAAAAD+wAAACoAYgBvAG8AawBtAGEAcgBrAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQAAAAAAP////8AAAATAP////sAAAAcAGwAcABfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAEAAABOAAADdAAAABMA////+wAAABwAbAB0AF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AQAAA8gAAACFAAAAEwD///8AAASpAAAD/wAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAABAAAADgB0AG8AbwBsAGIAYQByAQAAAAD/////AAAAAAAAAAA=</window-state>
+ <window-geometry>AdnQywADAAAAAAIoAAAAZAAAEbUAAAeGAAACTgAAAJ8AABGPAAAHYAAAAAAAAAAAFAAAAAJOAAAAnwAAEY8AAAdg</window-geometry>
+ <window-state>AAAA/wAAAAD9AAAAAgAAAAAAAAGqAAAGXvwCAAAABPsAAAAqAG4AYQB2AGkAZwBhAHQAbwByAF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAjQD////7AAAAHABoAHAAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAAATgAAA90AAAATAP////sAAAAgAGwAaQBiAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAAEMQAAAnsAAAATAP////sAAAAcAGUAbwBfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAAAAAYWAAAAlgAAAJYA////AAAAAQAAAO8AAAZe/AIAAAAD+wAAACoAYgBvAG8AawBtAGEAcgBrAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQAAAAAAP////8AAAATAP////sAAAAcAGwAcABfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAEAAABOAAAF0wAAABMA////+wAAABwAbAB0AF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AQAABicAAACFAAAAEwD///8AAAydAAAGXgAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAABAAAADgB0AG8AbwBsAGIAYQByAQAAAAD/////AAAAAAAAAAA=</window-state>
  <xor-anotb>false</xor-anotb>
  <xor-axorb>true</xor-axorb>
  <xor-bnota>false</xor-bnota>
