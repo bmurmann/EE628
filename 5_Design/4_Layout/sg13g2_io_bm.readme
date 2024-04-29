@@ -1,9 +1,0 @@
-Modifications made to IO cells:
-
-IOPadAnalog/SecondaryProtection
-* Added HeatRes and PolyRes to RPPD layout (for LVS)
-* Deleted substrate.drw (to avoid PTAP1 instances in LVS)
-* In cdl, change rppd to res_rppd (for LVS)
-
-
-
