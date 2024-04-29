@@ -1,0 +1,11 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 29/04/2024 22:05
+
+* cell sg13g2_DCNDiode
+.SUBCKT sg13g2_DCNDiode
+* device instance $1 r0 *1 15.25,-3.029 dantenna
+D$1 sub!$1 \$1 dantenna A=0.6084 P=3.12 m=1
+* device instance $2 r0 *1 16.53,2.88 dantenna
+D$2 sub!$1 \$8 dantenna A=35.0028 P=58.08 m=1
+* device instance $3 r0 *1 16.53,7.38 dantenna
+D$3 sub!$1 \$12 dantenna A=35.0028 P=58.08 m=1
+.ENDS sg13g2_DCNDiode
