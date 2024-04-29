@@ -206,6 +206,7 @@ value="
 .inc /foss/pdks/sg13g2/libs.tech/ngspice/models/diodes.lib
 .inc \\"../../4_Layout/Team 1/Team1_sim.spice\\"
 .inc \\"../../4_Layout/Team 3/Team3_sim.spice\\"
+.inc \\"../../4_Layout/Team 5/Team5_sim.spice\\"
 .inc \\"../../4_Layout/Team 6/Team6_sim.spice\\"
 .inc ../sg13g2_stdcell.spice
 .inc ../sg13g2_io.spi

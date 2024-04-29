@@ -340,7 +340,7 @@ C {padring.sym} 130 -200 0 0 {name=x10}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 1/Team1.sym} 950 -1250 0 0 {name=x1}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -1090 0 0 {name=x2}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -770 0 0 {name=x4}
-C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -610 0 0 {name=x5}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym} 950 -610 0 0 {name=x5}
 C {devices/ipin.sym} 50 -1130 0 0 {name=p1 lab=in1}
 C {devices/ipin.sym} 50 -1050 0 0 {name=p2 lab=in2}
 C {devices/ipin.sym} 50 -970 0 0 {name=p3 lab=in3}
