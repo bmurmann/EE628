@@ -6,6 +6,17 @@ Xdcpdiode pad iovdd iovss sg13g2_DCPDiode
 Xsecondprot iovdd iovss pad padres sg13g2_SecondaryProtection
 .ends
 
+.subckt sg13g2_SecondaryProtection iovdd iovss pad core
+Xguard1 iovss sg13g2_GuardRing_P576W948HFF
+Xguard2 iovss sg13g2_GuardRing_P456W948HFF
+Xguard3 iovdd sg13g2_GuardRing_N1324W456HTF
+R1 core pad res_rppd l=2.0um w=1.0um m=1
+*DN iovss core dantenna l=3.1um w=0.64um a=1.984p p=7.48u
+DN core iovss dantenna l=3.1um w=0.64um a=1.984p p=7.48u
+*DP core iovdd dpantenna l=0.64um w=4.98um a=3.1872p p=11.24u
+DP iovdd core dpantenna l=0.64um w=4.98um a=3.1872p p=11.24u
+.ends sg13g2_SecondaryProtection
+
 .subckt sg13g2_io_tie vdd vss
 .ends sg13g2_io_tie
 
@@ -57,26 +68,6 @@ Xpgate_levelup vdd iovdd vss pgate_core pgate sg13g2_LevelUp
 .subckt sg13g2_GuardRing_N1324W456HTF conn
 .ends sg13g2_GuardRing_N1324W456HTF
 
-.subckt sg13g2_SecondaryProtection iovdd iovss pad core
-R1 core pad res_rppd l=2.0um w=1.0um m=1
-
-*Xguard1 iovss sg13g2_GuardRing_P576W948HFF
-
-*DN iovss core dantenna l=3.1um w=0.64um a=1.984p p=7.48u
-DN core iovss dantenna l=3.1um w=0.64um a=1.984p p=7.48u
-
-*Xguard2 iovss sg13g2_GuardRing_P456W948HFF
-
-*DP core iovdd dpantenna l=0.64um w=4.98um a=3.1872p p=11.24u
-DP iovdd core dpantenna l=0.64um w=4.98um a=3.1872p p=11.24u
-
-*Xguard3 iovdd sg13g2_GuardRing_N1324W456HTF
-.ends sg13g2_SecondaryProtection
-
-
-
-
-
 .subckt sg13g2_LevelDown vdd vss iovdd iovss pad core
 Mn_hvinv vss padres padres_n vss sg13_hv_nmos l=0.45um w=2.65um
 Mp_hvinv vdd padres padres_n vdd sg13_hv_pmos l=0.45um w=4.65um
@@ -110,8 +101,10 @@ Xsecondprot iovdd iovss pad padres sg13g2_SecondaryProtection
 .ends sg13g2_GuardRing_N7276W2716HFF
 
 .subckt sg13g2_DCNDiode anode cathode guard
-dcdiode[0] anode cathode dantenna l=1.26um w=27.78um
-dcdiode[1] anode cathode dantenna l=1.26um w=27.78um
+*dcdiode[0] anode cathode dantenna l=1.26um w=27.78um
+*dcdiode[1] anode cathode dantenna l=1.26um w=27.78um
+dcdiode[0] cathode anode dantenna l=1.26um w=27.78um
+dcdiode[1] cathode anode dantenna l=1.26um w=27.78um
 Xguard guard sg13g2_GuardRing_N7276W2716HFF
 .ends sg13g2_DCNDiode
 
@@ -119,8 +112,10 @@ Xguard guard sg13g2_GuardRing_N7276W2716HFF
 .ends sg13g2_GuardRing_P7276W2716HFF
 
 .subckt sg13g2_DCPDiode anode cathode guard
-dcdiode[0] anode cathode dpantenna l=1.26um w=27.78um
-dcdiode[1] anode cathode dpantenna l=1.26um w=27.78um
+*dcdiode[0] anode cathode dpantenna l=1.26um w=27.78um
+*dcdiode[1] anode cathode dpantenna l=1.26um w=27.78um
+dcdiode[0] cathode anode dpantenna l=1.26um w=27.78um
+dcdiode[1] cathode anode dpantenna l=1.26um w=27.78um
 Xguard guard sg13g2_GuardRing_P7276W2716HFF
 .ends sg13g2_DCPDiode
 
@@ -310,36 +305,37 @@ Mclamp_g42_r2 iovss gate pad iovss sg13_hv_nmos l=0.6um w=4.4um
 Mclamp_g42_r3 iovss gate pad iovss sg13_hv_nmos l=0.6um w=4.4um
 XOuterRing iovdd sg13g2_GuardRing_N16000W4884HFF
 XInnerRing iovss sg13g2_GuardRing_P15280W4164HFF
-DGATE iovss gate dantenna l=0.64um w=0.3um
+*DGATE iovss gate dantenna l=0.64um w=0.3um
+DGATE gate iovss dantenna l=0.64um w=0.3um
 .ends sg13g2_Clamp_N43N43D4R
 
 .subckt sg13g2_RCClampResistor pin1 pin2
-res_fing[0] pin1 conn_0_1 rppd l=20.0um w=1.0um
-res_fing[1] conn_0_1 conn_1_2 rppd l=20.0um w=1.0um
-res_fing[2] conn_1_2 conn_2_3 rppd l=20.0um w=1.0um
-res_fing[3] conn_2_3 conn_3_4 rppd l=20.0um w=1.0um
-res_fing[4] conn_3_4 conn_4_5 rppd l=20.0um w=1.0um
-res_fing[5] conn_4_5 conn_5_6 rppd l=20.0um w=1.0um
-res_fing[6] conn_5_6 conn_6_7 rppd l=20.0um w=1.0um
-res_fing[7] conn_6_7 conn_7_8 rppd l=20.0um w=1.0um
-res_fing[8] conn_7_8 conn_8_9 rppd l=20.0um w=1.0um
-res_fing[9] conn_8_9 conn_9_10 rppd l=20.0um w=1.0um
-res_fing[10] conn_9_10 conn_10_11 rppd l=20.0um w=1.0um
-res_fing[11] conn_10_11 conn_11_12 rppd l=20.0um w=1.0um
-res_fing[12] conn_11_12 conn_12_13 rppd l=20.0um w=1.0um
-res_fing[13] conn_12_13 conn_13_14 rppd l=20.0um w=1.0um
-res_fing[14] conn_13_14 conn_14_15 rppd l=20.0um w=1.0um
-res_fing[15] conn_14_15 conn_15_16 rppd l=20.0um w=1.0um
-res_fing[16] conn_15_16 conn_16_17 rppd l=20.0um w=1.0um
-res_fing[17] conn_16_17 conn_17_18 rppd l=20.0um w=1.0um
-res_fing[18] conn_17_18 conn_18_19 rppd l=20.0um w=1.0um
-res_fing[19] conn_18_19 conn_19_20 rppd l=20.0um w=1.0um
-res_fing[20] conn_19_20 conn_20_21 rppd l=20.0um w=1.0um
-res_fing[21] conn_20_21 conn_21_22 rppd l=20.0um w=1.0um
-res_fing[22] conn_21_22 conn_22_23 rppd l=20.0um w=1.0um
-res_fing[23] conn_22_23 conn_23_24 rppd l=20.0um w=1.0um
-res_fing[24] conn_23_24 conn_24_25 rppd l=20.0um w=1.0um
-res_fing[25] conn_24_25 pin2 rppd l=20.0um w=1.0um
+res_fing[0] pin1 conn_0_1 res_rppd l=20.0um w=1.0um
+res_fing[1] conn_0_1 conn_1_2 res_rppd l=20.0um w=1.0um
+res_fing[2] conn_1_2 conn_2_3 res_rppd l=20.0um w=1.0um
+res_fing[3] conn_2_3 conn_3_4 res_rppd l=20.0um w=1.0um
+res_fing[4] conn_3_4 conn_4_5 res_rppd l=20.0um w=1.0um
+res_fing[5] conn_4_5 conn_5_6 res_rppd l=20.0um w=1.0um
+res_fing[6] conn_5_6 conn_6_7 res_rppd l=20.0um w=1.0um
+res_fing[7] conn_6_7 conn_7_8 res_rppd l=20.0um w=1.0um
+res_fing[8] conn_7_8 conn_8_9 res_rpp l=20.0um w=1.0um
+res_fing[9] conn_8_9 conn_9_10 res_rpp l=20.0um w=1.0um
+res_fing[10] conn_9_10 conn_10_11 res_rpp l=20.0um w=1.0um
+res_fing[11] conn_10_11 conn_11_12 res_rpp l=20.0um w=1.0um
+res_fing[12] conn_11_12 conn_12_13 res_rpp l=20.0um w=1.0um
+res_fing[13] conn_12_13 conn_13_14 res_rpp l=20.0um w=1.0um
+res_fing[14] conn_13_14 conn_14_15 res_rpp l=20.0um w=1.0um
+res_fing[15] conn_14_15 conn_15_16 res_rpp l=20.0um w=1.0um
+res_fing[16] conn_15_16 conn_16_17 res_rpp l=20.0um w=1.0um
+res_fing[17] conn_16_17 conn_17_18 res_rpp l=20.0um w=1.0um
+res_fing[18] conn_17_18 conn_18_19 res_rpp l=20.0um w=1.0um
+res_fing[19] conn_18_19 conn_19_20 res_rpp l=20.0um w=1.0um
+res_fing[20] conn_19_20 conn_20_21 res_rpp l=20.0um w=1.0um
+res_fing[21] conn_20_21 conn_21_22 res_rpp l=20.0um w=1.0um
+res_fing[22] conn_21_22 conn_22_23 res_rpp l=20.0um w=1.0um
+res_fing[23] conn_22_23 conn_23_24 res_rpp l=20.0um w=1.0um
+res_fing[24] conn_23_24 conn_24_25 res_rpp l=20.0um w=1.0um
+res_fing[25] conn_24_25 pin2 res_rpp l=20.0um w=1.0um
 .ends sg13g2_RCClampResistor
 
 .subckt sg13g2_GuardRing_P16000W4466HFT conn
@@ -454,7 +450,8 @@ Mclamp_g0 iovss gate pad iovss sg13_hv_nmos l=0.6um w=4.4um
 Mclamp_g1 pad gate iovss iovss sg13_hv_nmos l=0.6um w=4.4um
 XOuterRing iovdd sg13g2_GuardRing_N16000W1980HFF
 XInnerRing iovss sg13g2_GuardRing_P15280W1260HFF
-DGATE iovss gate dantenna l=0.64um w=0.3um
+*DGATE iovss gate dantenna l=0.64um w=0.3um
+DGATE gate iovss dantenna l=0.64um w=0.3um
 .ends sg13g2_Clamp_N2N2D
 
 .subckt sg13g2_GuardRing_P16000W3852HFF conn
@@ -470,7 +467,8 @@ Mclamp_g1_r0 pad gate iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 Mclamp_g1_r1 pad gate iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 XOuterRing iovss sg13g2_GuardRing_P16000W3852HFF
 XInnerRing iovdd sg13g2_GuardRing_N15280W3132HTF
-DGATE gate iovdd dpantenna l=0.64um w=0.3um
+*DGATE gate iovdd dpantenna l=0.64um w=0.3um
+DGATE iovdd gate dpantenna l=0.64um w=0.3um
 .ends sg13g2_Clamp_P2N2D
 
 .subckt sg13g2_LevelUpInv vdd iovdd vss i o
@@ -508,7 +506,8 @@ Mclamp_g6 iovss gate pad iovss sg13_hv_nmos l=0.6um w=4.4um
 Mclamp_g7 pad gate iovss iovss sg13_hv_nmos l=0.6um w=4.4um
 XOuterRing iovdd sg13g2_GuardRing_N16000W1980HFF
 XInnerRing iovss sg13g2_GuardRing_P15280W1260HFF
-DGATE iovss gate dantenna l=0.64um w=0.3um
+*DGATE iovss gate dantenna l=0.64um w=0.3um
+DGATE gate iovss dantenna l=0.64um w=0.3um
 .ends sg13g2_Clamp_N8N8D
 
 .subckt sg13g2_Clamp_P8N8D iovss iovdd pad gate
@@ -530,7 +529,8 @@ Mclamp_g7_r0 pad gate iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 Mclamp_g7_r1 pad gate iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 XOuterRing iovss sg13g2_GuardRing_P16000W3852HFF
 XInnerRing iovdd sg13g2_GuardRing_N15280W3132HTF
-DGATE gate iovdd dpantenna l=0.64um w=0.3um
+*DGATE gate iovdd dpantenna l=0.64um w=0.3um
+DGATE iovdd gate dpantenna l=0.64um w=0.3um
 .ends sg13g2_Clamp_P8N8D
 
 .subckt sg13g2_IOPadOut16mA vss vdd iovss iovdd c2p pad
@@ -559,7 +559,8 @@ Mclamp_g13 pad gate iovss iovss sg13_hv_nmos l=0.6um w=4.4um
 Mclamp_g14 iovss gate pad iovss sg13_hv_nmos l=0.6um w=4.4um
 XOuterRing iovdd sg13g2_GuardRing_N16000W1980HFF
 XInnerRing iovss sg13g2_GuardRing_P15280W1260HFF
-DGATE iovss gate dantenna l=0.64um w=0.3um
+*DGATE iovss gate dantenna l=0.64um w=0.3um
+DGATE gate iovss dantenna l=0.64um w=0.3um
 .ends sg13g2_Clamp_N15N15D
 
 .subckt sg13g2_Clamp_P15N15D iovss iovdd pad gate
@@ -595,7 +596,8 @@ Mclamp_g14_r0 iovdd gate pad iovdd sg13_hv_pmos l=0.6um w=6.66um
 Mclamp_g14_r1 iovdd gate pad iovdd sg13_hv_pmos l=0.6um w=6.66um
 XOuterRing iovss sg13g2_GuardRing_P16000W3852HFF
 XInnerRing iovdd sg13g2_GuardRing_N15280W3132HTF
-DGATE gate iovdd dpantenna l=0.64um w=0.3um
+*DGATE gate iovdd dpantenna l=0.64um w=0.3um
+DGATE iovdd gate dpantenna l=0.64um w=0.3um
 .ends sg13g2_Clamp_P15N15D
 
 .subckt sg13g2_IOPadOut30mA vss vdd iovss iovdd c2p pad
@@ -695,7 +697,7 @@ mclamp_g18 iovss off pad iovss sg13_hv_nmos l=0.6um w=4.4um
 mclamp_g19 pad off iovss iovss sg13_hv_nmos l=0.6um w=4.4um
 XOuterRing iovdd sg13g2_GuardRing_N16000W1980HFF
 XInnerRing iovss sg13g2_GuardRing_P15280W1260HFF
-Roff iovss off rppd l=3.54um w=0.5um
+Roff iovss off res_rpp l=3.54um w=0.5um
 .ends sg13g2_Clamp_N20N0D
 
 .subckt sg13g2_Clamp_P20N0D iovss iovdd pad
@@ -741,7 +743,7 @@ mclamp_g19_r0 pad off iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 mclamp_g19_r1 pad off iovdd iovdd sg13_hv_pmos l=0.6um w=6.66um
 XOuterRing iovss sg13g2_GuardRing_P16000W3852HFF
 XInnerRing iovdd sg13g2_GuardRing_N15280W3132HTF
-Roff iovdd off rppd l=12.9um w=0.5um
+Roff iovdd off res_rpp l=12.9um w=0.5um
 .ends sg13g2_Clamp_P20N0D
 
 .subckt sg13g2_Gallery vdd vss iovdd iopadin_pad iopadout4ma_pad iopadout16ma_pad iopadout30ma_pad iopadtriout4ma_pad iopadtriout16ma_pad iopadtriout30ma_pad iopadinout4ma_pad iopadinout16ma_pad iopadinout30ma_pad iopadin_p2c iopadinout4ma_p2c iopadinout16ma_p2c iopadinout30ma_p2c iopadout4ma_c2p iopadout16ma_c2p iopadout30ma_c2p iopadtriout4ma_c2p iopadtriout16ma_c2p iopadtriout30ma_c2p iopadinout4ma_c2p iopadinout16ma_c2p iopadinout30ma_c2p iopadtriout4ma_c2p_en iopadtriout16ma_c2p_en iopadtriout30ma_c2p_en iopadinout4ma_c2p_en iopadinout16ma_c2p_en iopadinout30ma_c2p_en ana_out ana_outres
