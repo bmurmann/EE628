@@ -103,8 +103,8 @@ Xsecondprot iovdd iovss pad padres sg13g2_SecondaryProtection
 .subckt sg13g2_DCNDiode anode cathode guard
 *dcdiode[0] anode cathode dantenna l=1.26um w=27.78um
 *dcdiode[1] anode cathode dantenna l=1.26um w=27.78um
-dcdiode[0] cathode anode dantenna l=1.26um w=27.78um
-dcdiode[1] cathode anode dantenna l=1.26um w=27.78um
+dcdiode0 cathode anode dantenna l=1.26um w=27.78um a=35.0028p p=58.08u
+dcdiode1 cathode anode dantenna l=1.26um w=27.78um a=35.0028p p=58.08u
 Xguard guard sg13g2_GuardRing_N7276W2716HFF
 .ends sg13g2_DCNDiode
 
@@ -114,8 +114,8 @@ Xguard guard sg13g2_GuardRing_N7276W2716HFF
 .subckt sg13g2_DCPDiode anode cathode guard
 *dcdiode[0] anode cathode dpantenna l=1.26um w=27.78um
 *dcdiode[1] anode cathode dpantenna l=1.26um w=27.78um
-dcdiode[0] cathode anode dpantenna l=1.26um w=27.78um
-dcdiode[1] cathode anode dpantenna l=1.26um w=27.78um
+dcdiode0 cathode anode dpantenna l=1.26um w=27.78um a=35.0028p p=58.08u
+dcdiode1 cathode anode dpantenna l=1.26um w=27.78um a=35.0028p p=58.08u
 Xguard guard sg13g2_GuardRing_P7276W2716HFF
 .ends sg13g2_DCPDiode
 

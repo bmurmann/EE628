@@ -1,4 +1,4 @@
-# Modifications made to IO cells and cdl (to pass LVS)
+# Modifications made to IO cell layout and cdl netlist (to pass LVS)
 Original files from the PDK's dev branch:  
 sg13g2_io.gds  
 sg13g2_io.spi  
@@ -13,6 +13,7 @@ sg13g2_io_bm.cdl
 * In cdl file, changed all X to D for diodes  
 * In cdl file, changed rppd to res_rppd  
 * In cdl file, flipped anode and cathode of all dantenna and dpantenna. The LVS is expecting a pin ordering that is the opposite of the spice standard (which is anode, cathode)!
+* In cdl files added A and P values to diodes to eliminate warnings/LVS mismatches
 
 * In oas file, IOPadAnalog/SecondaryProtection
   * Added required `heatres` and `polyres` layers to RPPD layout
@@ -31,3 +32,6 @@ sg13g2_io_bm.cdl
 
 * In oas file, IOPadAnalog/DCPDiode
   * Removed `recog.esd` layer so that this diode gets recognized as `dpantenna` as defined in the netlist
+
+* In oas file, IOPadAnalog
+  * The cell needs a dummy connection between the two `IOVDD' rails. This connection is provided by other cells in the pad ring, so this is just a memo to self for for isolated checking of this cell.
