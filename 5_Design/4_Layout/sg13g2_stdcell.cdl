@@ -15,6 +15,8 @@
 * limitations under the License.
 * 
 ************************************************************************
+* BM 5/1/2024: Fixed supply pin order of sg13g2_inv_4, sg13g2_inv_8, sg13g2_inv_16
+
 
 ************************************************************************
 * Library Name: sg13g2_stdcell
@@ -758,7 +760,8 @@ MX0 Y A VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT sg13g2_inv_16 A VSS VDD Y
+***BM .SUBCKT sg13g2_inv_16 A VSS VDD Y
+.SUBCKT sg13g2_inv_16 A VDD VSS Y
 *.PININFO A:I Y:O VDD:B VSS:B
 MX1 Y A VSS VSS sg13_lv_nmos m=16 w=740.00n l=130.00n ng=1
 MX0 Y A VDD VDD sg13_lv_pmos m=16 w=1.12u l=130.00n ng=1
@@ -782,7 +785,8 @@ MX0 Y A VDD VDD sg13_lv_pmos m=2 w=1.12u l=130.00n ng=1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT sg13g2_inv_4 A VSS VDD Y
+***BM .SUBCKT sg13g2_inv_4 A VSS VDD Y
+.SUBCKT sg13g2_inv_4 A VDD VSS Y
 *.PININFO A:I Y:O VDD:B VSS:B
 MP0 Y A VDD VDD sg13_lv_pmos m=4 w=1.12u l=130.00n ng=1
 MN0 Y A VSS VSS sg13_lv_nmos m=4 w=740.00n l=130.00n ng=1
@@ -794,7 +798,8 @@ MN0 Y A VSS VSS sg13_lv_nmos m=4 w=740.00n l=130.00n ng=1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT sg13g2_inv_8 A VSS VDD Y
+***BM .SUBCKT sg13g2_inv_8 A VSS VDD Y
+.SUBCKT sg13g2_inv_8 A VDD VSS Y
 *.PININFO A:I Y:O VDD:B VSS:B
 MX1 Y A VSS VSS sg13_lv_nmos m=8 w=740.00n l=130.00n ng=1
 MX0 Y A VDD VDD sg13_lv_pmos m=8 w=1.12u l=130.00n ng=1
