@@ -1,0 +1,58 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 01/05/2024 21:49
+
+* cell sg13g2_GateDecode
+.SUBCKT sg13g2_GateDecode
+* net 51 sub!
+* device instance $1 r0 *1 1.71,-8.995 sg13_lv_nmos
+M$1 11 12 51 51 sg13_lv_nmos W=2.7499999999999996 L=0.12999999999999995
+* device instance $2 r0 *1 5.22,-8.995 sg13_lv_nmos
+M$2 13 14 51 51 sg13_lv_nmos W=2.7499999999999996 L=0.12999999999999995
+* device instance $3 r0 *1 1.71,3.175 sg13_lv_nmos
+M$3 51 37 12 51 sg13_lv_nmos W=3.9299999999999993 L=0.12999999999999998
+* device instance $4 r0 *1 2.22,3.175 sg13_lv_nmos
+M$4 12 36 51 51 sg13_lv_nmos W=3.9299999999999993 L=0.12999999999999998
+* device instance $5 r0 *1 4.11,3.175 sg13_lv_nmos
+M$5 51 37 40 51 sg13_lv_nmos W=3.9299999999999993 L=0.12999999999999998
+* device instance $6 r0 *1 4.62,3.175 sg13_lv_nmos
+M$6 40 42 14 51 sg13_lv_nmos W=3.9299999999999993 L=0.12999999999999998
+* device instance $7 r0 *1 6.51,3.175 sg13_lv_nmos
+M$7 51 42 36 51 sg13_lv_nmos W=3.9299999999999993 L=0.12999999999999998
+* device instance $8 r0 *1 1.87,-12.68 sg13_hv_nmos
+M$8 5 11 51 51 sg13_hv_nmos W=1.8999999999999997 L=0.4499999999999999
+* device instance $9 r0 *1 2.7,-12.68 sg13_hv_nmos
+M$9 51 12 6 51 sg13_hv_nmos W=1.8999999999999997 L=0.4499999999999999
+* device instance $10 r0 *1 4.04,-12.68 sg13_hv_nmos
+M$10 51 6 2 51 sg13_hv_nmos W=1.8999999999999997 L=0.4499999999999999
+* device instance $11 r0 *1 5.38,-12.68 sg13_hv_nmos
+M$11 7 13 51 51 sg13_hv_nmos W=1.8999999999999997 L=0.4499999999999999
+* device instance $12 r0 *1 6.21,-12.68 sg13_hv_nmos
+M$12 51 14 8 51 sg13_hv_nmos W=1.8999999999999997 L=0.4499999999999999
+* device instance $13 r0 *1 7.55,-12.68 sg13_hv_nmos
+M$13 51 8 3 51 sg13_hv_nmos W=1.8999999999999997 L=0.4499999999999999
+* device instance $14 r0 *1 1.71,-4.005 sg13_lv_pmos
+M$14 11 12 26 26 sg13_lv_pmos W=4.749999999999999 L=0.12999999999999998
+* device instance $15 r0 *1 5.22,-4.005 sg13_lv_pmos
+M$15 13 14 26 26 sg13_lv_pmos W=4.749999999999999 L=0.12999999999999998
+* device instance $16 r0 *1 1.71,8.585 sg13_lv_pmos
+M$16 26 37 46 26 sg13_lv_pmos W=4.409999999999999 L=0.12999999999999995
+* device instance $17 r0 *1 2.22,8.585 sg13_lv_pmos
+M$17 46 36 12 26 sg13_lv_pmos W=4.409999999999999 L=0.12999999999999995
+* device instance $18 r0 *1 4.11,8.585 sg13_lv_pmos
+M$18 26 37 14 26 sg13_lv_pmos W=4.409999999999999 L=0.12999999999999995
+* device instance $19 r0 *1 4.62,8.585 sg13_lv_pmos
+M$19 14 42 26 26 sg13_lv_pmos W=4.409999999999999 L=0.12999999999999995
+* device instance $20 r0 *1 6.51,8.585 sg13_lv_pmos
+M$20 26 42 36 26 sg13_lv_pmos W=4.409999999999999 L=0.12999999999999995
+* device instance $21 r0 *1 1.87,-16.82 sg13_hv_pmos
+M$21 5 6 1 1 sg13_hv_pmos W=0.29999999999999993 L=0.44999999999999984
+* device instance $22 r0 *1 2.7,-16.82 sg13_hv_pmos
+M$22 1 5 6 1 sg13_hv_pmos W=0.29999999999999993 L=0.44999999999999984
+* device instance $23 r0 *1 5.38,-16.82 sg13_hv_pmos
+M$23 7 8 1 1 sg13_hv_pmos W=0.29999999999999993 L=0.44999999999999984
+* device instance $24 r0 *1 6.21,-16.82 sg13_hv_pmos
+M$24 1 7 8 1 sg13_hv_pmos W=0.29999999999999993 L=0.44999999999999984
+* device instance $25 r0 *1 4.04,-16.82 sg13_hv_pmos
+M$25 1 6 2 1 sg13_hv_pmos W=3.899999999999999 L=0.4499999999999999
+* device instance $26 r0 *1 7.55,-16.82 sg13_hv_pmos
+M$26 1 8 3 1 sg13_hv_pmos W=3.899999999999999 L=0.4499999999999999
+.ENDS sg13g2_GateDecode

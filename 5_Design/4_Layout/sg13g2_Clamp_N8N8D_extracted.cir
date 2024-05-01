@@ -1,0 +1,18 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 01/05/2024 21:56
+
+* cell sg13g2_Clamp_N8N8D
+.SUBCKT sg13g2_Clamp_N8N8D
+* net 8 sub!
+* net 10 dant
+* net 13 sub!
+* device instance $1 r0 *1 34.58,4.95 sg13_hv_nmos
+M$1 13 9 4 13 sg13_hv_nmos W=8.799999999999999 L=0.5999999999999998
+* device instance $3 r0 *1 37.6,4.95 sg13_hv_nmos
+M$3 13 9 5 13 sg13_hv_nmos W=8.799999999999999 L=0.5999999999999998
+* device instance $5 r0 *1 40.62,4.95 sg13_hv_nmos
+M$5 13 9 6 13 sg13_hv_nmos W=8.799999999999999 L=0.5999999999999998
+* device instance $7 r0 *1 43.64,4.95 sg13_hv_nmos
+M$7 13 9 7 13 sg13_hv_nmos W=8.799999999999999 L=0.5999999999999998
+* device instance $9 r0 *1 17.975,6.83 dantenna
+D$9 13 9 dantenna A=0.192 P=1.88 m=1
+.ENDS sg13g2_Clamp_N8N8D

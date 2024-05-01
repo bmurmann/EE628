@@ -1,0 +1,14 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 01/05/2024 21:49
+
+* cell sg13g2_DCPDiode
+.SUBCKT sg13g2_DCPDiode
+* net 3 sub!
+* net 5 dpant
+* net 7 diodevdd_4kv
+* net 9 dpant
+* net 12 sub!
+* device instance $1 r0 *1 16.53,2.88 dpantenna
+D$1 4 2 dpantenna A=35.0028 P=58.08 m=1
+* device instance $2 r0 *1 16.53,7.38 dpantenna
+D$2 8 2 dpantenna A=35.0028 P=58.08 m=1
+.ENDS sg13g2_DCPDiode
