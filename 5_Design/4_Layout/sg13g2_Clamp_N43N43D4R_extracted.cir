@@ -1,0 +1,69 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 02/05/2024 06:03
+
+* cell sg13g2_Clamp_N43N43D4R
+.SUBCKT sg13g2_Clamp_N43N43D4R
+* device instance $1 r0 *1 8.155,4.95 sg13_hv_nmos
+M$1 sub!$1 \$5 \$6 sub!$1 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
+* device instance $3 r0 *1 11.175,4.95 sg13_hv_nmos
+M$3 sub!$1 \$5 \$7 sub!$1 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
+* device instance $5 r0 *1 14.195,4.95 sg13_hv_nmos
+M$5 sub!$1 \$5 \$8 sub!$1 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
+* device instance $7 r0 *1 17.215,4.95 sg13_hv_nmos
+M$7 sub!$1 \$5 \$9 sub!$1 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
+* device instance $9 r0 *1 20.235,4.95 sg13_hv_nmos
+M$9 sub!$1 \$5 \$10 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $11 r0 *1 23.255,4.95 sg13_hv_nmos
+M$11 sub!$1 \$5 \$11 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $13 r0 *1 26.275,4.95 sg13_hv_nmos
+M$13 sub!$1 \$5 \$12 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $15 r0 *1 29.295,4.95 sg13_hv_nmos
+M$15 sub!$1 \$5 \$13 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $17 r0 *1 32.315,4.95 sg13_hv_nmos
+M$17 sub!$1 \$5 \$14 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $19 r0 *1 35.335,4.95 sg13_hv_nmos
+M$19 sub!$1 \$5 \$15 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $21 r0 *1 38.355,4.95 sg13_hv_nmos
+M$21 sub!$1 \$5 \$16 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $23 r0 *1 41.375,4.95 sg13_hv_nmos
+M$23 sub!$1 \$5 \$17 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $25 r0 *1 44.395,4.95 sg13_hv_nmos
+M$25 sub!$1 \$5 \$18 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $27 r0 *1 47.415,4.95 sg13_hv_nmos
+M$27 sub!$1 \$5 \$19 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $29 r0 *1 50.435,4.95 sg13_hv_nmos
+M$29 sub!$1 \$5 \$20 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $31 r0 *1 53.455,4.95 sg13_hv_nmos
+M$31 sub!$1 \$5 \$21 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $33 r0 *1 56.475,4.95 sg13_hv_nmos
+M$33 sub!$1 \$5 \$22 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $35 r0 *1 59.495,4.95 sg13_hv_nmos
+M$35 sub!$1 \$5 \$23 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $37 r0 *1 62.515,4.95 sg13_hv_nmos
+M$37 sub!$1 \$5 \$24 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $39 r0 *1 65.535,4.95 sg13_hv_nmos
+M$39 sub!$1 \$5 \$25 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $41 r0 *1 68.555,4.95 sg13_hv_nmos
+M$41 sub!$1 \$5 \$26 sub!$1 sg13_hv_nmos W=35.199999999999996
++ L=0.5999999999999998
+* device instance $43 r0 *1 71.575,4.95 sg13_hv_nmos
+M$43 sub!$1 \$5 \$27 sub!$1 sg13_hv_nmos W=17.599999999999998
++ L=0.5999999999999998
+* device instance $173 r0 *1 4.765,21.35 dantenna
+D$173 sub!$1 \$5 dantenna A=0.192 P=1.88 m=1
+.ENDS sg13g2_Clamp_N43N43D4R

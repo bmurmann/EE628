@@ -1,0 +1,9 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 02/05/2024 05:54
+
+* cell sg13g2_IOPadIOVss
+.SUBCKT sg13g2_IOPadIOVss
+* device instance $1 r0 *1 4.54,24.19 dantenna
+D$1 sub!$2 sub!$2 dantenna A=35.0028 P=58.08 m=2
+* device instance $3 r0 *1 4.54,83.19 dpantenna
+D$3 sub!$2 \$12 dpantenna A=35.0028 P=58.08 m=2
+.ENDS sg13g2_IOPadIOVss

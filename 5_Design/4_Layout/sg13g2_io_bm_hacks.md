@@ -37,5 +37,5 @@ sg13g2_io_bm.cdl
 * In oas file, IOPadAnalog
   * The cell needs a dummy connection between the two `IOVDD' rails. This connection is provided by other cells in the pad ring, so this is just a memo to self for for isolated checking of this cell.
 
-  * In oas file, IOPadAnalog/Clamp_N8N8D
+  * In oas file, Clamp_N8N8D
   * Added `heattrans` layer on NMOS HV devices
