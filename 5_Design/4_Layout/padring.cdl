@@ -43,6 +43,7 @@ xp10 vss avdd vss avdd sg13g2_IOPadVss
 * noconn #net3
 .ends
 
+
 .subckt sg13g2_IOPadAnalog vss vdd iovss iovdd pad padres
 Xnclamp iovss iovdd pad sg13g2_Clamp_N20N0D
 Xpclamp iovss iovdd pad sg13g2_Clamp_P20N0D
@@ -351,7 +352,7 @@ Mclamp_g42_r3 iovss gate pad iovss sg13_hv_nmos l=0.6um w=4.4um
 XOuterRing iovdd sg13g2_GuardRing_N16000W4884HFF
 XInnerRing iovss sg13g2_GuardRing_P15280W4164HFF
 *DGATE iovss gate dantenna l=0.64um w=0.3um
-DGATE gate iovss dantenna l=0.64um w=0.3um
+DGATE gate iovss dantenna l=0.64um w=0.3um a=0.192p p=1.88u
 .ends sg13g2_Clamp_N43N43D4R
 
 .subckt sg13g2_RCClampResistor pin1 pin2
@@ -816,4 +817,5 @@ Xiopadiovdd vss vdd vss iovdd sg13g2_IOPadIOVdd
 Xiopadanalog vss vdd vss iovdd ana_out ana_outres sg13g2_IOPadAnalog
 Xcorner2 vss vdd vss iovdd sg13g2_Corner
 .ends sg13g2_Gallery
+
 .end
