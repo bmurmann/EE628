@@ -40,218 +40,124 @@ out6} 2150 -670 2 0 1 1 {}
 T {avdd   vref  vldo   iovdd   ck3   ck2   ck1   vdd} 560 -2030 0 0 0.8 0.8 {}
 T {avss   avss    res    iovss   ck4    ck5   ck6   vss} 570 -170 0 0 0.8 0.8 {}
 T {(downbond)} 510 -200 0 0 0.5 0.5 {}
-N 460 -1520 600 -1520 {
-lab=avdd}
-N 600 -760 600 -680 {
-lab=avdd}
-N 460 -680 600 -680 {
+T {TopVia2 connection 
+on top of pas cell
+(intended, not dummy)} 290 -1700 0 0 0.4 0.4 {}
+T {Via2 connection 
+on top of pas cell
+(intended, not dummy)} 280 -570 0 0 0.4 0.4 {}
+T {avss} 1040 -1110 0 0 0.4 0.4 {}
+T {iovss} 1200 -1110 0 0 0.4 0.4 {}
+T {Dummy connections to please LVS (no metal connection 
+between these 3 nets, only soft short through substrate)
+
+Time permitting, add back-to-back ESD diodes between all
+supply domains. (Some are taken care of in the pad cells, 
+some are not.)} 800 -910 0 0 0.4 0.4 {}
+N 600 -760 600 -640 {
 lab=avdd}
 N 460 -1480 600 -1480 {
 lab=avdd}
-N 600 -1520 600 -1480 {
-lab=avdd}
-N 460 -1400 600 -1400 {
-lab=avdd}
-N 600 -1480 600 -1400 {
+N 600 -1480 600 -1360 {
 lab=avdd}
 N 460 -1360 600 -1360 {
 lab=avdd}
-N 600 -1400 600 -1360 {
+N 600 -1360 600 -1240 {
 lab=avdd}
-N 460 -1280 600 -1280 {
+N 600 -1190 600 -1120 {
 lab=avdd}
-N 600 -1360 600 -1280 {
-lab=avdd}
-N 460 -1160 600 -1160 {
-lab=avdd}
-N 600 -1190 600 -1160 {
-lab=avdd}
-N 460 -1040 600 -1040 {
-lab=avdd}
-N 600 -1120 600 -1040 {
+N 600 -1120 600 -1000 {
 lab=avdd}
 N 460 -1000 600 -1000 {
 lab=avdd}
-N 600 -1040 600 -1000 {
-lab=avdd}
 N 460 -880 600 -880 {
 lab=avdd}
-N 600 -920 600 -880 {
+N 600 -1000 600 -880 {
 lab=avdd}
-N 460 -920 600 -920 {
-lab=avdd}
-N 600 -1000 600 -920 {
-lab=avdd}
-N 460 -800 600 -800 {
-lab=avdd}
-N 600 -880 600 -800 {
+N 600 -880 600 -760 {
 lab=avdd}
 N 460 -760 600 -760 {
 lab=avdd}
-N 600 -800 600 -760 {
-lab=avdd}
 N 460 -640 600 -640 {
 lab=avdd}
-N 600 -680 600 -640 {
-lab=avdd}
-N 580 -660 580 -620 {
-lab=avss}
 N 460 -1240 600 -1240 {
-lab=avdd}
-N 600 -1280 600 -1240 {
 lab=avdd}
 N 460 -1120 600 -1120 {
 lab=avdd}
-N 600 -1160 600 -1120 {
-lab=avdd}
-N 460 -1500 580 -1500 {
-lab=avss}
 N 460 -1460 580 -1460 {
-lab=avss}
-N 580 -1500 580 -1460 {
-lab=avss}
-N 460 -1380 580 -1380 {
-lab=avss}
-N 580 -1460 580 -1380 {
-lab=avss}
+lab=#net1}
+N 580 -1460 580 -1340 {
+lab=#net1}
 N 460 -1340 580 -1340 {
-lab=avss}
-N 580 -1380 580 -1340 {
-lab=avss}
-N 460 -1260 580 -1260 {
-lab=avss}
-N 580 -1340 580 -1260 {
-lab=avss}
+lab=#net1}
+N 580 -1340 580 -1220 {
+lab=#net1}
 N 460 -1220 580 -1220 {
-lab=avss}
-N 580 -1260 580 -1220 {
-lab=avss}
-N 460 -1140 580 -1140 {
-lab=avss}
-N 580 -1220 580 -1140 {
-lab=avss}
+lab=#net1}
+N 580 -1220 580 -1100 {
+lab=#net1}
 N 460 -1100 580 -1100 {
-lab=avss}
-N 580 -1140 580 -1100 {
-lab=avss}
-N 460 -1020 580 -1020 {
-lab=avss}
-N 580 -1070 580 -1020 {
-lab=avss}
+lab=#net1}
 N 460 -980 580 -980 {
-lab=avss}
-N 580 -1020 580 -980 {
-lab=avss}
-N 580 -980 580 -900 {
-lab=avss}
+lab=#net1}
+N 580 -980 580 -860 {
+lab=#net1}
 N 460 -860 580 -860 {
-lab=avss}
-N 580 -900 580 -860 {
-lab=avss}
-N 460 -780 580 -780 {
-lab=avss}
-N 580 -860 580 -780 {
-lab=avss}
-N 460 -660 580 -660 {
-lab=avss}
-N 580 -740 580 -660 {
-lab=avss}
+lab=#net1}
+N 580 -860 580 -740 {
+lab=#net1}
+N 580 -740 580 -620 {
+lab=#net1}
 N 460 -620 580 -620 {
-lab=avss}
-N 580 -620 580 -530 {
-lab=avss}
+lab=#net1}
+N 580 -550 580 -530 {
+lab=#net1}
 N 600 -640 600 -530 {
-lab=avdd}
-N 720 -640 760 -640 {
-lab=avdd}
-N 760 -640 760 -530 {
 lab=avdd}
 N 720 -640 720 -530 {
 lab=avdd}
-N 640 -640 720 -640 {
-lab=avdd}
-N 640 -640 640 -530 {
-lab=avdd}
-N 600 -640 640 -640 {
-lab=avdd}
-N 700 -620 740 -620 {
-lab=avss}
-N 740 -620 740 -530 {
-lab=avss}
 N 700 -620 700 -530 {
-lab=avss}
-N 620 -620 700 -620 {
-lab=avss}
-N 620 -620 620 -530 {
-lab=avss}
-N 580 -620 620 -620 {
-lab=avss}
-N 720 -1520 760 -1520 {
+lab=#net1}
+N 760 -1520 880 -1520 {
 lab=avdd}
-N 700 -1500 740 -1500 {
-lab=avss}
-N 620 -1500 700 -1500 {
-lab=avss}
-N 640 -1520 720 -1520 {
+N 640 -800 640 -680 {
 lab=avdd}
-N 600 -1520 640 -1520 {
+N 620 -780 620 -660 {
+lab=#net1}
+N 600 -1580 600 -1480 {
 lab=avdd}
-N 580 -1500 620 -1500 {
-lab=avss}
-N 820 -1500 860 -1500 {
-lab=avss}
-N 740 -1500 820 -1500 {
-lab=avss}
-N 840 -1520 880 -1520 {
-lab=avdd}
-N 760 -1520 840 -1520 {
-lab=avdd}
-N 640 -1620 640 -1520 {
-lab=avdd}
-N 620 -1620 620 -1500 {
-lab=avss}
-N 600 -1620 600 -1520 {
-lab=avdd}
-N 580 -1620 580 -1500 {
-lab=avss}
+N 580 -1620 580 -1460 {
+lab=#net1}
 N 880 -1620 880 -1520 {
 lab=avdd}
 N 860 -1620 860 -1500 {
-lab=avss}
-N 840 -1620 840 -1520 {
-lab=avdd}
-N 820 -1620 820 -1500 {
-lab=avss}
+lab=#net1}
 N 760 -1620 760 -1520 {
 lab=avdd}
 N 740 -1620 740 -1500 {
-lab=avss}
-N 720 -1620 720 -1520 {
-lab=avdd}
-N 700 -1620 700 -1500 {
-lab=avss}
+lab=#net1}
 N 840 -620 840 -530 {
-lab=iovss}
+lab=#net2}
 N 960 -620 960 -530 {
-lab=iovss}
+lab=#net2}
 N 840 -620 960 -620 {
-lab=iovss}
+lab=#net2}
 N 1080 -620 1080 -530 {
-lab=iovss}
+lab=#net2}
 N 960 -620 1080 -620 {
-lab=iovss}
+lab=#net2}
 N 1200 -620 1200 -530 {
-lab=iovss}
+lab=#net2}
 N 1080 -620 1200 -620 {
-lab=iovss}
+lab=#net2}
 N 1320 -620 1320 -530 {
-lab=iovss}
+lab=#net2}
 N 1200 -620 1320 -620 {
-lab=iovss}
+lab=#net2}
 N 1440 -620 1440 -530 {
-lab=iovss}
+lab=#net2}
 N 1320 -620 1440 -620 {
-lab=iovss}
+lab=#net2}
 N 860 -640 860 -530 {
 lab=iovdd}
 N 980 -640 980 -530 {
@@ -319,7 +225,7 @@ lab=vdd}
 N 1380 -680 1500 -680 {
 lab=vdd}
 N 960 -1620 960 -1460 {
-lab=iovss}
+lab=#net2}
 N 980 -1620 980 -1480 {
 lab=iovdd}
 N 1000 -1620 1000 -1500 {
@@ -327,9 +233,9 @@ lab=vss}
 N 1020 -1620 1020 -1520 {
 lab=vdd}
 N 1080 -1620 1080 -1460 {
-lab=iovss}
+lab=#net2}
 N 960 -1460 1080 -1460 {
-lab=iovss}
+lab=#net2}
 N 1100 -1620 1100 -1480 {
 lab=iovdd}
 N 980 -1480 1100 -1480 {
@@ -343,9 +249,9 @@ lab=vdd}
 N 1020 -1520 1140 -1520 {
 lab=vdd}
 N 1200 -1620 1200 -1460 {
-lab=iovss}
+lab=#net2}
 N 1080 -1460 1200 -1460 {
-lab=iovss}
+lab=#net2}
 N 1220 -1620 1220 -1480 {
 lab=iovdd}
 N 1100 -1480 1220 -1480 {
@@ -359,9 +265,9 @@ lab=vdd}
 N 1140 -1520 1260 -1520 {
 lab=vdd}
 N 1320 -1620 1320 -1460 {
-lab=iovss}
+lab=#net2}
 N 1200 -1460 1320 -1460 {
-lab=iovss}
+lab=#net2}
 N 1340 -1620 1340 -1480 {
 lab=iovdd}
 N 1220 -1480 1340 -1480 {
@@ -375,9 +281,9 @@ lab=vdd}
 N 1260 -1520 1380 -1520 {
 lab=vdd}
 N 1440 -1620 1440 -1460 {
-lab=iovss}
+lab=#net2}
 N 1320 -1460 1440 -1460 {
-lab=iovss}
+lab=#net2}
 N 1460 -1620 1460 -1480 {
 lab=iovdd}
 N 1340 -1480 1460 -1480 {
@@ -391,7 +297,7 @@ lab=vdd}
 N 1380 -1520 1500 -1520 {
 lab=vdd}
 N 1440 -740 1440 -620 {
-lab=iovss}
+lab=#net2}
 N 1460 -760 1460 -640 {
 lab=iovdd}
 N 1480 -780 1480 -660 {
@@ -399,7 +305,7 @@ lab=vss}
 N 1500 -800 1500 -680 {
 lab=vdd}
 N 1440 -620 1620 -620 {
-lab=iovss}
+lab=#net2}
 N 1460 -640 1620 -640 {
 lab=iovdd}
 N 1480 -660 1620 -660 {
@@ -413,7 +319,7 @@ lab=vss}
 N 1460 -1480 1620 -1480 {
 lab=iovdd}
 N 1440 -1460 1620 -1460 {
-lab=iovss}
+lab=#net2}
 N 1500 -1400 1620 -1400 {
 lab=vdd}
 N 1500 -1520 1500 -1400 {
@@ -427,9 +333,9 @@ lab=iovdd}
 N 1460 -1480 1460 -1360 {
 lab=iovdd}
 N 1440 -1340 1620 -1340 {
-lab=iovss}
+lab=#net2}
 N 1440 -1460 1440 -1340 {
-lab=iovss}
+lab=#net2}
 N 1500 -1280 1620 -1280 {
 lab=vdd}
 N 1480 -1260 1620 -1260 {
@@ -441,9 +347,9 @@ lab=iovdd}
 N 1460 -1360 1460 -1240 {
 lab=iovdd}
 N 1440 -1220 1620 -1220 {
-lab=iovss}
+lab=#net2}
 N 1440 -1340 1440 -1220 {
-lab=iovss}
+lab=#net2}
 N 1500 -1160 1620 -1160 {
 lab=vdd}
 N 1500 -1280 1500 -1160 {
@@ -457,9 +363,9 @@ lab=iovdd}
 N 1460 -1190 1460 -1120 {
 lab=iovdd}
 N 1440 -1100 1620 -1100 {
-lab=iovss}
+lab=#net2}
 N 1440 -1220 1440 -1100 {
-lab=iovss}
+lab=#net2}
 N 1500 -1040 1620 -1040 {
 lab=vdd}
 N 1500 -1160 1500 -1040 {
@@ -473,9 +379,9 @@ lab=iovdd}
 N 1460 -1120 1460 -1000 {
 lab=iovdd}
 N 1440 -980 1620 -980 {
-lab=iovss}
+lab=#net2}
 N 1440 -1070 1440 -980 {
-lab=iovss}
+lab=#net2}
 N 1500 -920 1620 -920 {
 lab=vdd}
 N 1500 -1040 1500 -920 {
@@ -489,9 +395,9 @@ lab=iovdd}
 N 1460 -1000 1460 -880 {
 lab=iovdd}
 N 1440 -860 1620 -860 {
-lab=iovss}
+lab=#net2}
 N 1440 -980 1440 -860 {
-lab=iovss}
+lab=#net2}
 N 1500 -800 1620 -800 {
 lab=vdd}
 N 1500 -920 1500 -800 {
@@ -505,27 +411,21 @@ lab=iovdd}
 N 1460 -880 1460 -760 {
 lab=iovdd}
 N 1440 -740 1620 -740 {
-lab=iovss}
+lab=#net2}
 N 1440 -860 1440 -740 {
-lab=iovss}
-N 600 -1190 640 -1190 {
+lab=#net2}
+N 600 -1190 760 -1190 {
 lab=avdd}
 N 600 -1240 600 -1190 {
 lab=avdd}
-N 580 -1070 640 -1070 {
-lab=avss}
-N 580 -1100 580 -1070 {
-lab=avss}
-N 1400 -1070 1440 -1070 {
-lab=iovss}
+N 580 -1100 580 -980 {
+lab=#net1}
 N 1440 -1100 1440 -1070 {
-lab=iovss}
+lab=#net2}
 N 1400 -1190 1460 -1190 {
 lab=iovdd}
 N 1460 -1240 1460 -1190 {
 lab=iovdd}
-N 1400 -950 1480 -950 {
-lab=vss}
 N 1480 -1020 1480 -950 {
 lab=vss}
 N 1400 -1310 1500 -1310 {
@@ -534,12 +434,135 @@ N 1500 -1310 1500 -1280 {
 lab=vdd}
 N 1500 -1400 1500 -1310 {
 lab=vdd}
-N 460 -900 580 -900 {
-lab=avss}
 N 460 -740 580 -740 {
-lab=avss}
-N 580 -780 580 -740 {
-lab=avss}
+lab=#net1}
+N 580 -620 700 -620 {
+lab=#net1}
+N 600 -640 720 -640 {
+lab=avdd}
+N 620 -660 740 -660 {
+lab=#net1}
+N 740 -660 740 -530 {
+lab=#net1}
+N 640 -680 760 -680 {
+lab=avdd}
+N 760 -680 760 -530 {
+lab=avdd}
+N 620 -570 620 -530 {
+lab=#net1}
+N 460 -660 620 -660 {
+lab=#net1}
+N 640 -680 640 -530 {
+lab=avdd}
+N 460 -680 640 -680 {
+lab=avdd}
+N 460 -780 620 -780 {
+lab=#net1}
+N 620 -900 620 -780 {
+lab=#net1}
+N 460 -800 640 -800 {
+lab=avdd}
+N 640 -920 640 -800 {
+lab=avdd}
+N 460 -900 620 -900 {
+lab=#net1}
+N 620 -1020 620 -900 {
+lab=#net1}
+N 460 -920 640 -920 {
+lab=avdd}
+N 640 -1040 640 -920 {
+lab=avdd}
+N 460 -1020 620 -1020 {
+lab=#net1}
+N 620 -1070 620 -1020 {
+lab=#net1}
+N 460 -1040 640 -1040 {
+lab=avdd}
+N 640 -1160 640 -1040 {
+lab=avdd}
+N 460 -1140 620 -1140 {
+lab=#net1}
+N 620 -1260 620 -1140 {
+lab=#net1}
+N 460 -1160 640 -1160 {
+lab=avdd}
+N 640 -1280 640 -1160 {
+lab=avdd}
+N 460 -1260 620 -1260 {
+lab=#net1}
+N 620 -1380 620 -1260 {
+lab=#net1}
+N 460 -1280 640 -1280 {
+lab=avdd}
+N 640 -1400 640 -1280 {
+lab=avdd}
+N 460 -1380 620 -1380 {
+lab=#net1}
+N 620 -1500 620 -1380 {
+lab=#net1}
+N 460 -1400 640 -1400 {
+lab=avdd}
+N 640 -1520 640 -1400 {
+lab=avdd}
+N 460 -1500 620 -1500 {
+lab=#net1}
+N 620 -1620 620 -1500 {
+lab=#net1}
+N 460 -1520 640 -1520 {
+lab=avdd}
+N 640 -1600 640 -1520 {
+lab=avdd}
+N 640 -1520 760 -1520 {
+lab=avdd}
+N 620 -1500 740 -1500 {
+lab=#net1}
+N 740 -1500 860 -1500 {
+lab=#net1}
+N 700 -1620 700 -1460 {
+lab=#net1}
+N 580 -1460 700 -1460 {
+lab=#net1}
+N 720 -1620 720 -1480 {
+lab=avdd}
+N 600 -1480 720 -1480 {
+lab=avdd}
+N 700 -1460 820 -1460 {
+lab=#net1}
+N 820 -1620 820 -1460 {
+lab=#net1}
+N 720 -1480 840 -1480 {
+lab=avdd}
+N 840 -1620 840 -1480 {
+lab=avdd}
+N 530 -1600 640 -1600 {
+lab=avdd}
+N 640 -1620 640 -1600 {
+lab=avdd}
+N 530 -1600 530 -1580 {
+lab=avdd}
+N 530 -1580 600 -1580 {
+lab=avdd}
+N 600 -1620 600 -1580 {
+lab=avdd}
+N 580 -620 580 -550 {
+lab=#net1}
+N 520 -570 520 -550 {
+lab=#net1}
+N 620 -660 620 -570 {
+lab=#net1}
+N 520 -570 620 -570 {
+lab=#net1}
+N 520 -550 580 -550 {
+lab=#net1}
+N 1170 -950 1480 -950 {}
+N 1170 -1070 1440 -1070 {}
+N 1170 -1070 1170 -950 {}
+N 1150 -950 1170 -950 {}
+N 1150 -1070 1150 -950 {}
+N 1030 -950 1150 -950 {}
+N 620 -1070 1150 -1070 {}
+N 620 -1140 620 -1070 {
+lab=#net1}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {sg13g2_IOPadAnalog.sym} 310 -1500 0 0 {name=xp1}
 C {sg13g2_IOPadIn.sym} 1360 -1770 1 0 {name=xp26}
@@ -619,9 +642,7 @@ C {devices/noconn.sym} 460 -1180 0 1 {name=l2}
 C {devices/noconn.sym} 460 -1060 0 1 {name=l3}
 C {devices/noconn.sym} 900 -1620 1 1 {name=l4}
 C {devices/iopin.sym} 900 -1920 1 1 {name=p21 lab=vldo}
-C {devices/iopin.sym} 640 -1190 0 0 {name=p46 lab=avdd}
-C {devices/iopin.sym} 640 -1070 0 0 {name=p47 lab=avss}
-C {devices/iopin.sym} 1400 -1070 0 1 {name=p48 lab=iovss}
+C {devices/iopin.sym} 760 -1190 0 0 {name=p46 lab=avdd}
+C {devices/iopin.sym} 1030 -950 0 1 {name=p47 lab=vss}
 C {devices/iopin.sym} 1400 -1190 0 1 {name=p49 lab=iovdd}
-C {devices/iopin.sym} 1400 -950 0 1 {name=p50 lab=vss}
 C {devices/iopin.sym} 1400 -1310 0 1 {name=p51 lab=vdd}
