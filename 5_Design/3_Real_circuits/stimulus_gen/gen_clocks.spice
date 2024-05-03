@@ -1,0 +1,15 @@
+.inc ./stim_files/reset.stim
+.inc ./stim_files/ck1.stim
+.inc ./stim_files/ck2.stim
+.inc ./stim_files/ck3.stim
+.inc ./stim_files/ck4.stim
+.inc ./stim_files/ck5.stim
+.inc ./stim_files/ck6.stim
+
+.control
+save all
+tran 1n 1e-3
+wrdata gen_clocks.txt reset ck1 ck2 ck3 ck4 ck5 ck6
+.endc
+
+.GLOBAL GND
