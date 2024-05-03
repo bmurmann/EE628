@@ -26,4 +26,4 @@ d	stage + comp	Digital bitstream output
 
 
 Current Status:
-These are the final files
+These are the final files. Layout is DRC and LVS clean (as of May 3, 2024). Changed all labels to text and moved lower-left corner of top cell to (0,0).
