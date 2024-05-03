@@ -1,7 +1,0 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 03/05/2024 05:36
-
-* cell sg13g2_RCClampResistor
-.SUBCKT sg13g2_RCClampResistor
-* device instance $1 r0 *1 0,-0.57 rppd
-R$1 \$1 \$2 rppd w=1 l=0 ps=0 b=25 m=1
-.ENDS sg13g2_RCClampResistor

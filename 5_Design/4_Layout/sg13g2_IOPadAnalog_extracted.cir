@@ -1,27 +1,26 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 03/05/2024 04:28
+* Extracted by KLayout with SG13G2 LVS runset on : 03/05/2024 20:10
 
 * cell sg13g2_IOPadAnalog
 * pin PAD
-* pin IOVDD
 * pin CORE
 * pin sub!
-.SUBCKT sg13g2_IOPadAnalog PAD IOVDD CORE sub!
+.SUBCKT sg13g2_IOPadAnalog PAD CORE sub!
 * device instance $1 r0 *1 25.52,10.95 sg13_hv_nmos
 M$1 sub! \$6 PAD sub! sg13_hv_nmos W=88.00000000000001 L=0.5999999999999998
 * device instance $21 r0 *1 25.52,71.08 sg13_hv_pmos
-M$21 IOVDD \$39 PAD IOVDD sg13_hv_pmos W=266.3999999999999 L=0.5999999999999999
+M$21 \$30 \$40 PAD \$30 sg13_hv_pmos W=266.3999999999999 L=0.5999999999999999
 * device instance $61 r0 *1 40,20.44 dantenna
 D$61 sub! PAD dantenna A=35.0028 P=58.08 m=2
 * device instance $63 r0 *1 57.63,142.54 dantenna
 D$63 sub! CORE dantenna A=1.984 P=7.48 m=1
 * device instance $64 r0 *1 40,55.96 dpantenna
-D$64 PAD IOVDD dpantenna A=35.0028 P=58.08 m=2
+D$64 PAD \$30 dpantenna A=35.0028 P=58.08 m=2
 * device instance $66 r0 *1 55.46,147.51 dpantenna
-D$66 CORE IOVDD dpantenna A=3.1872 P=11.24 m=1
+D$66 CORE \$30 dpantenna A=3.1872 P=11.24 m=1
 * device instance $67 r0 *1 66.305,8.75 rppd
 R$67 sub! \$6 rppd w=0.5 l=3.54 ps=0 b=0 m=1
 * device instance $68 r0 *1 66.305,67.75 rppd
-R$68 IOVDD \$39 rppd w=0.5 l=12.9 ps=0 b=0 m=1
+R$68 \$30 \$40 rppd w=0.5 l=12.9 ps=0 b=0 m=1
 * device instance $69 r0 *1 53.09,141.11 rppd
 R$69 PAD CORE rppd w=1 l=2 ps=0 b=0 m=1
 .ENDS sg13g2_IOPadAnalog
