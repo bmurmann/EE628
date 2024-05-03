@@ -26,7 +26,7 @@ Xdcpdiode iovss iovdd iovss sg13g2_DCPDiode
 Xdcndiode vss pad iovdd sg13g2_DCNDiode
 Xdcpdiode pad iovdd iovss sg13g2_DCPDiode
 *Xleveldown vdd vss iovdd iovss pad p2c sg13g2_LevelDown
-Xleveldown vdd vss iovdd vss pad p2c sg13g2_LevelDown
+Xleveldown vdd vss iovdd vss pad p2c 
 .ends sg13g2_IOPadIn
 
 *** Hacking this to short VSS and IOVSS (to pass LVS standalone) 
@@ -496,6 +496,15 @@ Mn_lvld_n_inv vss lvld_n o vss sg13_hv_nmos l=0.45um w=1.9um
 Mp_lvld_n_inv iovdd lvld_n o iovdd sg13_hv_pmos l=0.45um w=3.9um
 .ends sg13g2_LevelUpInv
 
+.subckt sg13g2_LevelDown vdd vss iovdd iovss pad core
+Mn_hvinv vss padres padres_n vss sg13_hv_nmos l=0.45um w=2.65um
+Mp_hvinv vdd padres padres_n vdd sg13_hv_pmos l=0.45um w=4.65um
+Mn_lvinv core padres_n vss vss sg13_lv_nmos l=0.13um w=2.75um
+Mp_lvinv core padres_n vdd vdd sg13_lv_pmos l=0.13um w=4.75um
+Xsecondprot iovdd iovss pad padres sg13g2_SecondaryProtection
+.ends sg13g2_LevelDown
+
+
 *************************
 *** empty cells
 
@@ -608,14 +617,6 @@ Xngate_levelup vdd iovdd vss ngate_core ngate sg13g2_LevelUp
 Xpgate_nand vdd vss pgate_core core en sg13g2_io_nand2_x1
 Xpgate_levelup vdd iovdd vss pgate_core pgate sg13g2_LevelUp
 .ends sg13g2_GateDecode
-
-.subckt sg13g2_LevelDown vdd vss iovdd iovss pad core
-Mn_hvinv vss padres padres_n vss sg13_hv_nmos l=0.45um w=2.65um
-Mp_hvinv vdd padres padres_n vdd sg13_hv_pmos l=0.45um w=4.65um
-Mn_lvinv core padres_n vss vss sg13_lv_nmos l=0.13um w=2.75um
-Mp_lvinv core padres_n vdd vdd sg13_lv_pmos l=0.13um w=4.75um
-Xsecondprot iovdd iovss pad padres sg13g2_SecondaryProtection
-.ends sg13g2_LevelDown
 
 .subckt sg13g2_Clamp_P2N2D iovss iovdd pad gate
 Mclamp_g0_r0 iovdd gate pad iovdd sg13_hv_pmos l=0.6um w=6.66um

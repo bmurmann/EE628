@@ -1,0 +1,26 @@
+** sch_path: /foss/designs/lvs_test.sch
+.subckt lvs_test vin vout vdda vss
+*.ipin vin
+*.opin vout
+*.iopin vdda
+*.iopin vssa
+
+x1 vin VDD VSS net1 sg13g2_inv_1
+
+*** Hack to pass LVS
+*M1 vout net1 vssa vssa sg13_lv_nmos W=1.0u L=1u ng=1 m=1
+*C1 net1 vssa cap_cmim W=7.0e-6 L=7.0e-6 MF=1
+
+M1 vout net1 vss vss sg13_lv_nmos W=1.0u L=1u ng=1 m=1
+C1 net1 vss cap_cmim W=7.0e-6 L=7.0e-6 MF=1
+
+M2 vout net1 vdda vdda sg13_lv_pmos W=1.0u L=1u ng=1 m=1
+**.ends
+.end
+
+.SUBCKT sg13g2_inv_1 A VDD VSS Y
+*.PININFO A:I Y:O VDD:B VSS:B
+MX1 Y A VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MX0 Y A VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
+.ENDS
+
