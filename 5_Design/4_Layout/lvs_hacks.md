@@ -7,8 +7,7 @@
 sed -i.bak 's/.and(heattrans_drw)//g' $KLAYOUT_HOME/tech/lvs/rule_decks/mos_derivations.lvs
 ```
 
-* Changed `dpantenna` diode derivation (diode_derivations.lvs)
-
+~~* Changed `dpantenna` diode derivation (diode_derivations.lvs)~~
 ```
 #diode_exclude = gatpoly_drw.join(nwell_drw).join(nsd_drw)
 #                    .join(heattrans_drw).join(trans_drw).join(emwind_drw)
@@ -31,7 +30,7 @@ dpantenna_p = pactiv.and(antenna_d_mk)
 dpantenna_n = nwell_drw.and(antenna_d_mk).covering(dpantenna_p)
 ```
 
-* Changed `rppd` derivation (res_derivations.lvs) so that it gets recognized on nwell (as used in IO cells)
+* ~~Changed `rppd` derivation (res_derivations.lvs) so that it gets recognized on nwell (as used in IO cells)~~
 ```
 #polyres_exclude = activ_drw.join(nwell_drw).join(pwell_block)
 #                    .join(nsd_block).join(nbulay_drw).join(thickgateox_drw)

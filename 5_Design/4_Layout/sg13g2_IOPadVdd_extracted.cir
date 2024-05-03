@@ -1,81 +1,24 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 02/05/2024 06:36
+* Extracted by KLayout with SG13G2 LVS runset on : 03/05/2024 07:10
 
 * cell sg13g2_IOPadVdd
-* pin sub!
-.SUBCKT sg13g2_IOPadVdd 48
-* net 48 sub!
+* pin vdd
+* pin iovdd
+* pin iovss,vss
+.SUBCKT sg13g2_IOPadVdd vdd iovdd iovss|vss
 * device instance $1 r0 *1 8.155,10.95 sg13_hv_nmos
-M$1 48 24 2 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $3 r0 *1 11.175,10.95 sg13_hv_nmos
-M$3 48 24 3 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $5 r0 *1 14.195,10.95 sg13_hv_nmos
-M$5 48 24 4 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $7 r0 *1 17.215,10.95 sg13_hv_nmos
-M$7 48 24 5 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $9 r0 *1 20.235,10.95 sg13_hv_nmos
-M$9 48 24 6 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $11 r0 *1 23.255,10.95 sg13_hv_nmos
-M$11 48 24 7 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $13 r0 *1 26.275,10.95 sg13_hv_nmos
-M$13 48 24 8 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $15 r0 *1 29.295,10.95 sg13_hv_nmos
-M$15 48 24 9 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $17 r0 *1 32.315,10.95 sg13_hv_nmos
-M$17 48 24 10 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $19 r0 *1 35.335,10.95 sg13_hv_nmos
-M$19 48 24 11 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $21 r0 *1 38.355,10.95 sg13_hv_nmos
-M$21 48 24 12 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $23 r0 *1 41.375,10.95 sg13_hv_nmos
-M$23 48 24 13 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $25 r0 *1 44.395,10.95 sg13_hv_nmos
-M$25 48 24 14 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $27 r0 *1 47.415,10.95 sg13_hv_nmos
-M$27 48 24 15 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $29 r0 *1 50.435,10.95 sg13_hv_nmos
-M$29 48 24 16 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $31 r0 *1 53.455,10.95 sg13_hv_nmos
-M$31 48 24 17 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $33 r0 *1 56.475,10.95 sg13_hv_nmos
-M$33 48 24 18 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $35 r0 *1 59.495,10.95 sg13_hv_nmos
-M$35 48 24 19 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $37 r0 *1 62.515,10.95 sg13_hv_nmos
-M$37 48 24 20 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $39 r0 *1 65.535,10.95 sg13_hv_nmos
-M$39 48 24 21 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $41 r0 *1 68.555,10.95 sg13_hv_nmos
-M$41 48 24 22 48 sg13_hv_nmos W=35.199999999999996 L=0.5999999999999998
-* device instance $43 r0 *1 71.575,10.95 sg13_hv_nmos
-M$43 48 24 23 48 sg13_hv_nmos W=17.599999999999998 L=0.5999999999999998
+M$1 iovss|vss \$8 vdd iovss|vss sg13_hv_nmos W=756.7999999999977
++ L=0.5999999999999998
 * device instance $173 r0 *1 3.22,71.54 sg13_hv_nmos
-M$173 48 46 24 48 sg13_hv_nmos W=107.99999999999999 L=0.4999999999999999
+M$173 iovss|vss \$13 \$8 iovss|vss sg13_hv_nmos W=107.99999999999999
++ L=0.4999999999999999
 * device instance $179 r0 *1 13,71.54 sg13_hv_nmos
-M$179 48 46 48 48 sg13_hv_nmos W=125.99999999999999 L=9.499999999999996
+M$179 iovss|vss \$13 iovss|vss iovss|vss sg13_hv_nmos W=125.99999999999999
++ L=9.499999999999996
 * device instance $199 r0 *1 18.44,94.91 sg13_hv_pmos
-M$199 47 46 24 47 sg13_hv_pmos W=349.99999999999994 L=0.4999999999999999
+M$199 iovdd \$13 \$8 iovdd sg13_hv_pmos W=349.99999999999994
++ L=0.4999999999999999
 * device instance $249 r0 *1 4.765,27.35 dantenna
-D$249 48 24 dantenna A=0.192 P=1.88 m=1
-* device instance $250 r0 *1 18.875,37.28 res_rppd
-R$250 25 1 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $253 r0 *1 23.825,37.28 res_rppd
-R$253 26 36 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $256 r0 *1 28.775,37.28 res_rppd
-R$256 27 37 res_rppd w=0.9999999999999998 l=79.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $258 r0 *1 32.075,37.28 res_rppd
-R$258 28 38 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $260 r0 *1 35.375,37.28 res_rppd
-R$260 29 39 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $263 r0 *1 40.325,37.28 res_rppd
-R$263 30 40 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $266 r0 *1 45.275,37.28 res_rppd
-R$266 31 41 res_rppd w=0.9999999999999998 l=79.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $268 r0 *1 48.575,37.28 res_rppd
-R$268 32 42 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $270 r0 *1 51.875,37.28 res_rppd
-R$270 33 43 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $272 r0 *1 55.175,37.28 res_rppd
-R$272 34 44 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
-* device instance $274 r0 *1 58.475,37.28 res_rppd
-R$274 35 45 res_rppd w=0.9999999999999998 l=39.99999999999999 b=0.0 ps=0.0 m=1.0
+D$249 iovss|vss \$8 dantenna A=0.192 P=1.88 m=1
+* device instance $250 r0 *1 18.875,37.71 rppd
+R$250 vdd \$13 rppd w=1 l=0 ps=0 b=25 m=1
 .ENDS sg13g2_IOPadVdd
