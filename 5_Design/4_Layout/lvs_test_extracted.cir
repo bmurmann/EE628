@@ -1,21 +1,20 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 28/04/2024 01:33
+* Extracted by KLayout with SG13G2 LVS runset on : 03/05/2024 23:02
 
 * cell lvs_test
-* pin vssa
 * pin vin
 * pin vout
 * pin vdd
 * pin vdda
 * pin vss
-.SUBCKT lvs_test vssa vin vout vdd vdda vss
+.SUBCKT lvs_test vin vout vdd vdda vss
 * device instance $1 r0 *1 -1.507,14.949 sg13_lv_nmos
-M$1 vss vin \$2 vss sg13_lv_nmos W=0.7399999999999999 L=0.12999999999999995
+M$1 vss vin \$1 vss sg13_lv_nmos W=0.7399999999999999 L=0.12999999999999995
 * device instance $2 r0 *1 13.023,16.328 sg13_lv_nmos
-M$2 vssa \$2 vout vss sg13_lv_nmos W=0.9999999999999998 L=0.9999999999999998
+M$2 vss \$1 vout vss sg13_lv_nmos W=0.9999999999999998 L=0.9999999999999998
 * device instance $3 r0 *1 -1.497,16.624 sg13_lv_pmos
-M$3 vdd vin \$2 vdd sg13_lv_pmos W=1.1199999999999999 L=0.12999999999999995
+M$3 vdd vin \$1 vdd sg13_lv_pmos W=1.1199999999999999 L=0.12999999999999995
 * device instance $4 r0 *1 13.042,19.456 sg13_lv_pmos
-M$4 vdda \$2 vout vdda sg13_lv_pmos W=0.9999999999999998 L=0.9999999999999998
+M$4 vdda \$1 vout vdda sg13_lv_pmos W=0.9999999999999998 L=0.9999999999999998
 * device instance $5 r0 *1 1.395,5.482 cap_cmim
-C$5 \$2 vssa cap_cmim w=7 l=7 m=1
+C$5 \$1 vss cap_cmim w=7 l=7 m=1
 .ENDS lvs_test

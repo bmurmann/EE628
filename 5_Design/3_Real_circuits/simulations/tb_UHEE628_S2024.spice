@@ -1,6 +1,6 @@
 ** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/tb_UHEE628_S2024.sch
 **.subckt tb_UHEE628_S2024
-x1 net1 GND GND vdd GND vdd GND out1 GND GND out2 out3 GND iovdd vhi vlo GND out4 GND out5 GND out6 GND GND GND GND GND GND GND
+x1 net1 ck1 ck3 vdd ck2 vdd GND out1 GND GND out2 out3 GND iovdd vhi vlo out4 GND out5 GND out6 GND ck6 ck5 ck4 reset GND
 + UHEE628_S2024
 V1 iovdd GND 3
 V2 vdd GND 1.2
@@ -13,6 +13,13 @@ C3 out4 GND 1p m=1
 C4 out3 GND 1p m=1
 C5 out2 GND 1p m=1
 C6 out1 GND 1p m=1
+* noconn ck1
+* noconn ck3
+* noconn ck2
+* noconn ck6
+* noconn ck5
+* noconn ck4
+* noconn reset
 **** begin user architecture code
 
 
@@ -23,8 +30,11 @@ C6 out1 GND 1p m=1
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 .inc /foss/pdks/sg13g2/libs.tech/ngspice/models/diodes.lib
+.inc "../../4_Layout/Team 1/Team1_sim.spice"
 .inc "../../4_Layout/Team 3/Team3_sim.spice"
+.inc "../../4_Layout/Team 5/Team5_sim.spice"
 .inc "../../4_Layout/Team 6/Team6_sim.spice"
+.inc "../stimulus_gen/inc_clocks.spice"
 .inc ../sg13g2_stdcell.spice
 .inc ../sg13g2_io.spi
 .options gmin=1e-8 keepopinfo
@@ -32,17 +42,20 @@ C6 out1 GND 1p m=1
 .control
 optran 0 0 0 100p 2n 0
 op
+tran 1u 250u
+plot reset ck1
+plot out1 out2
 .endc
 
 
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  /foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sym # of pins=29
+* expanding   symbol:  /foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sym # of pins=27
 ** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sym
 ** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sch
-.subckt UHEE628_S2024 vldo ck1 ck3 avdd ck2 VDD vref out1 in1 in2 out2 out3 in3 iovdd vhi vlo iovss out4 in4 out5 in5 out6 in6 ck6
-+ ck5 ck4 res VSS avss
+.subckt UHEE628_S2024 vldo ck1 ck3 avdd ck2 VDD vref out1 in1 in2 out2 out3 in3 iovdd vhi vlo out4 in4 out5 in5 out6 in6 ck6 ck5
++ ck4 res VSS
 *.ipin in1
 *.ipin in2
 *.ipin in3
@@ -51,7 +64,6 @@ op
 *.ipin in6
 *.iopin iovdd
 *.iopin vlo
-*.iopin avss
 *.iopin avdd
 *.opin out1
 *.opin out2
@@ -59,7 +71,6 @@ op
 *.opin out4
 *.opin out5
 *.opin out6
-*.iopin iovss
 *.iopin VSS
 *.iopin VDD
 *.iopin vldo
@@ -73,24 +84,22 @@ op
 *.ipin ck6
 *.iopin vhi
 x10 vref ck3 vldo ck1 ck2 ck1_c ck3_c net1 ck2_c out1_c in1 out1 in2 out2 out2_c in2_c VDD out3 in3_c in3 out3_c avdd iovdd vhi
-+ iovss avss vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS
-+ padring
-x1 vhi vlo avdd avss in1_c out1_c res_c ck1_c template_idsm2
-x2 vhi vlo avdd avss in2_c out2_c res_c ck2_c template_idsm2
-x4 vhi vlo avdd avss in4_c out4_c res_c ck4_c template_idsm2
-x5 vhi vlo avdd avss in5_c out5_c res_c ck5_c template_idsm2
++ vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS padring
+x1 vhi vlo avdd VSS in1_c out1_c res_c ck1_c Team1
+x2 vhi vlo avdd VSS in2_c out2_c res_c ck2_c template_idsm2
+x4 vhi vlo avdd VSS in4_c out4_c res_c ck4_c template_idsm2
+x5 vhi vlo avdd VSS in5_c out5_c res_c ck5_c Team5
 * noconn #net1
-x6 vhi vlo avdd avss in6_c out6_c res_c ck6_c Team6
-x7 vhi avdd res_c out3_c in3_c vlo avss ck3_c Team3
+x6 vhi vlo avdd VSS in6_c out6_c res_c ck6_c Team6
+x7 vhi avdd res_c out3_c in3_c vlo VSS ck3_c Team3
 .ends
 
 
-* expanding   symbol:  padring.sym # of pins=49
+* expanding   symbol:  padring.sym # of pins=47
 ** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/padring.sym
 ** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/padring.sch
 .subckt padring vref ck3 vldo ck1 ck2 ck1_c ck3_c vref_c ck2_c out1_c in1 out1 in2 out2 out2_c in2_c vdd out3 in3_c in3 out3_c
-+ avdd iovdd vhi iovss avss vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4
-+ res in1_c vss
++ avdd iovdd vhi vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c vss
 *.ipin in1
 *.ipin in2
 *.ipin in3
@@ -135,43 +144,41 @@ x7 vhi avdd res_c out3_c in3_c vlo avss ck3_c Team3
 *.opin ck1_c
 *.iopin vldo
 *.iopin avdd
-*.iopin avss
-*.iopin iovss
-*.iopin iovdd
 *.iopin vss
+*.iopin iovdd
 *.iopin vdd
-xp1 avss avdd avss avdd in1 in1_c sg13g2_IOPadAnalog
-xp26 vss vdd iovss iovdd ck1_c ck1 sg13g2_IOPadIn
-xp24 vss vdd iovss iovdd out1_c out1 sg13g2_IOPadOut16mA
-xp32 avss avdd avss avdd sg13g2_IOPadVdd
-xp9 avss avdd avss avdd sg13g2_IOPadVss
-xp2 avss avdd avss avdd in2 in2_c sg13g2_IOPadAnalog
-xp3 avss avdd avss avdd in3 in3_c sg13g2_IOPadAnalog
-xp4 avss avdd avss avdd vhi net1 sg13g2_IOPadAnalog
-xp5 avss avdd avss avdd vlo net2 sg13g2_IOPadAnalog
-xp6 avss avdd avss avdd in4 in4_c sg13g2_IOPadAnalog
-xp7 avss avdd avss avdd in5 in5_c sg13g2_IOPadAnalog
-xp8 avss avdd avss avdd in6 in6_c sg13g2_IOPadAnalog
-xp23 vss vdd iovss iovdd out2_c out2 sg13g2_IOPadOut16mA
-xp22 vss vdd iovss iovdd out3_c out3 sg13g2_IOPadOut16mA
-xp21 vss vdd iovss iovdd sg13g2_IOPadIOVdd
-xp20 vss vdd iovss iovdd sg13g2_IOPadIOVss
-xp19 vss vdd iovss iovdd out4_c out4 sg13g2_IOPadOut16mA
-xp18 vss vdd iovss iovdd out5_c out5 sg13g2_IOPadOut16mA
-xp17 vss vdd iovss iovdd out6_c out6 sg13g2_IOPadOut16mA
-xp25 vss vdd iovss iovdd sg13g2_IOPadVdd
-xp16 vss vdd iovss iovdd sg13g2_IOPadVss
-xp27 vss vdd iovss iovdd ck2_c ck2 sg13g2_IOPadIn
-xp28 vss vdd iovss iovdd ck3_c ck3 sg13g2_IOPadIn
-xp29 vss vdd iovss iovdd sg13g2_IOPadIOVdd
-xp30 avss avdd avss avdd vldo net3 sg13g2_IOPadAnalog
-xp31 avss avdd avss avdd vref vref_c sg13g2_IOPadAnalog
-xp15 vss vdd iovss iovdd ck6_c ck6 sg13g2_IOPadIn
-xp14 vss vdd iovss iovdd ck5_c ck5 sg13g2_IOPadIn
-xp13 vss vdd iovss iovdd ck4_c ck4 sg13g2_IOPadIn
-xp12 vss vdd iovss iovdd sg13g2_IOPadIOVss
-xp11 vss vdd iovss iovdd res_c res sg13g2_IOPadIn
-xp10 avss avdd avss avdd sg13g2_IOPadVss
+xp1 vss avdd vss avdd in1 in1_c sg13g2_IOPadAnalog
+xp26 vss vdd vss iovdd ck1_c ck1 sg13g2_IOPadIn
+xp24 vss vdd vss iovdd out1_c out1 sg13g2_IOPadOut16mA
+xp32 vss avdd vss avdd sg13g2_IOPadVdd
+xp9 vss avdd vss avdd sg13g2_IOPadVss
+xp2 vss avdd vss avdd in2 in2_c sg13g2_IOPadAnalog
+xp3 vss avdd vss avdd in3 in3_c sg13g2_IOPadAnalog
+xp4 vss avdd vss avdd vhi net1 sg13g2_IOPadAnalog
+xp5 vss avdd vss avdd vlo net2 sg13g2_IOPadAnalog
+xp6 vss avdd vss avdd in4 in4_c sg13g2_IOPadAnalog
+xp7 vss avdd vss avdd in5 in5_c sg13g2_IOPadAnalog
+xp8 vss avdd vss avdd in6 in6_c sg13g2_IOPadAnalog
+xp23 vss vdd vss iovdd out2_c out2 sg13g2_IOPadOut16mA
+xp22 vss vdd vss iovdd out3_c out3 sg13g2_IOPadOut16mA
+xp21 vss vdd vss iovdd sg13g2_IOPadIOVdd
+xp20 vss vdd vss iovdd sg13g2_IOPadIOVss
+xp19 vss vdd vss iovdd out4_c out4 sg13g2_IOPadOut16mA
+xp18 vss vdd vss iovdd out5_c out5 sg13g2_IOPadOut16mA
+xp17 vss vdd vss iovdd out6_c out6 sg13g2_IOPadOut16mA
+xp25 vss vdd vss iovdd sg13g2_IOPadVdd
+xp16 vss vdd vss iovdd sg13g2_IOPadVss
+xp27 vss vdd vss iovdd ck2_c ck2 sg13g2_IOPadIn
+xp28 vss vdd vss iovdd ck3_c ck3 sg13g2_IOPadIn
+xp29 vss vdd vss iovdd sg13g2_IOPadIOVdd
+xp30 vss avdd vss avdd vldo net3 sg13g2_IOPadAnalog
+xp31 vss avdd vss avdd vref vref_c sg13g2_IOPadAnalog
+xp15 vss vdd vss iovdd ck6_c ck6 sg13g2_IOPadIn
+xp14 vss vdd vss iovdd ck5_c ck5 sg13g2_IOPadIn
+xp13 vss vdd vss iovdd ck4_c ck4 sg13g2_IOPadIn
+xp12 vss vdd vss iovdd sg13g2_IOPadIOVss
+xp11 vss vdd vss iovdd res_c res sg13g2_IOPadIn
+xp10 vss avdd vss avdd sg13g2_IOPadVss
 * noconn #net1
 * noconn #net2
 * noconn #net3
@@ -207,28 +214,28 @@ x3 vdda p2 net2 p1 net1 vout2 vmid2 vssa res dout template_comp
 *.opin p1
 *.opin p2
 *.opin p2e
-xn1 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
-xi7 net6 VDD VSS net9 sg13g2_inv_4
-xi1 clkin VDD VSS clkinb sg13g2_inv_2
-xi2 clkinb VDD VSS clkinbb sg13g2_inv_2
-xn2 clkinb b1 VDD VSS net12 sg13g2_nand2_2
-xi13 p1e VDD VSS b1 sg13g2_inv_4
-xi8 net8 VDD VSS net10 sg13g2_inv_4
-xi14 p2e VDD VSS b2 sg13g2_inv_4
-xn3 a1 b1 VDD VSS net1 sg13g2_nand2_2
-xn4 a2 b2 VDD VSS net3 sg13g2_nand2_2
-xi11 a1 VDD VSS p1e sg13g2_inv_4
-xi9 net9 VDD VSS a1 sg13g2_inv_4
-x12 a2 VDD VSS p2e sg13g2_inv_4
-xi10 net10 VDD VSS a2 sg13g2_inv_4
-xi15 net1 VDD VSS net2 sg13g2_inv_4
-xi17 net2 VDD VSS p1 sg13g2_inv_8
-xi16 net3 VDD VSS net4 sg13g2_inv_4
-xi18 net4 VDD VSS p2 sg13g2_inv_8
-xi3 net11 VDD VSS net5 sg13g2_inv_4
-xi5 net5 VDD VSS net6 sg13g2_inv_4
-xi4 net12 VDD VSS net7 sg13g2_inv_4
-xi6 net7 VDD VSS net8 sg13g2_inv_4
+xn1 clkinbb b2 VGND VNB VPB VPWR net11 sg13g2_nand2_2
+xi7 net6 VGND VNB VPB VPWR net9 sg13g2_inv_4
+xi1 clkin VGND VNB VPB VPWR clkinb sg13g2_inv_2
+xi2 clkinb VGND VNB VPB VPWR clkinbb sg13g2_inv_2
+xn2 clkinb b1 VGND VNB VPB VPWR net12 sg13g2_nand2_2
+xi13 p1e VGND VNB VPB VPWR b1 sg13g2_inv_4
+xi8 net8 VGND VNB VPB VPWR net10 sg13g2_inv_4
+xi14 p2e VGND VNB VPB VPWR b2 sg13g2_inv_4
+xn3 a1 b1 VGND VNB VPB VPWR net1 sg13g2_nand2_2
+xn4 a2 b2 VGND VNB VPB VPWR net3 sg13g2_nand2_2
+xi11 a1 VGND VNB VPB VPWR p1e sg13g2_inv_4
+xi9 net9 VGND VNB VPB VPWR a1 sg13g2_inv_4
+x12 a2 VGND VNB VPB VPWR p2e sg13g2_inv_4
+xi10 net10 VGND VNB VPB VPWR a2 sg13g2_inv_4
+xi15 net1 VGND VNB VPB VPWR net2 sg13g2_inv_4
+xi17 net2 VGND VNB VPB VPWR p1 sg13g2_inv_8
+xi16 net3 VGND VNB VPB VPWR net4 sg13g2_inv_4
+xi18 net4 VGND VNB VPB VPWR p2 sg13g2_inv_8
+xi3 net11 VGND VNB VPB VPWR net5 sg13g2_inv_4
+xi5 net5 VGND VNB VPB VPWR net6 sg13g2_inv_4
+xi4 net12 VGND VNB VPB VPWR net7 sg13g2_inv_4
+xi6 net7 VGND VNB VPB VPWR net8 sg13g2_inv_4
 .ends
 
 
@@ -260,9 +267,9 @@ XMn2 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XMn6 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XMn7 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
 XMp2 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
-x2 pr d VDD VSS gn sg13g2_and2_1
+x2 pr d VGND VNB VPB VPWR gn sg13g2_and2_1
 XMp3 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
-x3 d pr VDD VSS gp sg13g2_nand2b_1
+x3 d pr VGND VNB VPB VPWR gp sg13g2_nand2b_1
 XC1 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
 XC2 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
 XC3 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
@@ -301,14 +308,14 @@ XM32p net2 dint net3 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XM42p net2 dint VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
 XM8 net2 out1p VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
 XM21p net3 out1p VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-x1 ps dint dd net5 net4 VDD VSS sg13g2_dfrbp_2
-x2 dint VDD VSS d sg13g2_buf_2
+x1 ps dint net4 VGND VNB VPB VPWR dd net5 sg13g2_dfrbp_2
+x2 dint VGND VNB VPB VPWR d sg13g2_buf_2
 x3 res VDD VSS net4 sg13g2_inv_1
 XMp1 vinm_samp psb vinm vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
 XMn5 vinm_samp ps vinm vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XC1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
 x4 ps VDD VSS psb sg13g2_inv_1
-x5 dd VDD VSS dout sg13g2_inv_2
+x5 dd VGND VNB VPB VPWR dout sg13g2_inv_2
 * noconn #net5
 .ends
 

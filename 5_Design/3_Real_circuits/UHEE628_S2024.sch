@@ -5,6 +5,13 @@ K {}
 V {}
 S {}
 E {}
+T {avss} 1570 -110 0 0 0.4 0.4 {}
+T {iovss} 1340 -840 0 0 0.4 0.4 {}
+T {Dummy connections to please LVS (no metal connection 
+between these 3 nets, only soft short through substrate)} 1570 -180 0 0 0.4 0.4 {}
+T {avss} 340 -160 0 0 0.4 0.4 {}
+T {iovss} 1570 -220 0 0 0.4 0.4 {}
+T {vss} 1440 -180 0 0 0.4 0.4 {}
 N 1150 -1310 1150 -1130 {
 lab=out1_c}
 N 1130 -1050 1180 -1050 {
@@ -34,7 +41,7 @@ lab=vlo}
 N 440 -630 440 -470 {
 lab=avdd}
 N 460 -610 460 -450 {
-lab=avss}
+lab=#net1}
 N 480 -410 480 -360 {
 lab=res_c}
 N 80 -890 110 -890 {
@@ -48,19 +55,19 @@ lab=vhi}
 N 440 -470 800 -470 {
 lab=avdd}
 N 460 -450 800 -450 {
-lab=avss}
-N 410 -160 410 -140 {
-lab=avss}
+lab=#net1}
+N 410 -160 410 -80 {
+lab=#net1}
 N 410 -160 430 -160 {
-lab=avss}
+lab=#net1}
 N 410 -180 410 -160 {
-lab=avss}
+lab=#net1}
 N 430 -360 430 -160 {
-lab=avss}
+lab=#net1}
 N 430 -360 460 -360 {
-lab=avss}
+lab=#net1}
 N 460 -450 460 -360 {
-lab=avss}
+lab=#net1}
 N 570 -360 570 -300 {
 lab=res_c}
 N 480 -360 570 -360 {
@@ -80,9 +87,9 @@ lab=res_c}
 N 480 -730 480 -570 {
 lab=res_c}
 N 460 -610 800 -610 {
-lab=avss}
+lab=#net1}
 N 460 -770 460 -610 {
-lab=avss}
+lab=#net1}
 N 440 -630 800 -630 {
 lab=avdd}
 N 420 -650 800 -650 {
@@ -100,7 +107,7 @@ lab=vlo}
 N 420 -810 800 -810 {
 lab=vlo}
 N 460 -770 800 -770 {
-lab=avss}
+lab=#net1}
 N 440 -790 800 -790 {
 lab=avdd}
 N 400 -830 800 -830 {
@@ -128,7 +135,7 @@ lab=in4_c}
 N 480 -950 480 -730 {
 lab=res_c}
 N 460 -890 460 -770 {
-lab=avss}
+lab=#net1}
 N 440 -970 440 -790 {
 lab=avdd}
 N 420 -910 420 -810 {
@@ -140,9 +147,9 @@ lab=res_c}
 N 480 -1210 480 -1050 {
 lab=res_c}
 N 460 -1090 800 -1090 {
-lab=avss}
+lab=#net1}
 N 460 -1250 460 -1090 {
-lab=avss}
+lab=#net1}
 N 440 -1110 800 -1110 {
 lab=avdd}
 N 440 -1270 440 -1110 {
@@ -158,7 +165,7 @@ lab=vhi}
 N 480 -1210 800 -1210 {
 lab=res_c}
 N 460 -1250 800 -1250 {
-lab=avss}
+lab=#net1}
 N 440 -1270 800 -1270 {
 lab=avdd}
 N 420 -1290 800 -1290 {
@@ -170,7 +177,7 @@ lab=vhi}
 N 80 -890 80 -860 {
 lab=vhi}
 N 240 -970 260 -970 {
-lab=#net1}
+lab=in3_c}
 N 260 -1070 800 -1070 {
 lab=in2_c}
 N 260 -1070 260 -1050 {
@@ -271,9 +278,9 @@ N 1300 -570 1370 -570 {
 lab=out6}
 N 1300 -890 1370 -890 {
 lab=iovdd}
-N 1300 -810 1370 -810 {
-lab=iovss}
-N 970 -160 970 -140 {
+N 1300 -810 1560 -810 {
+lab=#net1}
+N 970 -150 970 -140 {
 lab=VSS}
 N 970 -160 990 -160 {
 lab=VSS}
@@ -324,21 +331,40 @@ lab=res_c}
 N 480 -1050 480 -950 {
 lab=res_c}
 N 260 -930 800 -930 {
-lab=#net1}
+lab=in3_c}
 N 260 -970 260 -930 {
-lab=#net1}
-N 420 -910 800 -910 {}
+lab=in3_c}
+N 420 -910 800 -910 {
+lab=vlo}
 N 420 -1130 420 -910 {
 lab=vlo}
-N 460 -890 800 -890 {}
+N 460 -890 800 -890 {
+lab=#net1}
 N 460 -1090 460 -890 {
-lab=avss}
+lab=#net1}
+N 410 -80 1560 -80 {
+lab=#net1}
+N 1560 -120 1560 -80 {
+lab=#net1}
+N 1560 -810 1560 -180 {
+lab=#net1}
+N 1520 -180 1560 -180 {
+lab=#net1}
+N 1520 -150 1520 -120 {
+lab=#net1}
+N 1520 -120 1560 -120 {
+lab=#net1}
+N 1520 -180 1520 -150 {
+lab=#net1}
+N 970 -150 1520 -150 {}
+N 970 -160 970 -150 {
+lab=VSS}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {padring.sym} 130 -200 0 0 {name=x10}
-C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -1250 0 0 {name=x1}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 1/Team1.sym} 950 -1250 0 0 {name=x1}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -1090 0 0 {name=x2}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -770 0 0 {name=x4}
-C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -610 0 0 {name=x5}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym} 950 -610 0 0 {name=x5}
 C {devices/ipin.sym} 50 -1130 0 0 {name=p1 lab=in1}
 C {devices/ipin.sym} 50 -1050 0 0 {name=p2 lab=in2}
 C {devices/ipin.sym} 50 -970 0 0 {name=p3 lab=in3}
@@ -347,7 +373,6 @@ C {devices/ipin.sym} 50 -650 0 0 {name=p5 lab=in5}
 C {devices/ipin.sym} 50 -570 0 0 {name=p6 lab=in6}
 C {devices/iopin.sym} 1370 -890 0 0 {name=p7 lab=iovdd}
 C {devices/iopin.sym} 50 -810 0 1 {name=p8 lab=vlo}
-C {devices/iopin.sym} 410 -140 3 1 {name=p9 lab=avss}
 C {devices/iopin.sym} 410 -1550 1 1 {name=p10 lab=avdd}
 C {devices/opin.sym} 1370 -1130 0 0 {name=p11 lab=out1}
 C {devices/opin.sym} 1370 -1050 0 0 {name=p12 lab=out2}
@@ -355,7 +380,6 @@ C {devices/opin.sym} 1370 -970 0 0 {name=p13 lab=out3}
 C {devices/opin.sym} 1370 -730 0 0 {name=p14 lab=out4}
 C {devices/opin.sym} 1370 -650 0 0 {name=p15 lab=out5}
 C {devices/opin.sym} 1370 -570 0 0 {name=p16 lab=out6}
-C {devices/iopin.sym} 1370 -810 0 0 {name=p17 lab=iovss}
 C {devices/iopin.sym} 970 -140 3 1 {name=p18 lab=VSS}
 C {devices/vdd.sym} 990 -320 0 0 {name=l2 lab=VSS}
 C {devices/iopin.sym} 970 -1550 1 1 {name=p19 lab=VDD}

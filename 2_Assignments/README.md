@@ -1,3 +1,8 @@
+**Week 16**
+  
+* Complete your pull request as detailed in lecture 27 & Discord.
+* Submit your final presentation on Laulima as your report for this week.
+
 
 **Week 15**
   

@@ -5,10 +5,11 @@ netlist: ''
 spice_net: true
 top_cell_name: ''
 spice_comment: false
-verbose: false
-schematic_simplify: true
+netlist_simplify: true
 net_only: false
 top_lvl_pins: false
 combine: false
 purge: false
 purge_nets: false
+schematic_simplify: true
+verbose: false
