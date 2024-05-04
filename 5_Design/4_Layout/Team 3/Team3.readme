@@ -1,13 +1,16 @@
 Team 3 Pin List: 
 
-Name	Type		Purpose
+Name	  Type		  Purpose
 ----------------------------------------
-V_in	input		Analog input of ADC
-dd	output		Digital output of ADC
-res	input		Digital reset signal 
-V_DDa	supply		Analog supply voltage
-V_SSa	supply		Analog supply voltage 
+vdda	  supply		Analog supply voltage
+vssa	  supply		Analog supply voltage 
+vhi     supply    High signal
+vlo     supply    Low signal
+vin	    input		  Analog input of ADC
+clkin   input     Input clock signal
+res	    input		  Digital reset signal
+dout	  output		Digital output of ADC
 
 
 Current status:
-These files are final. Still waiting on the draft of the final layout (.oas).
+These files are final. Layout is DRC and LVS clean. Removed all .label layers and made them all .text layers.
