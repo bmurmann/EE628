@@ -5,25 +5,7 @@ K {}
 V {}
 S {}
 E {}
-N 70 -620 190 -620 {
-lab=GND}
-N 70 -360 70 -260 {
-lab=GND}
-N 70 -360 190 -360 {
-lab=GND}
-N 70 -380 70 -360 {
-lab=GND}
-N 70 -380 190 -380 {
-lab=GND}
-N 70 -400 70 -380 {
-lab=GND}
-N 70 -400 190 -400 {
-lab=GND}
-N 70 -420 70 -400 {
-lab=GND}
-N 70 -420 190 -420 {
-lab=GND}
-N 70 -440 70 -420 {
+N 70 -440 70 -260 {
 lab=GND}
 N 70 -440 190 -440 {
 lab=GND}
@@ -49,23 +31,11 @@ N 70 -540 190 -540 {
 lab=GND}
 N 70 -560 70 -540 {
 lab=GND}
-N 70 -600 190 -600 {
-lab=GND}
-N 70 -620 70 -600 {
-lab=GND}
-N 70 -580 190 -580 {
-lab=GND}
-N 70 -600 70 -580 {
-lab=GND}
 N 70 -560 190 -560 {
-lab=GND}
-N 70 -580 70 -560 {
 lab=GND}
 N 520 -270 520 -230 {
 lab=GND}
-N 520 -360 520 -340 {
-lab=GND}
-N 520 -440 520 -360 {
+N 520 -360 520 -270 {
 lab=GND}
 N 1040 -310 1040 -260 {
 lab=GND}
@@ -95,11 +65,7 @@ N 490 -580 1100 -580 {
 lab=vdd}
 N 490 -600 1100 -600 {
 lab=vdd}
-N 490 -340 520 -340 {
-lab=GND}
 N 490 -360 520 -360 {
-lab=GND}
-N 490 -440 520 -440 {
 lab=GND}
 N 490 -380 580 -380 {
 lab=out6}
@@ -114,8 +80,6 @@ lab=out4}
 N 680 -420 680 -350 {
 lab=out4}
 N 630 -270 680 -270 {
-lab=GND}
-N 520 -340 520 -270 {
 lab=GND}
 N 680 -290 680 -270 {
 lab=GND}
@@ -151,6 +115,20 @@ N 830 -560 830 -350 {
 lab=out1}
 N 680 -270 730 -270 {
 lab=GND}
+N 150 -620 190 -620 {
+lab=ck1}
+N 150 -600 190 -600 {
+lab=ck3}
+N 150 -580 190 -580 {
+lab=ck2}
+N 150 -420 190 -420 {
+lab=ck6}
+N 150 -400 190 -400 {
+lab=ck5}
+N 150 -380 190 -380 {
+lab=ck4}
+N 150 -360 190 -360 {
+lab=reset}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sym} 340 -480 0 0 {name=x1}
 C {devices/gnd.sym} 70 -260 0 0 {name=l2 lab=GND}
@@ -208,6 +186,7 @@ value="
 .inc \\"../../4_Layout/Team 3/Team3_sim.spice\\"
 .inc \\"../../4_Layout/Team 5/Team5_sim.spice\\"
 .inc \\"../../4_Layout/Team 6/Team6_sim.spice\\"
+.inc \\"../stimulus_gen/inc_clocks.spice\\"
 .inc ../sg13g2_stdcell.spice
 .inc ../sg13g2_io.spi
 .options gmin=1e-8 keepopinfo
@@ -215,6 +194,9 @@ value="
 .control
 optran 0 0 0 100p 2n 0
 op
+tran 1u 250u
+plot reset ck1
+plot out1 out2
 .endc"}
 C {devices/lab_wire.sym} 600 -560 0 0 {name=p1 sig_type=std_logic lab=out1}
 C {devices/lab_wire.sym} 600 -540 0 0 {name=p2 sig_type=std_logic lab=out2}
@@ -226,3 +208,17 @@ C {devices/lab_wire.sym} 600 -580 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 600 -500 0 0 {name=p8 sig_type=std_logic lab=iovdd}
 C {devices/lab_wire.sym} 600 -480 0 0 {name=p9 sig_type=std_logic lab=vhi}
 C {devices/lab_wire.sym} 600 -460 0 0 {name=p10 sig_type=std_logic lab=vlo}
+C {devices/noconn.sym} 150 -620 2 1 {name=l9}
+C {devices/lab_wire.sym} 180 -620 0 0 {name=p11 sig_type=std_logic lab=ck1}
+C {devices/noconn.sym} 150 -600 2 1 {name=l10}
+C {devices/lab_wire.sym} 180 -600 0 0 {name=p12 sig_type=std_logic lab=ck3}
+C {devices/noconn.sym} 150 -580 2 1 {name=l11}
+C {devices/lab_wire.sym} 180 -580 0 0 {name=p13 sig_type=std_logic lab=ck2}
+C {devices/noconn.sym} 150 -420 2 1 {name=l12}
+C {devices/lab_wire.sym} 180 -420 0 0 {name=p14 sig_type=std_logic lab=ck6}
+C {devices/noconn.sym} 150 -400 2 1 {name=l13}
+C {devices/lab_wire.sym} 180 -400 0 0 {name=p15 sig_type=std_logic lab=ck5}
+C {devices/noconn.sym} 150 -380 2 1 {name=l14}
+C {devices/lab_wire.sym} 180 -380 0 0 {name=p16 sig_type=std_logic lab=ck4}
+C {devices/noconn.sym} 150 -360 2 1 {name=l15}
+C {devices/lab_wire.sym} 180 -360 0 0 {name=p17 sig_type=std_logic lab=reset}

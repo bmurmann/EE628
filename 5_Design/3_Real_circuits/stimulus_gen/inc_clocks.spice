@@ -1,0 +1,7 @@
+.inc ./stim_files/reset.stim
+.inc ./stim_files/ck1.stim
+.inc ./stim_files/ck2.stim
+.inc ./stim_files/ck3.stim
+.inc ./stim_files/ck4.stim
+.inc ./stim_files/ck5.stim
+.inc ./stim_files/ck6.stim
