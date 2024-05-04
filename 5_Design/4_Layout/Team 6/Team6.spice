@@ -1,65 +1,77 @@
-** sch_path: /foss/designs/Kate1/IDSM2.sch
-**.subckt IDSM2 vhi vlo vdda vssa vin dout res clk
-*.ipin vlo
-*.ipin vdda
-*.ipin vssa
-*.ipin vin
-*.ipin vhi
-*.ipin res
-*.ipin clk
-*.opin dout
+** sch_path: /foss/designs/ee628/Team6.sch
+.subckt Team6 vlo vdda vssa vin vhi res clk dout
+*.PININFO vlo:I vdda:I vssa:I vin:I vhi:I res:I clk:I dout:O
 x1 res p1e p1 p2 vhi vdda vin vout1 vssa net3 net2 vlo stage_T6
 x2 res p2e p2 p1 vhi vdda vout1 vout2 vssa vmid2 net1 vlo stage_T6
-x4 p1e p1 clk p2 p2e clkgen_T6
 x3 vdda p2 net1 vmid2 vssa net2 dout p1 vout2 res comparator_T6
-**.ends
+x4 p1e p1 clk p2 p2e clkgen_T6
+.ends
 
-* expanding   symbol:  /foss/designs/Kate1/stage_T6.sym # of pins=12
-** sym_path: /foss/designs/Kate1/stage_T6.sym
-** sch_path: /foss/designs/Kate1/stage_T6.sch
+* expanding   symbol:  /foss/designs/ee628/stage_T6.sym # of pins=12
+** sym_path: /foss/designs/ee628/stage_T6.sym
+** sch_path: /foss/designs/ee628/stage_T6.sch
 .subckt stage_T6 res pse ps pr vhi vdda vin vout vssa vmid d vlo
-*.iopin vhi
-*.ipin pr
-*.opin vout
-*.ipin d
-*.ipin vin
-*.ipin ps
-*.ipin pse
-*.ipin res
-*.opin vmid
-*.iopin vlo
-*.iopin vssa
-*.iopin vdda
+*.PININFO vhi:B pr:I vout:O d:I vin:I ps:I pse:I res:I vmid:O vlo:B vssa:B vdda:B
 x1 pr d VDD VSS gn sg13g2_and2_1
 x2 d pr VDD VSS gp sg13g2_nand2b_1
 C1 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
-M3 vx1 psb vin vdda sg13_lv_pmos W=6.0u L=0.13u ng=3 m=1
-M4 vx1 ps vin vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M5 vx1 gn vlo vssa sg13_lv_nmos W=0.5u L=0.13u ng=1 m=1
-M6 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
-M7 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-M8 vx4 pr vx2 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+M3 vx1 psb vin vdda sg13_lv_pmos L=0.13u W=6.0u ng=3 m=1
+M4 vx1 ps vin vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M5 vx1 gn vlo vssa sg13_lv_nmos L=0.13u W=0.5u ng=1 m=1
+M6 vx1 gp vhi vdda sg13_lv_pmos L=0.13u W=1.5u ng=1 m=1
+M7 vx2 pse vmid vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M8 vx4 pr vx2 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
 C2 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
-M9 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+M9 vx4 ps vx3 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
 C3 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
-M10 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-M11 vout vx3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
-M12 vout vx3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
-M1 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
-M2 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+M10 vout res vx4 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M11 vout vx3 vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M12 vout vx3 vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+M1 vmid vmid vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M2 vmid vmid vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
 x3 ps VDD VSS psb sg13g2_inv_1
 .ends
 
 
-* expanding   symbol:  /foss/designs/Kate1/clkgen_T6.sym # of pins=5
-** sym_path: /foss/designs/Kate1/clkgen_T6.sym
-** sch_path: /foss/designs/Kate1/clkgen_T6.sch
+* expanding   symbol:  /foss/designs/ee628/comparator_T6.sym # of pins=10
+** sym_path: /foss/designs/ee628/comparator_T6.sym
+** sch_path: /foss/designs/ee628/comparator_T6.sch
+.subckt comparator_T6 vdda pc d vinp vssa dd dout ps vinm res
+*.PININFO pc:I d:O vdda:B vinp:I vssa:B ps:I vinm:I res:I dd:O dout:O
+x1 ps VDD VSS net5 sg13g2_inv_1
+x2 din VDD VSS d sg13g2_buf_2
+C1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+M1 out1m pc vdda vdda sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M2 out1p out1m net3 vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M3 out1m out1p vdda vdda sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M4 out1p out1m vdda vdda sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M5 out1p pc vdda vdda sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M6 out1m out1p net1 vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M7 net3 pc net4 vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M8 net1 pc net2 vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M9 net4 vinm_samp vssa vssa sg13_lv_nmos L=1u W=2.0u ng=1 m=1
+M10 net2 vinp vssa vssa sg13_lv_nmos L=1u W=2.0u ng=1 m=1
+M11 vinm_samp net5 vinm vdda sg13_lv_pmos L=0.13u W=6.0u ng=3 m=1
+M12 vinm_samp ps vinm vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M13 net6 out1p VDD VDD sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M14 din net6 net8 VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M15 net6 din VDD VDD sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M16 din net6 VDD VDD sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M17 din out1m VDD VDD sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
+M18 net6 din net7 VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M19 net8 out1m VSS VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+M20 net7 out1p VSS VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
+x4 res VDD VSS resb sg13g2_inv_1
+x5 ps din resb dd net9 VDD VSS sg13g2_dfrbp_2
+x3 dd VDD VSS dout sg13g2_inv_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/ee628/clkgen_T6.sym # of pins=5
+** sym_path: /foss/designs/ee628/clkgen_T6.sym
+** sch_path: /foss/designs/ee628/clkgen_T6.sch
 .subckt clkgen_T6 p1e p1 clkin p2 p2e
-*.ipin clkin
-*.opin p1e
-*.opin p1
-*.opin p2
-*.opin p2e
+*.PININFO clkin:I p1e:O p1:O p2:O p2e:O
 x23 clkin VDD VSS clkinb sg13g2_inv_2
 x2 clkinb VDD VSS clkinbb sg13g2_inv_2
 x3 b1 clkinb VDD VSS net7 sg13g2_nand2_2
@@ -82,51 +94,99 @@ x12 net5 VDD VSS net6 sg13g2_inv_4
 x20 net11 VDD VSS net12 sg13g2_inv_4
 x13 net6 VDD VSS p1 sg13g2_inv_8
 x21 net12 VDD VSS p2 sg13g2_inv_8
+
+.SUBCKT sg13g2_dfrbp_2 CLK D Q Q_N RESET_B VDD VSS
+*.PININFO CLK:I D:I RESET_B:I Q:O Q_N:O VDD:B VSS:B
+MN13 net12 net2 VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN14 net5 clkneg net12 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN15 net2 net5 net11 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN16 net11 RESET_B VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN6 Q_N net5 VSS VSS sg13_lv_nmos m=2 w=740.00n l=130.00n ng=1
+MN0 Db D net10 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN1 net10 RESET_B VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN7 Db clkneg net6 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN8 net6 clkpos net9 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN9 net9 net4 net8 VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN10 net8 RESET_B VSS VSS sg13_lv_nmos m=1 w=420.00n l=130.00n ng=1
+MN11 net4 net6 VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN2 clkneg CLK VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN12 net4 clkpos net5 VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN3 clkpos clkneg VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MN4 Q net1 VSS VSS sg13_lv_nmos m=2 w=740.00n l=130.00n ng=1
+MN5 net1 net5 VSS VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MP14 net5 clkpos net3 VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP15 net2 net5 VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP16 net2 RESET_B VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP6 Q_N net5 VDD VDD sg13_lv_pmos m=2 w=1.12u l=130.00n ng=1
+MP7 Db clkpos net6 VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP0 Db RESET_B VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP1 Db D VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP8 net7 net4 VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP9 net6 clkneg net7 VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP10 net6 RESET_B VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP2 clkneg CLK VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
+MP3 clkpos clkneg VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
+MP11 net4 net6 VDD VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+MP12 net4 clkneg net5 VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+MP4 Q net1 VDD VDD sg13_lv_pmos m=2 w=1.12u l=130.00n ng=1
+MP13 net3 net2 VDD VDD sg13_lv_pmos m=1 w=420.00n l=130.00n ng=1
+MP5 net1 net5 VDD VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+
+.SUBCKT sg13g2_buf_2 A VDD VSS X
+*.PININFO A:I X:O VDD:B VSS:B
+MN1 net1 A VSS VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MN0 X net1 VSS VSS sg13_lv_nmos m=1 w=1.48u l=130.00n ng=2
+MP1 X net1 VDD VDD sg13_lv_pmos m=1 w=2.24u l=130.00n ng=2
+MP0 net1 A VDD VDD sg13_lv_pmos m=1 w=1.000u l=130.00n ng=1
+
+.SUBCKT sg13g2_inv_1 A VDD VSS Y
+*.PININFO A:I Y:O VDD:B VSS:B
+MX1 Y A VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MX0 Y A VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
+
+.SUBCKT sg13g2_inv_2 A VDD VSS Y
+*.PININFO A:I Y:O VDD:B VSS:B
+MX1 Y A VSS VSS sg13_lv_nmos m=2 w=740.00n l=130.00n ng=1
+MX0 Y A VDD VDD sg13_lv_pmos m=2 w=1.12u l=130.00n ng=1
+
+.SUBCKT sg13g2_and2_1 A B VDD VSS X
+*.PININFO A:I B:I X:O VDD:B VSS:B
+MX0 net4 A net2 VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MX2 X net4 VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MX3 net2 B VSS VSS sg13_lv_nmos m=1 w=640.00n l=130.00n ng=1
+MX1 net4 B VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
+MX4 VDD net4 X VDD sg13_lv_pmos m=1 w=1.12e-06 l=130.00n ng=1
+MX5 net4 A VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
+
+.SUBCKT sg13g2_nand2b_1 A_N B VDD VSS Y
+*.PININFO A_N:I B:I Y:O VDD:B VSS:B
+MX0 Y a_27_112_ VDD VDD sg13_lv_pmos m=1 w=1.12e-06 l=130.00n ng=1
+MX1 a_27_112_ A_N VDD VDD sg13_lv_pmos m=1 w=840.00n l=130.00n ng=1
+MX3 Y B VDD VDD sg13_lv_pmos m=1 w=1.12e-06 l=130.00n ng=1
+MX2 Y a_27_112_ net1 VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+MX4 a_27_112_ A_N VSS VSS sg13_lv_nmos m=1 w=550.00n l=130.00n ng=1
+MX5 net1 B VSS VSS sg13_lv_nmos m=1 w=740.00n l=130.00n ng=1
+
+.SUBCKT sg13g2_inv_4 A VDD VSS Y
+*.PININFO A:I Y:O VDD:B VSS:B
+MP0 Y A VDD VDD sg13_lv_pmos m=4 w=1.12u l=130.00n ng=1
+MN0 Y A VSS VSS sg13_lv_nmos m=4 w=740.00n l=130.00n ng=1
+
+
+.SUBCKT sg13g2_inv_8 A VDD VSS Y
+*.PININFO A:I Y:O VDD:B VSS:B
+MX1 Y A VSS VSS sg13_lv_nmos m=8 w=740.00n l=130.00n ng=1
+MX0 Y A VDD VDD sg13_lv_pmos m=8 w=1.12u l=130.00n ng=1
+
+
+.SUBCKT sg13g2_nand2_2 A B VDD VSS Y
+*.PININFO A:I B:I Y:O VDD:B VSS:B
+MP1 Y B VDD VDD sg13_lv_pmos m=2 w=1.12u l=130.00n ng=1
+MP0 Y A VDD VDD sg13_lv_pmos m=2 w=1.12u l=130.00n ng=1
+MN1 net1 B VSS VSS sg13_lv_nmos m=2 w=720.00n l=130.00n ng=1
+MN0 Y A net1 VSS sg13_lv_nmos m=2 w=720.00n l=130.00n ng=1
+
 .ends
-
-
-* expanding   symbol:  /foss/designs/Kate1/comparator_T6.sym # of pins=10
-** sym_path: /foss/designs/Kate1/comparator_T6.sym
-** sch_path: /foss/designs/Kate1/comparator_T6.sch
-.subckt comparator_T6 vdda pc d vinp vssa dd dout ps vinm res
-*.ipin pc
-*.opin d
-*.iopin vdda
-*.ipin vinp
-*.iopin vssa
-*.ipin ps
-*.ipin vinm
-*.ipin res
-*.opin dd
-*.opin dout
-x1 ps VDD VSS net5 sg13g2_inv_1
-x2 din VDD VSS d sg13g2_buf_2
-C1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
-M1 out1m pc vdda vdda sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M2 out1p out1m net3 vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M3 out1m out1p vdda vdda sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M4 out1p out1m vdda vdda sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M5 out1p pc vdda vdda sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M6 out1m out1p net1 vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M7 net3 pc net4 vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M8 net1 pc net2 vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M9 net4 vinm_samp vssa vssa sg13_lv_nmos W=2.0u L=1u ng=1 m=1
-M10 net2 vinp vssa vssa sg13_lv_nmos W=2.0u L=1u ng=1 m=1
-M11 vinm_samp net5 vinm vdda sg13_lv_pmos W=6.0u L=0.13u ng=3 m=1
-M12 vinm_samp ps vinm vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M13 net6 out1p VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M14 din net6 net8 VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M15 net6 din VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M16 din net6 VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M17 din out1m VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
-M18 net6 din net7 VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M19 net8 out1m VSS VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-M20 net7 out1p VSS VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
-x4 res VDD VSS resb sg13g2_inv_1
-x5 ps din dd net9 resb VDD VSS sg13g2_dfrbp_2
-x3 dd VDD VSS dout sg13g2_inv_2
-.ends
-
 .GLOBAL VDD
 .GLOBAL VSS
 .end
