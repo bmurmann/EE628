@@ -8,7 +8,58 @@ Y. Chae et al., "A 2.1 M Pixels, 120 Frame/s CMOS Image Sensor With Column-Paral
 ADC Architecture," in IEEE Journal of Solid-State Circuits, Jan. 2011. https://ieeexplore.ieee.org/document/5641589
 
 ## Current Status:
-These are preliminary files with the comparator in need of changes.
+These are preliminary files in need of fixes for lvs.
+
+### clock_gen.oas
+All LVS checks pass.
+
+All DRC checks pass with the exception of:
+- aFil.g2
+- GFil.g
+- M2.j
+- M3.j
+- M1Fil.h
+- M2Fil.h
+- M3Fil.h
+
+### stage.oas
+Not all LVS checks pass. Only some pins are recognized and we have not solved that issue. Overall we are also having issues of lvs providing different output depending on the machine it is run on.
+
+All DRC checks pass with the exception of:
+- aFil.g
+- aFil.g2
+- GFil.g
+- M1.j
+- M2.j
+- M3.j
+- M4.j
+- M5.j
+- M1Fil.h
+- M2Fil.h
+- M3Fil.h
+- M4Fil.h
+- M5Fil.h
+- TM1.c
+
+### comparator.oas
+Not all LVS checks pass. Similar issues as the stage.
+
+All DRC checks pass with the exception of:
+- aFil.g
+- aFil.g2
+- GFil.g
+- M1.j
+- M2.j
+- M3.j
+- M4.j
+- M5.j
+- M1Fil.h
+- M2Fil.h
+- M3Fil.h
+- M4Fil.h
+- M5Fil.h
+- TM1.c
+
 
 ## 📄 Deliverables
 The deliverables for this project all have the filename "Team1":
