@@ -4,10 +4,10 @@ Name	  Type		  Purpose
 ----------------------------------------
 vdda	  supply		Analog supply voltage
 vssa	  supply		Analog supply voltage 
-vhi     supply    High signal
-vlo     supply    Low signal
+vhi       supply    High signal
+vlo       supply    Low signal
 vin	    input		  Analog input of ADC
-clkin   input     Input clock signal
+clkin     input     Input clock signal
 res	    input		  Digital reset signal
 dout	  output		Digital output of ADC
 
