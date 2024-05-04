@@ -26,7 +26,7 @@ Xdcpdiode iovss iovdd iovss sg13g2_DCPDiode
 Xdcndiode vss pad iovdd sg13g2_DCNDiode
 Xdcpdiode pad iovdd iovss sg13g2_DCPDiode
 *Xleveldown vdd vss iovdd iovss pad p2c sg13g2_LevelDown
-Xleveldown vdd vss iovdd vss pad p2c 
+Xleveldown vdd vss iovdd vss pad p2c sg13g2_LevelDown
 .ends sg13g2_IOPadIn
 
 *** Hacking this to short VSS and IOVSS (to pass LVS standalone) 
