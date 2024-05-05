@@ -1,5 +1,11 @@
 ** sch_path: /foss/designs/Week 13/Team3.sch
-.subckt Team3 vhi vlo vdda vssa vin dout res clkin
+
+** Boris: Added this instantion to hack vssa for standalone LVS
+.subckt Team3 vhi vlo vdda vin dout res clkin
+x1 vhi vlo vdda vss vin dout res clkin Team3_inner
+
+
+.subckt Team3_inner vhi vlo vdda vssa vin dout res clkin
 *.PININFO vhi:I dout:O vlo:I vdda:I vssa:I vin:I clkin:I res:I
 x2 res p1 p1d p2d vhi vdda vout1 vin vssa net3 net2 vlo stage_T3
 x3 res p2 p2d p1d vhi vdda vout2 vout1 vssa vmid2 net1 vlo stage_T3
