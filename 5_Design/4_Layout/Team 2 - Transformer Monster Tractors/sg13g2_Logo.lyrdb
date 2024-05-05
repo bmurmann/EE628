@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>design rules: sg13g2 | layout cell: Logo</description>
+ <original-file/>
+ <generator>drc: script='/foss/designs/EE628/5_Design/4_Layout/.klayout/tech/drc/sg13g2.lydrc'</generator>
+ <top-cell>Logo</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>Act.a</name>
+   <description>Min. Activ width = 0.15</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Act.b</name>
+   <description>Act.b: Min. Activ space or notch = 0.21</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TGO.f</name>
+   <description>Min. ThickGateOx width = 0.86</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Gat.a</name>
+   <description>Min GatPoly width = 0.13</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Gat.b</name>
+   <description>Min. GatPoly space or notch = 0.18</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Gat.d</name>
+   <description>Min. GatPoly to Activ space = 0.07</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Cnt.a</name>
+   <description>Min.and max. size of Cont = 0.16</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Cnt.b</name>
+   <description>Min. Cont space = 0.18</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Pas.a</name>
+   <description>Min. Passiv width = 2.10</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Pas.b</name>
+   <description>Min. Passiv space or notch = 3.50</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.a</name>
+   <description>Min. width of Metal1 = 0.16</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.b</name>
+   <description>Min. Metal1 space or notch = 0.18</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.a</name>
+   <description>Min. width of Metal2 = 0.2</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.b</name>
+   <description>Min. Metal2 space or notch = 0.21</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.a</name>
+   <description>Min. width of Metal3 = 0.2</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.b</name>
+   <description>Min. Metal3 space or notch = 0.21</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.a</name>
+   <description>Min. width of Metal4 = 0.2</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.b</name>
+   <description>Min. Metal4 space or notch = 0.21</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.a</name>
+   <description>Min. width of Metal5 = 0.2</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.b</name>
+   <description>Min. Metal5 space or notch = 0.21</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via1.a</name>
+   <description>Via1.a: Min. and Maxi. size of Via1 = 0.19</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via1.b</name>
+   <description>Via1.b: Min. Via1 space = 0.22</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via2.a</name>
+   <description>Via2.a: Min. and Maxi. size of Via2 = 0.19</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via2.b</name>
+   <description>Via2.b: Min. Via2 space = 0.22</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via3.a</name>
+   <description>Via3.a: Min. and Maxi. size of Via3 = 0.19</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via3.b</name>
+   <description>Via3.b: Min. Via3 space = 0.22</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via4.a</name>
+   <description>Via4.a: Min. and Maxi. size of Via4 = 0.19</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Via4.b</name>
+   <description>Via4.b: Min. Via4 space = 0.22</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TV1.a</name>
+   <description>Min.and Max. TopVia1 (µm²) = 0.42</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TV1.b</name>
+   <description>Min. TopVia1 space = 0.42</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM1.a</name>
+   <description>Min. width of TopMetal1 = 1.64</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM1.b</name>
+   <description>Min. TopMetal1 space or notch = 1.64</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM2.a</name>
+   <description>Min. width of TopMetal2 = 2.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM2.b</name>
+   <description>Min. TopMetal2 space or notch = 2.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TV2.a</name>
+   <description>Min.and Max. TopVia2 = 0.90</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TV2.b</name>
+   <description>Min. TopVia2 space = 1.06</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>aFil.g</name>
+   <description>Min. global Activ coverage = 35.0 %</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>aFil.g1</name>
+   <description>Max. global Activ coverage = 55.0 %</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>aFil.g2</name>
+   <description>Min. Active coverage ratio for any 800 x 800 µm² chip area = 25.0 %</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>aFil.g3</name>
+   <description>Max. Active coverage ratio for any 800 x 800 µm² chip area = 65.0 %</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>GFil.g</name>
+   <description>Min. global GatPoly density [%] = 15.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.j</name>
+   <description>Min. global Metal1 density [%] = 35.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.k</name>
+   <description>Max. global Metal1 density [%] = 60.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.j</name>
+   <description>Min. global Metal2 density [%] = 35.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.k</name>
+   <description>Max. global Metal2 density [%] = 60.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.j</name>
+   <description>Min. global Metal3 density [%] = 35.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.k</name>
+   <description>Max. global Metal3 density [%] = 60.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.j</name>
+   <description>Min. global Metal4 density [%] = 35.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.k</name>
+   <description>Max. global Metal4 density [%] = 60.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.j</name>
+   <description>Min. global Metal5 density [%] = 35.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.k</name>
+   <description>Max. global Metal5 density [%] = 60.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1Fil.h</name>
+   <description>Min. Metal coverage MM1Filler ratio for any 800 x 800 µm² chip area [%] = 25.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1Fil.k</name>
+   <description>Max. Metal coverage MM1Filler ratio for any 800 x 800 µm² chip area [%] = 75.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2Fil.h</name>
+   <description>Min. Metal coverage MM2Filler ratio for any 800 x 800 µm² chip area [%] = 25.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2Fil.k</name>
+   <description>Max. Metal coverage MM2Filler ratio for any 800 x 800 µm² chip area [%] = 75.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3Fil.h</name>
+   <description>Min. Metal coverage MM3Filler ratio for any 800 x 800 µm² chip area [%] = 25.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3Fil.k</name>
+   <description>Max. Metal coverage MM3Filler ratio for any 800 x 800 µm² chip area [%] = 75.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4Fil.h</name>
+   <description>Min. Metal coverage MM4Filler ratio for any 800 x 800 µm² chip area [%] = 25.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4Fil.k</name>
+   <description>Max. Metal coverage MM4Filler ratio for any 800 x 800 µm² chip area [%] = 75.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5Fil.h</name>
+   <description>Min. Metal coverage MM5Filler ratio for any 800 x 800 µm² chip area [%] = 25.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5Fil.k</name>
+   <description>Max. Metal coverage MM5Filler ratio for any 800 x 800 µm² chip area [%] = 75.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM1.c</name>
+   <description>Min. global TopMetal1 density [%] = 25.00</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM1.d</name>
+   <description>Max. global TopMetal1 density [%] = 70.00</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM2.c</name>
+   <description>Min. global TopMetal1 density [%] = 25.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM2.c1</name>
+   <description>Max. global TopMetal1 density [%] = 70.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LBE.i</name>
+   <description>Max. global LBE density [%] = 20.0 %</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.a</name>
+   <description>Activ enclosure of Activ_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.b</name>
+   <description>GatPoly enclosure of GatPoly_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.c</name>
+   <description>NWell enclosure of NWell_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.d</name>
+   <description>Metal1 enclosure of Metal1_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.f.M1</name>
+   <description>Metal2 enclosure of Metal2_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.f.M2</name>
+   <description>Metal3 enclosure of Metal3_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.f.M3</name>
+   <description>Metal4 enclosure of Metal4_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.f.M4</name>
+   <description>Metal5 enclosure of Metal5_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.f.M5</name>
+   <description>TopMetal1 enclosure of TopMetal1_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.f.MT1</name>
+   <description>TopMetal2 enclosure of TopMetal2_pin = 0.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.Biwind</name>
+   <description>Biwind forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.PEmWind</name>
+   <description>PEmWind forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.BasPoly</name>
+   <description>BasPoly forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.DeepCo</name>
+   <description>DeepCo forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.PEmPoly</name>
+   <description>PEmPoly forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.EmPoly</name>
+   <description>EmPoly forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.LDMOS</name>
+   <description>LDMOS forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.PBiWind</name>
+   <description>PBiWind forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.Flash</name>
+   <description>Flash forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>forbidden.ColWind</name>
+   <description>ColWind forbidden layer in 0.13um designs</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LBE.a</name>
+   <description>LBE.a: Min. width of LBE = 100.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LBE.b</name>
+   <description>LBE.b: Max. width of LBE = 1500.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LBE.b1</name>
+   <description>LBE.b1: Max allowed LBE area = 250000.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LBE.c</name>
+   <description>LBE.c: Min. LBE space or notch = 100.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LBE.d</name>
+   <description>LBE.d: Min. space of LBE to inner edge of Edge Seal = 150.0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>LBE.h</name>
+   <description>LBE.h: No LBE ring allowed</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>Logo</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'TM2.c'</category>
+   <cell>Logo</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (-40.363,-48.718;-40.363,38.913;43.528,38.913;43.528,-48.718)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
