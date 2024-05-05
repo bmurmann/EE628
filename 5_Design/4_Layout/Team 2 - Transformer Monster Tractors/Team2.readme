@@ -2,19 +2,19 @@ Team2 pin list:
 
 Name    Type            Purpose
 -----------------------------------------
-iovdd   Input            Input to the LDO
-vref    Input            Reference Voltage for error amplifier
-vldo    InOut            Output of LDO and analog domain power supply for ADC (vdda)
-vlo    	Input            Low voltage for stage
-vhi    	Input            High voltage for stage
-vssa    Input            Analog ground for ADC
-vin    	Input            Input for ADC
-dd    	Output           Digital output of ADC
-res    	Input            Reset switch
-clkin   Input            Clock in
-VDD    	Inout            Digital power supply for ADC
-VSS    	Input            Digital ground for ADC
+iovdd    Input            Input to the LDO
+vref    Input               Reference Voltage for error amplifier
+vdda    InOut            LDO output and Analog power supply for ADC
+vlo        Input            Low voltage for stage
+vhi        Input            High voltage for stage
+vssa    Input             Analog ground for ADC and LDO
+vin        Input            Input for ADC
+dd        Output         Digital output of ADC
+res        Input            Reset switch
+clkin    Input             Clock in
+VDD     Inout            Digital power supply for ADC
+VSS      Input            Digital ground for ADC
 
 
 Current Status:
-ADC is LVS & DRC Clean. There are few LVS errors at LDO level and we're working on that. As soon we fix that we'll share the updated files. Iref and iovss pins were removed from the LDO. 
+Top is DRC and LVS clean. removed pins Iref and iovss
