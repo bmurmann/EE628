@@ -29,8 +29,6 @@ logger.info('Starting CAP DERIVATIONS')
 #            .join(res_drw).join(activ_mask).join(recog_diode)
 #            .join(recog_esd).join(ind_drw).join(ind_pin)
 #            .join(substrate_drw)
-
-
 cap_exc = recog_esd.join(ind_drw).join(ind_pin)
 
 
