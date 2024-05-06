@@ -1,8 +1,8 @@
 ** sch_path: /foss/designs/Jie_Design/Team_2.sch
 .subckt Team_2 vlo vhi vdda vssa iovdd vref vin dout res clkin
 *.PININFO clkin:I res:I dout:O vlo:I vssa:I vhi:I vin:I iovdd:I vref:I vdda:B
-M2 net3 net3 vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
-M5 net3 net3 vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+XM2 net3 net3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XM5 net3 net3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
 x5 net3 res p1e p1 p2 vhi vdda vin vssa net2 vlo vout1 Stage_T2
 x2 vdda p2 net1 net2 dout net3 res vssa p1 vout2 comparator_latch_T2
 x3 p1e clkin p1 p2 p2e ClockGen_T2
@@ -15,17 +15,17 @@ x4 iovdd vref vdda vssa LDO_TOP_T2
 ** sch_path: /foss/designs/Jie_Design/Stage_T2.sch
 .subckt Stage_T2 vmid res pse ps pr vhi vdda vin vssa d vlo vout
 *.PININFO vin:I ps:I pse:I vout:O vmid:B res:I pr:I vdda:B vssa:B vhi:B d:I vlo:B
-M3 vout vx3 vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
-M4 vout vx3 vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
-M1 vx4 pr vx2 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M6 vx4 ps vx3 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M7 vx2 pse vmid vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M8 vout res vx4 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M9 vx1 gn vlo vssa sg13_lv_nmos L=.13u W=0.5u ng=1 m=1
-M10 vx1 ps vin vssa sg13_lv_nmos L=0.13u W=2u ng=3 m=1
-M11 vx1 psb vin vdda sg13_lv_pmos L=0.13u W=6u ng=1 m=1
+XM3 vout vx3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XM4 vout vx3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XM1 vx4 pr vx2 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM6 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM7 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM8 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM9 vx1 gn vlo vssa sg13_lv_nmos W=0.5u L=.13u ng=1 m=1
+XM10 vx1 ps vin vssa sg13_lv_nmos W=2u L=0.13u ng=3 m=1
+XM11 vx1 psb vin vdda sg13_lv_pmos W=6u L=0.13u ng=1 m=1
 x3 ps VDD VSS psb sg13g2_inv_1
-M2 vx1 gp vhi vdda sg13_lv_pmos L=0.13u W=1.5u ng=1 m=1
+XM2 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
 x1 d pr VDD VSS gp sg13g2_nand2b_1
 x2 pr d VDD VSS gn sg13g2_and2_1
 XC1 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
@@ -39,26 +39,26 @@ XC3 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
 ** sch_path: /foss/designs/Jie_Design/comparator_latch_T2.sch
 .subckt comparator_latch_T2 vdda pc d dd dout vinp res vssa ps vinm
 *.PININFO vdda:B vssa:B pc:I vinp:I vinm:I ps:I dd:O d:O res:I dout:O
-M1 d2p pc d1p vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M3 out1m pc vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
-M4 out1m out1p vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
-M5 out1m out1p d2p vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
-M6 d1p vinp vssa vssa sg13_lv_nmos L=1u W=2.0u ng=1 m=1
-M2 out1p out1m vdda vdda sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
-M7 out1p pc vdda vdda sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
-M8 d2m pc d1m vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M9 out1p out1m d2m vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M10 d1m vinm_samp vssa vssa sg13_lv_nmos L=1u W=2.0u ng=1 m=1
-M11 d2p2 out1p VSS VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M12 net1 out1p VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
-M13 net1 net2 VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
-M14 net1 net2 d2p2 VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
-M16 net2 net1 VDD VDD sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
-M17 net2 out1m VDD VDD sg13_lv_pmos L=0.13u W=4.0u ng=1 m=1
-M18 d2m2 out1m VSS VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M19 net2 net1 d2m2 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M15 vinm_samp ps vinm vssa sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
-M20 vinm_samp net3 vinm vdda sg13_lv_pmos L=0.13u W=6u ng=1 m=1
+XM1 d2p pc d1p vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM3 out1m pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM4 out1m out1p vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM5 out1m out1p d2p vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM6 d1p vinp vssa vssa sg13_lv_nmos W=2.0u L=1u ng=1 m=1
+XM2 out1p out1m vdda vdda sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM7 out1p pc vdda vdda sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM8 d2m pc d1m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM9 out1p out1m d2m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM10 d1m vinm_samp vssa vssa sg13_lv_nmos W=2.0u L=1u ng=1 m=1
+XM11 d2p2 out1p VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM12 net1 out1p VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM13 net1 net2 VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM14 net1 net2 d2p2 VSS sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM16 net2 net1 VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM17 net2 out1m VDD VDD sg13_lv_pmos W=4.0u L=0.13u ng=1 m=1
+XM18 d2m2 out1m VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM19 net2 net1 d2m2 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM15 vinm_samp ps vinm vssa sg13_lv_nmos W=2.0u L=0.13u ng=1 m=1
+XM20 vinm_samp net3 vinm vdda sg13_lv_pmos W=6u L=0.13u ng=1 m=1
 x1 ps VDD VSS net3 sg13g2_inv_1
 x2 net2 VDD VSS d sg13g2_buf_2
 x3 ps net2 dd net5 net4 VDD VSS sg13g2_dfrbp_2
@@ -104,21 +104,21 @@ x23 net9 VDD VSS net10 sg13g2_inv_4
 ** sch_path: /foss/designs/Test_Cases/LDO_TOP_T2.sch
 .subckt LDO_TOP_T2 VDD_IO Vref vdda vssa
 *.PININFO VDD_IO:I vssa:I Vref:I vdda:B
-M14 Verr net1 VDD_IO VDD_IO sg13_hv_pmos L=0.9u W=36u ng=1 m=1
-M16 net1 net1 VDD_IO VDD_IO sg13_hv_pmos L=0.9u W=36u ng=1 m=1
-M17 net1 vdda net2 vssa sg13_hv_nmos L=0.9u W=136.5u ng=1 m=1
-M18 Verr Vref net2 vssa sg13_hv_nmos L=0.9u W=136.5u ng=1 m=1
-M19 net2 vbn vssa vssa sg13_hv_nmos L=0.9u W=33u ng=1 m=1
-M6 vstart vstart VDD_IO VDD_IO sg13_hv_pmos L=5u W=1.0u ng=1 m=1
-M1 vbp vstart vssa vssa sg13_hv_nmos L=0.45u W=1.0u ng=1 m=1
-M9 vstart vbn vssa vssa sg13_hv_nmos L=0.9u W=33u ng=1 m=1
-M4 vbp vbn net3 vssa sg13_hv_nmos L=0.9u W=178u ng=1 m=1
-M13 vbn vbn vssa vssa sg13_hv_nmos L=0.9u W=33u ng=1 m=1
-M5 vbp vbp VDD_IO VDD_IO sg13_hv_pmos L=0.9u W=54u ng=1 m=1
-M20 vbn vbp VDD_IO VDD_IO sg13_hv_pmos L=0.9u W=54u ng=1 m=1
+XM14 Verr net1 VDD_IO VDD_IO sg13_hv_pmos W=36u L=0.9u ng=1 m=1
+XM16 net1 net1 VDD_IO VDD_IO sg13_hv_pmos W=36u L=0.9u ng=1 m=1
+XM17 net1 vdda net2 vssa sg13_hv_nmos W=136.5u L=0.9u ng=1 m=1
+XM18 Verr Vref net2 vssa sg13_hv_nmos W=136.5u L=0.9u ng=1 m=1
+XM19 net2 vbn vssa vssa sg13_hv_nmos W=33u L=0.9u ng=1 m=1
+XM6 vstart vstart VDD_IO VDD_IO sg13_hv_pmos W=1.0u L=5u ng=1 m=1
+XM1 vbp vstart vssa vssa sg13_hv_nmos W=1.0u L=0.45u ng=1 m=1
+XM9 vstart vbn vssa vssa sg13_hv_nmos W=33u L=0.9u ng=1 m=1
+XM4 vbp vbn net3 vssa sg13_hv_nmos W=178u L=0.9u ng=1 m=1
+XM13 vbn vbn vssa vssa sg13_hv_nmos W=33u L=0.9u ng=1 m=1
+XM5 vbp vbp VDD_IO VDD_IO sg13_hv_pmos W=54u L=0.9u ng=1 m=1
+XM20 vbn vbp VDD_IO VDD_IO sg13_hv_pmos W=54u L=0.9u ng=1 m=1
 XR4 vssa net3 rhigh w=0.5e-6 l=0.96e-6 m=2 b=0
 XC1 vssa vdda cap_cmim W=140.0e-6 L=225.0e-6 MF=1
-M10 vdda Verr VDD_IO VDD_IO sg13_hv_pmos L=0.45u W=1.414m ng=1 m=1
+XM10 vdda Verr VDD_IO VDD_IO sg13_hv_pmos W=1.414m L=0.45u ng=1 m=1
 XC2 net4 vdda cap_cmim W=60.0e-6 L=60.0e-6 MF=1
 XR1 Verr net4 rhigh w=0.5e-6 l=4*0.96e-6 m=1 b=0
 .ends

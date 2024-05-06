@@ -1,11 +1,5 @@
 ** sch_path: /foss/designs/Jie_Design/Team_2.sch
-
-*** BM: added for standlaone LVS
-.subckt Team_2 vlo vhi vdda iovdd vref vin dout res clkin
-x1 vlo vhi vdda vss iovdd vref vin dout res clkin Team_2_inner
-.ends
-
-.subckt Team_2_inner vlo vhi vdda vssa iovdd vref vin dout res clkin
+.subckt Team_2 vlo vhi vdda vssa iovdd vref vin dout res clkin
 *.PININFO clkin:I res:I dout:O vlo:I vssa:I vhi:I vin:I iovdd:I vref:I vdda:B
 M2 net3 net3 vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
 M5 net3 net3 vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
@@ -131,9 +125,6 @@ R1 Verr net4 rhigh w=0.5e-6 l=4*0.96e-6 m=1 b=0
 
 .GLOBAL VDD
 .GLOBAL VSS
-.end
-
-
 ************************************************************************
 * 
 * Copyright 2023 IHP PDK Authors
@@ -1620,3 +1611,4 @@ MMPB0 Y B2 pndA VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
 MMPA1 pndA A2 VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
 MMPA0 pndA A1 VDD VDD sg13_lv_pmos m=1 w=1.12u l=130.00n ng=1
 .ENDS
+.end
