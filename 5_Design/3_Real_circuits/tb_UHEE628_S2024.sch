@@ -183,6 +183,7 @@ value="
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 .inc /foss/pdks/sg13g2/libs.tech/ngspice/models/diodes.lib
 .inc \\"../../4_Layout/Team 1/Team1_sim.spice\\"
+.inc \\"../../4_Layout/Team 2 - Transformer Monster Tractors/Team_2_sim.spice\\"
 .inc \\"../../4_Layout/Team 3/Team3_sim.spice\\"
 .inc \\"../../4_Layout/Team 4/Team4_sim.spice\\"
 .inc \\"../../4_Layout/Team 5/Team5_sim.spice\\"

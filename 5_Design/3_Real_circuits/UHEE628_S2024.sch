@@ -16,8 +16,6 @@ N 1150 -1310 1150 -1130 {
 lab=out1_c}
 N 1130 -1050 1180 -1050 {
 lab=out2_c}
-N 1130 -1150 1130 -1050 {
-lab=out2_c}
 N 1150 -970 1180 -970 {
 lab=out3_c}
 N 1150 -990 1150 -970 {
@@ -132,35 +130,19 @@ N 260 -750 260 -730 {
 lab=in4_c}
 N 240 -730 260 -730 {
 lab=in4_c}
-N 480 -950 480 -730 {
+N 480 -890 480 -730 {
 lab=res_c}
-N 460 -890 460 -770 {
-lab=VSS}
-N 440 -970 440 -790 {
+N 440 -950 440 -790 {
 lab=avdd}
-N 420 -910 420 -810 {
-lab=vlo}
 N 400 -990 400 -860 {
 lab=vhi}
-N 480 -1050 800 -1050 {
+N 480 -1040 480 -890 {
 lab=res_c}
-N 480 -1210 480 -1050 {
-lab=res_c}
-N 460 -1090 800 -1090 {
+N 460 -930 460 -770 {
 lab=VSS}
-N 460 -1250 460 -1090 {
-lab=VSS}
-N 440 -1110 800 -1110 {
+N 440 -1270 440 -950 {
 lab=avdd}
-N 440 -1270 440 -1110 {
-lab=avdd}
-N 420 -1130 800 -1130 {
-lab=vlo}
-N 420 -1290 420 -1130 {
-lab=vlo}
-N 400 -1150 800 -1150 {
-lab=vhi}
-N 400 -1310 400 -1150 {
+N 400 -1140 400 -990 {
 lab=vhi}
 N 480 -1210 800 -1210 {
 lab=res_c}
@@ -178,9 +160,9 @@ N 80 -890 80 -860 {
 lab=vhi}
 N 240 -970 260 -970 {
 lab=in3_c}
-N 260 -1070 800 -1070 {
+N 260 -1060 800 -1060 {
 lab=in2_c}
-N 260 -1070 260 -1050 {
+N 260 -1060 260 -1050 {
 lab=in2_c}
 N 240 -1050 260 -1050 {
 lab=in2_c}
@@ -190,7 +172,7 @@ N 260 -1230 260 -1130 {
 lab=in1_c}
 N 240 -1130 260 -1130 {
 lab=in1_c}
-N 1100 -1150 1130 -1150 {
+N 1100 -1140 1130 -1140 {
 lab=out2_c}
 N 1100 -990 1150 -990 {
 lab=out3_c}
@@ -224,9 +206,9 @@ N 730 -870 800 -870 {
 lab=ck3_c}
 N 730 -1400 730 -870 {
 lab=ck3_c}
-N 750 -1030 800 -1030 {
+N 750 -1020 800 -1020 {
 lab=ck2_c}
-N 750 -1380 750 -1030 {
+N 750 -1380 750 -1020 {
 lab=ck2_c}
 N 750 -1380 810 -1380 {
 lab=ck2_c}
@@ -276,7 +258,7 @@ N 1300 -650 1370 -650 {
 lab=out5}
 N 1300 -570 1370 -570 {
 lab=out6}
-N 1300 -890 1370 -890 {
+N 1340 -890 1370 -890 {
 lab=iovdd}
 N 1300 -810 1560 -810 {
 lab=VSS}
@@ -296,8 +278,6 @@ N 970 -1550 970 -1540 {
 lab=VDD}
 N 1000 -1540 1000 -1390 {
 lab=VDD}
-N 570 -1550 570 -1520 {
-lab=vldo}
 N 730 -1550 730 -1520 {
 lab=ck3}
 N 810 -1550 810 -1520 {
@@ -320,28 +300,10 @@ N 1100 -1310 1150 -1310 {
 lab=out1_c}
 N 400 -990 800 -990 {
 lab=vhi}
-N 400 -1150 400 -990 {
-lab=vhi}
-N 440 -970 800 -970 {
-lab=avdd}
-N 440 -1110 440 -970 {
-lab=avdd}
-N 480 -950 800 -950 {
-lab=res_c}
-N 480 -1050 480 -950 {
-lab=res_c}
-N 260 -930 800 -930 {
+N 260 -910 800 -910 {
 lab=in3_c}
-N 260 -970 260 -930 {
+N 260 -970 260 -910 {
 lab=in3_c}
-N 420 -910 800 -910 {
-lab=vlo}
-N 420 -1130 420 -910 {
-lab=vlo}
-N 460 -890 800 -890 {
-lab=VSS}
-N 460 -1090 460 -890 {
-lab=VSS}
 N 410 -80 1560 -80 {
 lab=VSS}
 N 1560 -120 1560 -80 {
@@ -360,10 +322,72 @@ N 970 -150 1520 -150 {
 lab=VSS}
 N 970 -160 970 -150 {
 lab=VSS}
+N 480 -1040 800 -1040 {
+lab=res_c}
+N 480 -1210 480 -1040 {
+lab=res_c}
+N 490 -1400 490 -1380 {
+lab=vref_c}
+N 490 -1380 500 -1380 {
+lab=vref_c}
+N 500 -1380 500 -1080 {
+lab=vref_c}
+N 500 -1080 800 -1080 {
+lab=vref_c}
+N 420 -1160 800 -1160 {
+lab=vlo}
+N 420 -970 420 -810 {
+lab=vlo}
+N 420 -1290 420 -1160 {
+lab=vlo}
+N 400 -1140 800 -1140 {
+lab=vhi}
+N 400 -1310 400 -1140 {
+lab=vhi}
+N 460 -930 800 -930 {
+lab=VSS}
+N 460 -1120 460 -930 {
+lab=VSS}
+N 480 -890 800 -890 {
+lab=res_c}
+N 440 -950 800 -950 {
+lab=avdd}
+N 420 -970 800 -970 {
+lab=vlo}
+N 420 -1160 420 -970 {
+lab=vlo}
+N 460 -1120 800 -1120 {
+lab=VSS}
+N 460 -1250 460 -1120 {
+lab=VSS}
+N 1130 -1140 1130 -1050 {
+lab=out2_c}
+N 700 -1100 800 -1100 {
+lab=iovdd}
+N 700 -1100 700 -850 {
+lab=iovdd}
+N 700 -850 1340 -850 {
+lab=iovdd}
+N 1340 -890 1340 -850 {
+lab=iovdd}
+N 1300 -890 1340 -890 {
+lab=iovdd}
+N 1100 -1160 1120 -1160 {
+lab=#net1}
+N 1120 -1340 1120 -1160 {
+lab=#net1}
+N 600 -1340 1120 -1340 {
+lab=#net1}
+N 570 -1540 570 -1520 {
+lab=vldo}
+N 600 -1540 600 -1340 {}
+N 570 -1540 600 -1540 {}
+N 570 -1550 570 -1540 {
+lab=vldo}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {padring.sym} 130 -200 0 0 {name=x10}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 1/Team1.sym} 950 -1250 0 0 {name=x1}
-C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -1090 0 0 {name=x2}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 2 - Transformer Monster Tractors/Team_2.sym} 950 -1090 0 0 {name=x2}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 4/Team4.sym} 950 -770 0 0 {name=x4}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym} 950 -610 0 0 {name=x5}
 C {devices/ipin.sym} 50 -1130 0 0 {name=p1 lab=in1}
@@ -390,7 +414,6 @@ C {devices/ipin.sym} 730 -1550 1 0 {name=p21 lab=ck3}
 C {devices/ipin.sym} 810 -1550 1 0 {name=p22 lab=ck2}
 C {devices/ipin.sym} 890 -1550 1 0 {name=p23 lab=ck1}
 C {devices/ipin.sym} 490 -1550 1 0 {name=p24 lab=vref}
-C {devices/noconn.sym} 490 -1400 3 0 {name=l4}
 C {devices/ipin.sym} 570 -140 3 0 {name=p25 lab=res}
 C {devices/ipin.sym} 730 -140 3 0 {name=p26 lab=ck4}
 C {devices/ipin.sym} 810 -140 3 0 {name=p27 lab=ck5}
@@ -398,8 +421,8 @@ C {devices/ipin.sym} 890 -140 3 0 {name=p28 lab=ck6}
 C {devices/iopin.sym} 50 -890 0 1 {name=p29 lab=vhi}
 C {devices/lab_wire.sym} 540 -360 0 0 {name=p31 sig_type=std_logic lab=res_c}
 C {devices/lab_wire.sym} 330 -1230 0 0 {name=p32 sig_type=std_logic lab=in1_c}
-C {devices/lab_wire.sym} 330 -1070 0 0 {name=p33 sig_type=std_logic lab=in2_c}
-C {devices/lab_wire.sym} 330 -930 0 0 {name=p34 sig_type=std_logic lab=in3_c}
+C {devices/lab_wire.sym} 330 -1060 0 0 {name=p33 sig_type=std_logic lab=in2_c}
+C {devices/lab_wire.sym} 330 -910 0 0 {name=p34 sig_type=std_logic lab=in3_c}
 C {devices/lab_wire.sym} 330 -750 0 0 {name=p35 sig_type=std_logic lab=in4_c}
 C {devices/lab_wire.sym} 330 -590 0 0 {name=p36 sig_type=std_logic lab=in5_c}
 C {devices/lab_wire.sym} 330 -430 0 0 {name=p37 sig_type=std_logic lab=in6_c}
@@ -417,3 +440,4 @@ C {devices/lab_wire.sym} 1130 -570 3 0 {name=p48 sig_type=std_logic lab=out6_c}
 C {devices/lab_wire.sym} 1130 -650 0 0 {name=p49 sig_type=std_logic lab=out5_c}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 6/Team6.sym} 950 -450 0 0 {name=x6}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 3/Team3.sym} 950 -930 0 0 {name=x7}
+C {devices/lab_wire.sym} 500 -1370 3 0 {name=p9 sig_type=std_logic lab=vref_c}
