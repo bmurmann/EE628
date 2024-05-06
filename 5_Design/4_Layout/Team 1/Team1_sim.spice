@@ -1,17 +1,33 @@
-** sch_path: /foss/designs/week12/IDSM2_t1.sch
-.subckt Team1 vhi vlo vdda vssa vin dd res clkin
-*.PININFO clkin:I res:I vin:I vssa:I vdda:I vlo:I vhi:I dd:O
-x1 vdda p2 dd net1 vmid2 vssa p1 res vout2 comp_t1
+** sch_path: /foss/designs/layout/EE628_IDSM2/schematics/IDSM2_t1.sch
+**.subckt IDSM2_t1 vhi vlo vdda vssa vin dout res clkin
+*.ipin clkin
+*.ipin res
+*.ipin vin
+*.ipin vssa
+*.ipin vdda
+*.ipin vlo
+*.ipin vhi
+*.opin dout
+x1 vdda p2 net1 net2 vmid2 dout vssa p1 res vout2 comp_t1
 x2 p1e clkin p1 p2 p2e clk_generator_t1
-x3 res p1e p1 p2 vhi vdda vin vout1 vssa dd net2 vlo stage_t1
+x3 res p1e p1 p2 vhi vdda vin vout1 vssa net2 net3 vlo stage_t1
 x4 res p2e p2 p1 vhi vdda vout1 vout2 vssa net1 vmid2 vlo stage_t1
-.ends
+**.ends
 
-* expanding   symbol:  /foss/designs/week12/comp_t1.sym # of pins=9
-** sym_path: /foss/designs/week12/comp_t1.sym
-** sch_path: /foss/designs/week12/comp_t1.sch
-.subckt comp_t1 vdda pc d dd vinp vssa ps res vinm
-*.PININFO pc:I vinp:I ps:I vinm:I vdda:B vssa:B d:O dd:O res:I
+* expanding   symbol:  /foss/designs/layout/EE628_IDSM2/schematics/comp_t1.sym # of pins=10
+** sym_path: /foss/designs/layout/EE628_IDSM2/schematics/comp_t1.sym
+** sch_path: /foss/designs/layout/EE628_IDSM2/schematics/comp_t1.sch
+.subckt comp_t1 vdda pc d dd vinp dout vssa ps res vinm
+*.ipin pc
+*.ipin vinp
+*.ipin ps
+*.ipin vinm
+*.iopin vdda
+*.iopin vssa
+*.opin d
+*.opin dd
+*.ipin res
+*.opin dout
 XM4 vinm_samp ps vinm vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 XM5 vinm_samp psb vinm vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
 x3 ps VDD VSS psb sg13g2_inv_1
@@ -37,14 +53,19 @@ XM20 net4 out1m VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 x1 net2 VDD VSS d sg13g2_buf_2
 x2 ps net2 dd net7 net6 VDD VSS sg13g2_dfrbp_2
 x4 res VDD VSS net6 sg13g2_inv_1
+x5 dd VDD VSS dout sg13g2_inv_2
 .ends
 
 
-* expanding   symbol:  /foss/designs/week12/clk_generator_t1.sym # of pins=5
-** sym_path: /foss/designs/week12/clk_generator_t1.sym
-** sch_path: /foss/designs/week12/clk_generator_t1.sch
+* expanding   symbol:  /foss/designs/layout/EE628_IDSM2/schematics/clk_generator_t1.sym # of pins=5
+** sym_path: /foss/designs/layout/EE628_IDSM2/schematics/clk_generator_t1.sym
+** sch_path: /foss/designs/layout/EE628_IDSM2/schematics/clk_generator_t1.sch
 .subckt clk_generator_t1 p1e clkin p1 p2 p2e
-*.PININFO clkin:I p2e:O p2:O p1:O p1e:O
+*.ipin clkin
+*.opin p2e
+*.opin p2
+*.opin p1
+*.opin p1e
 x1 clkin VDD VSS clkinb sg13g2_inv_2
 x2 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
 x3 clkinb VDD VSS clkinbb sg13g2_inv_2
@@ -70,11 +91,22 @@ x10 net10 VDD VSS p2 sg13g2_inv_8
 .ends
 
 
-* expanding   symbol:  /foss/designs/week12/stage_t1.sym # of pins=12
-** sym_path: /foss/designs/week12/stage_t1.sym
-** sch_path: /foss/designs/week12/stage_t1.sch
+* expanding   symbol:  /foss/designs/layout/EE628_IDSM2/schematics/stage_t1.sym # of pins=12
+** sym_path: /foss/designs/layout/EE628_IDSM2/schematics/stage_t1.sym
+** sch_path: /foss/designs/layout/EE628_IDSM2/schematics/stage_t1.sch
 .subckt stage_t1 res pse ps pr vhi vdda vin vout vssa d vmid vlo
-*.PININFO res:I pse:I ps:I pr:I vhi:B vin:I d:I vlo:B vdda:B vssa:B vout:O vmid:O
+*.ipin res
+*.ipin pse
+*.ipin ps
+*.ipin pr
+*.iopin vhi
+*.ipin vin
+*.ipin d
+*.iopin vlo
+*.iopin vdda
+*.iopin vssa
+*.opin vout
+*.opin vmid
 x1 ps VDD VSS psb sg13g2_inv_1
 x2 d pr VDD VSS gp sg13g2_nand2b_1
 XM2 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
