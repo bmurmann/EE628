@@ -12,7 +12,7 @@ x2 res p1 p1d p2d vhi vdda vout1 vin vssa net3 net2 vlo stage_T3
 x3 res p2 p2d p1d vhi vdda vout2 vout1 vssa vmid2 net1 vlo stage_T3
 x1 p1 clkin p1d p2d p2 clock_T3
 x4 vdda p2d net1 vmid2 net2 dout vssa res p1d vout2 comp_latch_T3
-**.ends
+.ends
 
 * expanding   symbol:  /foss/designs/Week 13/stage_T3.sym # of pins=12
 ** sym_path: /foss/designs/Week 13/stage_T3.sym

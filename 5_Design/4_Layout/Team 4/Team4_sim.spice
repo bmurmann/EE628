@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/FinalProject/IDSM2.sch
-**.subckt IDSM2 vhi vlo vdda vssa vin dout res clkin
+.subckt Team4 vhi vlo vdda vssa vin dout res clkin
 *.ipin vhi
 *.ipin vlo
 *.ipin vdda
@@ -12,7 +12,7 @@ x1 vdda p2 net1 net2 dout vmid2 res vssa p1 vout2 comp_t4
 x2 res vhi p1e p1 vdda p2 vin vout1 vssa net2 net3 vlo stage_t4
 x3 res vhi p2e p2 vdda p1 vout1 vout2 vssa net1 vmid2 vlo stage_t4
 x4 p1e p1 clkin p2 p2e clkgen_t4
-**.ends
+.ends
 
 * expanding   symbol:  /foss/designs/FinalProject/comp_t4.sym # of pins=10
 ** sym_path: /foss/designs/FinalProject/comp_t4.sym

@@ -32,6 +32,7 @@ C6 out1 GND 1p m=1
 .inc /foss/pdks/sg13g2/libs.tech/ngspice/models/diodes.lib
 .inc "../../4_Layout/Team 1/Team1_sim.spice"
 .inc "../../4_Layout/Team 3/Team3_sim.spice"
+.inc "../../4_Layout/Team 4/Team4_sim.spice"
 .inc "../../4_Layout/Team 5/Team5_sim.spice"
 .inc "../../4_Layout/Team 6/Team6_sim.spice"
 .inc "../stimulus_gen/inc_clocks.spice"
@@ -87,11 +88,11 @@ x10 vref ck3 vldo ck1 ck2 ck1_c ck3_c net1 ck2_c out1_c in1 out1 in2 out2 out2_c
 + vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS padring
 x1 vhi vlo avdd VSS in1_c out1_c res_c ck1_c Team1
 x2 vhi vlo avdd VSS in2_c out2_c res_c ck2_c template_idsm2
-x4 vhi vlo avdd VSS in4_c out4_c res_c ck4_c template_idsm2
+x4 vhi vlo avdd VSS in4_c out4_c res_c ck4_c Team4
 x5 vhi vlo avdd VSS in5_c out5_c res_c ck5_c Team5
 * noconn #net1
 x6 vhi vlo avdd VSS in6_c out6_c res_c ck6_c Team6
-x7 vhi avdd res_c out3_c in3_c vlo VSS ck3_c Team3
+x7 vhi avdd res_c in3_c vlo out3_c VSS ck3_c Team3
 .ends
 
 

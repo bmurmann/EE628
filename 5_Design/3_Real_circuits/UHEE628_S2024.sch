@@ -41,7 +41,7 @@ lab=vlo}
 N 440 -630 440 -470 {
 lab=avdd}
 N 460 -610 460 -450 {
-lab=#net1}
+lab=VSS}
 N 480 -410 480 -360 {
 lab=res_c}
 N 80 -890 110 -890 {
@@ -55,19 +55,19 @@ lab=vhi}
 N 440 -470 800 -470 {
 lab=avdd}
 N 460 -450 800 -450 {
-lab=#net1}
+lab=VSS}
 N 410 -160 410 -80 {
-lab=#net1}
+lab=VSS}
 N 410 -160 430 -160 {
-lab=#net1}
+lab=VSS}
 N 410 -180 410 -160 {
-lab=#net1}
+lab=VSS}
 N 430 -360 430 -160 {
-lab=#net1}
+lab=VSS}
 N 430 -360 460 -360 {
-lab=#net1}
+lab=VSS}
 N 460 -450 460 -360 {
-lab=#net1}
+lab=VSS}
 N 570 -360 570 -300 {
 lab=res_c}
 N 480 -360 570 -360 {
@@ -87,9 +87,9 @@ lab=res_c}
 N 480 -730 480 -570 {
 lab=res_c}
 N 460 -610 800 -610 {
-lab=#net1}
+lab=VSS}
 N 460 -770 460 -610 {
-lab=#net1}
+lab=VSS}
 N 440 -630 800 -630 {
 lab=avdd}
 N 420 -650 800 -650 {
@@ -107,7 +107,7 @@ lab=vlo}
 N 420 -810 800 -810 {
 lab=vlo}
 N 460 -770 800 -770 {
-lab=#net1}
+lab=VSS}
 N 440 -790 800 -790 {
 lab=avdd}
 N 400 -830 800 -830 {
@@ -135,7 +135,7 @@ lab=in4_c}
 N 480 -950 480 -730 {
 lab=res_c}
 N 460 -890 460 -770 {
-lab=#net1}
+lab=VSS}
 N 440 -970 440 -790 {
 lab=avdd}
 N 420 -910 420 -810 {
@@ -147,9 +147,9 @@ lab=res_c}
 N 480 -1210 480 -1050 {
 lab=res_c}
 N 460 -1090 800 -1090 {
-lab=#net1}
+lab=VSS}
 N 460 -1250 460 -1090 {
-lab=#net1}
+lab=VSS}
 N 440 -1110 800 -1110 {
 lab=avdd}
 N 440 -1270 440 -1110 {
@@ -165,7 +165,7 @@ lab=vhi}
 N 480 -1210 800 -1210 {
 lab=res_c}
 N 460 -1250 800 -1250 {
-lab=#net1}
+lab=VSS}
 N 440 -1270 800 -1270 {
 lab=avdd}
 N 420 -1290 800 -1290 {
@@ -279,7 +279,7 @@ lab=out6}
 N 1300 -890 1370 -890 {
 lab=iovdd}
 N 1300 -810 1560 -810 {
-lab=#net1}
+lab=VSS}
 N 970 -150 970 -140 {
 lab=VSS}
 N 970 -160 990 -160 {
@@ -339,31 +339,32 @@ lab=vlo}
 N 420 -1130 420 -910 {
 lab=vlo}
 N 460 -890 800 -890 {
-lab=#net1}
+lab=VSS}
 N 460 -1090 460 -890 {
-lab=#net1}
+lab=VSS}
 N 410 -80 1560 -80 {
-lab=#net1}
+lab=VSS}
 N 1560 -120 1560 -80 {
-lab=#net1}
+lab=VSS}
 N 1560 -810 1560 -180 {
-lab=#net1}
+lab=VSS}
 N 1520 -180 1560 -180 {
-lab=#net1}
+lab=VSS}
 N 1520 -150 1520 -120 {
-lab=#net1}
+lab=VSS}
 N 1520 -120 1560 -120 {
-lab=#net1}
+lab=VSS}
 N 1520 -180 1520 -150 {
-lab=#net1}
-N 970 -150 1520 -150 {}
+lab=VSS}
+N 970 -150 1520 -150 {
+lab=VSS}
 N 970 -160 970 -150 {
 lab=VSS}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {padring.sym} 130 -200 0 0 {name=x10}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 1/Team1.sym} 950 -1250 0 0 {name=x1}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -1090 0 0 {name=x2}
-C {/foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym} 950 -770 0 0 {name=x4}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 4/Team4.sym} 950 -770 0 0 {name=x4}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym} 950 -610 0 0 {name=x5}
 C {devices/ipin.sym} 50 -1130 0 0 {name=p1 lab=in1}
 C {devices/ipin.sym} 50 -1050 0 0 {name=p2 lab=in2}
