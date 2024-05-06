@@ -8,8 +8,11 @@ Y. Chae et al., "A 2.1 M Pixels, 120 Frame/s CMOS Image Sensor With Column-Paral
 ADC Architecture," in IEEE Journal of Solid-State Circuits, Jan. 2011. https://ieeexplore.ieee.org/document/5641589
 
 ## Current Status:
-These are preliminary files in need of fixes for lvs.
-
+Schematic: Updated to include the inverter for dout output
+Clock gen: LVS Clean
+Stage: 40-50%: issues with capactiros and multi gate PMOS
+Comp: Current version with connections not very clean after connecting taps
+We kept a copy of the older version that was 50-60% clean but did not have connections to tap
 ### clock_gen.oas
 All LVS checks pass.
 
@@ -23,7 +26,8 @@ All DRC checks pass with the exception of:
 - M3Fil.h
 
 ### stage.oas
-Not all LVS checks pass. Only some pins are recognized and we have not solved that issue. Overall we are also having issues of lvs providing different output depending on the machine it is run on.
+Around 40-50% LVS Passing, there are issues with the recognition of multi-gate PMOS
+and two of our capacitors, those seem to be big issue with the stage.
 
 All DRC checks pass with the exception of:
 - aFil.g
@@ -42,7 +46,11 @@ All DRC checks pass with the exception of:
 - TM1.c
 
 ### comparator.oas
-Not all LVS checks pass. Similar issues as the stage.
+We had around 50-60% green, then after realizing some taps were not connected
+we connected taps and looking through to make sure everything is connected
+we now have much less green. We maintained a copy of the older version that had 50-60% green
+so that we could revert back to it if needed.
+
 
 All DRC checks pass with the exception of:
 - aFil.g
