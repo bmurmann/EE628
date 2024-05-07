@@ -30,7 +30,8 @@ x4                  vhi vlo avdd in4_c out4_c res_c ck4_c  IDSM2_T4
 
 
 ****************
-***x6 vhi vlo avdd VSS in6_c out6_c res_c ck6_c Team6
+***.subckt Team6_inner  vhi vlo vdda vssa vin    dout    res    clk
+x6                      vhi vlo avdd vss  in6_c  out6_c  res_c  ck6_c   Team6_inner
 
 .ends
 
