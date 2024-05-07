@@ -13,19 +13,7 @@ sg13g2_io_bm.cdl
 * Changed all X to M for MOSFETs  
 * Changed all X to D for diodes  
 * Added some A and P values to all diodes to eliminate warnings/LVS mismatches
-* Changed IOPadVdd as follows (this needs to be revisited; cell seems buggy)
-```
-.subckt sg13g2_IOPadVdd vss vdd iovss iovdd
-Xnclamp iovss iovdd vdd ngate sg13g2_Clamp_N43N43D4R
-Xrcres vdd res_cap sg13g2_RCClampResistor
-*** Inverter is connected to iovdd in layout (does not seem to be correct)
-*Xrcinv vdd iovss res_cap ngate sg13g2_RCClampInverter
-Xrcinv iovdd iovss res_cap ngate sg13g2_RCClampInverter
-*** These are not in the layout
-*Xdcndiode iovss vdd iovdd sg13g2_DCNDiode
-*Xdcpdiode vdd iovdd iovss sg13g2_DCPDiode
-.ends sg13g2_IOPadVdd
-```
+
 
 ## Layout changes
 * IOPadAnalog
@@ -33,9 +21,6 @@ Xrcinv iovdd iovss res_cap ngate sg13g2_RCClampInverter
 
 * IOPadOut16mA
   * Ditto, the cell needs a dummy connection between the two `IOVDD' rails.
-
-* IOPadVdd
-  * Added missing M2 connection to the pad
 
 * DCNDiode
   * Removed `recog.esd` so that this diode gets recognized as `dantenna` as defined in the netlist
@@ -61,5 +46,9 @@ Xrcinv iovdd iovss res_cap ngate sg13g2_RCClampInverter
 * Clamp_P8N8D
   * Added `heattrans` layer on NMOS HV devices
 
-* RCCClampResistor
+* RCClampResistor
   * Replaced RPPD with a pycell-generated device (25 bends). The LVS currently has trouble matching series-connected resistors (they simplify in a an odd way)
+
+* IOPadVDD
+  * The original cell was buggy as documented here: https://github.com/IHP-GmbH/IHP-Open-PDK/issues/101#issuecomment-2095787568
+  * Made appropriate fixes in the local cell

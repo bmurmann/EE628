@@ -8,8 +8,6 @@ ln -fs $DESIGNS/EE628/5_Design/4_Layout/padring.oas          $KLAYOUT_HOME/libra
 ln -fs $DESIGNS/EE628/5_Design/4_Layout/sg13g2_pr.gds        $KLAYOUT_HOME/libraries
 ln -fs $DESIGNS/EE628/5_Design/4_Layout/sg13g2_stdcell.gds   $KLAYOUT_HOME/libraries
 ln -fs $DESIGNS/EE628/5_Design/4_Layout/sg13g2_io_bm.oas     $KLAYOUT_HOME/libraries
-ln -fs $DESIGNS/EE628/5_Design/4_Layout/sg13g2_io_update_received_2024.05.06.gds     $KLAYOUT_HOME/libraries
-
 
 ln -fs $DESIGNS/EE628/5_Design/4_Layout/Team1.oas $KLAYOUT_HOME/libraries
 ln -fs $DESIGNS/EE628/5_Design/4_Layout/Team2.oas $KLAYOUT_HOME/libraries
