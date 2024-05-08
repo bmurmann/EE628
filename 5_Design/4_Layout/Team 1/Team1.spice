@@ -38,7 +38,7 @@ M15 net2 net1 VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
 M16 net2 out1m VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
 M17 net1 net2 net3 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
 M18 net2 net1 net4 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
-M19 net3 out1p VSS net5 sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M19 net3 out1p VSS VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
 M20 net4 out1m VSS VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
 x1 net2 VDD VSS d sg13g2_buf_2
 x2 ps net2 dd net7 net6 VDD VSS sg13g2_dfrbp_2
