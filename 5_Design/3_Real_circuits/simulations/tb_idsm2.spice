@@ -1,0 +1,186 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/tb_idsm2.sch
+**.subckt tb_idsm2
+Vin vin GND dc {vin}
+Vssa vssa GND dc 0
+Vres res GND dc {vdd} pwl(0, {vdd}, {per/2}, {vdd}, {per/2+25p}, 0)
+Vclk clkin GND pulse({vdd}, 0, {per}, 100p, 100p, {0.5*per}, {per})
+Vddd VDD GND dc {vdd}
+Vssd VSS GND dc 0
+Vdda vdda GND dc {vdd}
+x1 vhi vlo vdda vssa vin dout res clkin template_idsm2
+Vlo vlo GND dc {vlo}
+Vhi vhi GND dc {vhi}
+C1 dout GND 50f m=1
+**** begin user architecture code
+
+
+.param temp=27 per=20n N=110
+.param vlo=0.3 vhi=0.9 vdd=1.2 vin=0.6
+.option method=gear reltol=1e-5
+.ic v(x1.x3.out1p)=0
+.tran 100p {per*N} uic
+.meas tran iavg_ana AVG i(Vdda)
+.meas tran iavg_dig AVG i(Vddd)
+
+.control
+set wr_singlescale
+set wr_vecnames
+option numdgt = 3
+let index = 1
+foreach vin_val 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85
+  alterparam vin = $vin_val
+  reset
+  run
+  set file = {tb_idsm2_}{$&index}{.txt}
+  wrdata $file x1.vout1 x1.vout2 dout x1.p1 x1.p2
+  destroy $curplot
+  let index = index + 1
+end
+.endc
+
+
+ .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  template_idsm2.sym # of pins=8
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_idsm2.sch
+.subckt template_idsm2 vhi vlo vdda vssa vin dout res clkin
+*.ipin clkin
+*.ipin res
+*.ipin vin
+*.opin dout
+*.ipin vssa
+*.ipin vdda
+*.ipin vlo
+*.ipin vhi
+x4 p1e p1 clkin p2 p2e template_clkgen
+x1 res p1e p1 p2 vhi vdda vout1 vin vssa net1 vlo net3 template_stage
+x2 res p2e p2 p1 vhi vdda vout2 vout1 vssa net2 vlo vmid2 template_stage
+x3 vdda p2 net2 p1 net1 vout2 vmid2 vssa res dout template_comp
+* noconn #net3
+.ends
+
+
+* expanding   symbol:  template_clkgen.sym # of pins=5
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sch
+.subckt template_clkgen p1e p1 clkin p2 p2e
+*.ipin clkin
+*.opin p1e
+*.opin p1
+*.opin p2
+*.opin p2e
+xn1 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
+xi7 net6 VDD VSS net9 sg13g2_inv_4
+xi1 clkin VDD VSS clkinb sg13g2_inv_2
+xi2 clkinb VDD VSS clkinbb sg13g2_inv_2
+xn2 clkinb b1 VDD VSS net12 sg13g2_nand2_2
+xi13 p1e VDD VSS b1 sg13g2_inv_4
+xi8 net8 VDD VSS net10 sg13g2_inv_4
+xi14 p2e VDD VSS b2 sg13g2_inv_4
+xn3 a1 b1 VDD VSS net1 sg13g2_nand2_2
+xn4 a2 b2 VDD VSS net3 sg13g2_nand2_2
+xi11 a1 VDD VSS p1e sg13g2_inv_4
+xi9 net9 VDD VSS a1 sg13g2_inv_4
+x12 a2 VDD VSS p2e sg13g2_inv_4
+xi10 net10 VDD VSS a2 sg13g2_inv_4
+xi15 net1 VDD VSS net2 sg13g2_inv_4
+xi17 net2 VDD VSS p1 sg13g2_inv_8
+xi16 net3 VDD VSS net4 sg13g2_inv_4
+xi18 net4 VDD VSS p2 sg13g2_inv_8
+xi3 net11 VDD VSS net5 sg13g2_inv_4
+xi5 net5 VDD VSS net6 sg13g2_inv_4
+xi4 net12 VDD VSS net7 sg13g2_inv_4
+xi6 net7 VDD VSS net8 sg13g2_inv_4
+.ends
+
+
+* expanding   symbol:  template_stage.sym # of pins=12
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_stage.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_stage.sch
+.subckt template_stage res pse ps pr vhi vdda vout vin vssa d vlo vmid
+*.opin vout
+*.iopin vdda
+*.ipin res
+*.ipin vin
+*.ipin pse
+*.ipin ps
+*.ipin pr
+*.ipin d
+*.iopin vssa
+*.iopin vhi
+*.iopin vlo
+*.opin vmid
+XMn vout vx3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XMp vout vx3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XMn3 vx1 gn vlo vssa sg13_lv_nmos W=0.5u L=0.13u ng=1 m=1
+XMn4 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+x1 ps VDD VSS psb sg13g2_inv_1
+XMp1 vx1 psb vin vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
+XMn5 vx1 ps vin vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn1 vx4 pr vx2 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn2 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn6 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn7 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XMp2 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+x2 pr d VDD VSS gn sg13g2_and2_1
+XMp3 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
+x3 d pr VDD VSS gp sg13g2_nand2b_1
+XC1 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+XC2 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+XC3 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+.ends
+
+
+* expanding   symbol:  template_comp.sym # of pins=10
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_comp.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_comp.sch
+.subckt template_comp vdda pc d ps dd vinm vinp vssa res dout
+*.opin d
+*.ipin pc
+*.iopin vssa
+*.iopin vdda
+*.ipin ps
+*.ipin res
+*.opin dd
+*.ipin vinm
+*.ipin vinp
+*.opin dout
+XM3m out1p out1m d2m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM4m out1p out1m vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM5m out1p pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM2m d2m pc d1m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM1m d1m vinm_samp vssa vssa sg13_lv_nmos W=2u L=1u ng=1 m=1
+XM3p out1m out1p d2p vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM4p out1m out1p vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM5p out1m pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM2p d2p pc d1p vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM1p d1p vinp vssa vssa sg13_lv_nmos W=2u L=1u ng=1 m=1
+XM32m dint net2 net1 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM2 dint net2 VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM3 dint out1m VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM21m net1 out1m VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM32p net2 dint net3 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM42p net2 dint VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM8 net2 out1p VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM21p net3 out1p VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+x1 ps dint dd net5 net4 VDD VSS sg13g2_dfrbp_2
+x2 dint VDD VSS d sg13g2_buf_2
+x3 res VDD VSS net4 sg13g2_inv_1
+XMp1 vinm_samp psb vinm vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
+XMn5 vinm_samp ps vinm vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XC1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+x4 ps VDD VSS psb sg13g2_inv_1
+x5 dd VDD VSS dout sg13g2_inv_2
+* noconn #net5
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VSS
+.end

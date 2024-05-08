@@ -1,0 +1,115 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/tb_stage_corners.sch
+**.subckt tb_stage_corners
+Vin vin GND dc {vin}
+Vssa vssa GND dc 0
+Vres res GND dc {vdd} pwl(0, {vdd}, {per/2}, {vdd}, {per/2+25p}, 0)
+Vclk clkin GND pulse({vdd}, 0, {per}, 100p, 100p, {per/2}, {per})
+x2 p1e p1 clkin p2 p2e template_clkgen
+x1 res p1e p1 p2 vhi vdda vout vin vssa d vlo net1 template_stage
+Vddd VDD GND dc {vdd}
+Vssd VSS GND dc 0
+Vdda vdda GND dc {vdd}
+Vlo vlo GND dc {vlo}
+Vhi vhi GND dc {vhi}
+C1 vout GND 50f m=1
+Vd d GND dc {vd}
+**** begin user architecture code
+
+
+.param temp=27 per=80n vdd=1.2
+.param vin=0.6 vlo=0.3 vhi=0.9 vd={vdd}
+.option method=gear reltol=1e-6
+
+.control
+set wr_singlescale
+set wr_vecnames
+set color0 = white
+tran 100p 240n
+plot p2 p2e vout
+***
+wrdata tb_stage_corners_ff.txt p2e vout
+***
+.endc
+
+
+ .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_ff
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  template_clkgen.sym # of pins=5
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sch
+.subckt template_clkgen p1e p1 clkin p2 p2e
+*.ipin clkin
+*.opin p1e
+*.opin p1
+*.opin p2
+*.opin p2e
+xn1 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
+xi7 net6 VDD VSS net9 sg13g2_inv_4
+xi1 clkin VDD VSS clkinb sg13g2_inv_2
+xi2 clkinb VDD VSS clkinbb sg13g2_inv_2
+xn2 clkinb b1 VDD VSS net12 sg13g2_nand2_2
+xi13 p1e VDD VSS b1 sg13g2_inv_4
+xi8 net8 VDD VSS net10 sg13g2_inv_4
+xi14 p2e VDD VSS b2 sg13g2_inv_4
+xn3 a1 b1 VDD VSS net1 sg13g2_nand2_2
+xn4 a2 b2 VDD VSS net3 sg13g2_nand2_2
+xi11 a1 VDD VSS p1e sg13g2_inv_4
+xi9 net9 VDD VSS a1 sg13g2_inv_4
+x12 a2 VDD VSS p2e sg13g2_inv_4
+xi10 net10 VDD VSS a2 sg13g2_inv_4
+xi15 net1 VDD VSS net2 sg13g2_inv_4
+xi17 net2 VDD VSS p1 sg13g2_inv_8
+xi16 net3 VDD VSS net4 sg13g2_inv_4
+xi18 net4 VDD VSS p2 sg13g2_inv_8
+xi3 net11 VDD VSS net5 sg13g2_inv_4
+xi5 net5 VDD VSS net6 sg13g2_inv_4
+xi4 net12 VDD VSS net7 sg13g2_inv_4
+xi6 net7 VDD VSS net8 sg13g2_inv_4
+.ends
+
+
+* expanding   symbol:  template_stage.sym # of pins=12
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_stage.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_stage.sch
+.subckt template_stage res pse ps pr vhi vdda vout vin vssa d vlo vmid
+*.opin vout
+*.iopin vdda
+*.ipin res
+*.ipin vin
+*.ipin pse
+*.ipin ps
+*.ipin pr
+*.ipin d
+*.iopin vssa
+*.iopin vhi
+*.iopin vlo
+*.opin vmid
+XMn vout vx3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XMp vout vx3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XMn3 vx1 gn vlo vssa sg13_lv_nmos W=0.5u L=0.13u ng=1 m=1
+XMn4 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+x1 ps VDD VSS psb sg13g2_inv_1
+XMp1 vx1 psb vin vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
+XMn5 vx1 ps vin vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn1 vx4 pr vx2 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn2 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn6 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn7 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XMp2 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+x2 pr d VDD VSS gn sg13g2_and2_1
+XMp3 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
+x3 d pr VDD VSS gp sg13g2_nand2b_1
+XC1 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+XC2 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+XC3 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VSS
+.end
