@@ -464,8 +464,6 @@ Xpmosguardring supply sg13g2_GuardRing_N9472W2216HTT
 Xnclamp iovss iovdd vdd ngate sg13g2_Clamp_N43N43D4R
 Xrcres vdd res_cap sg13g2_RCClampResistor
 Xrcinv vdd iovss res_cap ngate sg13g2_RCClampInverter
-Xdcndiode iovss vdd iovdd sg13g2_DCNDiode
-Xdcpdiode vdd iovdd iovss sg13g2_DCPDiode
 .ends sg13g2_IOPadVdd
 
 * sg13g2_IOPadIn

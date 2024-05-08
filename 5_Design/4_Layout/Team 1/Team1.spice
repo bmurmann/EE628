@@ -1,5 +1,11 @@
 ** sch_path: /foss/designs/week12/IDSM2_t1.sch
-.subckt IDSM2_t1 vhi vlo vdda vssa vin dd res clkin
+
+.subckt IDSM2_t1 vhi vlo vdda vin dout res clkin
+x1 vhi vlo vdda vss vin dout res clkin IDSM2_t1_inner
+.ends
+
+
+.subckt IDSM2_t1_inner vhi vlo vdda vssa vin dout res clkin
 *.PININFO clkin:I res:I vin:I vssa:I vdda:I vlo:I vhi:I dd:O
 x1 vdda p2 net1 net2 vmid2 dout vssa p1 res vout2 comp_t1
 x2 p1e clkin p1 p2 p2e clk_generator_t1

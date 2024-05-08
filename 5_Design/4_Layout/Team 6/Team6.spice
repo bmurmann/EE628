@@ -1,5 +1,10 @@
 ** sch_path: /foss/designs/ee628/Team6.sch
-.subckt Team6 vlo vdda vssa vin vhi res clk dout
+
+.subckt Team6_inner vhi vlo vdda vss vin dout res clk
+x1 vhi vlo vdda vss vin dout res clk Team6_inner_1
+.ends
+
+.subckt Team6_inner_1 vhi vlo vdda vssa vin dout res clk
 *.PININFO vlo:I vdda:I vssa:I vin:I vhi:I res:I clk:I dout:O
 x1 res p1e p1 p2 vhi vdda vin vout1 vssa net3 net2 vlo stage_T6
 x2 res p2e p2 p1 vhi vdda vout1 vout2 vssa vmid2 net1 vlo stage_T6
@@ -62,8 +67,8 @@ M18 net6 din net7 VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
 M19 net8 out1m VSS VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
 M20 net7 out1p VSS VSS sg13_lv_nmos L=0.13u W=2.0u ng=1 m=1
 x4 res VDD VSS resb sg13g2_inv_1
-x5 ps din resb dd net9 VDD VSS sg13g2_dfrbp_2
 x3 dd VDD VSS dout sg13g2_inv_2
+x6 ps din dd net9 resb VDD VSS sg13g2_dfrbp_2
 .ends
 
 
@@ -94,6 +99,7 @@ x12 net5 VDD VSS net6 sg13g2_inv_4
 x20 net11 VDD VSS net12 sg13g2_inv_4
 x13 net6 VDD VSS p1 sg13g2_inv_8
 x21 net12 VDD VSS p2 sg13g2_inv_8
+.ends
 
 .SUBCKT sg13g2_dfrbp_2 CLK D Q Q_N RESET_B VDD VSS
 *.PININFO CLK:I D:I RESET_B:I Q:O Q_N:O VDD:B VSS:B
@@ -186,7 +192,6 @@ MP0 Y A VDD VDD sg13_lv_pmos m=2 w=1.12u l=130.00n ng=1
 MN1 net1 B VSS VSS sg13_lv_nmos m=2 w=720.00n l=130.00n ng=1
 MN0 Y A net1 VSS sg13_lv_nmos m=2 w=720.00n l=130.00n ng=1
 
-.ends
 .GLOBAL VDD
 .GLOBAL VSS
 .end
