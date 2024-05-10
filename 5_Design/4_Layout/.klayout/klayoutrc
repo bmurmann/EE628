@@ -139,7 +139,7 @@
  <l2ndb-show-all>true</l2ndb-show-all>
  <l2ndb-window-dim>1</l2ndb-window-dim>
  <l2ndb-window-mode>fit-net</l2ndb-window-mode>
- <l2ndb-window-state>NetlistBrowserDialog="AdnQywADAAAAAAG1AAAAxwAABWUAAANQAAAB2wAAAQIAAAU/AAADKgAAAAAAAAAABaAAAAHbAAABAgAABT8AAAMq";log_view="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAABAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAABAAAAZAAAAAEAAAAAAAAD6AAAAABk";splitter_3="AAAA/wAAAAEAAAACAAAByQAACI4B/////wEAAAABAA==";sch_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAAASwAAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAlgAAAAEAAAAAAAAD6AEAAACW";sch_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAAZAAAAAEAAAAAAAAD6AEAAABk";splitter="AAAA/wAAAAEAAAACAAABAAAAAQAB/////wEAAAABAA==";nl_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAAASwAAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAlgAAAAEAAAAAAAAD6AEAAACW";nl_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAAZAAAAAEAAAAAAAAD6AEAAABk";splitter_4="AAAA/wAAAAEAAAACAAABCQAAAjUB/////wEAAAABAA==";xref_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjgAAAAEAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAAEAAAAlgAAAAEAAAAAAAAAGQAAAAEAAAAAAAAAlgAAAAEAAAAAAAAA8wAAAAEAAAAAAAAD6AEAAACW";xref_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQcAAAACAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAACAAAAZAAAAAEAAAAAAAAAowAAAAEAAAAAAAAD6AEAAAAZ";</l2ndb-window-state>
+ <l2ndb-window-state>NetlistBrowserDialog="AdnQywADAAAAAAEiAAAA/QAABXEAAAOGAAABSAAAATgAAAVLAAADYAAAAAAAAAAABaAAAAFIAAABOAAABUsAAANg";splitter_3="AAAA/wAAAAEAAAACAAAByQAACI4B/////wEAAAABAA==";sch_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAAASwAAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAlgAAAAEAAAAAAAAD6AEAAACW";sch_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAAZAAAAAEAAAAAAAAD6AEAAABk";log_view="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0UAAAABAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAABAAADRQAAAAEAAAAAAAAD6AAAAABk";splitter="AAAA/wAAAAEAAAACAAABAAAAAQAB/////wEAAAABAA==";nl_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAADAgAAAAEAAAABAAAAGQAAAkEAAAADAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAADAAAAlgAAAAEAAAAAAAAAAAAAAAEAAAAAAAABqwAAAAEAAAAAAAAD6AEAAACW";nl_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAABAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAABAAAA/gAAAAEAAAAAAAAD6AEAAABk";splitter_4="AAAA/wAAAAEAAAACAAABCQAAAjUB/////wEAAAABAA==";xref_directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtcAAAAEAQEAAQAAAAAAAAAAAAAAAJYAAAAZAAAAgQAAAAAAAAAEAAAAlgAAAAEAAAAAAAAAGQAAAAEAAAAAAAAAlgAAAAEAAAAAAAABkgAAAAEAAAAAAAAD6AEAAACW";xref_hierarchy_tree="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQcAAAACAQAAAQAAAAAAAAAAAAAAAGQAAAAZAAAAgQAAAAAAAAACAAAAZAAAAAEAAAAAAAAAowAAAAEAAAAAAAAD6AEAAAAZ";</l2ndb-window-state>
  <layer-visibility-follows-selection>false</layer-visibility-follows-selection>
  <layers-always-show-layout-index>false</layers-always-show-layout-index>
  <layers-always-show-ld>true</layers-always-show-ld>
@@ -199,7 +199,7 @@
  <rdb-max-marker-count>1000</rdb-max-marker-count>
  <rdb-window-dim>1</rdb-window-dim>
  <rdb-window-mode>fit-marker</rdb-window-mode>
- <rdb-window-state-v2>MarkerBrowserDialog="AdnQywADAAAAAAGpAAAAkQAAA/cAAAMaAAABzwAAAMwAAAPRAAAC9AAAAAAAAAAABaAAAAHPAAAAzAAAA9EAAAL0";splitter_2="AAAA/wAAAAEAAAACAAABAAAAAQIB/////wEAAAABAA==";splitter="AAAA/wAAAAEAAAACAAAA8gAAAPkB/////wEAAAACAA==";markers_list="AAAA/wAAAAAAAAABAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAEAQEAAQAAAAAAAAAAAAAAAGQAAAAYAAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAABk";directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAANsAAAACAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAAZAAAAAEAAAAAAAAAdwAAAAEAAAAAAAAD6AAAAABk";</rdb-window-state-v2>
+ <rdb-window-state-v2>MarkerBrowserDialog="AdnQywADAAAAAABwAAAAjAAAA90AAAMVAAAAlgAAAMcAAAO3AAAC7wAAAAAAAAAABaAAAACWAAAAxwAAA7cAAALv";splitter_2="AAAA/wAAAAEAAAACAAABAAAAAQIB/////wEAAAABAA==";splitter="AAAA/wAAAAEAAAACAAAA8gAAAPkB/////wEAAAACAA==";markers_list="AAAA/wAAAAAAAAABAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAEAQEAAQAAAAAAAAAAAAAAAGQAAAAYAAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAABk";directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAfoAAAACAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAAZAAAAAEAAAAAAAABlgAAAAEAAAAAAAAD6AAAAABk";</rdb-window-state-v2>
  <reader-options-show-always>false</reader-options-show-always>
  <ruler-color>auto</ruler-color>
  <ruler-grid-snap>false</ruler-grid-snap>
@@ -277,7 +277,121 @@
  <sr-window-state>search_replace_dialog="AdnQywADAAAAAAA+AAAAqgAAA4IAAAMcAAAAPgAAAM8AAAOCAAADHAAAAAAAAAAAB4AAAAA+AAAAzwAAA4IAAAMc";splitter="AAAA/wAAAAEAAAACAAABTQAAAQAB/////wEAAAABAA==";results="AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAAAAAD6AD/////";</sr-window-state>
  <stipple-offset>true</stipple-offset>
  <stipple-palette>0 1 2 3 4 5[1] 6 7 8 9[0] 10 11 12 13 14 15</stipple-palette>
- <stream-import-spec2/>
+ <stream-import-spec2>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;stream-import-data&gt;
+ &lt;files&gt;
+  &lt;file&gt;/foss/designs/EE628/5_Design/4_Layout/TOP_FILL.gds&lt;/file&gt;
+ &lt;/files&gt;
+ &lt;cell-name/&gt;
+ &lt;layer-offset/&gt;
+ &lt;layer-mode&gt;original&lt;/layer-mode&gt;
+ &lt;import-mode&gt;instantiate&lt;/import-mode&gt;
+ &lt;reference-points&gt;
+  &lt;reference-point&gt;
+   &lt;p1&gt;0,0&lt;/p1&gt;
+   &lt;p2&gt;0,0&lt;/p2&gt;
+  &lt;/reference-point&gt;
+ &lt;/reference-points&gt;
+ &lt;explicit-trans&gt;r0 *1 0,0&lt;/explicit-trans&gt;
+ &lt;options&gt;
+  &lt;gds2&gt;
+   &lt;box-mode&gt;1&lt;/box-mode&gt;
+   &lt;allow-big-records&gt;true&lt;/allow-big-records&gt;
+   &lt;allow-multi-xy-records&gt;true&lt;/allow-multi-xy-records&gt;
+  &lt;/gds2&gt;
+  &lt;common&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;enable-properties&gt;true&lt;/enable-properties&gt;
+   &lt;enable-text-objects&gt;true&lt;/enable-text-objects&gt;
+  &lt;/common&gt;
+  &lt;lefdef&gt;
+   &lt;read-all-layers&gt;true&lt;/read-all-layers&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;produce-net-names&gt;true&lt;/produce-net-names&gt;
+   &lt;net-property-name&gt;#1&lt;/net-property-name&gt;
+   &lt;produce-inst-names&gt;true&lt;/produce-inst-names&gt;
+   &lt;inst-property-name&gt;#1&lt;/inst-property-name&gt;
+   &lt;produce-pin-names&gt;false&lt;/produce-pin-names&gt;
+   &lt;pin-property-name&gt;#1&lt;/pin-property-name&gt;
+   &lt;produce-cell-outlines&gt;true&lt;/produce-cell-outlines&gt;
+   &lt;cell-outline-layer&gt;OUTLINE&lt;/cell-outline-layer&gt;
+   &lt;produce-placement-blockages&gt;true&lt;/produce-placement-blockages&gt;
+   &lt;placement-blockage-layer&gt;PLACEMENT_BLK&lt;/placement-blockage-layer&gt;
+   &lt;produce-regions&gt;true&lt;/produce-regions&gt;
+   &lt;region-layer&gt;REGIONS&lt;/region-layer&gt;
+   &lt;produce-via-geometry&gt;true&lt;/produce-via-geometry&gt;
+   &lt;via_geometry-suffix-string/&gt;
+   &lt;via_geometry-datatype-string&gt;0&lt;/via_geometry-datatype-string&gt;
+   &lt;produce-pins&gt;true&lt;/produce-pins&gt;
+   &lt;pins-suffix-string&gt;.PIN&lt;/pins-suffix-string&gt;
+   &lt;pins-datatype-string&gt;2&lt;/pins-datatype-string&gt;
+   &lt;produce-lef-pins&gt;true&lt;/produce-lef-pins&gt;
+   &lt;lef_pins-suffix-string&gt;.PIN&lt;/lef_pins-suffix-string&gt;
+   &lt;lef_pins-datatype-string&gt;2&lt;/lef_pins-datatype-string&gt;
+   &lt;produce-fills&gt;true&lt;/produce-fills&gt;
+   &lt;fills-suffix-string&gt;.FILL&lt;/fills-suffix-string&gt;
+   &lt;fills-datatype-string&gt;5&lt;/fills-datatype-string&gt;
+   &lt;produce-obstructions&gt;true&lt;/produce-obstructions&gt;
+   &lt;obstructions-suffix&gt;.OBS&lt;/obstructions-suffix&gt;
+   &lt;obstructions-datatype&gt;3&lt;/obstructions-datatype&gt;
+   &lt;produce-blockages&gt;true&lt;/produce-blockages&gt;
+   &lt;blockages-suffix&gt;.BLK&lt;/blockages-suffix&gt;
+   &lt;blockages-datatype&gt;4&lt;/blockages-datatype&gt;
+   &lt;produce-labels&gt;true&lt;/produce-labels&gt;
+   &lt;labels-suffix&gt;.LABEL&lt;/labels-suffix&gt;
+   &lt;labels-datatype&gt;1&lt;/labels-datatype&gt;
+   &lt;produce-lef-labels&gt;true&lt;/produce-lef-labels&gt;
+   &lt;lef-labels-suffix&gt;.LABEL&lt;/lef-labels-suffix&gt;
+   &lt;lef-labels-datatype&gt;1&lt;/lef-labels-datatype&gt;
+   &lt;produce-routing&gt;true&lt;/produce-routing&gt;
+   &lt;routing-suffix-string/&gt;
+   &lt;routing-datatype-string&gt;0&lt;/routing-datatype-string&gt;
+   &lt;produce-special-routing&gt;true&lt;/produce-special-routing&gt;
+   &lt;special-routing-suffix-string/&gt;
+   &lt;special-routing-datatype-string&gt;0&lt;/special-routing-datatype-string&gt;
+   &lt;via-cellname-prefix&gt;VIA_&lt;/via-cellname-prefix&gt;
+   &lt;read-lef-with-def&gt;true&lt;/read-lef-with-def&gt;
+   &lt;macro-resolution-mode&gt;default&lt;/macro-resolution-mode&gt;
+   &lt;separate-groups&gt;false&lt;/separate-groups&gt;
+   &lt;joined-paths&gt;false&lt;/joined-paths&gt;
+   &lt;map-file/&gt;
+  &lt;/lefdef&gt;
+  &lt;dxf&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;unit&gt;1&lt;/unit&gt;
+   &lt;text-scaling&gt;100&lt;/text-scaling&gt;
+   &lt;circle-points&gt;100&lt;/circle-points&gt;
+   &lt;circle-accuracy&gt;0&lt;/circle-accuracy&gt;
+   &lt;contour-accuracy&gt;0&lt;/contour-accuracy&gt;
+   &lt;polyline-mode&gt;0&lt;/polyline-mode&gt;
+   &lt;render-texts-as-polygons&gt;false&lt;/render-texts-as-polygons&gt;
+   &lt;keep-other-cells&gt;false&lt;/keep-other-cells&gt;
+   &lt;keep-layer-names&gt;false&lt;/keep-layer-names&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+  &lt;/dxf&gt;
+  &lt;cif&gt;
+   &lt;wire-mode&gt;0&lt;/wire-mode&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;keep-layer-names&gt;false&lt;/keep-layer-names&gt;
+  &lt;/cif&gt;
+  &lt;mag&gt;
+   &lt;lambda&gt;1&lt;/lambda&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;keep-layer-names&gt;false&lt;/keep-layer-names&gt;
+   &lt;merge&gt;true&lt;/merge&gt;
+   &lt;lib-paths&gt;
+   &lt;/lib-paths&gt;
+  &lt;/mag&gt;
+ &lt;/options&gt;
+&lt;/stream-import-data&gt;
+</stream-import-spec2>
  <synchronized-views>false</synchronized-views>
  <tech-editor-window-state/>
  <technology-data/>
@@ -286,12 +400,12 @@
  <text-font>0</text-font>
  <text-lazy-rendering>true</text-lazy-rendering>
  <text-point-mode>false</text-point-mode>
- <text-visible>true</text-visible>
+ <text-visible>false</text-visible>
  <tip-window-hidden>only-top-level-shown-by-default=3,hide-empty-layers=4,hide-empty-layers=0,editor-mode=4,editor-mode=0,drawing-on-invisible-layer=4,drawing-on-invisible-layer=0</tip-window-hidden>
  <tracking-cursor-color>auto</tracking-cursor-color>
  <tracking-cursor-enabled>true</tracking-cursor-enabled>
  <window-geometry>AdnQywADAAAAAAAAAAAAAAAABZ8AAAOPAAAAJgAAADsAAANFAAACkgAAAAACAAAABaAAAAAGAAAAGwAABZkAAAOJ</window-geometry>
- <window-state>AAAA/wAAAAD9AAAAAgAAAAAAAAEZAAADC/wCAAAABPsAAAAqAG4AYQB2AGkAZwBhAHQAbwByAF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAjQD////7AAAAHABoAHAAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAAATgAAACQAAAATAP////sAAAAgAGwAaQBiAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAAAeAAAAuEAAAATAP////sAAAAcAGUAbwBfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAAAAALaAAABgAAAAJYA////AAAAAQAAAO8AAAML/AIAAAAD+wAAACoAYgBvAG8AawBtAGEAcgBrAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQAAAAAAP////8AAAATAP////sAAAAcAGwAcABfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAEAAABOAAACgAAAABMA////+wAAABwAbAB0AF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AQAAAtQAAACFAAAAEwD///8AAAOAAAADCwAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAABAAAADgB0AG8AbwBsAGIAYQByAQAAAAD/////AAAAAAAAAAA=</window-state>
+ <window-state>AAAA/wAAAAD9AAAAAgAAAAAAAAEZAAADC/wCAAAABPsAAAAqAG4AYQB2AGkAZwBhAHQAbwByAF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAjQD////7AAAAHABoAHAAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAAATgAAACQAAAATAP////sAAAAgAGwAaQBiAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQBAAAAeAAAAuEAAAATAP////sAAAAcAGUAbwBfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAAAAAJaAAAA/wAAAJYA////AAAAAQAAAO8AAAML/AIAAAAD+wAAACoAYgBvAG8AawBtAGEAcgBrAHMAXwBkAG8AYwBrAF8AdwBpAGQAZwBlAHQAAAAAAP////8AAAATAP////sAAAAcAGwAcABfAGQAbwBjAGsAXwB3AGkAZABnAGUAdAEAAABOAAACgAAAABMA////+wAAABwAbAB0AF8AZABvAGMAawBfAHcAaQBkAGcAZQB0AQAAAtQAAACFAAAAEwD///8AAAOAAAADCwAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAABAAAADgB0AG8AbwBsAGIAYQByAQAAAAD/////AAAAAAAAAAA=</window-state>
  <xor-anotb>false</xor-anotb>
  <xor-axorb>true</xor-axorb>
  <xor-bnota>false</xor-bnota>
