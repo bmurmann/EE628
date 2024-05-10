@@ -7,7 +7,7 @@ x10 vref ck3 vldo ck1 ck2 ck1_c ck3_c vref_c ck2_c out1_c in1 out1 in2 out2 out2
 + vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS padring
 x1 vhi vlo avdd VSS in1_c out1_c res_c ck1_c IDSM2_t1
 x2 vlo vhi vldo VSS iovdd vref_c in2_c out2_c res_c ck2_c Team_2
-x4 vhi vlo avdd VSS in4_c out4_c res_c ck4_c IDSM2_T4
+x4 vhi vlo avdd in4_c out4_c res_c ck4_c IDSM2_T4
 x5 vhi vlo out5_c avdd VSS in5_c res_c ck5_c Team5
 x6 vhi vlo avdd VSS in6_c out6_c res_c ck6_c Team6_inner
 x3 vhi vlo avdd VSS in3_c out3_c res_c ck3_c Team3
