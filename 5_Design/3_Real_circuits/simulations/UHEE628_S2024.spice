@@ -1,95 +1,25 @@
 ** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sch
-**.subckt UHEE628_S2024 vldo ck1 ck3 avdd ck2 VDD vref out1 in1 in2 out2 out3 in3 iovdd vhi vlo out4 in4 out5 in5 out6 in6 ck6 ck5
-*+ ck4 res VSS
-*.ipin in1
-*.ipin in2
-*.ipin in3
-*.ipin in4
-*.ipin in5
-*.ipin in6
-*.iopin iovdd
-*.iopin vlo
-*.iopin avdd
-*.opin out1
-*.opin out2
-*.opin out3
-*.opin out4
-*.opin out5
-*.opin out6
-*.iopin VSS
-*.iopin VDD
-*.iopin vldo
-*.ipin ck3
-*.ipin ck2
-*.ipin ck1
-*.ipin vref
-*.ipin res
-*.ipin ck4
-*.ipin ck5
-*.ipin ck6
-*.iopin vhi
-x10 vref ck3 vldo ck1 ck2 ck1_c ck3_c vref_c ck2_c out1_c in1 out1 in2 out2 out2_c in2_c VDD out3 in3_c in3 out3_c avdd iovdd vhi
-+ vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS padring
+.subckt UHEE628_S2024 vldo ck1 ck3 avdd ck2 VDD vref out1 in1 in2 out2 out3 in3 iovdd vhi vlo out4 in4 out5 in5 out6 in6 ck6 ck5
++ ck4 res VSS
+*.PININFO in1:I in2:I in3:I in4:I in5:I in6:I iovdd:B vlo:B avdd:B out1:O out2:O out3:O out4:O out5:O out6:O VSS:B VDD:B vldo:B
+*+ ck3:I ck2:I ck1:I vref:I res:I ck4:I ck5:I ck6:I vhi:B
+*  x10 -  padring  IS MISSING !!!!
 x1 vhi vlo avdd VSS in1_c out1_c res_c ck1_c Team1
 x2 vlo vhi vldo VSS iovdd vref_c in2_c out2_c res_c ck2_c Team_2
 x4 vhi vlo avdd VSS in4_c out4_c res_c ck4_c Team4
 x5 vhi vlo out5_c avdd VSS in5_c res_c ck5_c Team5
 x6 vhi vlo avdd VSS in6_c out6_c res_c ck6_c Team6
 x7 vhi vlo avdd VSS in3_c out3_c res_c ck3_c Team3
-**.ends
+.ends
 
 * expanding   symbol:  padring.sym # of pins=47
 ** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/padring.sym
 ** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/padring.sch
 .subckt padring vref ck3 vldo ck1 ck2 ck1_c ck3_c vref_c ck2_c out1_c in1 out1 in2 out2 out2_c in2_c vdd out3 in3_c in3 out3_c
 + avdd iovdd vhi vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c vss
-*.ipin in1
-*.ipin in2
-*.ipin in3
-*.iopin vhi
-*.iopin vlo
-*.ipin in4
-*.ipin in5
-*.ipin in6
-*.opin out1
-*.opin out2
-*.opin out3
-*.opin out4
-*.opin out5
-*.opin out6
-*.ipin res
-*.ipin ck4
-*.ipin ck5
-*.ipin ck6
-*.ipin vref
-*.ipin ck3
-*.ipin ck2
-*.ipin ck1
-*.opin in1_c
-*.opin in2_c
-*.opin in3_c
-*.opin in4_c
-*.opin in5_c
-*.opin in6_c
-*.opin res_c
-*.opin ck4_c
-*.opin ck5_c
-*.opin ck6_c
-*.ipin out1_c
-*.ipin out2_c
-*.ipin out3_c
-*.ipin out4_c
-*.ipin out5_c
-*.ipin out6_c
-*.opin vref_c
-*.opin ck3_c
-*.opin ck2_c
-*.opin ck1_c
-*.iopin vldo
-*.iopin avdd
-*.iopin vss
-*.iopin iovdd
-*.iopin vdd
+*.PININFO in1:I in2:I in3:I vhi:B vlo:B in4:I in5:I in6:I out1:O out2:O out3:O out4:O out5:O out6:O res:I ck4:I ck5:I ck6:I vref:I
+*+ ck3:I ck2:I ck1:I in1_c:O in2_c:O in3_c:O in4_c:O in5_c:O in6_c:O res_c:O ck4_c:O ck5_c:O ck6_c:O out1_c:I out2_c:I out3_c:I out4_c:I
+*+ out5_c:I out6_c:I vref_c:O ck3_c:O ck2_c:O ck1_c:O vldo:B avdd:B vss:B iovdd:B vdd:B
 xp1 vss avdd vss avdd in1 in1_c sg13g2_IOPadAnalog
 xp26 vss vdd vss iovdd ck1_c ck1 sg13g2_IOPadIn
 xp24 vss vdd vss iovdd out1_c out1 sg13g2_IOPadOut16mA
@@ -132,14 +62,7 @@ xp10 vss avdd vss avdd sg13g2_IOPadVss
 ** sym_path: /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym
 ** sch_path: /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sch
 .subckt Team5 vhi vlo dd vdda vssa vin res clkin
-*.ipin vhi
-*.ipin vlo
-*.ipin vdda
-*.ipin vssa
-*.ipin vin
-*.ipin res
-*.opin dd
-*.ipin clkin
+*.PININFO vhi:I vlo:I vdda:I vssa:I vin:I res:I dd:O clkin:I
 *  x2 -  Team5_split1  IS MISSING !!!!
 *  x1 -  Team5_split2  IS MISSING !!!!
 .ends
