@@ -58,16 +58,6 @@ xp10 vss avdd vss avdd sg13g2_IOPadVss
 * noconn #net3
 .ends
 
-
-* expanding   symbol:  /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym # of pins=8
-** sym_path: /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym
-** sch_path: /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sch
-.subckt Team5 vhi vlo dd vdda vssa vin res clkin
-*.PININFO vhi:I vlo:I vdda:I vssa:I vin:I res:I dd:O clkin:I
-*  x2 -  Team5_split1  IS MISSING !!!!
-*  x1 -  Team5_split2  IS MISSING !!!!
-.ends
-
 .GLOBAL VSS
 .GLOBAL VDD
 .end
