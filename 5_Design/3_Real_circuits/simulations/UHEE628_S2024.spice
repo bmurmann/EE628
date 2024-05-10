@@ -5,12 +5,12 @@
 *+ ck3:I ck2:I ck1:I vref:I res:I ck4:I ck5:I ck6:I vhi:B
 x10 vref ck3 vldo ck1 ck2 ck1_c ck3_c vref_c ck2_c out1_c in1 out1 in2 out2 out2_c in2_c VDD out3 in3_c in3 out3_c avdd iovdd vhi
 + vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS padring
-x1 vhi vlo avdd VSS in1_c out1_c res_c ck1_c Team1
+x1 vhi vlo avdd VSS in1_c out1_c res_c ck1_c IDSM2_t1
 x2 vlo vhi vldo VSS iovdd vref_c in2_c out2_c res_c ck2_c Team_2
-x4 vhi vlo avdd VSS in4_c out4_c res_c ck4_c Team4
+x4 vhi vlo avdd in4_c out4_c res_c ck4_c IDSM2_T4
 x5 vhi vlo out5_c avdd VSS in5_c res_c ck5_c Team5
-x6 vhi vlo avdd VSS in6_c out6_c res_c ck6_c Team6
-x7 vhi vlo avdd VSS in3_c out3_c res_c ck3_c Team3
+x6 vhi vlo avdd VSS in6_c out6_c res_c ck6_c Team6_inner
+x3 vhi vlo avdd VSS in3_c out3_c res_c ck3_c Team3
 .ends
 
 * expanding   symbol:  padring.sym # of pins=47
@@ -56,16 +56,6 @@ xp10 vss avdd vss avdd sg13g2_IOPadVss
 * noconn #net1
 * noconn #net2
 * noconn #net3
-.ends
-
-
-* expanding   symbol:  /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym # of pins=8
-** sym_path: /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym
-** sch_path: /foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sch
-.subckt Team5 vhi vlo dd vdda vssa vin res clkin
-*.PININFO vhi:I vlo:I vdda:I vssa:I vin:I res:I dd:O clkin:I
-*  x2 -  Team5_split1  IS MISSING !!!!
-*  x1 -  Team5_split2  IS MISSING !!!!
 .ends
 
 .GLOBAL VSS
