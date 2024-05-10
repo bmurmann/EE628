@@ -2,16 +2,13 @@
 .subckt UHEE628_S2024 vldo ck1 ck3 avdd ck2 VDD vref out1 in1 in2 out2 out3 in3 iovdd vhi vlo out4 in4 out5 in5 out6 in6 ck6 ck5
 + ck4 res VSS
 
-
 ****************
 x10 vref ck3 vldo ck1 ck2 ck1_c ck3_c vref_c ck2_c out1_c in1 out1 in2 out2 out2_c in2_c VDD out3 in3_c in3 out3_c avdd iovdd vhi
 + vlo out4 in4_c in4 out4_c out5 in5_c out5_c in5 in6 in6_c out6 out6_c ck5_c ck4_c res_c ck6_c ck6 ck5 ck4 res in1_c VSS padring
 
-
 ****************
 ***.subckt IDSM2_t1 vhi vlo vdda  vssa vin    dout    res    clkin
 x1                  vhi vlo avdd  VSS  in1_c  out1_c  res_c  ck1_c    IDSM2_t1
-
 
 ****************
 ***.subckt Team_2  vlo vhi vdda vssa iovdd vref    vin    dout    res    clkin
@@ -25,10 +22,9 @@ x3                vhi vlo avdd VSS  in3_c  out3_c res_c  ck3_c  Team3
 ***.subckt IDSM2_T4 vhi vlo vdda vin   dout   res   clkin
 x4                  vhi vlo avdd in4_c out4_c res_c ck4_c  IDSM2_T4
 
-
 ****************
-***x5 vhi vlo avdd VSS in5_c out5_c res_c ck5_c Team5
-
+***.subckt Team5 vhi   vlo  dd      vdda   VSS    vin      res     clkin
+x5               vhi   vlo  out5_c  avdd   VSS    in5_c    res_c   ck5_c    Team5
 
 ****************
 ***.subckt Team6_inner  vhi vlo vdda vssa vin    dout    res    clk
