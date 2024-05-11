@@ -86,8 +86,6 @@ N 480 -730 480 -570 {
 lab=res_c}
 N 460 -610 800 -610 {
 lab=VSS}
-N 460 -770 460 -610 {
-lab=VSS}
 N 440 -630 800 -630 {
 lab=avdd}
 N 420 -650 800 -650 {
@@ -104,8 +102,6 @@ N 420 -790 420 -650 {
 lab=vlo}
 N 420 -810 800 -810 {
 lab=vlo}
-N 460 -770 800 -770 {
-lab=VSS}
 N 440 -790 800 -790 {
 lab=avdd}
 N 400 -830 800 -830 {
@@ -138,7 +134,7 @@ N 400 -990 400 -860 {
 lab=vhi}
 N 480 -1040 480 -890 {
 lab=res_c}
-N 460 -930 460 -770 {
+N 460 -930 460 -610 {
 lab=VSS}
 N 440 -1270 440 -950 {
 lab=avdd}
@@ -373,22 +369,24 @@ lab=iovdd}
 N 1300 -890 1340 -890 {
 lab=iovdd}
 N 1100 -1160 1120 -1160 {
-lab=#net1}
+lab=vldo}
 N 1120 -1340 1120 -1160 {
-lab=#net1}
+lab=vldo}
 N 600 -1340 1120 -1340 {
-lab=#net1}
+lab=vldo}
 N 570 -1540 570 -1520 {
 lab=vldo}
-N 600 -1540 600 -1340 {}
-N 570 -1540 600 -1540 {}
+N 600 -1540 600 -1340 {
+lab=vldo}
+N 570 -1540 600 -1540 {
+lab=vldo}
 N 570 -1550 570 -1540 {
 lab=vldo}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {padring.sym} 130 -200 0 0 {name=x10}
-C {/foss/designs/EE628/5_Design/4_Layout/Team 1/Team1.sym} 950 -1250 0 0 {name=x1}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 1/IDSM2_t1.sym} 950 -1250 0 0 {name=x1}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 2 - Transformer Monster Tractors/Team_2.sym} 950 -1090 0 0 {name=x2}
-C {/foss/designs/EE628/5_Design/4_Layout/Team 4/Team4.sym} 950 -770 0 0 {name=x4}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 4/IDSM2_T4.sym} 950 -770 0 0 {name=x4}
 C {/foss/designs/EE628/5_Design/4_Layout/Team 5/Team5.sym} 950 -610 0 0 {name=x5}
 C {devices/ipin.sym} 50 -1130 0 0 {name=p1 lab=in1}
 C {devices/ipin.sym} 50 -1050 0 0 {name=p2 lab=in2}
@@ -438,6 +436,6 @@ C {devices/lab_wire.sym} 1130 -1120 3 0 {name=p46 sig_type=std_logic lab=out2_c}
 C {devices/lab_wire.sym} 1130 -800 3 0 {name=p47 sig_type=std_logic lab=out4_c}
 C {devices/lab_wire.sym} 1130 -570 3 0 {name=p48 sig_type=std_logic lab=out6_c}
 C {devices/lab_wire.sym} 1130 -650 0 0 {name=p49 sig_type=std_logic lab=out5_c}
-C {/foss/designs/EE628/5_Design/4_Layout/Team 6/Team6.sym} 950 -450 0 0 {name=x6}
-C {/foss/designs/EE628/5_Design/4_Layout/Team 3/Team3.sym} 950 -930 0 0 {name=x7}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 6/Team6_inner.sym} 950 -450 0 0 {name=x6}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 3/Team3.sym} 950 -930 0 0 {name=x3}
 C {devices/lab_wire.sym} 500 -1370 3 0 {name=p9 sig_type=std_logic lab=vref_c}
