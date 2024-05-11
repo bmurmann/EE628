@@ -52,3 +52,5 @@ sg13g2_io_bm.cdl
 * IOPadVDD
   * The original cell was buggy as documented here: https://github.com/IHP-GmbH/IHP-Open-PDK/issues/101#issuecomment-2095787568
   * Made appropriate fixes in the local cell
+
+* Added M2 in corner cell to meet density requirements
