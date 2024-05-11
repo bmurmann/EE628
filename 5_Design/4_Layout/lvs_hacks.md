@@ -36,3 +36,5 @@ cap_exc = recog_esd.join(ind_drw).join(ind_pin)
 #mimcap_exclude = rfmimcap_exc.join(pwell_block).join(ptap_holes)
 mimcap_exclude = recog_esd.join(ind_drw).join(ind_pin)
 ```
+
+* Disabled RF devices in `rfmos_derivations.lvs`. The extraction hallucinates extra RF MOSFETs inside guard rings (including seal ring). 
