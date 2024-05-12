@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/Kate1/IDSM2.sch
-.subckt Team6 vhi vlo vdda vssa vin dout res clk
+.subckt Team6_inner vhi vlo vdda vssa vin dout res clk
 *.ipin vlo
 *.ipin vdda
 *.ipin vssa

@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/turn-in/Team5.sch
-**.subckt Team5 vhi vlo dd vdda vssa vin res clkin
+.subckt Team5 vhi vlo dd vdda vssa vin res clkin
 *.ipin vhi
 *.ipin vlo
 *.ipin vdda
@@ -10,7 +10,7 @@
 *.ipin clkin
 x2 vhi vlo vdda vssa vmid vin vout2 dd d res net1 net3 net4 net2 Team5_split1
 x1 vdda vssa d vmid vout2 dd res net4 net3 net2 net1 clkin Team5_split2
-**.ends
+.ends
 
 * expanding   symbol:  /foss/designs/Team5_split1.sym # of pins=14
 ** sym_path: /foss/designs/Team5_split1.sym
