@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-T {comparator + flipflop} -320 -520 0 0 0.4 0.4 {}
+T {comparator + flipflop} -320 -540 0 0 0.4 0.4 {}
 T {vref scaling} -880 -190 0 0 0.4 0.4 {}
 N -1150 -630 -1150 -610 {
 lab=GND}
@@ -93,16 +93,26 @@ N -400 -730 -400 -690 {p1
 lab=VDD}
 N -1070 -160 -1010 -160 {
 lab=GND}
-N -290 -630 -290 -610 {
+N -180 -630 -180 -610 {
 lab=GND}
-N -290 -730 -290 -690 {p1
+N -180 -730 -180 -690 {p1
 lab=resb}
-N -320 -460 -260 -460 {
+N -320 -460 -230 -460 {
 lab=vcmp}
 N -1070 -160 -1070 -120 {
 lab=GND}
 N -1090 -200 -1010 -200 {
 lab=q}
+N -260 -480 -230 -480 {
+lab=p1}
+N -260 -440 -230 -440 {
+lab=resb}
+N -50 -480 -20 -480 {
+lab=q}
+N -290 -630 -290 -610 {
+lab=GND}
+N -290 -730 -290 -690 {p1
+lab=VSS}
 C {devices/code_shown.sym} 0 -200 0 0 {name=MODEL only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -112,8 +122,6 @@ value="
 "}
 C {devices/code_shown.sym} 0 -570 0 0 {name=NGSPICE only_toplevel=true 
 value="
-*DFF CLK D    Q  Q_N  RESET_B  VDD VSS
-x1   p1  vcmp q  qn   resb     VDD GND sg13g2_dfrbp_1
 .param temp=27 vdd=1.2 per=1u
 .model mysw SW vt=\{vdd/2\} ron=10k roff=10gig
 .option method=gear reltol=1e-4
@@ -170,12 +178,18 @@ C {devices/gnd.sym} -320 -350 0 0 {name=l13 lab=GND}
 C {devices/vsource.sym} -320 -410 0 0 {name=E2 value="TABLE \{V(vo,0)\} = (-0.1mV, 0V) (0.1mV, \{vdd\})"}
 C {devices/lab_wire.sym} -260 -460 0 0 {name=p10 sig_type=std_logic lab=vcmp}
 C {devices/gnd.sym} -400 -610 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} -400 -660 0 0 {name=Vsup value="dc \{vdd\}"}
+C {devices/vsource.sym} -400 -660 0 0 {name=Vdd value="dc \{vdd\}"}
 C {devices/vdd.sym} -400 -730 0 0 {name=l15 lab=VDD}
 C {devices/vcvs.sym} -970 -180 0 0 {name=E3 value=\{1/vdd\}}
 C {devices/gnd.sym} -1070 -120 0 0 {name=l16 lab=GND}
 C {devices/lab_wire.sym} -1050 -200 0 0 {name=p11 sig_type=std_logic lab=q}
-C {devices/gnd.sym} -290 -610 0 0 {name=l18 lab=GND}
-C {devices/vsource.sym} -290 -660 0 0 {name=Vresb value="dc 0 pwl(0, 0, \{per/2\}, 0, \{per/2+100p\} \{vdd\}"}
-C {devices/lab_wire.sym} -290 -730 0 0 {name=p12 sig_type=std_logic lab=resb}
-C {devices/noconn.sym} -1090 -200 0 0 {name=l17}
+C {devices/gnd.sym} -180 -610 0 0 {name=l18 lab=GND}
+C {devices/vsource.sym} -180 -660 0 0 {name=Vresb value="dc 0 pwl(0, 0, \{per/2\}, 0, \{per/2+100p\} \{vdd\}"}
+C {devices/lab_wire.sym} -180 -730 0 0 {name=p12 sig_type=std_logic lab=resb}
+C {sg13g2_stdcells/sg13g2_dfrbp_1.sym} -140 -460 0 0 {name=x1 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {devices/lab_wire.sym} -260 -480 0 0 {name=p13 sig_type=std_logic lab=p1}
+C {devices/lab_wire.sym} -260 -440 0 0 {name=p14 sig_type=std_logic lab=resb}
+C {devices/lab_wire.sym} -20 -480 0 0 {name=p15 sig_type=std_logic lab=q}
+C {devices/gnd.sym} -290 -610 0 0 {name=l17 lab=GND}
+C {devices/vsource.sym} -290 -660 0 0 {name=Vss value="dc 0"}
+C {devices/vdd.sym} -290 -730 0 0 {name=l19 lab=VSS}

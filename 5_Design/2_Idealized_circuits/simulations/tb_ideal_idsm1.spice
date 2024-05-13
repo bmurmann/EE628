@@ -11,10 +11,11 @@ C2 vx vo 1p m=1
 S3 net1 net2 p2 GND mysw
 S4 net3 GND p1 GND mysw
 E2 vcmp GND TABLE {V(vo,0)} = (-0.1mV, 0V) (0.1mV, {vdd})
-Vsup VDD GND dc {vdd}
+Vdd VDD GND dc {vdd}
 E3 net2 GND q GND {1/vdd}
 Vresb resb GND dc 0 pwl(0, 0, {per/2}, 0, {per/2+100p} {vdd}
-* noconn q
+x1 p1 vcmp q net4 resb VDD VSS sg13g2_dfrbp_1
+Vss VSS GND dc 0
 **** begin user architecture code
 
 .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
@@ -23,8 +24,6 @@ Vresb resb GND dc 0 pwl(0, 0, {per/2}, 0, {per/2+100p} {vdd}
 
 
 
-*DFF CLK D    Q  Q_N  RESET_B  VDD VSS
-x1   p1  vcmp q  qn   resb     VDD GND sg13g2_dfrbp_1
 .param temp=27 vdd=1.2 per=1u
 .model mysw SW vt={vdd/2} ron=10k roff=10gig
 .option method=gear reltol=1e-4
@@ -43,4 +42,5 @@ wrdata tb_ideal_idsm1.txt vo q p1 p2
 **.ends
 .GLOBAL GND
 .GLOBAL VDD
+.GLOBAL VSS
 .end

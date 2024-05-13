@@ -1,0 +1,68 @@
+** sch_path: /foss/designs/EE628/5_Design/2_Idealized_circuits/tb_ideal_idsm2_scaled.sch
+**.subckt tb_ideal_idsm2_scaled
+Vp1 p1 GND dc 0 pulse(0, {vdd}, 5n, 100p, 100p, {per/2-5n}, {per})
+E1 vo1 GND net3 VMID -1000
+S1 net1 vi p1 GND mysw
+Vp2 p2 GND dc {vdd} pulse({vdd}, 0, 0, 100p, 100p, {per/2+5n}, {per})
+Vin vi VMID dc 7m
+C1 net1 net2 1p m=1
+S2 net3 net2 p2 GND mysw
+C2 net3 vo1 2p m=1
+S3 net1 net9 p2 GND mysw
+S4 net2 VMID p1 GND mysw
+E2 vcmp GND TABLE {V(vo2,0)} = (599.9mV, 0V) (600.1mV, {vdd})
+Vsup VDD GND dc {vdd}
+Vresb resb GND dc 0 pwl(0, 0, {per/2}, 0, {per/2+100p} {vdd}
+x1 p2 vcmp q qb resb VDD VSS sg13g2_dfrbp_1
+Vss VSS GND dc 0
+E4 net7 GND net6 VMID -1000
+S5 net4 vo1 p2 GND mysw
+C3 net4 net5 1p m=1
+S6 net6 net5 p1 GND mysw
+C4 net6 net7 2p m=1
+S7 net4 net11 p1 GND mysw
+S8 net5 VMID p2 GND mysw
+S9 vo2 net7 p1 GND mysw
+C5 vo2 GND 1p m=1
+x2 p1 q net8 net10 resb VDD VSS sg13g2_dfrbp_1
+Vmid VMID GND dc {vdd/2}
+S10 net9 VH net8 GND mysw
+S11 net9 VL net10 GND mysw
+S12 net11 VH q GND mysw
+S13 net11 VL qb GND mysw
+Vl VL GND dc 0.25
+Vh VH GND dc {vdd-0.25}
+S14 vo1 net3 res GND mysw
+S15 net7 net6 res GND mysw
+x3 resb VDD VSS res sg13g2_inv_1
+**** begin user architecture code
+
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerRES.lib res_typ
+.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+
+
+.param temp=27 vdd=1.2 per=1u
+.model mysw SW vt={vdd/2} ron=10k roff=1gig
+.option method=gear reltol=1e-4
+
+.control
+save all
+tran 1n 65u
+plot vo1 vo2 q
+set wr_singlescale
+set wr_vecnames
+wrdata tb_ideal_idsm2_scaled.txt vo1 vo2 q p1 p2
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VSS
+.GLOBAL VMID
+.GLOBAL VL
+.GLOBAL VH
+.end

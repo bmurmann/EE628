@@ -1,0 +1,69 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/tb_clkgen.sch
+**.subckt tb_clkgen
+Vp1 clkin GND dc 0 pulse(0, {vdd}, 0, 100p, 100p, {per/2}, {per})
+Vsup VDD GND dc {vdd}
+Vss VSS GND dc 0
+C1 p2e GND {cl} m=1
+C2 p2 GND {cl} m=1
+C3 p1 GND {cl} m=1
+C4 p1e GND {cl} m=1
+x1 p1e p1 clkin p2 p2e template_clkgen
+**** begin user architecture code
+
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+
+
+.param temp=27 vdd=1.2 per=20n cl=25f
+.option method=gear
+
+.control
+save all
+tran 10p 15n
+meas tran tp1e_p1 TRIG v(p1e) VAL=0.6 FALL=1 TARG v(p1) VAL=0.6 FALL=1
+meas tran tp1_p2  TRIG v(p1)  VAL=0.6 FALL=1 TARG v(p2) VAL=0.6 RISE=1
+write tb_clkgen.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  template_clkgen.sym # of pins=5
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sch
+.subckt template_clkgen p1e p1 clkin p2 p2e
+*.ipin clkin
+*.opin p1e
+*.opin p1
+*.opin p2
+*.opin p2e
+xn1 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
+xi7 net6 VDD VSS net9 sg13g2_inv_4
+xi1 clkin VDD VSS clkinb sg13g2_inv_2
+xi2 clkinb VDD VSS clkinbb sg13g2_inv_2
+xn2 clkinb b1 VDD VSS net12 sg13g2_nand2_2
+xi13 p1e VDD VSS b1 sg13g2_inv_4
+xi8 net8 VDD VSS net10 sg13g2_inv_4
+xi14 p2e VDD VSS b2 sg13g2_inv_4
+xn3 a1 b1 VDD VSS net1 sg13g2_nand2_2
+xn4 a2 b2 VDD VSS net3 sg13g2_nand2_2
+xi11 a1 VDD VSS p1e sg13g2_inv_4
+xi9 net9 VDD VSS a1 sg13g2_inv_4
+x12 a2 VDD VSS p2e sg13g2_inv_4
+xi10 net10 VDD VSS a2 sg13g2_inv_4
+xi15 net1 VDD VSS net2 sg13g2_inv_4
+xi17 net2 VDD VSS p1 sg13g2_inv_8
+xi16 net3 VDD VSS net4 sg13g2_inv_4
+xi18 net4 VDD VSS p2 sg13g2_inv_8
+xi3 net11 VDD VSS net5 sg13g2_inv_4
+xi5 net5 VDD VSS net6 sg13g2_inv_4
+xi4 net12 VDD VSS net7 sg13g2_inv_4
+xi6 net7 VDD VSS net8 sg13g2_inv_4
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VSS
+.end
