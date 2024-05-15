@@ -136,9 +136,9 @@ lab=GND}
 N 20 -470 20 -450 {
 lab=GND}
 N 20 -560 20 -530 {
-lab=#net1}
+lab=vref}
 N 20 -560 190 -560 {
-lab=#net1}
+lab=vref}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sym} 340 -480 0 0 {name=x1}
 C {devices/vsource.sym} 1040 -280 0 0 {name=V1 value="DC 0 PWL(0.0 0 3u 3)" savecurrent=false}
@@ -179,7 +179,7 @@ m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/simulator_commands_shown.sym} 1240 -650 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 1230 -710 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -206,15 +206,17 @@ value="
 .control
 optran 0 0 0 100p 2n 0
 op
-tran 10n 10u
-save all
+tran 10n 50u
 plot reset ck1
 plot out1 out2
 ** plot @V1[i]
 ** plot @V2[i]
 ** plot @V4[i]
 ** plot @V3[i]
-plot @V5[i]
+** plot @V5[i]
+** save @V1[i] @V2[i] @V3[i] @V4[i] @V5[i]
+** wrdata data_out.txt out1 out2 @V1[i] @V2[i] @V3[i] @V4[i] @V5[i]
+wrdata data_out.txt out1
 .endc"}
 C {devices/lab_wire.sym} 600 -560 0 0 {name=p1 sig_type=std_logic lab=out1}
 C {devices/lab_wire.sym} 600 -540 0 0 {name=p2 sig_type=std_logic lab=out2}
