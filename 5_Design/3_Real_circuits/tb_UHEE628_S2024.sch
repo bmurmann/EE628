@@ -5,34 +5,30 @@ K {}
 V {}
 S {}
 E {}
-N 70 -440 70 -230 {
-lab=VSS}
+N 70 -440 70 -200 {
+lab=v0p6}
 N 70 -440 190 -440 {
-lab=VSS}
+lab=v0p6}
 N 70 -460 70 -440 {
-lab=VSS}
+lab=v0p6}
 N 70 -460 190 -460 {
-lab=VSS}
+lab=v0p6}
 N 70 -480 70 -460 {
-lab=VSS}
+lab=v0p6}
 N 70 -480 190 -480 {
-lab=VSS}
+lab=v0p6}
 N 70 -500 70 -480 {
-lab=VSS}
+lab=v0p6}
 N 70 -500 190 -500 {
-lab=VSS}
+lab=v0p6}
 N 70 -520 70 -500 {
-lab=VSS}
+lab=v0p6}
 N 70 -520 190 -520 {
-lab=VSS}
+lab=v0p6}
 N 70 -540 70 -520 {
-lab=VSS}
+lab=v0p6}
 N 70 -540 190 -540 {
-lab=VSS}
-N 70 -560 70 -540 {
-lab=VSS}
-N 70 -560 190 -560 {
-lab=VSS}
+lab=v0p6}
 N 520 -270 520 -230 {
 lab=VSS}
 N 520 -360 520 -270 {
@@ -135,8 +131,14 @@ N 290 -230 520 -230 {
 lab=VSS}
 N 290 -230 290 -200 {
 lab=VSS}
-N 70 -230 290 -230 {
-lab=VSS}
+N 70 -140 70 -120 {
+lab=GND}
+N 20 -470 20 -450 {
+lab=GND}
+N 20 -560 20 -530 {
+lab=#net1}
+N 20 -560 190 -560 {
+lab=#net1}
 C {devices/title.sym} 160 -40 0 0 {name=l1 author="Boris Murmann"}
 C {/foss/designs/EE628/5_Design/3_Real_circuits/UHEE628_S2024.sym} 340 -480 0 0 {name=x1}
 C {devices/vsource.sym} 1040 -280 0 0 {name=V1 value="DC 0 PWL(0.0 0 3u 3)" savecurrent=false}
@@ -196,7 +198,7 @@ value="
 .inc \\"../stimulus_gen/inc_clocks.spice\\"
 .inc ../sg13g2_stdcell.spice
 .inc ../sg13g2_io.spi
-.options gmin=1e-3 reltol=1e-1 abstol=1e-1 keepopinfo
+.options gmin=1e-5 reltol=1e-3 keepopinfo
 
 .GLOBAL VDD
 .GLOBAL VSS
@@ -204,7 +206,8 @@ value="
 .control
 optran 0 0 0 100p 2n 0
 op
-tran 10n 50u
+tran 10n 10u
+save all
 plot reset ck1
 plot out1 out2
 ** plot @V1[i]
@@ -241,3 +244,9 @@ C {devices/gnd.sym} 1040 -230 0 0 {name=l16 lab=GND}
 C {devices/vsource.sym} 290 -170 0 0 {name=V5 value=0 savecurrent=false}
 C {devices/gnd.sym} 290 -120 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 420 -230 0 0 {name=p18 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 70 -170 0 0 {name=V6 value=0.6 savecurrent=false}
+C {devices/gnd.sym} 70 -120 0 0 {name=l2 lab=GND}
+C {devices/lab_wire.sym} 70 -230 0 0 {name=p19 sig_type=std_logic lab=v0p6}
+C {devices/vsource.sym} 20 -500 0 0 {name=V7 value=1.2 savecurrent=false}
+C {devices/gnd.sym} 20 -450 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 70 -560 0 0 {name=p20 sig_type=std_logic lab=vref}
