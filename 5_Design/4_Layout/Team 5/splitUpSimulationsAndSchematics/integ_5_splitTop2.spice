@@ -1,0 +1,31 @@
+** sch_path: /foss/designs/layout/integ_5_splitTop2.sch
+.subckt integ_5_splitTop2 vdda vout vx4 pr vx1 vx3 pse VSS vmid
+*.PININFO vdda:B vout:B vx4:B pr:B vx1:B vx3:B pse:B vssa:B vmid:B
+x1 vdda vx3 vout VSS vmid integ_5_split3
+x2 vx4 pr vx1 vx3 pse VSS vmid integ_5_split4
+.ends
+
+* expanding   symbol:  /foss/designs/integ_5_split3.sym # of pins=5
+** sym_path: /foss/designs/integ_5_split3.sym
+** sch_path: /foss/designs/integ_5_split3.sch
+.subckt integ_5_split3 vdda vx3 vout vssa vmid
+*.PININFO vssa:B vdda:B vmid:B vout:B vx3:B
+M3 vout vx3 vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M4 vout vx3 vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+M7 vmid vmid vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M8 vmid vmid vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split4.sym # of pins=7
+** sym_path: /foss/designs/integ_5_split4.sym
+** sch_path: /foss/designs/integ_5_split4.sch
+.subckt integ_5_split4 vx4 pr vx1 vx3 pse vssa vmid
+*.PININFO vssa:B vx1:B pse:B vmid:B vx3:B pr:B vx4:B
+C2 vx3 center cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+M5 vx4 pr center vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M6 center pse vmid vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+C3 center vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+.ends
+
+.end
