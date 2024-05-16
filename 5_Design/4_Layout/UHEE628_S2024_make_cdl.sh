@@ -1,5 +1,5 @@
 #!/bin/bash
-cat UHEE628_S2024_top_schem.cdl \
+cat ../3_Real_circuits/simulations/UHEE628_S2024.spice \
     Team1.cdl \
     Team2.cdl \
     Team3.cdl \
