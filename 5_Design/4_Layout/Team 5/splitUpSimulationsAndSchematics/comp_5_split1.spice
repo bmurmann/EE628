@@ -1,0 +1,10 @@
+** sch_path: /foss/designs/comp_5_split1.sch
+.subckt comp_5_split1 vdda pc out1m out1p vinp VSS
+*.PININFO pc:I vdda:B vssa:B vinp:I out1m:B out1p:B
+M2 out1m pc vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M1 out1m out1p vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M4 out1m out1p net2 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M7 net2 pc net1 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M8 net1 vinp VSS VSS sg13_lv_nmos L=1u W=2u ng=1 m=1
+.ends
+.end

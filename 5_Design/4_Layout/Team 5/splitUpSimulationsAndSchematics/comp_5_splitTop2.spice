@@ -1,0 +1,19 @@
+** sch_path: /foss/designs/comp_5_splitTop2.sch
+.subckt comp_5_splitTop2 out1m VDD d_inv in VSS
+*.PININFO VDD:B d_inv:B VSS:B out1m:B in:B
+x1 VDD net1 d_inv in VSS comp_5_split2
+x5 VDD d_inv net1 out1m VSS comp_5_split2
+.ends
+
+* expanding   symbol:  /foss/designs/comp_5_split2.sym # of pins=5
+** sym_path: /foss/designs/comp_5_split2.sym
+** sch_path: /foss/designs/comp_5_split2.sch
+.subckt comp_5_split2 VDD out1p out2m out1m VSS
+*.PININFO out1m:B out2m:B out1p:B VSS:B VDD:B
+M3 out2m out1m VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M12 out2m out1p VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M15 out2m out1p net1 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M16 net1 out1m VSS VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+.ends
+
+.end

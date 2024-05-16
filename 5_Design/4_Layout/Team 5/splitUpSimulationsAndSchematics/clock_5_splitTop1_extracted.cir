@@ -1,0 +1,76 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 05/05/2024 12:25
+
+* cell clock_5_splitTop1
+* pin nand_B1
+* pin nand_B2
+* pin p1e
+* pin nand_A2
+* pin p1
+* pin clkin
+* pin VDD
+* pin VSS
+.SUBCKT clock_5_splitTop1 nand_B1 nand_B2 p1e nand_A2 p1 clkin VDD VSS
+* device instance $1 r0 *1 9.462,1.152 sg13_lv_nmos
+M$1 \$17 \$16 VSS VSS sg13_lv_nmos W=1.4399999999999997 L=0.12999999999999998
+* device instance $3 r0 *1 10.492,1.152 sg13_lv_nmos
+M$3 \$17 nand_B1 \$18 VSS sg13_lv_nmos W=1.4399999999999997
++ L=0.12999999999999998
+* device instance $5 r0 *1 50.525,1.153 sg13_lv_nmos
+M$5 \$25 nand_A2 VSS VSS sg13_lv_nmos W=1.4399999999999997 L=0.12999999999999998
+* device instance $7 r0 *1 51.555,1.153 sg13_lv_nmos
+M$7 \$25 \$22 \$26 VSS sg13_lv_nmos W=1.4399999999999997 L=0.12999999999999998
+* device instance $9 r0 *1 -0.405,1.177 sg13_lv_nmos
+M$9 VSS clkin nand_B2 VSS sg13_lv_nmos W=1.4799999999999998
++ L=0.12999999999999995
+* device instance $11 r0 *1 4.616,1.177 sg13_lv_nmos
+M$11 VSS nand_B2 \$16 VSS sg13_lv_nmos W=1.4799999999999998
++ L=0.12999999999999995
+* device instance $13 r0 *1 14.625,1.178 sg13_lv_nmos
+M$13 VSS \$18 \$19 VSS sg13_lv_nmos W=2.9599999999999995 L=0.12999999999999995
+* device instance $17 r0 *1 19.793,1.178 sg13_lv_nmos
+M$17 VSS \$19 \$20 VSS sg13_lv_nmos W=2.9599999999999995 L=0.12999999999999995
+* device instance $21 r0 *1 25.009,1.178 sg13_lv_nmos
+M$21 VSS \$20 \$21 VSS sg13_lv_nmos W=2.9599999999999995 L=0.12999999999999995
+* device instance $25 r0 *1 34.279,1.178 sg13_lv_nmos
+M$25 VSS \$21 \$22 VSS sg13_lv_nmos W=2.9599999999999995 L=0.12999999999999995
+* device instance $29 r0 *1 39.136,1.178 sg13_lv_nmos
+M$29 VSS \$22 p1e VSS sg13_lv_nmos W=2.9599999999999995 L=0.12999999999999995
+* device instance $33 r0 *1 44.605,1.178 sg13_lv_nmos
+M$33 VSS p1e nand_A2 VSS sg13_lv_nmos W=2.9599999999999995 L=0.12999999999999995
+* device instance $37 r0 *1 56.209,1.178 sg13_lv_nmos
+M$37 VSS \$26 \$27 VSS sg13_lv_nmos W=2.9599999999999995 L=0.12999999999999995
+* device instance $41 r0 *1 61.355,1.178 sg13_lv_nmos
+M$41 VSS \$27 p1 VSS sg13_lv_nmos W=5.92 L=0.12999999999999995
+* device instance $49 r0 *1 -0.415,2.837 sg13_lv_pmos
+M$49 VDD clkin nand_B2 VDD sg13_lv_pmos W=2.2399999999999998
++ L=0.12999999999999995
+* device instance $51 r0 *1 4.606,2.837 sg13_lv_pmos
+M$51 VDD nand_B2 \$16 VDD sg13_lv_pmos W=2.2399999999999998
++ L=0.12999999999999995
+* device instance $53 r0 *1 9.462,2.837 sg13_lv_pmos
+M$53 VDD \$16 \$18 VDD sg13_lv_pmos W=2.2399999999999998 L=0.12999999999999995
+* device instance $55 r0 *1 10.492,2.837 sg13_lv_pmos
+M$55 VDD nand_B1 \$18 VDD sg13_lv_pmos W=2.2399999999999998
++ L=0.12999999999999995
+* device instance $57 r0 *1 14.625,2.838 sg13_lv_pmos
+M$57 VDD \$18 \$19 VDD sg13_lv_pmos W=4.4799999999999995 L=0.12999999999999995
+* device instance $61 r0 *1 19.793,2.838 sg13_lv_pmos
+M$61 VDD \$19 \$20 VDD sg13_lv_pmos W=4.4799999999999995 L=0.12999999999999995
+* device instance $65 r0 *1 25.009,2.838 sg13_lv_pmos
+M$65 VDD \$20 \$21 VDD sg13_lv_pmos W=4.4799999999999995 L=0.12999999999999995
+* device instance $69 r0 *1 34.279,2.838 sg13_lv_pmos
+M$69 VDD \$21 \$22 VDD sg13_lv_pmos W=4.4799999999999995 L=0.12999999999999995
+* device instance $73 r0 *1 39.136,2.838 sg13_lv_pmos
+M$73 VDD \$22 p1e VDD sg13_lv_pmos W=4.4799999999999995 L=0.12999999999999995
+* device instance $77 r0 *1 44.605,2.838 sg13_lv_pmos
+M$77 VDD p1e nand_A2 VDD sg13_lv_pmos W=4.4799999999999995 L=0.12999999999999995
+* device instance $81 r0 *1 50.525,2.838 sg13_lv_pmos
+M$81 VDD nand_A2 \$26 VDD sg13_lv_pmos W=2.2399999999999998
++ L=0.12999999999999995
+* device instance $83 r0 *1 51.555,2.838 sg13_lv_pmos
+M$83 VDD \$22 \$26 VDD sg13_lv_pmos W=2.2399999999999998 L=0.12999999999999995
+* device instance $85 r0 *1 56.209,2.838 sg13_lv_pmos
+M$85 VDD \$26 \$27 VDD sg13_lv_pmos W=4.4799999999999995 L=0.12999999999999995
+* device instance $89 r0 *1 61.355,2.838 sg13_lv_pmos
+M$89 VDD \$27 p1 VDD sg13_lv_pmos W=8.959999999999999 L=0.12999999999999995
+.ENDS clock_5_splitTop1

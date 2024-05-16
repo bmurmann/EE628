@@ -1,0 +1,22 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 09/05/2024 10:15
+
+* cell comp_5_splitTop2
+* pin sub!
+.SUBCKT comp_5_splitTop2 sub!
+* device instance $1 r0 *1 -2.121,-6.776 sg13_lv_nmos
+M$1 sub! \$2 \$3 sub! sg13_lv_nmos W=2.0 L=0.13
+* device instance $2 r0 *1 -2.079,-3.277 sg13_lv_nmos
+M$2 \$6 \$22 \$3 sub! sg13_lv_nmos W=2.0 L=0.13
+* device instance $3 r0 *1 -2.121,-0.976 sg13_lv_nmos
+M$3 sub! \$18 \$19 sub! sg13_lv_nmos W=2.0 L=0.13
+* device instance $4 r0 *1 -2.079,2.523 sg13_lv_nmos
+M$4 \$22 \$6 \$19 sub! sg13_lv_nmos W=2.0 L=0.13
+* device instance $5 r0 *1 -3.379,-3.912 sg13_lv_pmos
+M$5 \$6 \$2 \$7 \$7 sg13_lv_pmos W=4.0 L=0.13
+* device instance $6 r0 *1 0.063,-3.912 sg13_lv_pmos
+M$6 \$7 \$22 \$6 \$7 sg13_lv_pmos W=4.0 L=0.13
+* device instance $7 r0 *1 -3.379,1.888 sg13_lv_pmos
+M$7 \$22 \$18 \$7 \$7 sg13_lv_pmos W=4.0 L=0.13
+* device instance $8 r0 *1 0.063,1.888 sg13_lv_pmos
+M$8 \$7 \$6 \$22 \$7 sg13_lv_pmos W=4.0 L=0.13
+.ENDS comp_5_splitTop2

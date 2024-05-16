@@ -1,0 +1,60 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 05/05/2024 12:32
+
+* cell clock_5_splitTop2
+* pin nand_B2
+* pin inv_bottom
+* pin p2e
+* pin nand_B1
+* pin p2
+* pin nand_A2
+* pin sub!
+.SUBCKT clock_5_splitTop2 nand_B2 inv_bottom p2e nand_B1 p2 nand_A2 sub!
+* device instance $1 r0 *1 -0.936,-0.548 sg13_lv_nmos
+M$1 \$2 nand_B2 sub! sub! sg13_lv_nmos W=1.44 L=0.13
+* device instance $3 r0 *1 0.094,-0.548 sg13_lv_nmos
+M$3 \$2 nand_A2 \$15 sub! sg13_lv_nmos W=1.44 L=0.13
+* device instance $5 r0 *1 39.5,-0.548 sg13_lv_nmos
+M$5 \$3 nand_B1 sub! sub! sg13_lv_nmos W=1.44 L=0.13
+* device instance $7 r0 *1 40.53,-0.548 sg13_lv_nmos
+M$7 \$3 \$19 \$22 sub! sg13_lv_nmos W=1.44 L=0.13
+* device instance $9 r0 *1 3.828,-0.523 sg13_lv_nmos
+M$9 sub! \$15 \$16 sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $13 r0 *1 9.043,-0.523 sg13_lv_nmos
+M$13 sub! \$16 \$17 sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $17 r0 *1 13.979,-0.523 sg13_lv_nmos
+M$17 sub! \$17 inv_bottom sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $21 r0 *1 23.254,-0.523 sg13_lv_nmos
+M$21 sub! inv_bottom \$19 sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $25 r0 *1 28.111,-0.523 sg13_lv_nmos
+M$25 sub! \$19 p2e sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $29 r0 *1 33.58,-0.523 sg13_lv_nmos
+M$29 sub! p2e nand_B1 sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $33 r0 *1 45.184,-0.523 sg13_lv_nmos
+M$33 sub! \$22 \$23 sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $37 r0 *1 50.33,-0.523 sg13_lv_nmos
+M$37 sub! \$23 p2 sub! sg13_lv_nmos W=5.920000000000001 L=0.13
+* device instance $45 r0 *1 -0.936,1.137 sg13_lv_pmos
+M$45 \$36 nand_B2 \$15 \$36 sg13_lv_pmos W=2.24 L=0.13
+* device instance $47 r0 *1 0.094,1.137 sg13_lv_pmos
+M$47 \$36 nand_A2 \$15 \$36 sg13_lv_pmos W=2.24 L=0.13
+* device instance $49 r0 *1 3.828,1.137 sg13_lv_pmos
+M$49 \$36 \$15 \$16 \$36 sg13_lv_pmos W=4.48 L=0.13
+* device instance $53 r0 *1 9.043,1.137 sg13_lv_pmos
+M$53 \$36 \$16 \$17 \$36 sg13_lv_pmos W=4.48 L=0.13
+* device instance $57 r0 *1 13.979,1.137 sg13_lv_pmos
+M$57 \$36 \$17 inv_bottom \$36 sg13_lv_pmos W=4.48 L=0.13
+* device instance $61 r0 *1 23.254,1.137 sg13_lv_pmos
+M$61 \$36 inv_bottom \$19 \$36 sg13_lv_pmos W=4.48 L=0.13
+* device instance $65 r0 *1 28.111,1.137 sg13_lv_pmos
+M$65 \$36 \$19 p2e \$36 sg13_lv_pmos W=4.48 L=0.13
+* device instance $69 r0 *1 33.58,1.137 sg13_lv_pmos
+M$69 \$36 p2e nand_B1 \$36 sg13_lv_pmos W=4.48 L=0.13
+* device instance $73 r0 *1 39.5,1.137 sg13_lv_pmos
+M$73 \$36 nand_B1 \$22 \$36 sg13_lv_pmos W=2.24 L=0.13
+* device instance $75 r0 *1 40.53,1.137 sg13_lv_pmos
+M$75 \$36 \$19 \$22 \$36 sg13_lv_pmos W=2.24 L=0.13
+* device instance $77 r0 *1 45.184,1.137 sg13_lv_pmos
+M$77 \$36 \$22 \$23 \$36 sg13_lv_pmos W=4.48 L=0.13
+* device instance $81 r0 *1 50.33,1.137 sg13_lv_pmos
+M$81 \$36 \$23 p2 \$36 sg13_lv_pmos W=8.96 L=0.13
+.ENDS clock_5_splitTop2
