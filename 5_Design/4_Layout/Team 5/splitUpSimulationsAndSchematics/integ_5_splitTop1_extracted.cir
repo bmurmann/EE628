@@ -1,0 +1,42 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 06/05/2024 03:15
+
+* cell integ_5_splitTop1
+* pin sub!
+.SUBCKT integ_5_splitTop1 sub!
+* device instance $1 r0 *1 -1.145,-11.96 sg13_lv_nmos
+M$1 \$5 \$3 \$7 sub! sg13_lv_nmos W=0.64 L=0.13
+* device instance $2 r0 *1 -0.635,-11.96 sg13_lv_nmos
+M$2 sub! \$9 \$7 sub! sg13_lv_nmos W=0.64 L=0.13
+* device instance $3 r0 *1 -0.125,-12.01 sg13_lv_nmos
+M$3 sub! \$5 \$6 sub! sg13_lv_nmos W=0.74 L=0.13
+* device instance $4 r0 *1 4.621,-11.066 sg13_lv_nmos
+M$4 \$1 \$6 \$19 sub! sg13_lv_nmos W=0.5 L=0.13
+* device instance $5 r0 *1 5.778,-6.341 sg13_lv_nmos
+M$5 \$20 \$30 \$19 sub! sg13_lv_nmos W=2.0 L=0.13
+* device instance $6 r0 *1 0.875,0.142 sg13_lv_nmos
+M$6 \$25 \$29 \$33 sub! sg13_lv_nmos W=0.74 L=0.13
+* device instance $7 r0 *1 1.185,0.142 sg13_lv_nmos
+M$7 \$33 \$3 sub! sub! sg13_lv_nmos W=0.74 L=0.13
+* device instance $8 r0 *1 2.035,0.237 sg13_lv_nmos
+M$8 sub! \$9 \$29 sub! sg13_lv_nmos W=0.55 L=0.12999999999999998
+* device instance $9 r0 *1 5.383,0.142 sg13_lv_nmos
+M$9 \$17 \$30 sub! sub! sg13_lv_nmos W=0.74 L=0.13
+* device instance $10 r0 *1 -1.145,-10.32 sg13_lv_pmos
+M$10 \$10 \$3 \$5 \$10 sg13_lv_pmos W=0.84 L=0.13
+* device instance $11 r0 *1 -0.635,-10.32 sg13_lv_pmos
+M$11 \$10 \$9 \$5 \$10 sg13_lv_pmos W=0.84 L=0.13
+* device instance $12 r0 *1 -0.125,-10.46 sg13_lv_pmos
+M$12 \$10 \$5 \$6 \$10 sg13_lv_pmos W=1.12 L=0.13
+* device instance $13 r0 *1 -1.384,-6.339 sg13_lv_pmos
+M$13 \$19 \$17 \$20 \$13 sg13_lv_pmos W=6.0 L=0.12999999999999998
+* device instance $17 r0 *1 -2.076,1.29 sg13_lv_pmos
+M$17 \$19 \$25 \$28 \$13 sg13_lv_pmos W=1.5 L=0.12999999999999998
+* device instance $18 r0 *1 2.035,1.662 sg13_lv_pmos
+M$18 \$10 \$9 \$29 \$10 sg13_lv_pmos W=0.84 L=0.13
+* device instance $19 r0 *1 0.985,1.802 sg13_lv_pmos
+M$19 \$10 \$29 \$25 \$10 sg13_lv_pmos W=1.12 L=0.13
+* device instance $20 r0 *1 1.495,1.802 sg13_lv_pmos
+M$20 \$25 \$3 \$10 \$10 sg13_lv_pmos W=1.12 L=0.13
+* device instance $21 r0 *1 5.373,1.817 sg13_lv_pmos
+M$21 \$17 \$30 \$10 \$10 sg13_lv_pmos W=1.12 L=0.13
+.ENDS integ_5_splitTop1

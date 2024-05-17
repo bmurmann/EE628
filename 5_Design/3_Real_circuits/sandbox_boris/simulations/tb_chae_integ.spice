@@ -1,0 +1,37 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/sandbox_boris/tb_chae_integ.sch
+**.subckt tb_chae_integ
+Vp1 p1 GND dc 0 pulse(0, {vdd}, 5n, 500p, 500p, 495n, 1u)
+E1 vo1 GND net3 GND -50
+S1 net1 vi p1 GND mysw
+Vp2 p2 GND dc {vdd} pulse({vdd}, 0, 0, 500p, 500p, 505n, 1u)
+Vin vi GND dc 0.1
+C1 net1 net2 1p m=1
+S2 net3 net2 p2 GND mysw
+C2 net3 vo1 1p m=1
+S3 net1 GND p2 GND mysw
+S4 net2 GND p1 GND mysw
+E2 vo2 GND net6 GND -50
+S5 net4 vi p1 GND mysw
+C3 net4 net5 1p m=1
+C4 net7 vo2 1p m=1
+S7 net4 GND p2 GND mysw
+S8 net5 GND p1 GND mysw
+C5 net5 net6 1p m=1
+S6 net7 net5 p2 GND mysw
+S9 net7 net6 p1 GND mysw
+**** begin user architecture code
+
+
+.param temp=27 vdd=1.2
+.model mysw SW vt={vdd/2} ron=10k roff=10gig
+.control
+save all
+tran 1n 50u
+plot vo1 vo2
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

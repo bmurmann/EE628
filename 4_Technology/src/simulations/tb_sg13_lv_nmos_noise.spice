@@ -1,0 +1,32 @@
+** sch_path: /foss/designs/EE628/4_Technology/src/tb_sg13_lv_nmos_noise.sch
+**.subckt tb_sg13_lv_nmos_noise
+Xm1 d g GND GND sg13_lv_nmos W={Wx} L={Lx} ng=1 m=1
+Vgs g GND dc 0.5 ac 1
+Vds d GND 0.6
+H1 vx GND Vds 1
+**** begin user architecture code
+ .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+
+
+
+.param temp=27
+.param Wx=5u Lx=0.13u
+
+.control
+save all @n.xm1.nsg13_lv_nmos[gm]
+set sqrnoise
+noise v(vx) Vgs dec 1 100e6 100e9
+setplot noise1
+print v(onoise_spectrum)
+print @n.xm1.nsg13_lv_nmos[gm]
+
+* id^2 = 4*k*T*gamma*gm
+* gamma = =id^2 / (4*k*T*gm)
+print v(onoise_spectrum)/(4*1.38e-23*300*@n.xm1.nsg13_lv_nmos[gm])
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

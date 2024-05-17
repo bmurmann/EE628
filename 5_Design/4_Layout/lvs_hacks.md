@@ -1,54 +1,40 @@
 # Changes made to LVS
 
-
-
-* Removed `heattrans` layer requirement for MOSFETs so that LVS can pass on standard cells & IO cells
+* Removed `heattrans` layer requirement for MOSFETs so that LVS can pass standard cells & IO cells
 ```
 sed -i.bak 's/.and(heattrans_drw)//g' $KLAYOUT_HOME/tech/lvs/rule_decks/mos_derivations.lvs
 ```
 
-~~* Changed `dpantenna` diode derivation (diode_derivations.lvs)~~
+* Removed `mim_drw` exclusion from `mos_derivations` so that MOSFETs can be placed under MIM capacitors.
 ```
-#diode_exclude = gatpoly_drw.join(nwell_drw).join(nsd_drw)
-#                    .join(heattrans_drw).join(trans_drw).join(emwind_drw)
-#                    .join(emwihv_drw).join(heatres_drw).join(polyres_drw)
-#                    .join(mim_drw).join(extblock_drw).join(res_drw)
-#                    .join(activ_mask).join(recog_esd).join(ind_drw)
-#                    .join(ind_pin).join(substrate_drw)
-diode_exclude = gatpoly_drw.join(nsd_drw)
-                    .join(heattrans_drw).join(trans_drw).join(emwind_drw)
-                    .join(emwihv_drw).join(heatres_drw).join(polyres_drw)
-                    .join(mim_drw).join(extblock_drw).join(res_drw)
-                    .join(activ_mask).join(recog_esd).join(ind_drw)
-                    .join(ind_pin).join(substrate_drw)
-```
-```
-# ==== dpantenna diode ====
-#dpantenna_n = pactiv.and(antenna_d_mk)
-#dpantenna_p = pwell.and(antenna_d_mk).covering(dpantenna_n)
-dpantenna_p = pactiv.and(antenna_d_mk)
-dpantenna_n = nwell_drw.and(antenna_d_mk).covering(dpantenna_p)
+#mos_exclude = pwell_block.join(nsd_drw).join(trans_drw)
+#                .join(emwind_drw).join(emwihv_drw).join(heatres_drw)
+#                .join(salblock_drw).join(polyres_drw).join(mim_drw)
+#                .join(extblock_drw).join(res_drw).join(activ_mask)
+#                .join(recog_diode).join(recog_esd).join(ind_drw)
+#                .join(ind_pin).join(ind_drw).join(substrate_drw)
+mos_exclude = pwell_block.join(nsd_drw).join(trans_drw)
+                .join(emwind_drw).join(emwihv_drw).join(heatres_drw)
+                .join(salblock_drw).join(polyres_drw)
+                .join(extblock_drw).join(res_drw).join(activ_mask)
+                .join(recog_diode).join(recog_esd).join(ind_drw)
+                .join(ind_pin).join(ind_drw).join(substrate_drw)
 ```
 
-* ~~Changed `rppd` derivation (res_derivations.lvs) so that it gets recognized on nwell (as used in IO cells)~~
+* Deleted most mimcap-related exclusions from `cap_derivations` to allow placing components underneath.
 ```
-#polyres_exclude = activ_drw.join(nwell_drw).join(pwell_block)
-#                    .join(nsd_block).join(nbulay_drw).join(thickgateox_drw)
-#                    .join(heattrans_drw).join(trans_drw).join(emwind_drw)
-#                    .join(emwihv_drw).join(mim_drw).join(activ_mask)
-#                    .join(recog_diode).join(recog_esd).join(ind_drw)
-#                    .join(ind_pin).join(substrate_drw)
-polyres_exclude = activ_drw.join(pwell_block)
-                    .join(nsd_block).join(nbulay_drw).join(thickgateox_drw)
-                    .join(heattrans_drw).join(trans_drw).join(emwind_drw)
-                    .join(emwihv_drw).join(mim_drw).join(activ_mask)
-                    .join(recog_diode).join(recog_esd).join(ind_drw)
-                    .join(ind_pin).join(substrate_drw)
+#cap_exc = nsd_drw.join(heattrans_drw).join(trans_drw)
+#            .join(emwind_drw).join(emwihv_drw).join(heatres_drw)
+#            .join(salblock_drw).join(polyres_drw).join(extblock_drw)
+#            .join(res_drw).join(activ_mask).join(recog_diode)
+#            .join(recog_esd).join(ind_drw).join(ind_pin)
+#            .join(substrate_drw)
+cap_exc = recog_esd.join(ind_drw).join(ind_pin)
 ```
 ```
-## polyres
-#polyres_mk = polyres_drw.and(heatres_drw).and(extblock_drw)
-#                .and(pwell).interacting(gatpoly_drw).not(polyres_exclude)
-polyres_mk = polyres_drw.and(heatres_drw).and(extblock_drw)
-                .interacting(gatpoly_drw).not(polyres_exclude)
+# === MIMCAP ===
+#mimcap_exclude = rfmimcap_exc.join(pwell_block).join(ptap_holes)
+mimcap_exclude = recog_esd.join(ind_drw).join(ind_pin)
 ```
+
+* Disabled RF devices in `rfmos_derivations.lvs`. The extraction hallucinates extra RF MOSFETs inside guard rings (including seal ring). 

@@ -1,0 +1,98 @@
+** sch_path: /foss/designs/week12/IDSM2_t1.sch
+
+.subckt IDSM2_t1 vhi vlo vdda vssa vin dout res clkin
+*.PININFO clkin:I res:I vin:I vssa:I vdda:I vlo:I vhi:I dd:O
+x1 vdda p2 net1 net2 vmid2 dout vssa p1 res vout2 comp_t1
+x2 p1e clkin p1 p2 p2e clk_generator_t1
+x3 res p1e p1 p2 vhi vdda vin vout1 vssa net2 net3 vlo stage_t1
+x4 res p2e p2 p1 vhi vdda vout1 vout2 vssa net1 vmid2 vlo stage_t1
+.ends
+
+* expanding   symbol:  /foss/designs/week12/comp_t1.sym # of pins=9
+** sym_path: /foss/designs/week12/comp_t1.sym
+** sch_path: /foss/designs/week12/comp_t1.sch
+.subckt comp_t1 vdda pc d dd vinp dout vssa ps res vinm
+*.PININFO pc:I vinp:I ps:I vinm:I vdda:B vssa:B d:O dd:O res:I
+M4 vinm_samp ps vinm vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M5 vinm_samp psb vinm vdda sg13_lv_pmos L=0.13u W=6u ng=3 m=1
+x3 ps VDD VSS psb sg13g2_inv_1
+C1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+M1 out1m pc vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M2 out1m out1p vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M3 out1p out1m vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M6 out1p pc vdda vdda sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M7 out1m out1p d2p vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M8 d2p pc d1p vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M9 d1p vinp vssa vssa sg13_lv_nmos L=1u W=2u ng=1 m=1
+M10 out1p out1m d2m vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M11 d2m pc d1m vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M12 d1m vinm_samp vssa vssa sg13_lv_nmos L=1u W=2u ng=1 m=1
+M13 net1 out1p VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M14 net1 net2 VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M15 net2 net1 VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M16 net2 out1m VDD VDD sg13_lv_pmos L=0.13u W=4u ng=1 m=1
+M17 net1 net2 net3 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M18 net2 net1 net4 VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M19 net3 out1p VSS VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M20 net4 out1m VSS VSS sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+x1 net2 VDD VSS d sg13g2_buf_2
+x2 ps net2 dd net7 net6 VDD VSS sg13g2_dfrbp_2
+x4 res VDD VSS net6 sg13g2_inv_1
+x5 dd VDD VSS dout sg13g2_inv_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/week12/clk_generator_t1.sym # of pins=5
+** sym_path: /foss/designs/week12/clk_generator_t1.sym
+** sch_path: /foss/designs/week12/clk_generator_t1.sch
+.subckt clk_generator_t1 p1e clkin p1 p2 p2e
+*.PININFO clkin:I p2e:O p2:O p1:O p1e:O
+x1 clkin VDD VSS clkinb sg13g2_inv_2
+x2 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
+x3 clkinb VDD VSS clkinbb sg13g2_inv_2
+x4 net11 VDD VSS net2 sg13g2_inv_4
+x8 b1 clkinb VDD VSS net12 sg13g2_nand2_2
+x9 net12 VDD VSS net1 sg13g2_inv_4
+x15 net2 VDD VSS net4 sg13g2_inv_4
+x16 net1 VDD VSS net3 sg13g2_inv_4
+x17 net4 VDD VSS net6 sg13g2_inv_4
+x18 net3 VDD VSS net5 sg13g2_inv_4
+x19 net6 VDD VSS a1 sg13g2_inv_4
+x20 net5 VDD VSS a2 sg13g2_inv_4
+x21 a1 VDD VSS p1e sg13g2_inv_4
+x22 a2 VDD VSS p2e sg13g2_inv_4
+x23 p1e VDD VSS b1 sg13g2_inv_4
+x24 p2e VDD VSS b2 sg13g2_inv_4
+x25 a1 b1 VDD VSS net7 sg13g2_nand2_2
+x26 a2 b2 VDD VSS net8 sg13g2_nand2_2
+x5 net7 VDD VSS net9 sg13g2_inv_4
+x6 net8 VDD VSS net10 sg13g2_inv_4
+x7 net9 VDD VSS p1 sg13g2_inv_8
+x10 net10 VDD VSS p2 sg13g2_inv_8
+.ends
+
+
+* expanding   symbol:  /foss/designs/week12/stage_t1.sym # of pins=12
+** sym_path: /foss/designs/week12/stage_t1.sym
+** sch_path: /foss/designs/week12/stage_t1.sch
+.subckt stage_t1 res pse ps pr vhi vdda vin vout vssa d vmid vlo
+*.PININFO res:I pse:I ps:I pr:I vhi:B vin:I d:I vlo:B vdda:B vssa:B vout:O vmid:O
+x1 ps VDD VSS psb sg13g2_inv_1
+x2 d pr VDD VSS gp sg13g2_nand2b_1
+M2 vout res vx4 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M3 vx1 gp vhi vdda sg13_lv_pmos L=0.13u W=1.5u ng=1 m=1
+M4 vx1 ps vin vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M5 vx1 psb vin vdda sg13_lv_pmos L=0.13u W=6u ng=3 m=1
+C2 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+x4 pr d VDD VSS gn sg13g2_and2_1
+M6 vx1 gn vlo vssa sg13_lv_nmos L=0.13u W=0.5u ng=1 m=1
+C3 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+M7 vx4 pr vx2 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M8 vx4 ps vx3 vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+C4 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+M9 vx2 pse vmid vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+M10 vout vx3 vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M11 vout vx3 vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+M12 vmid vmid vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M13 vmid vmid vssa vssa sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+.ends

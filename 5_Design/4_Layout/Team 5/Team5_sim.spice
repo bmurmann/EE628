@@ -1,5 +1,5 @@
-** sch_path: /foss/designs/Team5.sch
-.subckt Team5 vhi vlo vdda vssa vin res dd clkin
+** sch_path: /foss/designs/turn-in/Team5.sch
+.subckt Team5 vhi vlo dd vdda vssa vin res clkin
 *.ipin vhi
 *.ipin vlo
 *.ipin vdda
@@ -8,87 +8,79 @@
 *.ipin res
 *.opin dd
 *.ipin clkin
-x3 res p1e p1 p2 vhi vdda vout1 vin vssa dd vlo net2 integ_5
-x2 res p2e p2 p1 vhi vdda vout2 vout1 vssa net1 vlo vmid2 integ_5
-x4 p1e p1 clkin p2 p2e clock_5
-x1 vdda p2 net1 dd vmid2 vssa res p1 vout2 comp_5
+x2 vhi vlo vdda vssa vmid vin vout2 dd d res net1 net3 net4 net2 Team5_split1
+x1 vdda vssa d vmid vout2 dd res net4 net3 net2 net1 clkin Team5_split2
 .ends
 
-* expanding   symbol:  /foss/designs/integ_5.sym # of pins=12
-** sym_path: /foss/designs/integ_5.sym
-** sch_path: /foss/designs/integ_5.sch
-.subckt integ_5 res pse ps pr vhi vdda vout vin vssa d vlo vmid
-*.ipin res
-*.ipin pse
-*.ipin ps
-*.ipin pr
-*.iopin vssa
-*.iopin vdda
-*.opin vout
-*.opin vmid
-*.ipin d
-*.iopin vlo
+* expanding   symbol:  /foss/designs/Team5_split1.sym # of pins=14
+** sym_path: /foss/designs/Team5_split1.sym
+** sch_path: /foss/designs/Team5_split1.sch
+.subckt Team5_split1 vhi vlo vdda vssa vinp vin vinm dd d res p1e p1 p2 p2e
+*.ipin vhi
+*.ipin vlo
+*.ipin vdda
+*.ipin vssa
 *.ipin vin
-*.iopin vhi
-x1 ps VDD VSS psb sg13g2_inv_1
-XM1 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XC1 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
-XM2 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM3 vout vx3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
-XM4 vout vx3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
-XC2 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
-XM5 vx4 pr vx2 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM6 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM7 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
-XM8 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
-XM9 vx1 gn vlo vssa sg13_lv_nmos W=0.5u L=0.13u ng=1 m=1
-XC3 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
-x2 pr d VDD VSS gn sg13g2_and2_1
-XM10 vx1 psb vin vdda sg13_lv_pmos W=6u L=0.13u ng=4 m=1
-XM11 vx1 ps vin vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-x3 d pr VDD VSS gp sg13g2_nand2b_1
-XM12 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
+*.ipin res
+*.iopin p1
+*.iopin p1e
+*.iopin p2e
+*.iopin p2
+*.iopin vinp
+*.iopin vinm
+*.iopin d
+*.iopin dd
+x3 res p1e p1 p2 vhi vdda vout1 vin vssa dd vlo net1 integ_5_splitTop
+x5 res p2e p2 p1 vhi vdda vinm vout1 vssa d vlo vinp integ_5_splitTop
 .ends
 
 
-* expanding   symbol:  /foss/designs/clock_5.sym # of pins=5
-** sym_path: /foss/designs/clock_5.sym
-** sch_path: /foss/designs/clock_5.sch
-.subckt clock_5 p1e p1 clkin p2 p2e
+* expanding   symbol:  /foss/designs/Team5_split2.sym # of pins=12
+** sym_path: /foss/designs/Team5_split2.sym
+** sch_path: /foss/designs/Team5_split2.sch
+.subckt Team5_split2 vdda vssa d vinp vinm dd res p2 p1 p2e p1e clkin
+*.ipin vdda
+*.ipin vssa
+*.ipin res
 *.ipin clkin
-*.opin p1e
-*.opin p1
-*.opin p2
-*.opin p2e
-x4 net1 VDD VSS net2 sg13g2_inv_4
-x5 net2 VDD VSS net3 sg13g2_inv_4
-x6 net3 VDD VSS net4 sg13g2_inv_4
-x7 net4 VDD VSS a1 sg13g2_inv_4
-x8 a1 VDD VSS p1e sg13g2_inv_4
-x9 p1e VDD VSS b1 sg13g2_inv_4
-x11 net5 VDD VSS net6 sg13g2_inv_4
-x16 net7 VDD VSS net8 sg13g2_inv_4
-x17 net8 VDD VSS net9 sg13g2_inv_4
-x18 net9 VDD VSS net10 sg13g2_inv_4
-x19 net10 VDD VSS a2 sg13g2_inv_4
-x20 a2 VDD VSS p2e sg13g2_inv_4
-x21 p2e VDD VSS b2 sg13g2_inv_4
-x23 net11 VDD VSS net12 sg13g2_inv_4
-x13 clkin VDD VSS clkinb sg13g2_inv_2
-x1 clkinb VDD VSS clkinbb sg13g2_inv_2
-x3 net6 VDD VSS p1 sg13g2_inv_8
-x12 net12 VDD VSS p2 sg13g2_inv_8
-x2 clkinbb b2 VDD VSS net1 sg13g2_nand2_2
-x10 b1 clkinb VDD VSS net7 sg13g2_nand2_2
-x14 a1 b1 VDD VSS net5 sg13g2_nand2_2
-x15 b2 a2 VDD VSS net11 sg13g2_nand2_2
+*.iopin vinp
+*.iopin vinm
+*.iopin p1e
+*.iopin p1
+*.iopin p2
+*.iopin p2e
+*.iopin d
+*.iopin dd
+x1 vdda p2 d dd vinp vssa res p1 vinm comp_5_splitTop
+x4 p1e clkin p1 p2 p2e clock_5_splitTop
 .ends
 
 
-* expanding   symbol:  /foss/designs/comp_5.sym # of pins=9
-** sym_path: /foss/designs/comp_5.sym
-** sch_path: /foss/designs/comp_5.sch
-.subckt comp_5 vdda pc d dd vinp vssa res ps vinm
+* expanding   symbol:  /foss/designs/layout/integ_5_splitTop.sym # of pins=12
+** sym_path: /foss/designs/layout/integ_5_splitTop.sym
+** sch_path: /foss/designs/layout/integ_5_splitTop.sch
+.subckt integ_5_splitTop res pse ps pr vhi vdda vout vin vssa d vlo vmid
+*.iopin ps
+*.iopin vhi
+*.iopin vdda
+*.iopin vlo
+*.iopin vout
+*.iopin vmid
+*.iopin pse
+*.iopin pr
+*.iopin d
+*.iopin vin
+*.iopin res
+*.iopin vssa
+x1 ps vhi vin d vdda pr vssa vlo vout net1 net2 pse vmid integ_5_splitTop3
+x2 res vout net1 vssa ps net2 integ_5_split5
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_splitTop.sym # of pins=9
+** sym_path: /foss/designs/comp_5_splitTop.sym
+** sch_path: /foss/designs/comp_5_splitTop.sch
+.subckt comp_5_splitTop vdda pc d dd vinp vssa res ps vinm
 *.ipin pc
 *.iopin vdda
 *.iopin vssa
@@ -98,31 +90,417 @@ x15 b2 a2 VDD VSS net11 sg13g2_nand2_2
 *.ipin res
 *.opin dd
 *.opin d
-XM2 out1m pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM1 out1m out1p vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM4 out1m out1p d2p vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM5 out1p out1m vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM6 out1p pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM7 d2p pc d1p vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM8 d1p vinp vssa vssa sg13_lv_nmos W=2u L=1u ng=1 m=1
-XM9 out1p out1m d2m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM10 d2m pc d1m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM11 d1m vinm_samp vssa vssa sg13_lv_nmos W=2u L=1u ng=1 m=1
-XM3 net1 out1p VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM12 net1 net2 VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM13 net2 net1 VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM14 net2 out1m VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
-XM15 net1 net2 net3 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM16 net3 out1p VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM17 net2 net1 net4 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
-XM18 net4 out1m VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+x2 vdda pc out1m vinp out1p vssa ps vinm comp_5_splitTop3
+x1 out1m VDD VSS out1p res d dd ps comp_5_splitTop4
+.ends
+
+
+* expanding   symbol:  /foss/designs/clock_5_splitTop.sym # of pins=5
+** sym_path: /foss/designs/clock_5_splitTop.sym
+** sch_path: /foss/designs/clock_5_splitTop.sch
+.subckt clock_5_splitTop p1e clkin p1 p2 p2e
+*.ipin clkin
+*.opin p1e
+*.opin p1
+*.opin p2
+*.opin p2e
+x1 p1e clkin p1 net1 net2 clkinb clock_5_splitTop1
+x2 net1 clkinb net2 p2 p2e clock_5_splitTop2
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_splitTop3.sym # of pins=13
+** sym_path: /foss/designs/integ_5_splitTop3.sym
+** sch_path: /foss/designs/integ_5_splitTop3.sch
+.subckt integ_5_splitTop3 ps vhi vin d vdda pr vssa vlo vout vx4 vx3 pse vmid
+*.ipin pse
+*.ipin pr
+*.iopin vssa
+*.ipin d
+*.iopin vlo
+*.ipin vin
+*.iopin vhi
+*.iopin vdda
+*.iopin ps
+*.iopin vmid
+*.iopin vx3
+*.iopin vx4
+*.iopin vout
+x1 ps vhi vin d net1 vdda pr vssa vlo integ_5_splitTop1
+x2 vdda vout vx4 pr net1 vx3 pse vssa vmid integ_5_splitTop2
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split5.sym # of pins=6
+** sym_path: /foss/designs/integ_5_split5.sym
+** sch_path: /foss/designs/integ_5_split5.sch
+.subckt integ_5_split5 res vout vx4 vssa ps vx3
+*.ipin res
+*.iopin vssa
+*.opin vout
+*.iopin vx3
+*.iopin ps
+*.iopin vx4
+XM1 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XC1 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+XM2 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_splitTop3.sym # of pins=8
+** sym_path: /foss/designs/comp_5_splitTop3.sym
+** sch_path: /foss/designs/comp_5_splitTop3.sch
+.subckt comp_5_splitTop3 vdda pc out1m vinp out1p vssa ps vinm
+*.ipin pc
+*.iopin vdda
+*.iopin vssa
+*.ipin vinp
+*.ipin ps
+*.ipin vinm
+*.iopin out1p
+*.iopin out1m
+x5 vdda pc vinp out1m out1p vssa vinm_samp comp_5_splitTop1
+x7 vdda vssa ps vinm_samp vinm comp_5_split3
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_splitTop4.sym # of pins=8
+** sym_path: /foss/designs/comp_5_splitTop4.sym
+** sch_path: /foss/designs/comp_5_splitTop4.sch
+.subckt comp_5_splitTop4 out1m VDD VSS out1p res d dd ps
+*.ipin res
+*.opin dd
+*.opin d
+*.iopin out1m
+*.iopin out1p
+*.iopin VDD
+*.iopin VSS
+*.iopin ps
+x6 out1p VDD net1 out1m VSS comp_5_splitTop2
+x1 net1 d dd ps res comp_5_split4
+.ends
+
+
+* expanding   symbol:  /foss/designs/clock_5_splitTop1.sym # of pins=6
+** sym_path: /foss/designs/clock_5_splitTop1.sym
+** sch_path: /foss/designs/clock_5_splitTop1.sch
+.subckt clock_5_splitTop1 p1e clkin p1 nand_A2 nand_B1 nand_B2
+*.ipin clkin
+*.opin p1e
+*.opin p1
+*.iopin nand_B2
+*.iopin nand_B1
+*.iopin nand_A2
+x1 p1e net1 p1 nand_A2 clock_5_split1
+x3 net1 clkin nand_B2 nand_B1 clock_5_split3
+.ends
+
+
+* expanding   symbol:  /foss/designs/clock_5_splitTop2.sym # of pins=5
+** sym_path: /foss/designs/clock_5_splitTop2.sym
+** sch_path: /foss/designs/clock_5_splitTop2.sch
+.subckt clock_5_splitTop2 nand_A2 nand_B2 nand_B1 p2 p2e
+*.opin p2
+*.opin p2e
+*.iopin nand_B2
+*.iopin nand_B1
+*.iopin nand_A2
+x2 nand_B1 net1 p2 p2e clock_5_split2
+x4 net1 nand_A2 nand_B2 clock_5_split4
+.ends
+
+
+* expanding   symbol:  /foss/designs/layout/integ_5_splitTop1.sym # of pins=9
+** sym_path: /foss/designs/layout/integ_5_splitTop1.sym
+** sch_path: /foss/designs/layout/integ_5_splitTop1.sch
+.subckt integ_5_splitTop1 ps vhi vin d vx1 vdda pr vssa vlo
+*.iopin d
+*.iopin vin
+*.iopin ps
+*.iopin vhi
+*.iopin vx1
+*.iopin vdda
+*.iopin pr
+*.iopin vssa
+*.iopin vlo
+x1 ps net1 vhi d vdda pr vx1 integ_5_split1
+x2 ps vin vx1 d vdda net1 pr vssa vlo integ_5_split2
+.ends
+
+
+* expanding   symbol:  /foss/designs/layout/integ_5_splitTop2.sym # of pins=9
+** sym_path: /foss/designs/layout/integ_5_splitTop2.sym
+** sch_path: /foss/designs/layout/integ_5_splitTop2.sch
+.subckt integ_5_splitTop2 vdda vout vx4 pr vx1 vx3 pse vssa vmid
+*.iopin vdda
+*.iopin vout
+*.iopin vx4
+*.iopin pr
+*.iopin vx1
+*.iopin vx3
+*.iopin pse
+*.iopin vssa
+*.iopin vmid
+x1 vdda vx3 vout vssa vmid integ_5_split3
+x2 vx4 pr vx1 vx3 pse vssa vmid integ_5_split4
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_splitTop1.sym # of pins=7
+** sym_path: /foss/designs/comp_5_splitTop1.sym
+** sch_path: /foss/designs/comp_5_splitTop1.sch
+.subckt comp_5_splitTop1 vdda pc vinp out1m out1p vssa vinm_samp
+*.ipin pc
+*.iopin vdda
+*.iopin vssa
+*.ipin vinp
+*.iopin out1m
+*.iopin out1p
+*.iopin vinm_samp
+x1 vdda pc out1m out1p vinp vssa comp_5_split1
+x2 vdda pc out1p out1m vinm_samp vssa comp_5_split1
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_split3.sym # of pins=5
+** sym_path: /foss/designs/comp_5_split3.sym
+** sch_path: /foss/designs/comp_5_split3.sch
+.subckt comp_5_split3 vdda vssa ps vinm_samp vinm
+*.iopin vdda
+*.iopin vssa
+*.ipin ps
+*.ipin vinm
+*.iopin vinm_samp
 XM19 vinm_samp psb vinm vdda sg13_lv_pmos W=6u L=0.13u ng=1 m=1
 XM20 vinm_samp ps vinm vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
 x1 ps VDD VSS psb sg13g2_inv_1
 XC1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
-x2 ps net2 dd net6 net5 VDD VSS sg13g2_dfrbp_2
-x3 res VDD VSS net5 sg13g2_inv_1
-x4 net2 VDD VSS d sg13g2_buf_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_splitTop2.sym # of pins=5
+** sym_path: /foss/designs/comp_5_splitTop2.sym
+** sch_path: /foss/designs/comp_5_splitTop2.sch
+.subckt comp_5_splitTop2 out1m VDD d_inv in VSS
+*.iopin VDD
+*.iopin d_inv
+*.iopin VSS
+*.iopin out1m
+*.iopin in
+x1 VDD net1 d_inv in VSS comp_5_split2
+x5 VDD d_inv net1 out1m VSS comp_5_split2
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_split4.sym # of pins=5
+** sym_path: /foss/designs/comp_5_split4.sym
+** sch_path: /foss/designs/comp_5_split4.sch
+.subckt comp_5_split4 d_inv d dd ps res
+*.ipin res
+*.opin dd
+*.opin d
+*.iopin d_inv
+*.iopin ps
+x2 ps d_inv dd net2 net1 VDD VSS sg13g2_dfrbp_2
+x3 res VDD VSS net1 sg13g2_inv_1
+x4 d_inv VDD VSS d sg13g2_buf_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/clock_5_split1.sym # of pins=4
+** sym_path: /foss/designs/clock_5_split1.sym
+** sch_path: /foss/designs/clock_5_split1.sch
+.subckt clock_5_split1 p1e inv_top p1 nand_A2
+*.opin p1e
+*.opin p1
+*.iopin inv_top
+*.iopin nand_A2
+x7 inv_top VDD VSS a1 sg13g2_inv_4
+x8 a1 VDD VSS p1e sg13g2_inv_4
+x9 p1e VDD VSS nand_A2 sg13g2_inv_4
+x11 net1 VDD VSS net2 sg13g2_inv_4
+x3 net2 VDD VSS p1 sg13g2_inv_8
+x14 a1 nand_A2 VDD VSS net1 sg13g2_nand2_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/clock_5_split3.sym # of pins=4
+** sym_path: /foss/designs/clock_5_split3.sym
+** sch_path: /foss/designs/clock_5_split3.sch
+.subckt clock_5_split3 inv_top clkin nand_B2 nand_B1
+*.ipin clkin
+*.iopin nand_B2
+*.iopin nand_B1
+*.iopin inv_top
+x4 net1 VDD VSS net2 sg13g2_inv_4
+x5 net2 VDD VSS net3 sg13g2_inv_4
+x6 net3 VDD VSS inv_top sg13g2_inv_4
+x13 clkin VDD VSS nand_B2 sg13g2_inv_2
+x1 nand_B2 VDD VSS clkinbb sg13g2_inv_2
+x2 nand_B1 clkinbb VDD VSS net1 sg13g2_nand2_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/clock_5_split2.sym # of pins=4
+** sym_path: /foss/designs/clock_5_split2.sym
+** sch_path: /foss/designs/clock_5_split2.sch
+.subckt clock_5_split2 nand_B1 inv_bottom p2 p2e
+*.opin p2
+*.opin p2e
+*.iopin inv_bottom
+*.iopin nand_B1
+x19 inv_bottom VDD VSS a2 sg13g2_inv_4
+x20 a2 VDD VSS p2e sg13g2_inv_4
+x21 p2e VDD VSS nand_B1 sg13g2_inv_4
+x23 net1 VDD VSS net2 sg13g2_inv_4
+x12 net2 VDD VSS p2 sg13g2_inv_8
+x15 a2 nand_B1 VDD VSS net1 sg13g2_nand2_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/clock_5_split4.sym # of pins=3
+** sym_path: /foss/designs/clock_5_split4.sym
+** sch_path: /foss/designs/clock_5_split4.sch
+.subckt clock_5_split4 inv_bottom nand_A2 nand_B2
+*.iopin inv_bottom
+*.iopin nand_A2
+*.iopin nand_B2
+x16 net1 VDD VSS net2 sg13g2_inv_4
+x17 net2 VDD VSS net3 sg13g2_inv_4
+x18 net3 VDD VSS inv_bottom sg13g2_inv_4
+x10 nand_A2 nand_B2 VDD VSS net1 sg13g2_nand2_2
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split1.sym # of pins=7
+** sym_path: /foss/designs/integ_5_split1.sym
+** sch_path: /foss/designs/integ_5_split1.sch
+.subckt integ_5_split1 ps psb vhi d vdda pr vx1
+*.ipin ps
+*.iopin vhi
+*.iopin psb
+*.iopin vx1
+*.iopin vdda
+*.iopin pr
+*.iopin d
+x1 ps VDD VSS psb sg13g2_inv_1
+x3 d pr VDD VSS net1 sg13g2_nand2b_1
+XM12 vx1 net1 vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split2.sym # of pins=9
+** sym_path: /foss/designs/integ_5_split2.sym
+** sch_path: /foss/designs/integ_5_split2.sch
+.subckt integ_5_split2 ps vin vx1 d vdda psb pr vssa vlo
+*.ipin d
+*.iopin vlo
+*.ipin vin
+*.iopin pr
+*.iopin psb
+*.iopin ps
+*.iopin vx1
+*.iopin vssa
+*.iopin vdda
+x1 ps vssa vx1 vin vdda psb integ_5_split2.1
+x2 vx1 pr vssa d vlo integ_5_split2.2
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split3.sym # of pins=5
+** sym_path: /foss/designs/integ_5_split3.sym
+** sch_path: /foss/designs/integ_5_split3.sch
+.subckt integ_5_split3 vdda vx3 vout vssa vmid
+*.iopin vssa
+*.iopin vdda
+*.iopin vmid
+*.iopin vout
+*.iopin vx3
+XM3 vout vx3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XM4 vout vx3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XM7 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XM8 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split4.sym # of pins=7
+** sym_path: /foss/designs/integ_5_split4.sym
+** sch_path: /foss/designs/integ_5_split4.sch
+.subckt integ_5_split4 vx4 pr vx1 vx3 pse vssa vmid
+*.iopin vssa
+*.iopin vx1
+*.iopin pse
+*.iopin vmid
+*.iopin vx3
+*.iopin pr
+*.iopin vx4
+XC2 vx3 net1 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+XM5 vx4 pr net1 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM6 net1 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XC3 net1 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_split1.sym # of pins=6
+** sym_path: /foss/designs/comp_5_split1.sym
+** sch_path: /foss/designs/comp_5_split1.sch
+.subckt comp_5_split1 vdda pc out1m out1p vinp vssa
+*.ipin pc
+*.iopin vdda
+*.iopin vssa
+*.ipin vinp
+*.iopin out1m
+*.iopin out1p
+XM2 out1m pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM1 out1m out1p vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM4 out1m out1p net2 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM7 net2 pc net1 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM8 net1 vinp vssa vssa sg13_lv_nmos W=2u L=1u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/comp_5_split2.sym # of pins=5
+** sym_path: /foss/designs/comp_5_split2.sym
+** sch_path: /foss/designs/comp_5_split2.sch
+.subckt comp_5_split2 VDD out1p out2m out1m VSS
+*.iopin out1m
+*.iopin out2m
+*.iopin out1p
+*.iopin VSS
+*.iopin VDD
+XM3 out2m out1m VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM12 out2m out1p VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM15 out2m out1p net1 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM16 net1 out1m VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split2.1.sym # of pins=6
+** sym_path: /foss/designs/integ_5_split2.1.sym
+** sch_path: /foss/designs/integ_5_split2.1.sch
+.subckt integ_5_split2.1 ps vssa vx1 vin vdda psb
+*.ipin vin
+*.iopin psb
+*.iopin ps
+*.iopin vx1
+*.iopin vdda
+*.iopin vssa
+XM10 vx1 psb vin vdda sg13_lv_pmos W=6u L=0.13u ng=4 m=1
+XM11 vx1 ps vin vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/integ_5_split2.2.sym # of pins=5
+** sym_path: /foss/designs/integ_5_split2.2.sym
+** sch_path: /foss/designs/integ_5_split2.2.sch
+.subckt integ_5_split2.2 vx1 pr vssa d vlo
+*.ipin d
+*.iopin vlo
+*.iopin pr
+*.iopin vx1
+*.iopin vssa
+XM9 vx1 gn vlo vssa sg13_lv_nmos W=0.5u L=0.13u ng=1 m=1
+x2 pr d VDD VSS gn sg13g2_and2_1
 .ends
 
 .GLOBAL VDD

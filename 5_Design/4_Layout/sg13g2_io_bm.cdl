@@ -26,7 +26,7 @@ Xdcpdiode iovss iovdd iovss sg13g2_DCPDiode
 Xdcndiode vss pad iovdd sg13g2_DCNDiode
 Xdcpdiode pad iovdd iovss sg13g2_DCPDiode
 *Xleveldown vdd vss iovdd iovss pad p2c sg13g2_LevelDown
-Xleveldown vdd vss iovdd vss pad p2c 
+Xleveldown vdd vss iovdd vss pad p2c sg13g2_LevelDown
 .ends sg13g2_IOPadIn
 
 *** Hacking this to short VSS and IOVSS (to pass LVS standalone) 
@@ -43,12 +43,7 @@ Xgatelu vdd vss iovdd c2p ngate pgate sg13g2_GateLevelUpInv
 .subckt sg13g2_IOPadVdd vss vdd iovss iovdd
 Xnclamp iovss iovdd vdd ngate sg13g2_Clamp_N43N43D4R
 Xrcres vdd res_cap sg13g2_RCClampResistor
-*** Inverter is connected to iovdd in layout
-*Xrcinv vdd iovss res_cap ngate sg13g2_RCClampInverter
-Xrcinv iovdd iovss res_cap ngate sg13g2_RCClampInverter
-*** These are not in the layout
-*Xdcndiode iovss vdd iovdd sg13g2_DCNDiode
-*Xdcpdiode vdd iovdd iovss sg13g2_DCPDiode
+Xrcinv vdd iovss res_cap ngate sg13g2_RCClampInverter
 .ends sg13g2_IOPadVdd
 
 *** Hacking this to short VSS and IOVSS (to pass LVS standalone) 

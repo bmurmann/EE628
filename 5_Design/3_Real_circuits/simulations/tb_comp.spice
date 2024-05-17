@@ -1,0 +1,117 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/tb_comp.sch
+**.subckt tb_comp
+Vic net1 GND dc {vic}
+Vssa vssa GND dc 0
+Vres res GND dc {vdd} pwl(0, {vdd}, {per/4}, {vdd}, {per/4+50p}, 0)
+Vclk clkin GND pulse({vdd}, {0}, {per/2}, 100p, 100p, {per/2}, {per})
+Vddd VDD GND dc {vdd}
+Vssd VSS GND dc 0
+Vdda vdda GND dc {vdd}
+x1 vdda pc d ps dd vinm vinp vssa res dout template_comp
+x2 ps net2 clkin pc net3 template_clkgen
+Vm vinm net1 dc {-vid/2}
+Vp vinp net1 dc {+vid/2}
+**** begin user architecture code
+
+
+.param temp=27 per=20n vdd=1.2 vic=0.6 vid=100m
+.option method=gear reltol=1e-4
+
+.control
+tran 100p 20n
+alterparam vid=-100m
+reset
+tran 100p 20n
+plot pc tran1.x1.out1m tran1.x1.out1p
+plot pc tran2.x1.out1m tran2.x1.out1p
+.endc
+
+
+ .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  template_comp.sym # of pins=10
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_comp.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_comp.sch
+.subckt template_comp vdda pc d ps dd vinm vinp vssa res dout
+*.opin d
+*.ipin pc
+*.iopin vssa
+*.iopin vdda
+*.ipin ps
+*.ipin res
+*.opin dd
+*.ipin vinm
+*.ipin vinp
+*.opin dout
+XM3m out1p out1m d2m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM4m out1p out1m vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM5m out1p pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM2m d2m pc d1m vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM1m d1m vinm_samp vssa vssa sg13_lv_nmos W=2u L=1u ng=1 m=1
+XM3p out1m out1p d2p vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM4p out1m out1p vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM5p out1m pc vdda vdda sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM2p d2p pc d1p vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM1p d1p vinp vssa vssa sg13_lv_nmos W=2u L=1u ng=1 m=1
+XM32m dint net2 net1 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM2 dint net2 VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM3 dint out1m VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM21m net1 out1m VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM32p net2 dint net3 VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XM42p net2 dint VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM8 net2 out1p VDD VDD sg13_lv_pmos W=4u L=0.13u ng=1 m=1
+XM21p net3 out1p VSS VSS sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+x1 ps dint dd net5 net4 VDD VSS sg13g2_dfrbp_2
+x2 dint VDD VSS d sg13g2_buf_2
+x3 res VDD VSS net4 sg13g2_inv_1
+XMp1 vinm_samp psb vinm vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
+XMn5 vinm_samp ps vinm vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XC1 vinm_samp vssa cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+x4 ps VDD VSS psb sg13g2_inv_1
+x5 dd VDD VSS dout sg13g2_inv_2
+* noconn #net5
+.ends
+
+
+* expanding   symbol:  /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sym # of pins=5
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_clkgen.sch
+.subckt template_clkgen p1e p1 clkin p2 p2e
+*.ipin clkin
+*.opin p1e
+*.opin p1
+*.opin p2
+*.opin p2e
+xn1 clkinbb b2 VDD VSS net11 sg13g2_nand2_2
+xi7 net6 VDD VSS net9 sg13g2_inv_4
+xi1 clkin VDD VSS clkinb sg13g2_inv_2
+xi2 clkinb VDD VSS clkinbb sg13g2_inv_2
+xn2 clkinb b1 VDD VSS net12 sg13g2_nand2_2
+xi13 p1e VDD VSS b1 sg13g2_inv_4
+xi8 net8 VDD VSS net10 sg13g2_inv_4
+xi14 p2e VDD VSS b2 sg13g2_inv_4
+xn3 a1 b1 VDD VSS net1 sg13g2_nand2_2
+xn4 a2 b2 VDD VSS net3 sg13g2_nand2_2
+xi11 a1 VDD VSS p1e sg13g2_inv_4
+xi9 net9 VDD VSS a1 sg13g2_inv_4
+x12 a2 VDD VSS p2e sg13g2_inv_4
+xi10 net10 VDD VSS a2 sg13g2_inv_4
+xi15 net1 VDD VSS net2 sg13g2_inv_4
+xi17 net2 VDD VSS p1 sg13g2_inv_8
+xi16 net3 VDD VSS net4 sg13g2_inv_4
+xi18 net4 VDD VSS p2 sg13g2_inv_8
+xi3 net11 VDD VSS net5 sg13g2_inv_4
+xi5 net5 VDD VSS net6 sg13g2_inv_4
+xi4 net12 VDD VSS net7 sg13g2_inv_4
+xi6 net7 VDD VSS net8 sg13g2_inv_4
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VSS
+.end

@@ -1,0 +1,82 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/sandbox_boris/tb_stage_noise.sch
+**.subckt tb_stage_noise
+Vin vin GND dc {vin} ac 1
+Vssa vssa GND dc 0
+x1 GND GND GND VDD vhi vdda vout vin vssa GND vlo net1 template_stage
+Vddd VDD GND dc {vdd}
+Vssd VSS GND dc 0
+Vdda vdda GND dc {vdd}
+Vlo vlo GND dc {vlo}
+Vhi vhi GND dc {vhi}
+C1 vout GND 50f m=1
+R1 vout x1.vx4 100e6 m=1
+R2 x1.vx3 x1.vx2 100e6 m=1
+**** begin user architecture code
+
+
+.param temp=27 vdd=1.2
+.param vin=0.6 vlo=0.3 vhi=0.9
+.global x1.vx2 x1.vx3 x1.vx4
+
+.control
+save all
+op
+write tb_stage_noise.raw
+
+noise v(x1.vx1, x1.vx2) Vin dec 100 1 1000gig
+display
+print v(onoise_total)
+set color0 = white
+setplot noise1
+plot onoise_spectrum
+plot sqrt(integ(onoise_spectrum^2))
+.endc
+
+
+ .lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.inc /foss/pdks/sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  ../template_stage.sym # of pins=12
+** sym_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_stage.sym
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/template_stage.sch
+.subckt template_stage res pse ps pr vhi vdda vout vin vssa d vlo vmid
+*.opin vout
+*.iopin vdda
+*.ipin res
+*.ipin vin
+*.ipin pse
+*.ipin ps
+*.ipin pr
+*.ipin d
+*.iopin vssa
+*.iopin vhi
+*.iopin vlo
+*.opin vmid
+XMn vout vx3 vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XMp vout vx3 vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+XMn3 vx1 gn vlo vssa sg13_lv_nmos W=0.5u L=0.13u ng=1 m=1
+XMn4 vout res vx4 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+x1 ps VDD VSS psb sg13g2_inv_1
+XMp1 vx1 psb vin vdda sg13_lv_pmos W=6u L=0.13u ng=3 m=1
+XMn5 vx1 ps vin vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn1 vx4 pr vx2 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn2 vx4 ps vx3 vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn6 vx2 pse vmid vssa sg13_lv_nmos W=2u L=0.13u ng=1 m=1
+XMn7 vmid vmid vssa vssa sg13_lv_nmos W=2.5u L=1.5u ng=1 m=1
+XMp2 vmid vmid vdda vdda sg13_lv_pmos W=10u L=1.5u ng=4 m=1
+x2 pr d VDD VSS gn sg13g2_and2_1
+XMp3 vx1 gp vhi vdda sg13_lv_pmos W=1.5u L=0.13u ng=1 m=1
+x3 d pr VDD VSS gp sg13g2_nand2b_1
+XC1 vx2 vx1 cap_cmim W=5.77e-6 L=5.77e-6 MF=1
+XC2 vx3 vx2 cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+XC3 vx4 vout cap_cmim W=8.16e-6 L=8.16e-6 MF=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VSS
+.end

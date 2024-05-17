@@ -1,0 +1,33 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 05/05/2024 06:12
+
+* cell clock_5_split3
+.SUBCKT clock_5_split3
+* device instance $1 r0 *1 9.737,0.877 sg13_lv_nmos
+M$1 \$9 \$15 sub! sub! sg13_lv_nmos W=1.44 L=0.13
+* device instance $3 r0 *1 10.767,0.877 sg13_lv_nmos
+M$3 \$9 nand_B1 \$16 sub! sg13_lv_nmos W=1.44 L=0.13
+* device instance $5 r0 *1 -0.13,0.902 sg13_lv_nmos
+M$5 sub! clkin nand_B2 sub! sg13_lv_nmos W=1.48 L=0.13
+* device instance $7 r0 *1 4.891,0.902 sg13_lv_nmos
+M$7 sub! nand_B2 \$15 sub! sg13_lv_nmos W=1.48 L=0.13
+* device instance $9 r0 *1 14.9,0.903 sg13_lv_nmos
+M$9 sub! \$16 \$10 sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $13 r0 *1 20.068,0.903 sg13_lv_nmos
+M$13 sub! \$10 \$11 sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $17 r0 *1 25.284,0.903 sg13_lv_nmos
+M$17 sub! \$11 inv_top sub! sg13_lv_nmos W=2.96 L=0.13
+* device instance $21 r0 *1 -0.14,2.562 sg13_lv_pmos
+M$21 \$23 clkin nand_B2 \$23 sg13_lv_pmos W=2.24 L=0.13
+* device instance $23 r0 *1 4.881,2.562 sg13_lv_pmos
+M$23 \$23 nand_B2 \$15 \$23 sg13_lv_pmos W=2.24 L=0.13
+* device instance $25 r0 *1 9.737,2.562 sg13_lv_pmos
+M$25 \$23 \$15 \$16 \$23 sg13_lv_pmos W=2.24 L=0.13
+* device instance $27 r0 *1 10.767,2.562 sg13_lv_pmos
+M$27 \$23 nand_B1 \$16 \$23 sg13_lv_pmos W=2.24 L=0.13
+* device instance $29 r0 *1 14.9,2.563 sg13_lv_pmos
+M$29 \$23 \$16 \$10 \$23 sg13_lv_pmos W=4.48 L=0.13
+* device instance $33 r0 *1 20.068,2.563 sg13_lv_pmos
+M$33 \$23 \$10 \$11 \$23 sg13_lv_pmos W=4.48 L=0.13
+* device instance $37 r0 *1 25.284,2.563 sg13_lv_pmos
+M$37 \$23 \$11 inv_top \$23 sg13_lv_pmos W=4.48 L=0.13
+.ENDS clock_5_split3

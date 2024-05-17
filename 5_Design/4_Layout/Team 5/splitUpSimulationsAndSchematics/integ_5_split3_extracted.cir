@@ -1,0 +1,14 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 08/05/2024 04:40
+
+* cell integ_5_split3
+* pin sub!
+.SUBCKT integ_5_split3 sub!
+* device instance $1 r0 *1 13.177,1.276 sg13_lv_nmos
+M$1 \$9 \$8 sub! sub! sg13_lv_nmos W=2.5 L=1.5
+* device instance $2 r0 *1 13.177,10.822 sg13_lv_nmos
+M$2 \$13 \$13 sub! sub! sg13_lv_nmos W=2.5 L=1.5
+* device instance $3 r0 *1 1.119,1.26 sg13_lv_pmos
+M$3 \$9 \$8 \$2 \$2 sg13_lv_pmos W=10.0 L=1.5
+* device instance $7 r0 *1 1.119,10.806 sg13_lv_pmos
+M$7 \$13 \$13 \$2 \$2 sg13_lv_pmos W=10.0 L=1.5
+.ENDS integ_5_split3

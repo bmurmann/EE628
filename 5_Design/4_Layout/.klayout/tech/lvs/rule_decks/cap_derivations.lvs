@@ -23,18 +23,22 @@
 
 logger.info('Starting CAP DERIVATIONS')
 
-cap_exc = nsd_drw.join(heattrans_drw).join(trans_drw)
-            .join(emwind_drw).join(emwihv_drw).join(heatres_drw)
-            .join(salblock_drw).join(polyres_drw).join(extblock_drw)
-            .join(res_drw).join(activ_mask).join(recog_diode)
-            .join(recog_esd).join(ind_drw).join(ind_pin)
-            .join(substrate_drw)
+#cap_exc = nsd_drw.join(heattrans_drw).join(trans_drw)
+#            .join(emwind_drw).join(emwihv_drw).join(heatres_drw)
+#            .join(salblock_drw).join(polyres_drw).join(extblock_drw)
+#            .join(res_drw).join(activ_mask).join(recog_diode)
+#            .join(recog_esd).join(ind_drw).join(ind_pin)
+#            .join(substrate_drw)
+cap_exc = recog_esd.join(ind_drw).join(ind_pin)
+
 
 rfmimcap_exc = gatpoly_drw.join(nsd_block).join(psd)
                 .join(nbulay_drw).join(thickgateox_drw).join(cap_exc)
 
 # === MIMCAP ===
-mimcap_exclude = rfmimcap_exc.join(pwell_block).join(ptap_holes)
+#mimcap_exclude = rfmimcap_exc.join(pwell_block).join(ptap_holes)
+mimcap_exclude = recog_esd.join(ind_drw).join(ind_pin)
+
 
 mim_top = mim_drw.overlapping(topmetal1_drw).and(metal5_drw)
 mim_btm = metal5_drw.and(mim_drw).sized(0.6.um)

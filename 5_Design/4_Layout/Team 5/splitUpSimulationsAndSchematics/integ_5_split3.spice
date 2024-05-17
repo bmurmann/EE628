@@ -1,0 +1,9 @@
+** sch_path: /foss/designs/integ_5_split3.sch
+.subckt integ_5_split3 vdda vx3 vout VSS vmid
+*.PININFO vssa:B vdda:B vmid:B vout:B vx3:B
+M3 vout vx3 vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M4 vout vx3 VSS VSS sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+M7 vmid vmid vdda vdda sg13_lv_pmos L=1.5u W=10u ng=4 m=1
+M8 vmid vmid VSS VSS sg13_lv_nmos L=1.5u W=2.5u ng=1 m=1
+.ends
+.end

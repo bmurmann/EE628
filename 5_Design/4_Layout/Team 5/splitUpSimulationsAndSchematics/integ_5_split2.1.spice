@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/integ_5_split2.1.sch
+.subckt integ_5_split2.1 ps vssa vx1 vin vdda psb
+*.PININFO vin:I psb:B ps:B vx1:B vdda:B vssa:B
+M10 vx1 psb vin vdda sg13_lv_pmos L=0.13u W=6u ng=4 m=1
+M11 vx1 ps vin vssa sg13_lv_nmos L=0.13u W=2u ng=1 m=1
+.ends
+.end
