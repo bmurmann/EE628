@@ -901,7 +901,8 @@
         "sealring_complete_minL": "50u",
         "sealring_complete_minW": "50u",
         "sealring_complete_maxL": "25000u",
-        "sealring_complete_maxW": "32000u"
+        "sealring_complete_maxW": "32000u",
+        "sealring_complete_edgeBox": "25u"
     },
     "Layers": {
         "Activ":            "1, 0",
@@ -1103,6 +1104,9 @@
 
         "HeatTrans":        "51, 0",
         "HeatTrans.drawing": "51, 0",
+        
+        "HeatRes":        "52, 0",
+        "HeatRes.drawing": "52, 0",
 
         "TEXT":             "63, 0",
         "TEXT.drawing":     "63, 0",
