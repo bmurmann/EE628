@@ -278,11 +278,15 @@ M13 vbn vbn vssa vssa sg13_hv_nmos L=0.9u W=33u ng=1 m=1
 M5 vbp vbp VDD_IO VDD_IO sg13_hv_pmos L=0.9u W=54u ng=1 m=1
 M20 vbn vbp VDD_IO VDD_IO sg13_hv_pmos L=0.9u W=54u ng=1 m=1
 R4 vssa net3 rhigh w=0.5e-6 l=0.96e-6 m=2 b=0
-C1 vssa vdda cap_cmim W=140.0e-6 L=225.0e-6 MF=1
+C1 vssa vdda cap_cmim W=70e-6 L=75.0e-6 MF=6
 M10 vdda Verr VDD_IO VDD_IO sg13_hv_pmos L=0.45u W=1.414m ng=1 m=1
 C2 net4 vdda cap_cmim W=60.0e-6 L=60.0e-6 MF=1
 R1 Verr net4 rhigh w=0.5e-6 l=4*0.96e-6 m=1 b=0
 .ends
+
+.GLOBAL VDD
+.GLOBAL VSS
+.end
 ** sch_path: /foss/designs/Week 13/Team3.sch
 .subckt Team3 vhi vlo vdda vssa vin dout res clkin
 *.PININFO vhi:I dout:O vlo:I vdda:I vssa:I vin:I clkin:I res:I
