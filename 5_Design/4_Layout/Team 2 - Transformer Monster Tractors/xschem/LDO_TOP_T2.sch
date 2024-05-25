@@ -252,7 +252,7 @@ lab=VDD_IO}
 N 1670 -400 1800 -400 {
 lab=vdda}
 C {sg13g2_pr/sg13_hv_pmos.sym} 1260 -660 0 0 {name=M14
-L=0.45u
+L=0.9u
 W=36u
 ng=1
 m=1
@@ -260,7 +260,7 @@ model=sg13_hv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} 1080 -660 0 1 {name=M16
-L=0.45u
+L=0.9u
 W=36u
 ng=1
 m=1
@@ -368,7 +368,7 @@ C {devices/ipin.sym} 120 -110 0 0 {name=p2 lab=vssa}
 C {devices/ipin.sym} 1370 -430 2 0 {name=p7 lab=Vref}
 C {devices/iopin.sym} 1800 -400 0 0 {name=p8 lab=vdda}
 C {devices/lab_pin.sym} 1530 -530 3 1 {name=p9 sig_type=std_logic lab=Verr}
-C {sg13g2_pr/cap_cmim.sym} 1670 -280 2 0 {name=C1 model=cap_cmim W=160.0e-6 L=225.0e-6 MF=1 spiceprefix=X}
+C {sg13g2_pr/cap_cmim.sym} 1670 -280 2 0 {name=C1 model=cap_cmim W=70e-6 L=75.0e-6 MF=6 spiceprefix=X}
 C {sg13g2_pr/sg13_hv_pmos.sym} 1650 -530 0 0 {name=M10
 L=0.45u
 W=1.414m
