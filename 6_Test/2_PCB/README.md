@@ -1,0 +1,1 @@
+This folder contains all files related to PCB design and test setup.
