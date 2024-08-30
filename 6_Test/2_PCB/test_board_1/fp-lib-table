@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TestBoard")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/TestBoard.pretty")(options "")(descr ""))
+  (lib (name "TPS74501PDRVR")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/tps745Footprints.pretty")(options "")(descr ""))
+  (lib (name "SN74ALVCH162827DLR")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/74ALVCHFootprints.pretty")(options "")(descr ""))
+  (lib (name "ADA4807-2ARMZ")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/ADA4807-2ARMZFootprints.pretty")(options "")(descr ""))
+)

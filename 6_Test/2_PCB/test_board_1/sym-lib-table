@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "74ALVCH162827DLR")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/74ALVCH.kicad_sym")(options "")(descr ""))
+  (lib (name "Chip")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/chip.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS74501PDRVR")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/tps745.kicad_sym")(options "")(descr ""))
+  (lib (name "ADA4807-2ARMZ")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/ADA4807-2ARMZ.kicad_sym")(options "")(descr ""))
+)
