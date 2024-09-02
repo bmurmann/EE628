@@ -578,6 +578,22 @@
     [
       "7acc191a-fe8c-48a0-9d8b-f697ef59ac03",
       "Root"
+    ],
+    [
+      "52b67f2c-cc8e-4f62-a575-3aba327208d6",
+      "AnalogSupply"
+    ],
+    [
+      "3fda20fb-45a4-4cc0-8eed-f7fd55f8edda",
+      "DigitalSupply"
+    ],
+    [
+      "cbe3ae4c-3a1a-4667-bb22-9fc87ee8927f",
+      "LDOCircuitry"
+    ],
+    [
+      "36f89322-0687-4d91-b917-546fb94c0fff",
+      "ADC"
     ]
   ],
   "text_variables": {}
