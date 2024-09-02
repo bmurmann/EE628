@@ -1,0 +1,12 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "digitalBuffer")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/74ALVCH.kicad_sym")(options "")(descr ""))
+  (lib (name "chip")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/chip.kicad_sym")(options "")(descr ""))
+  (lib (name "LDO")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/tps745.kicad_sym")(options "")(descr ""))
+  (lib (name "opAmp")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/ADA4807-2ARMZ.kicad_sym")(options "")(descr ""))
+  (lib (name "cap4.7uF")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/Cap4.7uF.kicad_sym")(options "")(descr ""))
+  (lib (name "cap100nF")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/cap100nF.kicad_sym")(options "")(descr ""))
+  (lib (name "cap100pF")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/cap100pF.kicad_sym")(options "")(descr ""))
+  (lib (name "resistor1k")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/resistor1k.kicad_sym")(options "")(descr ""))
+  (lib (name "potentiometer")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/potentiometer.kicad_sym")(options "")(descr ""))
+)

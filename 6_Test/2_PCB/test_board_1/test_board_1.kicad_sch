@@ -1,0 +1,225 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7acc191a-fe8c-48a0-9d8b-f697ef59ac03")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 190.5 82.55)
+		(size 74.93 62.23)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "36f89322-0687-4d91-b917-546fb94c0fff")
+		(property "Sheetname" "ADC"
+			(at 190.5 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC.kicad_sch"
+			(at 190.5 145.3646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test_board_1"
+				(path "/7acc191a-fe8c-48a0-9d8b-f697ef59ac03"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 208.28 39.37)
+		(size 33.02 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3fda20fb-45a4-4cc0-8eed-f7fd55f8edda")
+		(property "Sheetname" "DigitalSupply"
+			(at 208.28 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "digitalSupply.kicad_sch"
+			(at 208.28 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test_board_1"
+				(path "/7acc191a-fe8c-48a0-9d8b-f697ef59ac03"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 38.1)
+		(size 29.21 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "52b67f2c-cc8e-4f62-a575-3aba327208d6")
+		(property "Sheetname" "AnalogSupply"
+			(at 102.87 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "analogSupply.kicad_sch"
+			(at 102.87 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "V_SUP" input
+			(at 102.87 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "457b3807-bcc8-4d92-bb78-36bd3b6e6743")
+		)
+		(pin "AVDD" output
+			(at 132.08 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "51d1220e-27f7-43a2-af8d-2fd2887bbc51")
+		)
+		(pin "VA" output
+			(at 132.08 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c0916b81-d607-42a0-b890-724be279d0d5")
+		)
+		(pin "AVSS" output
+			(at 132.08 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ee03dff3-ef33-4054-8a6b-15f34c62c3bb")
+		)
+		(pin "VHI" output
+			(at 132.08 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "31733123-e57e-4ca2-ae06-9de073dae55c")
+		)
+		(pin "VLO" output
+			(at 132.08 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "784f08b8-ad0f-48d7-9579-03537a016141")
+		)
+		(instances
+			(project "test_board_1"
+				(path "/7acc191a-fe8c-48a0-9d8b-f697ef59ac03"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 82.55)
+		(size 31.75 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cbe3ae4c-3a1a-4667-bb22-9fc87ee8927f")
+		(property "Sheetname" "LDOCircuitry"
+			(at 102.87 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LDOCircuitry.kicad_sch"
+			(at 102.87 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test_board_1"
+				(path "/7acc191a-fe8c-48a0-9d8b-f697ef59ac03"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
