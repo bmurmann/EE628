@@ -1013,6 +1013,377 @@
 				)
 			)
 		)
+		(symbol "ferriteBeads120Ohm:BLM18PG121SN1D"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 6.985 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "BLM18PG121SN1D"
+				(at 6.985 -2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "IND_BLM18_0603_MUR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "BLM18PG121SN1D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BLM18PG121SN1D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "IND_BLM18_0603_MUR IND_BLM18_0603_MUR-M IND_BLM18_0603_MUR-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BLM18PG121SN1D_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.08 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 7.62 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 10.16 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 0) (xy 12.7 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 5.08 1.27)
+					(mid 3.81 2.5344)
+					(end 2.54 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 1.27)
+					(mid 6.35 2.5344)
+					(end 5.08 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 10.16 1.27)
+					(mid 8.89 2.5344)
+					(end 7.62 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 12.7 1.27)
+					(mid 11.43 2.5344)
+					(end 10.16 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "BLM18PG121SN1D_1_2"
+				(arc
+					(start -1.27 5.08)
+					(mid -2.5344 3.81)
+					(end -1.27 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 7.62)
+					(mid -2.5344 6.35)
+					(end -1.27 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 10.16)
+					(mid -2.5344 8.89)
+					(end -1.27 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 12.7)
+					(mid -2.5344 11.43)
+					(end -1.27 10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy -1.27 5.08)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 7.62) (xy -1.27 7.62)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 10.16) (xy -1.27 10.16)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 12.7) (xy -1.27 12.7)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "opAmp:ADA4807-2ARMZ"
 			(pin_names
 				(offset 0.254)
@@ -1794,6 +2165,12 @@
 		)
 	)
 	(junction
+		(at 26.67 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dedafe8-137a-4bc6-a3e8-5cacf1b9b708")
+	)
+	(junction
 		(at 276.86 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1836,12 +2213,6 @@
 		(uuid "87890c71-386b-44ad-9595-cbe60b3c834e")
 	)
 	(junction
-		(at 67.31 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b11d6af-54da-491d-beac-e342e8ec8ede")
-	)
-	(junction
 		(at 100.33 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1854,10 +2225,22 @@
 		(uuid "c18df3e5-5d85-471b-bcad-2c52aa72068d")
 	)
 	(junction
+		(at 67.31 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3b199e5-c379-4a4b-985f-5e657ca83355")
+	)
+	(junction
 		(at 171.45 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6cf4814-fcd5-42ac-9011-7e551f6a37e0")
+	)
+	(junction
+		(at 67.31 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4d7c542-62f1-454e-aaa9-a9f631467b0c")
 	)
 	(junction
 		(at 215.9 86.36)
@@ -1909,6 +2292,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 38.1) (xy 67.31 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1025c929-78f5-4ecf-99cb-25dded2dc6b7")
+	)
+	(wire
+		(pts
 			(xy 22.86 30.48) (xy 26.67 30.48)
 		)
 		(stroke
@@ -1926,6 +2319,16 @@
 			(type default)
 		)
 		(uuid "1672d7c2-f78f-451f-9523-e071b3cafd52")
+	)
+	(wire
+		(pts
+			(xy 149.86 63.5) (xy 67.31 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f101d07-585f-43d2-baf7-0140dd4dc1a4")
 	)
 	(wire
 		(pts
@@ -1959,13 +2362,33 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 30.48) (xy 67.31 30.48)
+			(xy 26.67 38.1) (xy 26.67 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c724615-ffb7-48c7-b2e5-0d2c1234e40f")
+		(uuid "2ebca4c5-effd-4199-b466-b068b3c404f8")
+	)
+	(wire
+		(pts
+			(xy 26.67 63.5) (xy 22.86 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "335c26d1-c00a-45d3-bf9d-a24c81efdcbd")
+	)
+	(wire
+		(pts
+			(xy 224.79 38.1) (xy 224.79 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3da07e25-0438-4a3b-b667-aaf98897e2b5")
 	)
 	(wire
 		(pts
@@ -2016,6 +2439,16 @@
 			(type default)
 		)
 		(uuid "5ab1a31b-0f6a-47de-a37a-8d27408f4db6")
+	)
+	(wire
+		(pts
+			(xy 67.31 63.5) (xy 26.67 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c3fed25-47f1-44f1-b362-377ff13ac399")
 	)
 	(wire
 		(pts
@@ -2139,6 +2572,36 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 50.8) (xy 149.86 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a99fa6e1-7cc1-43a1-b359-bbf466c10ea1")
+	)
+	(wire
+		(pts
+			(xy 62.23 30.48) (xy 67.31 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9c4be53-4d75-4bf9-9c1a-da54d26fcf1d")
+	)
+	(wire
+		(pts
+			(xy 147.32 50.8) (xy 149.86 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0bbe91c-de93-4ca2-9015-c445ef101e73")
+	)
+	(wire
+		(pts
 			(xy 215.9 44.45) (xy 262.89 44.45)
 		)
 		(stroke
@@ -2189,6 +2652,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 38.1) (xy 254 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2f9f360-65a8-442b-90c9-0a468c90ca8b")
+	)
+	(wire
+		(pts
 			(xy 224.79 30.48) (xy 254 30.48)
 		)
 		(stroke
@@ -2206,6 +2679,16 @@
 			(type default)
 		)
 		(uuid "de4d9972-dd28-495f-906f-87d2edc5251d")
+	)
+	(wire
+		(pts
+			(xy 276.86 52.07) (xy 276.86 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e39ec7b5-9fb7-4f7d-a1d6-d4e7d6268ee4")
 	)
 	(wire
 		(pts
@@ -2229,16 +2712,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 52.07) (xy 276.86 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed6f7a23-8f7f-4ef6-8185-50f0f9b6c9db")
-	)
-	(wire
-		(pts
 			(xy 261.62 88.9) (xy 261.62 91.44)
 		)
 		(stroke
@@ -2256,6 +2729,17 @@
 			(type default)
 		)
 		(uuid "fcd33d5d-738a-4179-be19-8d9e4bffab73")
+	)
+	(label "AVSS"
+		(at 224.79 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b5b6370-2d25-4da6-aa53-517722cfa3ab")
 	)
 	(label "AVSS"
 		(at 276.86 73.66 0)
@@ -2280,7 +2764,18 @@
 		(uuid "bb6b4fd3-fd79-4a0b-b109-2ef78ec1da4c")
 	)
 	(label "AVSS"
-		(at 276.86 57.15 0)
+		(at 254 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc22a651-4a7d-42cb-a072-fe351af3e067")
+	)
+	(label "AVSS"
+		(at 276.86 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2291,23 +2786,23 @@
 		(uuid "d76a725d-a327-4d2c-937d-f75fcf1ad2ee")
 	)
 	(global_label "GND"
-		(shape output)
-		(at 30.48 124.46 0)
+		(shape input)
+		(at 22.86 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "071af368-3782-4649-9ab5-edac939b6b70")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.3357 124.46 0)
+			(at 16.0043 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2452,6 +2947,76 @@
 			(project ""
 				(path "/7acc191a-fe8c-48a0-9d8b-f697ef59ac03/52b67f2c-cc8e-4f62-a575-3aba327208d6"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ferriteBeads120Ohm:BLM18PG121SN1D")
+		(at 46.99 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20c6aabd-0ccb-4738-9ded-604a48fe4294")
+		(property "Reference" "L1"
+			(at 54.61 22.86 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "BLM18PG121SN1D"
+			(at 54.61 25.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "IND_BLM18_0603_MUR"
+			(at 46.99 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "BLM18PG121SN1D"
+			(at 46.99 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f31b734-b1e4-4bb8-bb71-cbd8e25e8f88")
+		)
+		(pin "2"
+			(uuid "ede064a9-dbbf-4d37-87c1-0a204176b335")
+		)
+		(instances
+			(project ""
+				(path "/7acc191a-fe8c-48a0-9d8b-f697ef59ac03/52b67f2c-cc8e-4f62-a575-3aba327208d6"
+					(reference "L1")
 					(unit 1)
 				)
 			)

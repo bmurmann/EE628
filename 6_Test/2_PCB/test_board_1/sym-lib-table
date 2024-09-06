@@ -9,4 +9,5 @@
   (lib (name "cap100pF")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/cap100pF.kicad_sym")(options "")(descr ""))
   (lib (name "resistor1k")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/resistor1k.kicad_sym")(options "")(descr ""))
   (lib (name "potentiometer")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/potentiometer.kicad_sym")(options "")(descr ""))
+  (lib (name "ferriteBeads120Ohm")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/ferriteBead120Ohm.kicad_sym")(options "")(descr ""))
 )
