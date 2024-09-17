@@ -1,0 +1,17 @@
+* Simple SPICE netlist with a voltage source and a resistor
+.title Simple Resistor Circuit
+
+* Define a DC voltage source of 5V
+V1 1 0 DC 5
+
+* Define a resistor of 1k ohms
+R1 1 0 1k
+
+* Perform a DC analysis
+.dc V1 0 5 0.1
+
+* Print the current through the voltage source V1
+.print dc I(V1)
+
+.end
+

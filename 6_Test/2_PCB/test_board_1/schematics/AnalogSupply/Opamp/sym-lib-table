@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Opamp")(type "KiCad")(uri "/home/maxwell/Desktop/ee699/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/ADA4807-2ARMZ.kicad_sym")(options "")(descr ""))
+)
