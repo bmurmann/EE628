@@ -264,15 +264,3 @@ S4	104	313	106	113	Switch
 *
 .ends
 
-* Dual op-amp model using two instances of the single op-amp ADA4807
-
-.SUBCKT ADA4807-2 V++ V-- In1p In1n Out1 In2p In2n Out2
-
-* Instance of the first op-amp
-XOP1 In1p In1n V++ V-- Out1 ADA4807
-
-* Instance of the second op-amp
-XOP2 In2p In2n V++ V-- Out2 ADA4807
-
-.ENDS ADA4807-2
-

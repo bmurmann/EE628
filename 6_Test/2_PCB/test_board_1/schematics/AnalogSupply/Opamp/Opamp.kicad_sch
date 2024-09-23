@@ -1244,7 +1244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "/home/maxwell/Desktop/ee699/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/models/ADA4807-2.cir"
+		(property "Sim.Library" "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/models/ADA4807-2.cir"
 			(at 127 99.06 0)
 			(effects
 				(font
@@ -1253,7 +1253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "ADA4807"
+		(property "Sim.Name" "ADA4807-2"
 			(at 127 99.06 0)
 			(effects
 				(font
@@ -1271,7 +1271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=104 3=100 4=103 8=102"
+		(property "Sim.Pins" "1=Out1 2=In1n 3=In1p 4=V-- 5=In2p 6=In2n 7=Out2 8=V++"
 			(at 127 99.06 0)
 			(effects
 				(font

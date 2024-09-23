@@ -1,4 +1,8 @@
 (sym_lib_table
   (version 7)
-  (lib (name "LDO")(type "KiCad")(uri "${TEST_BOARD_EDA}/tps745.kicad_sym")(options "")(descr ""))
+  (lib (name "LDO")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/tps745.kicad_sym")(options "")(descr ""))
+  (lib (name "Cap4.7uF")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/Cap4.7uF.kicad_sym")(options "")(descr ""))
+  (lib (name "Resistor1k")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/resistor1k.kicad_sym")(options "")(descr ""))
+  (lib (name "resistor4.7k")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/resistor4.7k.kicad_sym")(options "")(descr ""))
+  (lib (name "potentiometer")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/potentiometer.kicad_sym")(options "")(descr ""))
 )

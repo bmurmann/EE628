@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ldo.kicad_pro",
+    "filename": "ldo_no_fb.kicad_pro",
     "version": 1
   },
   "net_settings": {

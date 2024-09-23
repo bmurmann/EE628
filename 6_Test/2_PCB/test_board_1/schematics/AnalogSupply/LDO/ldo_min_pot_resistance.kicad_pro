@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ldo.kicad_pro",
+    "filename": "ldo_min_pot_resistance.kicad_pro",
     "version": 1
   },
   "net_settings": {

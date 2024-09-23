@@ -5,7 +5,10 @@
       "analysis": "OP",
       "commands": [
         ".op",
-        ".kicad adjustpaths"
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
       ]
     }
   ],
