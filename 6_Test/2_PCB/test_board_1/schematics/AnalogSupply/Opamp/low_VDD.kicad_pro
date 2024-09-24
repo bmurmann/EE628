@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Opamp.kicad_pro",
+    "filename": "low_VDD.kicad_pro",
     "version": 1
   },
   "net_settings": {

@@ -20,22 +20,6 @@
 *   Capacitive load drive, Quiescent and dynamic supply currents,
 *   Disable pin functionality, Single supply & offset supply functionality.
 *
-
-*** Common models***
-.model	diode	d(bv=100)
-.model	Switch	vswitch(Von=0.301,Voff=0.299,ron=0.001,roff=1e6)
-.model	DzVoutP	D(BV=4.3)
-.model	DzVoutN	D(BV=4.3)
-
-.model	DzSlewP	D(BV=66.5)
-.model	DzSlewN D(BV=76.1)
-.model	DPD         D(BV=3.416)
-.model	DVnoisy	D(IS=3.66e-016 KF=8.03e-018)
-.model	DINnoisy	D(IS=1.83e-017 KF=6.64e-016)
-.model	DIPnoisy	D(IS=1.83e-017 KF=6.64e-016)
-.model	Rideal	res(T_ABS=-273)
-*
-
 * Node Assignments
 *                             Non-Inverting Input         
 *                              |     Inverting Input
@@ -262,5 +246,17 @@ DOVee	315	103	diode
 S4	104	313	106	113	Switch
 *
 *
+*** Common models***
+.model	diode	d(bv=100)
+.model	Switch	vswitch(Von=0.301,Voff=0.299,ron=0.001,roff=1e6)
+.model	DzVoutP	D(BV=4.3)
+.model	DzVoutN	D(BV=4.3)
+.model	DzSlewP	D(BV=66.5)
+.model	DzSlewN D(BV=76.1)
+.model	DPD         D(BV=3.416)
+.model	DVnoisy	D(IS=3.66e-016 KF=8.03e-018)
+.model	DINnoisy	D(IS=1.83e-017 KF=6.64e-016)
+.model	DIPnoisy	D(IS=1.83e-017 KF=6.64e-016)
+.model	Rideal	res(T_ABS=-273)
+*
 .ends
-
