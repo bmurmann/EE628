@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ldo_final.kicad_pro",
+    "filename": "ferriteBeads.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -368,8 +368,8 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 4,
-      "workbook_filename": "ldo_final.wbk"
+      "model_mode": 1,
+      "workbook_filename": "ferriteBeads.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -384,7 +384,7 @@
   },
   "sheets": [
     [
-      "13e0581d-653f-492c-8c95-aff22e6b90f8",
+      "18cdb9fc-e00b-4fb5-bf42-9af5864dc442",
       "Root"
     ]
   ],

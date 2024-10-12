@@ -540,6 +540,12 @@
 		)
 	)
 	(junction
+		(at 177.8 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b4e498d-9c2d-4bd9-b777-8013e50dbb4c")
+	)
+	(junction
 		(at 125.73 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -584,6 +590,16 @@
 			(type default)
 		)
 		(uuid "27ba4cd4-146a-49ff-b3d8-b95a0be08ae1")
+	)
+	(wire
+		(pts
+			(xy 177.8 104.14) (xy 177.8 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39840a6b-a08a-4185-8702-52b7ae37b8c2")
 	)
 	(wire
 		(pts
@@ -1086,7 +1102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=100 2=101 3=102 4=103 6=104 6=106"
+		(property "Sim.Pins" "1=104 2=103 3=100 4=101 5=106 6=102"
 			(at 127 104.14 0)
 			(effects
 				(font

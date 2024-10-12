@@ -2745,7 +2745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "r=0"
+		(property "Sim.Params" "r=10k"
 			(at 193.04 118.11 0)
 			(effects
 				(font
