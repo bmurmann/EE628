@@ -386,6 +386,18 @@
     [
       "2f1c28d0-b53e-40e9-b5bc-17715b545373",
       "Root"
+    ],
+    [
+      "c35211e2-8572-42d3-a6ba-25a7101b7bb6",
+      "AnalogSupply"
+    ],
+    [
+      "fdee9364-0143-49e5-8a4b-de9a4ad969eb",
+      "DigitalSupply"
+    ],
+    [
+      "8a0916ba-f0ff-4447-b0f5-57c87d76727c",
+      "Buffer"
     ]
   ],
   "text_variables": {}
