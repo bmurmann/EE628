@@ -1322,206 +1322,6 @@
 				)
 			)
 		)
-		(symbol "Simulation_SPICE:VDC"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.0254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "V"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "1"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Voltage source, DC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "DC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VDC_0_0"
-				(polyline
-					(pts
-						(xy -1.27 0.254) (xy 1.27 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.254) (xy -1.27 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.254) (xy -0.254 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.254) (xy 0.762 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 0 1.905 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "VDC_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "VDC_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "ferriteBeads120Ohm:BLM18PG121SN1D"
 			(pin_names
 				(offset 0.254)
@@ -2551,12 +2351,6 @@
 		(uuid "19799cb5-8adb-4b76-9194-f5dfffd87c14")
 	)
 	(junction
-		(at 269.24 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c2454eb-1f78-49b6-9362-85b8f00b1f99")
-	)
-	(junction
 		(at 269.24 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2617,6 +2411,12 @@
 		(uuid "882874ed-bfd5-447e-a1af-65f7be79554d")
 	)
 	(junction
+		(at 269.24 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0ed03da-e637-4e6f-983c-dc2321e4663d")
+	)
+	(junction
 		(at 250.19 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2627,6 +2427,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3d709d9-b2e2-40bd-a09d-744ac5104a8a")
+	)
+	(junction
+		(at 273.05 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be7eb0f6-bf7f-4aaa-abd6-79d7db387b39")
 	)
 	(junction
 		(at 248.92 74.93)
@@ -2663,12 +2469,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6a98a3d-eb66-407f-8bc8-b1819b607e20")
-	)
-	(junction
-		(at 273.05 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa092626-a9ac-4788-aa3f-5be70da64cf2")
 	)
 	(wire
 		(pts
@@ -2752,7 +2552,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 80.01) (xy 276.86 80.01)
+			(xy 257.81 80.01) (xy 269.24 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2852,16 +2652,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 39.37) (xy 275.59 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f739be5-f480-41f4-b415-70432fc9d18c")
-	)
-	(wire
-		(pts
 			(xy 179.07 39.37) (xy 179.07 64.77)
 		)
 		(stroke
@@ -2869,6 +2659,16 @@
 			(type default)
 		)
 		(uuid "39cdfbc1-99a9-46fb-888c-8f15ffe01fba")
+	)
+	(wire
+		(pts
+			(xy 194.31 104.14) (xy 194.31 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a2d3531-5f55-45b8-bf5e-8caa0b9fa02f")
 	)
 	(wire
 		(pts
@@ -2882,13 +2682,13 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 80.01) (xy 269.24 80.01)
+			(xy 24.13 39.37) (xy 57.15 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3d5f6e46-1082-421d-a3e5-0c288e5fe5ce")
+		(uuid "407eef71-efff-4899-9939-93792090694a")
 	)
 	(wire
 		(pts
@@ -3039,16 +2839,6 @@
 			(type default)
 		)
 		(uuid "7c56cd0e-0faa-4194-abdb-1bca8387db3e")
-	)
-	(wire
-		(pts
-			(xy 194.31 104.14) (xy 194.31 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a0cbce4-1353-4825-b997-9709576b7a89")
 	)
 	(wire
 		(pts
@@ -3252,16 +3042,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 39.37) (xy 57.15 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de1404d8-b07f-4745-b736-513d24ccf1e2")
-	)
-	(wire
-		(pts
 			(xy 130.81 59.69) (xy 133.35 59.69)
 		)
 		(stroke
@@ -3279,16 +3059,6 @@
 			(type default)
 		)
 		(uuid "e0901f94-23ea-474d-b43e-2d776d0abf2b")
-	)
-	(wire
-		(pts
-			(xy 46.99 49.53) (xy 46.99 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0d834af-a21b-4488-84a4-ea79935b785b")
 	)
 	(wire
 		(pts
@@ -3329,6 +3099,26 @@
 			(type default)
 		)
 		(uuid "ebf38a10-0eb6-4887-9152-fa4ebffc923c")
+	)
+	(wire
+		(pts
+			(xy 269.24 80.01) (xy 276.86 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed94bd9d-2c6c-4db7-a8e2-561af7350930")
+	)
+	(wire
+		(pts
+			(xy 273.05 39.37) (xy 275.59 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee406db1-1b09-4df0-8914-6064047dbcff")
 	)
 	(wire
 		(pts
@@ -3410,6 +3200,17 @@
 			(justify left bottom)
 		)
 		(uuid "0bd371ab-cfc3-47a9-90a9-3ccbfa5bfbf4")
+	)
+	(label "Analog_Discover_Input"
+		(at 25.4 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2379a0fc-28e9-4d00-9007-a7dc4a745906")
 	)
 	(label "VHI"
 		(at 270.51 80.01 0)
@@ -3548,43 +3349,45 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 46.99 54.61 0)
+		(lib_id "potentiometer:3310Y-001-103L")
+		(at 184.15 96.52 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0d2bb7e0-29c7-45d5-ab02-36c87ba73ecf")
-		(property "Reference" "#PWR?"
-			(at 46.99 60.96 0)
+		(uuid "1515db86-f0ef-4dd9-b323-b69b712749ee")
+		(property "Reference" "R2"
+			(at 186.69 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 46.99 59.69 0)
+		(property "Value" "3310Y-001-103L"
+			(at 186.69 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 46.99 54.61 0)
+		(property "Footprint" "3310Y-001-103L:TRIM_3310Y-001-103L"
+			(at 184.15 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 54.61 0)
+			(at 184.15 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,8 +3395,64 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 54.61 0)
+		(property "Description" ""
+			(at 184.15 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC 7351B"
+			(at 184.15 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "BOURNS"
+			(at 184.15 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 184.15 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 184.15 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 184.15 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "r=5k"
+			(at 184.15 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3602,18 +3461,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "bc4ae02e-7557-45d1-b238-6d743fa73447")
+			(uuid "75fc7530-1d10-4921-adda-0c7de0668fef")
+		)
+		(pin "3"
+			(uuid "432588e4-e1bf-491c-9de5-02af9f7ca055")
+		)
+		(pin "2"
+			(uuid "1d47e204-b4f9-43ca-aba9-d43b52719d3c")
 		)
 		(instances
-			(project ""
-				(path "/13e0581d-653f-492c-8c95-aff22e6b90f8"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project ""
+			(project "analogSupply_final_sim"
 				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "#PWR0103")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3690,6 +3549,42 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 154.94 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 154.94 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 154.94 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "r=5k"
+			(at 154.94 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -3826,6 +3721,114 @@
 		)
 	)
 	(symbol
+		(lib_id "Cap100nF:CL05B104KP5NNNC")
+		(at 257.81 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20444fac-77ba-4eeb-b103-1ee959a146b7")
+		(property "Reference" "C4"
+			(at 261.62 93.9799 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CL05B104KP5NNNC"
+			(at 261.62 96.5199 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "CAP_CL05_SAM"
+			(at 257.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "CL05B104KP5NNNC"
+			(at 257.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 257.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "C"
+			(at 257.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 257.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "c=100n"
+			(at 257.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "="
+			(at 257.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b5457c94-5611-4594-a3ad-6a3256f1fe70")
+		)
+		(pin "1"
+			(uuid "0f6b2096-0bdc-4c14-a24f-9415493c2a4b")
+		)
+		(instances
+			(project "analogSupply_final_sim"
+				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Cap4.7uF:CL10A475KP8NNNC")
 		(at 57.15 39.37 270)
 		(unit 1)
@@ -3952,7 +3955,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RC0402FR-074K7L"
+		(property "Value" "${SIM.PARAMS}"
 			(at 157.48 90.1699 90)
 			(effects
 				(font
@@ -4069,6 +4072,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "R"
+			(at 154.94 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "="
+			(at 154.94 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "r=4.7k"
+			(at 154.94 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 154.94 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "84ef853a-ad5f-4ef9-8019-405dbcc74b36")
 		)
@@ -4079,100 +4118,6 @@
 			(project ""
 				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "potentiometer:3310Y-001-103L")
-		(at 184.15 120.65 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3223fd93-286b-4d45-81a1-298f68b378ce")
-		(property "Reference" "R5"
-			(at 186.69 119.3799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3310Y-001-103L"
-			(at 186.69 121.9199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "3310Y-001-103L:TRIM_3310Y-001-103L"
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC 7351B"
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 184.15 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0bab244d-2bae-439d-a69f-b9163a1db25f")
-		)
-		(pin "3"
-			(uuid "0bdb4b7f-a0a7-4e01-9c0b-6d8152a1cbf5")
-		)
-		(pin "2"
-			(uuid "68eadc62-6bc1-4fb1-a6d8-867830ed84f1")
-		)
-		(instances
-			(project "analogSupply_final"
-				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4389,6 +4334,114 @@
 		)
 	)
 	(symbol
+		(lib_id "Cap100nF:CL05B104KP5NNNC")
+		(at 269.24 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f1f474e-f614-41fa-9b86-da0ddfb6eba2")
+		(property "Reference" "C5"
+			(at 273.05 82.5499 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CL05B104KP5NNNC"
+			(at 273.05 85.0899 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "CAP_CL05_SAM"
+			(at 269.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "CL05B104KP5NNNC"
+			(at 269.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 269.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "C"
+			(at 269.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 269.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "c=100n"
+			(at 269.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "="
+			(at 269.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d7f33585-a1b7-4517-b9f0-71949b4aefee")
+		)
+		(pin "1"
+			(uuid "51c568f5-c51e-47ff-b8cb-ec7097718b48")
+		)
+		(instances
+			(project "analogSupply_final_sim"
+				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 133.35 66.04 0)
 		(unit 1)
@@ -4455,78 +4508,6 @@
 			(project ""
 				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
 					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Cap100nF:CL05B104KP5NNNC")
-		(at 269.24 87.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ac99a18-f7fa-45d6-8de8-7b7a7db3e942")
-		(property "Reference" "C5"
-			(at 273.05 82.5499 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "CL05B104KP5NNNC"
-			(at 273.05 85.0899 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "CAP_CL05_SAM"
-			(at 269.24 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "CL05B104KP5NNNC"
-			(at 269.24 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 269.24 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2e9f20cc-d676-47c0-8964-c507e2b0c8a0")
-		)
-		(pin "1"
-			(uuid "c9c50825-3c5e-4bf5-bffa-63bf2e83437c")
-		)
-		(instances
-			(project "analogSupply_final"
-				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -4892,6 +4873,136 @@
 		)
 	)
 	(symbol
+		(lib_id "potentiometer:3310Y-001-103L")
+		(at 184.15 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa98342f-8dbb-4ef4-ad97-ac5e5137dab4")
+		(property "Reference" "R5"
+			(at 186.69 119.3799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3310Y-001-103L"
+			(at 186.69 121.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "3310Y-001-103L:TRIM_3310Y-001-103L"
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC 7351B"
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "BOURNS"
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "r=5k"
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "664b47e1-f38b-4767-9a53-89d1f079a30c")
+		)
+		(pin "3"
+			(uuid "6dc26402-d831-49d3-9409-732b193304a3")
+		)
+		(pin "2"
+			(uuid "6883eb39-848b-411f-b30b-45adc69abe34")
+		)
+		(instances
+			(project "analogSupply_final_sim"
+				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 52.07 0)
 		(unit 1)
@@ -4952,110 +5063,6 @@
 			(project "analogSupply_without_pots"
 				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
 					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VDC")
-		(at 194.31 118.11 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be0cad15-1122-4696-aa51-f954dfd5236b")
-		(property "Reference" "V--1"
-			(at 198.12 116.9697 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0"
-			(at 198.12 119.5097 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 194.31 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 194.31 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Voltage source, DC"
-			(at 194.31 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 194.31 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 194.31 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 194.31 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e458fb9b-679d-4d1b-85fb-37b7087579d1")
-		)
-		(pin "1"
-			(uuid "971791a7-5fa4-4873-bdb1-7765c9cc782c")
-		)
-		(instances
-			(project ""
-				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "V--1")
-					(unit 1)
-				)
-			)
-			(project "OpAmps_p1_p2_300mv"
-				(path "/e43f7f3b-37e8-4384-a9a7-d1eacee8f636"
-					(reference "V--?")
 					(unit 1)
 				)
 			)
@@ -5589,78 +5596,6 @@
 	)
 	(symbol
 		(lib_id "Cap100nF:CL05B104KP5NNNC")
-		(at 257.81 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d99dd51b-3abd-475b-b24c-993a557b071c")
-		(property "Reference" "C7"
-			(at 261.62 93.9799 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "CL05B104KP5NNNC"
-			(at 261.62 96.5199 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "CAP_CL05_SAM"
-			(at 257.81 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "CL05B104KP5NNNC"
-			(at 257.81 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 257.81 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "121e0fbc-7a6f-4406-8e4b-0508f59d2b5e")
-		)
-		(pin "1"
-			(uuid "b4eee0ee-ccce-4354-abdf-12cbd39eaf87")
-		)
-		(instances
-			(project "analogSupply_final"
-				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Cap100nF:CL05B104KP5NNNC")
 		(at 269.24 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5716,6 +5651,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "C"
+			(at 269.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 269.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "c=100n"
+			(at 269.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "="
+			(at 269.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cce0d103-02c7-4226-9168-f3e0b4635b53")
 		)
@@ -5726,110 +5697,6 @@
 			(project "analogSupply_final"
 				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VDC")
-		(at 46.99 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9b87b18-ce81-432e-800f-3f3610843267")
-		(property "Reference" "V?"
-			(at 50.8 43.0501 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3"
-			(at 50.8 45.5901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Voltage source, DC"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "34799313-d21d-4939-8925-a237d73becf5")
-		)
-		(pin "1"
-			(uuid "192d9aec-ae7c-4bc8-8c7e-03f1400932bc")
-		)
-		(instances
-			(project ""
-				(path "/13e0581d-653f-492c-8c95-aff22e6b90f8"
-					(reference "V?")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "V1")
 					(unit 1)
 				)
 			)
@@ -6014,100 +5881,6 @@
 		)
 	)
 	(symbol
-		(lib_id "potentiometer:3310Y-001-103L")
-		(at 184.15 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc196c0f-c24b-4572-979c-700df5170f70")
-		(property "Reference" "R2"
-			(at 186.69 95.2499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3310Y-001-103L"
-			(at 186.69 97.7899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "3310Y-001-103L:TRIM_3310Y-001-103L"
-			(at 184.15 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC 7351B"
-			(at 184.15 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "BOURNS"
-			(at 184.15 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77795691-f6a6-4cd1-92b5-4c42b5055caa")
-		)
-		(pin "3"
-			(uuid "0c8cc76d-ade1-436d-902f-93c46a90d1e6")
-		)
-		(pin "2"
-			(uuid "622e7b9b-c848-4a8d-b994-a48142926aa3")
-		)
-		(instances
-			(project "analogSupply_final"
-				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Cap100nF:CL05B104KP5NNNC")
 		(at 273.05 46.99 90)
 		(unit 1)
@@ -6116,8 +5889,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fd912150-7ece-417a-a735-5e84b8aba612")
-		(property "Reference" "C4"
+		(uuid "f6318772-e129-4761-b823-3ec32fb76cf3")
+		(property "Reference" "C7"
 			(at 276.86 41.9099 90)
 			(effects
 				(font
@@ -6164,16 +5937,52 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "C"
+			(at 273.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 273.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "c=100n"
+			(at 273.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "="
+			(at 273.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "32246b09-d242-4ef5-8fd5-635b027c80e0")
+			(uuid "9b565501-8059-4d42-9869-c0cf0f1d61a5")
 		)
 		(pin "1"
-			(uuid "1c8c6527-4a2d-4c17-9d74-78208ca19c0f")
+			(uuid "7fab8023-4547-4470-9aa5-c98c4182459c")
 		)
 		(instances
-			(project ""
+			(project "analogSupply_final_sim"
 				(path "/bb4589bd-64fa-4400-9ba1-49fd7d1724b5"
-					(reference "C4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
