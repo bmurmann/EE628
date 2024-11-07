@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "low_VDD_low_pot.kicad_pro",
+    "filename": "OpAmps_p2_1.8V.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -362,19 +362,19 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "Spice",
+    "net_format_name": "",
     "ngspice": {
       "fix_include_paths": true,
       "meta": {
         "version": 0
       },
-      "model_mode": 0,
-      "workbook_filename": "Opamp.wbk"
+      "model_mode": 4,
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
-    "spice_current_sheet_as_root": true,
-    "spice_external_command": "",
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
     "spice_save_all_currents": false,
     "spice_save_all_dissipations": false,
@@ -384,8 +384,8 @@
   },
   "sheets": [
     [
-      "95e5dcee-77e4-4cc3-9d7c-d0dc3cd96a78",
-      "Root"
+      "e43f7f3b-37e8-4384-a9a7-d1eacee8f636",
+      ""
     ]
   ],
   "text_variables": {}
