@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "cap4.7uF")(type "KiCad")(uri "C:/Users/Dylan/Documents/GitHub/EE628/6_Test/2_PCB/test_board_1/Cap4.7uF.kicad_sym")(options "")(descr ""))
+  (lib (name "resistor1k")(type "KiCad")(uri "C:/Users/Dylan/Documents/GitHub/EE628/6_Test/2_PCB/test_board_1/resistor1k.kicad_sym")(options "")(descr ""))
+  (lib (name "LDO")(type "KiCad")(uri "C:/Users/Dylan/Documents/GitHub/EE628/6_Test/2_PCB/test_board_1/tps745.kicad_sym")(options "")(descr ""))
+  (lib (name "cap100pF")(type "KiCad")(uri "C:/Users/Dylan/Documents/GitHub/EE628/6_Test/2_PCB/test_board_1/cap100pF.kicad_sym")(options "")(descr ""))
+  (lib (name "cap100nF")(type "KiCad")(uri "C:/Users/Dylan/Documents/GitHub/EE628/6_Test/2_PCB/test_board_1/cap100nF.kicad_sym")(options "")(descr ""))
+  (lib (name "opAmp")(type "KiCad")(uri "C:/Users/Dylan/Documents/GitHub/EE628/6_Test/2_PCB/test_board_1/ADA4807-2ARMZ.kicad_sym")(options "")(descr ""))
+)
