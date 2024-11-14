@@ -1939,7 +1939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\Dylan\\OneDrive\\ECE699\\SN74ALVCH162827.lib"
+		(property "Sim.Library" "sim_models\\SN74ALVCH162827.lib"
 			(at 165.1 59.69 0)
 			(effects
 				(font

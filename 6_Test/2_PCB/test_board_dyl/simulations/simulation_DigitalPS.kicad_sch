@@ -2662,7 +2662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\Dylan\\OneDrive\\ECE699_Lib\\TPS74501P_TRANS.lib"
+		(property "Sim.Library" "sim_models\\TPS74501P_TRANS.lib"
 			(at 142.24 73.66 0)
 			(effects
 				(font
@@ -2919,7 +2919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\Dylan\\OneDrive\\ECE699_Lib\\BLM18PG121SN1.lib"
+		(property "Sim.Library" "sim_models\\BLM18PG121SN1.lib"
 			(at 82.55 63.5 0)
 			(effects
 				(font
