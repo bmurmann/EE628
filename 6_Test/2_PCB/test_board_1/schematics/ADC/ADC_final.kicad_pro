@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "reset_pulse_final.kicad_pro",
+    "filename": "ADC_final.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -376,7 +376,7 @@
   },
   "sheets": [
     [
-      "0bff1e6a-b7a1-4868-b621-6260b272cc3b",
+      "4b4409c6-81e7-4e6a-a7a9-48607a4f7e14",
       "Root"
     ]
   ],

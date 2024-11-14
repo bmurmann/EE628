@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "reset_pulse_final.kicad_pro",
+    "filename": "digitalSupply_final_sim.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -363,6 +363,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -376,7 +384,7 @@
   },
   "sheets": [
     [
-      "0bff1e6a-b7a1-4868-b621-6260b272cc3b",
+      "f6e34d3b-8b33-4655-9001-4493d9f5a8b9",
       "Root"
     ]
   ],

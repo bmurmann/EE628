@@ -8,4 +8,6 @@
   (lib (name "resistor4.7k")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/resistor4.7k.kicad_sym")(options "")(descr ""))
   (lib (name "potentiometer")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/potentiometer.kicad_sym")(options "")(descr ""))
   (lib (name "Cap100nF")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/cap100nF.kicad_sym")(options "")(descr ""))
+  (lib (name "pot_10turn")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/potentiometer_10turn.kicad_sym")(options "")(descr ""))
+  (lib (name "ADC")(type "KiCad")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/chip.kicad_sym")(options "")(descr ""))
 )

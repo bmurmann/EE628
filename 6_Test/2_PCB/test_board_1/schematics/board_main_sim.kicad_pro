@@ -390,6 +390,14 @@
     [
       "0a919f49-2db5-4a49-acae-598537b168fb",
       "AnalogSupply"
+    ],
+    [
+      "67cdf4fb-e160-416a-a6f0-b53d0a3ad737",
+      "DigitalSupply"
+    ],
+    [
+      "26226914-76fb-4db0-a074-5233062a7d0a",
+      "ADC"
     ]
   ],
   "text_variables": {}

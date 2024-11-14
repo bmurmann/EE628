@@ -1182,6 +1182,18 @@
 		)
 		(uuid "2c18eb76-0279-4008-9734-5a709077785e")
 	)
+	(hierarchical_label "RES_Jump1"
+		(shape output)
+		(at 177.8 44.45 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "639e9c6a-b4eb-487d-8694-033acc8b6cea")
+	)
 	(hierarchical_label "CLKX"
 		(shape input)
 		(at 45.72 114.3 180)
@@ -1193,6 +1205,18 @@
 			(justify right)
 		)
 		(uuid "79393ea1-0222-4e8b-83fd-18a2025e27c0")
+	)
+	(hierarchical_label "RES_Jump2"
+		(shape output)
+		(at 237.49 44.45 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9936edfa-7342-4d50-aa03-4ac848431737")
 	)
 	(hierarchical_label "RESX"
 		(shape input)
