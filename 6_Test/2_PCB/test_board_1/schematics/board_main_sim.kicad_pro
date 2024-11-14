@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "analogSupply_without_pots.kicad_pro",
+    "filename": "board_main_sim.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -384,8 +384,12 @@
   },
   "sheets": [
     [
-      "bb4589bd-64fa-4400-9ba1-49fd7d1724b5",
-      ""
+      "9c0580c5-7bd5-4e54-bf4c-826aa4ac3630",
+      "Root"
+    ],
+    [
+      "0a919f49-2db5-4a49-acae-598537b168fb",
+      "AnalogSupply"
     ]
   ],
   "text_variables": {}

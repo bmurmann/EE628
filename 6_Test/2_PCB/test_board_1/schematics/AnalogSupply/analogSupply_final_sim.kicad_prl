@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "analogSupply_final2.kicad_prl",
+    "filename": "analogSupply_final_sim2.kicad_prl",
     "version": 3
   },
   "project": {
