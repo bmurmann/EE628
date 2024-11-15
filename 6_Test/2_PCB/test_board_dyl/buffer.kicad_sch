@@ -2988,7 +2988,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 51.054 90)
 			(effects
 				(font
@@ -3250,7 +3250,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 61.214 90)
 			(effects
 				(font
@@ -3318,7 +3318,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DL56"
+		(property "Footprint" "74ALVCHFootprints:DL56"
 			(at 179.07 62.23 0)
 			(effects
 				(font
@@ -3549,7 +3549,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 129.794 90)
 			(effects
 				(font
@@ -3616,7 +3616,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 134.874 90)
 			(effects
 				(font
@@ -3683,7 +3683,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 145.034 90)
 			(effects
 				(font
@@ -3815,7 +3815,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 119.634 90)
 			(effects
 				(font
@@ -3882,7 +3882,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 109.474 90)
 			(effects
 				(font
@@ -4014,7 +4014,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 76.454 90)
 			(effects
 				(font
@@ -4081,7 +4081,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 99.314 90)
 			(effects
 				(font
@@ -4278,7 +4278,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 81.534 90)
 			(effects
 				(font
@@ -4345,7 +4345,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 104.394 90)
 			(effects
 				(font
@@ -4412,7 +4412,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 114.554 90)
 			(effects
 				(font
@@ -4479,7 +4479,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 86.614 90)
 			(effects
 				(font
@@ -4676,7 +4676,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 139.954 90)
 			(effects
 				(font
@@ -4873,7 +4873,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 71.374 90)
 			(effects
 				(font
@@ -5070,7 +5070,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 66.294 90)
 			(effects
 				(font
@@ -5202,7 +5202,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 91.694 90)
 			(effects
 				(font
@@ -5269,7 +5269,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 45.974 90)
 			(effects
 				(font
@@ -5336,7 +5336,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 56.134 90)
 			(effects
 				(font
@@ -5403,7 +5403,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 73.914 124.714 90)
 			(effects
 				(font

@@ -9,4 +9,5 @@
   (lib (name "cap100nFFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/cap100nFFootprints.pretty")(options "")(descr ""))
   (lib (name "cap100pFFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/cap100pFFootprints.pretty")(options "")(descr ""))
   (lib (name "resistor1kFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/resistor1kFootprints.pretty")(options "")(descr ""))
+  (lib (name "potentiometer_10turn")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/potentiometer_10turn.pretty")(options "")(descr ""))
 )

@@ -3349,7 +3349,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3310Y-001-103L"
+		(property "Value" "10k"
 			(at 165.1 104.1399 90)
 			(effects
 				(font
@@ -3358,7 +3358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "3310Y-001-103L:TRIM_3310Y-001-103L"
+		(property "Footprint" "potentiometer_10turn:potentiometer_10turn"
 			(at 162.56 102.87 0)
 			(effects
 				(font
@@ -3882,7 +3882,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RC0402JR-071KL"
+		(property "Value" "1k"
 			(at 160.02 78.7399 90)
 			(effects
 				(font
@@ -4055,7 +4055,7 @@
 				)
 			)
 		)
-		(property "Value" "3310Y-001-103L"
+		(property "Value" "10k"
 			(at 133.35 72.39 0)
 			(effects
 				(font
@@ -4063,7 +4063,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3310Y-001-103L:TRIM_3310Y-001-103L"
+		(property "Footprint" "potentiometer_10turn:potentiometer_10turn"
 			(at 133.35 76.2 0)
 			(effects
 				(font
@@ -4257,7 +4257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DRV0006A"
+		(property "Footprint" "tps745Footprints:DRV0006A_NV"
 			(at 91.44 55.88 0)
 			(effects
 				(font
@@ -4371,7 +4371,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RC0402JR-071KL"
+		(property "Value" "6k"
 			(at 128.27 60.9599 90)
 			(effects
 				(font
@@ -4594,7 +4594,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KS-6_ADI"
+		(property "Footprint" "opampADA4807Footprints:KS-6_ADI"
 			(at 175.26 107.95 0)
 			(effects
 				(font
@@ -4820,7 +4820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KS-6_ADI"
+		(property "Footprint" "opampADA4807Footprints:KS-6_ADI"
 			(at 175.26 81.28 0)
 			(effects
 				(font
@@ -5136,7 +5136,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IND_BLM18_0603_MUR"
+		(property "Footprint" "ferriteBead120OhmFootprints:IND_BLM18_0603_MUR"
 			(at 36.83 45.72 0)
 			(effects
 				(font
@@ -5343,7 +5343,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3310Y-001-103L"
+		(property "Value" "10k"
 			(at 165.1 128.2699 90)
 			(effects
 				(font
@@ -5352,7 +5352,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "3310Y-001-103L:TRIM_3310Y-001-103L"
+		(property "Footprint" "potentiometer_10turn:potentiometer_10turn"
 			(at 162.56 127 0)
 			(effects
 				(font

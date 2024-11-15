@@ -2010,7 +2010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IND_BLM18_0603_MUR"
+		(property "Footprint" "ferriteBead120OhmFootprints:IND_BLM18_0603_MUR"
 			(at 72.39 63.5 0)
 			(effects
 				(font
@@ -2082,7 +2082,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "POT_PV37W_MUR"
+		(property "Footprint" "potentiometer_10turn:potentiometer_10turn"
 			(at 176.53 95.25 0)
 			(effects
 				(font
@@ -2295,7 +2295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DRV0006A"
+		(property "Footprint" "tps745Footprints:DRV0006A_NV"
 			(at 142.24 73.66 0)
 			(effects
 				(font
@@ -2452,7 +2452,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 177.546 99.314 90)
 			(effects
 				(font
@@ -2662,7 +2662,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 177.546 71.374 90)
 			(effects
 				(font
