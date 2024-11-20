@@ -1,0 +1,106 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "PV37W103C01B00" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "R" (id 0) (at -10.6887 7.63475 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "PV37W103C01B00" (id 1) (at -10.6887 -5.5953 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "PV37W103C01B00:TRIM_PV37W103C01B00" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "08/19" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "Manufacturer recommendations" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "7.75 mm" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Bourns" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "PV37W103C01B00_0_0"
+      (polyline
+        (pts (xy 5.08 0.0) (xy 4.572 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 4.572 0.0) (xy 3.81 -1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 3.81 -1.016) (xy 2.54 1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 1.27) (xy 1.27 -1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -1.016) (xy 0.0 1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 1.27) (xy -1.27 -1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.27 -1.016) (xy -2.54 1.27)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 1.27) (xy -3.81 -1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.81 -1.016) (xy -4.572 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -4.572 0.0) (xy -5.08 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 1.27) (xy -1.27 2.54)) (stroke (width 0.2032))
+      )
+      (polyline
+        (pts (xy 1.27 2.54) (xy 0.0 1.27)) (stroke (width 0.2032))
+      )
+      (polyline
+        (pts (xy -1.27 2.54) (xy 1.27 2.54)) (stroke (width 0.2032))
+      )
+      (polyline
+        (pts (xy 4.953 -2.413) (xy 7.493 -2.413)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 7.493 -2.413) (xy 6.223 -3.048)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 6.223 -3.048) (xy 6.223 -1.778)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 6.223 -1.778) (xy 7.493 -2.413)) (stroke (width 0.1524))
+      )
+      (text "Clockwise" (at -3.81 -3.175 0)
+        (effects (font (size 1.27 1.27)) (justify bottom left))
+      )
+      (pin passive line (at 10.16 0.0 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -10.16 0.0 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 0.0 7.62 270.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
