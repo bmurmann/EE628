@@ -231,7 +231,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "buffer_final.kicad_pro",
+    "filename": "LDO_circuitry_final.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -363,14 +363,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -384,8 +376,8 @@
   },
   "sheets": [
     [
-      "9c0410b0-1417-4abf-8da5-257df1b80c8d",
-      "Root"
+      "1d203505-0113-4179-87e1-d4f3bd3291d4",
+      ""
     ]
   ],
   "text_variables": {}

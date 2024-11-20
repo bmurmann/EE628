@@ -377,19 +377,31 @@
   "sheets": [
     [
       "9c0580c5-7bd5-4e54-bf4c-826aa4ac3630",
-      ""
+      "Root"
     ],
     [
-      "c35211e2-8572-42d3-a6ba-25a7101b7bb6",
+      "0a919f49-2db5-4a49-acae-598537b168fb",
       "AnalogSupply"
     ],
     [
-      "fdee9364-0143-49e5-8a4b-de9a4ad969eb",
+      "67cdf4fb-e160-416a-a6f0-b53d0a3ad737",
       "DigitalSupply"
     ],
     [
-      "8a0916ba-f0ff-4447-b0f5-57c87d76727c",
+      "26226914-76fb-4db0-a074-5233062a7d0a",
+      "ADC"
+    ],
+    [
+      "49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab",
       "Buffer"
+    ],
+    [
+      "9621bf7e-7afb-4298-8f88-3144a5d5b439",
+      "ResetPulse"
+    ],
+    [
+      "104c40d7-ae25-447b-8675-a765b7f78bca",
+      "LDO_Cir"
     ]
   ],
   "text_variables": {}

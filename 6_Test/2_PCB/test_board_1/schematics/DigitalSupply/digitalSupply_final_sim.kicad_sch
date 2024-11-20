@@ -1908,16 +1908,6 @@
 		)
 		(uuid "eb87404f-04d3-4c63-adce-1e9b34725843")
 	)
-	(text ".ac lin 100000 0 100000000"
-		(exclude_from_sim no)
-		(at 142.24 117.348 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "87493f41-5f96-4f87-9667-0801b9ea5080")
-	)
 	(hierarchical_label "VSUP"
 		(shape input)
 		(at 55.88 76.2 180)

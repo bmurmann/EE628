@@ -2476,6 +2476,12 @@
 		(uuid "41517d2a-bb21-4e5d-a02f-6181ced5b2a1")
 	)
 	(junction
+		(at 72.39 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44a4f009-dfd2-4d8e-bcf2-d76248dcc6eb")
+	)
+	(junction
 		(at 252.73 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2617,7 +2623,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 44.45) (xy 74.93 44.45)
+			(xy 71.12 44.45) (xy 72.39 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2814,6 +2820,16 @@
 			(type default)
 		)
 		(uuid "488b3482-23dd-4bc9-90f6-50209cbbb5e2")
+	)
+	(wire
+		(pts
+			(xy 72.39 44.45) (xy 72.39 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0ba1e4-0414-40da-8977-18b14237c8be")
 	)
 	(wire
 		(pts
@@ -3355,6 +3371,16 @@
 		)
 		(uuid "ec43fa9c-33ca-40d0-b234-ec5692762d3b")
 	)
+	(wire
+		(pts
+			(xy 72.39 44.45) (xy 74.93 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb3b58c3-a49c-4a45-8008-5e68780dff3e")
+	)
 	(text "The ADC connects AVSS to GND. This jumper should only be connected for simulations"
 		(exclude_from_sim no)
 		(at 117.348 166.878 0)
@@ -3376,6 +3402,18 @@
 			(justify right)
 		)
 		(uuid "09258f1c-650b-4bd0-850e-2e38b78803fd")
+	)
+	(hierarchical_label "VA"
+		(shape output)
+		(at 72.39 76.2 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0dc61afb-6774-49d0-8968-8fe907eed6b4")
 	)
 	(hierarchical_label "AVSS"
 		(shape output)
@@ -4580,7 +4618,7 @@
 			)
 			(project "board_main_sim"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "#PWR05")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4893,7 +4931,7 @@
 			)
 			(project "board_main_sim"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "#PWR04")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5499,7 +5537,7 @@
 			)
 			(project "board_main_sim"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "#PWR07")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5695,7 +5733,7 @@
 			)
 			(project "board_main_sim"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "#PWR06")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5767,7 +5805,7 @@
 			)
 			(project "board_main_sim"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "#PWR03")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)

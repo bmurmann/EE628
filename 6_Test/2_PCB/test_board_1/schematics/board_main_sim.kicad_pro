@@ -369,7 +369,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": ""
+      "workbook_filename": "board_main_sim.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -398,6 +398,14 @@
     [
       "26226914-76fb-4db0-a074-5233062a7d0a",
       "ADC"
+    ],
+    [
+      "9621bf7e-7afb-4298-8f88-3144a5d5b439",
+      "ResetPulse"
+    ],
+    [
+      "49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab",
+      "Buffer"
     ]
   ],
   "text_variables": {}

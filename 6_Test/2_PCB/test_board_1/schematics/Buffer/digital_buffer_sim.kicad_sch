@@ -326,180 +326,6 @@
 				)
 			)
 		)
-		(symbol "Simulation_SPICE:VPULSE"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.0254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "V"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "VPULSE"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Voltage source, pulse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "PULSE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Sim.Params" "y1=0 y2=1 td=2n tr=2n tf=2n tw=50n per=100n"
-				(at 2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VPULSE_0_0"
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy -1.397 -0.762) (xy -1.143 0.762) (xy -0.127 0.762) (xy 0.127 -0.762) (xy 1.143 -0.762)
-						(xy 1.397 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 0 1.905 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "VPULSE_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "VPULSE_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "buffer:SN74ALVCH162827DLR"
 			(pin_names
 				(offset 0.254)
@@ -1782,13 +1608,33 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 68.58) (xy 58.42 62.23)
+			(xy 165.1 64.77) (xy 170.18 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a231bd1c-9b6f-45d8-8bd8-a1c13a72106b")
+		(uuid "89639f5f-9743-49cb-a87b-1f5ca7d7608e")
+	)
+	(wire
+		(pts
+			(xy 165.1 62.23) (xy 170.18 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96538b0a-8e66-4f10-b73c-263f3f11ab60")
+	)
+	(wire
+		(pts
+			(xy 58.42 62.23) (xy 58.42 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0e4611f-f857-4d71-961a-64ed7234d394")
 	)
 	(wire
 		(pts
@@ -1885,274 +1731,6 @@
 		(uuid "c65dcb31-383e-47a6-9303-b50c953a7b5d")
 	)
 	(symbol
-		(lib_id "buffer:SN74ALVCH162827DLR")
-		(at 165.1 59.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0394848f-3fc8-4443-bd9c-3c95f5701a73")
-		(property "Reference" "U1"
-			(at 132.08 49.53 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "SN74ALVCH162827DLR"
-			(at 132.08 52.07 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "DL56"
-			(at 165.1 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "SN74ALVCH162827DLR"
-			(at 165.1 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 165.1 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "sim_models\\SN74ALVCH162827.lib"
-			(at 165.1 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "SN74ALVCH162827"
-			(at 165.1 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 165.1 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=OEZ 2=Y 4=AGND 7=VCC 55=A"
-			(at 165.1 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "52"
-			(uuid "1d2edbeb-b878-40c1-9b49-e5a50acf091f")
-		)
-		(pin "54"
-			(uuid "f4f7b91a-fd0d-4932-80b1-d4c465a025d9")
-		)
-		(pin "40"
-			(uuid "3e06d82e-d871-4315-8cd6-3a55cb0230cd")
-		)
-		(pin "13"
-			(uuid "02c08531-7574-4916-97ea-1043c55dcfdf")
-		)
-		(pin "31"
-			(uuid "426c4c1d-98ff-492a-9254-929f18a6d50b")
-		)
-		(pin "4"
-			(uuid "4087485a-1ea3-4a1a-b9a3-a4aef7a05b67")
-		)
-		(pin "21"
-			(uuid "d1f58925-a174-4684-9042-69921c2a7294")
-		)
-		(pin "18"
-			(uuid "0f0e4f3b-deca-4d38-afb0-656831b7cf78")
-		)
-		(pin "17"
-			(uuid "fe809016-0dbf-4622-b77c-cf03abb1a680")
-		)
-		(pin "24"
-			(uuid "89201a5e-9e69-4e19-ae5d-2df21d73b3b0")
-		)
-		(pin "29"
-			(uuid "8cfc789d-d97a-452c-b342-19fd0d1b73ef")
-		)
-		(pin "37"
-			(uuid "2cf2217b-7a58-4c98-9cd1-941a9f3a7e7b")
-		)
-		(pin "1"
-			(uuid "e463a06c-9740-460c-8227-9b79b0597157")
-		)
-		(pin "49"
-			(uuid "faba7507-1497-457f-96d6-49bbc0aafb53")
-		)
-		(pin "53"
-			(uuid "52b917f9-0e82-444e-b7db-4eb9658b385c")
-		)
-		(pin "15"
-			(uuid "38c2f02a-d42d-467d-99d8-a169de97139d")
-		)
-		(pin "56"
-			(uuid "750ea221-e4c1-435a-8a36-f142d950d676")
-		)
-		(pin "39"
-			(uuid "5172de50-fbee-41b3-9763-5ab04cbb0916")
-		)
-		(pin "2"
-			(uuid "05567c37-8fc2-41bb-8fa8-50b59ff9dae5")
-		)
-		(pin "51"
-			(uuid "6178ecd7-c7d0-4d77-a1fb-71b2feff2315")
-		)
-		(pin "55"
-			(uuid "677aafa1-0c0e-4560-a921-75706268e4b5")
-		)
-		(pin "35"
-			(uuid "bf92ebba-de5a-4a48-ac0b-7479b3b0cac8")
-		)
-		(pin "47"
-			(uuid "9b423c88-0bd6-401d-9f4d-c87222f7181b")
-		)
-		(pin "48"
-			(uuid "61d20f9b-c6f8-4506-b5ee-6e837003095c")
-		)
-		(pin "30"
-			(uuid "36dcb702-7c60-48c1-9a2f-2a9e85a3a4d9")
-		)
-		(pin "36"
-			(uuid "2b0be97e-3e29-45c7-aedd-9d0fce83dcda")
-		)
-		(pin "50"
-			(uuid "132f9c7f-5686-4f0e-9973-fcc4f20efc45")
-		)
-		(pin "6"
-			(uuid "f90aba53-9a8f-4e97-b47d-e39d01824e99")
-		)
-		(pin "32"
-			(uuid "0cd53f8f-412b-44f5-bed9-f56b65109be2")
-		)
-		(pin "8"
-			(uuid "9d40bb32-0dca-42e9-b5c3-76b43176f86e")
-		)
-		(pin "9"
-			(uuid "084ef30a-3076-4a93-92de-7d5c2359544a")
-		)
-		(pin "12"
-			(uuid "6cf64770-544b-45fe-8bab-e0410642ba13")
-		)
-		(pin "19"
-			(uuid "1c033c71-d635-422d-be4b-b9075bccd380")
-		)
-		(pin "3"
-			(uuid "62de7bb2-d8ce-454a-bb2b-b8ab9276e7b6")
-		)
-		(pin "41"
-			(uuid "f86f6f1a-dafd-445d-91f7-c96481a75cb6")
-		)
-		(pin "14"
-			(uuid "989642e1-364b-4fa7-8879-ba6375597d61")
-		)
-		(pin "16"
-			(uuid "36c3a6b7-d5cd-47e3-84db-25add66c5353")
-		)
-		(pin "22"
-			(uuid "c1d9386b-8e56-44f9-8a16-f7d541a59cca")
-		)
-		(pin "10"
-			(uuid "2d3e3164-8c18-4145-82e9-86816ed719e8")
-		)
-		(pin "20"
-			(uuid "b608aa10-001f-4ce3-a17a-b83559d1117c")
-		)
-		(pin "23"
-			(uuid "f6539062-236e-4134-a66a-bb35f1386341")
-		)
-		(pin "27"
-			(uuid "0d998ec9-261f-46e6-8bce-7475ab1edb34")
-		)
-		(pin "26"
-			(uuid "6eafee93-7e5d-4252-bf6d-33c1ff16d647")
-		)
-		(pin "28"
-			(uuid "bdd35a21-5bfd-4b2c-abd0-d873b8b4d672")
-		)
-		(pin "34"
-			(uuid "15f2cfb9-4516-440f-9fa6-f04ce0d1d8b7")
-		)
-		(pin "5"
-			(uuid "baefe160-ee59-4c0f-abaf-f2408af2caa4")
-		)
-		(pin "44"
-			(uuid "2e66b708-29bd-4c3f-8069-e64821de9640")
-		)
-		(pin "43"
-			(uuid "73a4c4c4-51dd-44f2-b3e4-3bb300eba6e8")
-		)
-		(pin "45"
-			(uuid "e90debc6-5467-4b4d-bf79-915567cfdf26")
-		)
-		(pin "25"
-			(uuid "a51b1ab2-1657-4700-9dc1-a6fc7c9d10e2")
-		)
-		(pin "46"
-			(uuid "3c87bab5-23f5-4283-a152-d4b74166a147")
-		)
-		(pin "33"
-			(uuid "101c28a5-2c16-4dcb-a357-bc2a78adb784")
-		)
-		(pin "42"
-			(uuid "f0e103b9-04a4-432a-8a62-07af2e1252dc")
-		)
-		(pin "7"
-			(uuid "5b20be5e-a6d4-4629-bb4b-e7e1e9ff5815")
-		)
-		(pin "38"
-			(uuid "8537b87b-f106-4f0f-b22f-ae0ad89ad611")
-		)
-		(pin "11"
-			(uuid "4d6770f2-764c-4dc7-8fe1-99d798c0f7f6")
-		)
-		(instances
-			(project ""
-				(path "/d0d2326e-a192-4b42-9e81-f9196c981f11"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 182.88 91.44 0)
 		(unit 1)
@@ -2213,113 +1791,6 @@
 			(project "digital_buffer_sim"
 				(path "/d0d2326e-a192-4b42-9e81-f9196c981f11"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VPULSE")
-		(at 58.42 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a42b6f6-d713-4d50-88cf-973189c8c41b")
-		(property "Reference" "V1"
-			(at 62.23 70.9901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VPULSE"
-			(at 62.23 73.5301 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 58.42 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Voltage source, pulse"
-			(at 58.42 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 58.42 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "PULSE"
-			(at 58.42 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 58.42 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "y1=0 y2=3 td=.2n tr=0.5n tf=0.5n tw=10n per=20n"
-			(at 62.23 76.0701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "d886ab05-fba8-4bd8-b6d2-23e9d879bfe0")
-		)
-		(pin "1"
-			(uuid "4862f5a3-509e-40ef-b4cd-8ed464fc39c9")
-		)
-		(instances
-			(project ""
-				(path "/d0d2326e-a192-4b42-9e81-f9196c981f11"
-					(reference "V1")
 					(unit 1)
 				)
 			)
@@ -2406,6 +1877,274 @@
 			(project ""
 				(path "/d0d2326e-a192-4b42-9e81-f9196c981f11"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "buffer:SN74ALVCH162827DLR")
+		(at 165.1 59.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9260b1ff-8775-41ca-a183-7fa9f60f76ee")
+		(property "Reference" "U1"
+			(at 132.08 49.53 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "SN74ALVCH162827DLR"
+			(at 132.08 52.07 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "DL56"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "SN74ALVCH162827DLR"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/models/SN74ALVCH162827.lib"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "SN74ALVCH162827"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=OEZ 2=Y 7=VCC 53=AGND 55=A"
+			(at 165.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "52"
+			(uuid "f6b17288-069a-421b-b4a5-ecb342aca566")
+		)
+		(pin "54"
+			(uuid "e97f27b3-4738-49ba-b0ef-c6a3228cb579")
+		)
+		(pin "40"
+			(uuid "06953a97-be2d-4cba-babd-4d6865de7437")
+		)
+		(pin "13"
+			(uuid "8b7aef45-803e-4ea1-abb0-49da208f0cdb")
+		)
+		(pin "31"
+			(uuid "4a4b31e6-be93-4d3b-b40a-22581bbb1d16")
+		)
+		(pin "4"
+			(uuid "70cb611f-3f8b-4033-a075-6b92f5976c5d")
+		)
+		(pin "21"
+			(uuid "e4758c1d-89c4-462e-b6c6-1292c6c4aa50")
+		)
+		(pin "18"
+			(uuid "71dc5094-72a6-4212-933e-f1a998dc2ff8")
+		)
+		(pin "17"
+			(uuid "745b664b-bf8a-4a29-a588-d4bd106221b3")
+		)
+		(pin "24"
+			(uuid "a2b13dd3-7b35-4a39-b0ba-bd9f4a97742c")
+		)
+		(pin "29"
+			(uuid "fc1047c9-8c89-4848-bde4-159f734f5627")
+		)
+		(pin "37"
+			(uuid "ef34b1bf-40ac-43ba-a1ed-a961d201c7ea")
+		)
+		(pin "1"
+			(uuid "31032dcc-8f03-4a13-a357-2de923daff80")
+		)
+		(pin "49"
+			(uuid "32160c2c-2875-4437-bc48-2b45e52fdefa")
+		)
+		(pin "53"
+			(uuid "172a99f8-214b-481b-b397-7c1d44e1cb1c")
+		)
+		(pin "15"
+			(uuid "1fa39006-e6e6-4819-afbd-38af324b30da")
+		)
+		(pin "56"
+			(uuid "0a02df74-39d6-44f6-8a74-03332805b4eb")
+		)
+		(pin "39"
+			(uuid "e821b3d2-7c99-4921-854f-064b1091c79a")
+		)
+		(pin "2"
+			(uuid "1523c30f-a772-48ae-8764-71e237c1c993")
+		)
+		(pin "51"
+			(uuid "819bedba-05fd-4b20-888c-9cddf15b0f70")
+		)
+		(pin "55"
+			(uuid "d0f8a0fb-3765-4af7-b270-8f7c8bf4580a")
+		)
+		(pin "35"
+			(uuid "095acb9b-6c8f-45f9-af98-7960a1734ae0")
+		)
+		(pin "47"
+			(uuid "7e14a12d-3d82-402e-8196-710e452b1113")
+		)
+		(pin "48"
+			(uuid "77b07565-b850-4c61-a408-e6a5409d1d54")
+		)
+		(pin "30"
+			(uuid "d91708d9-a0bc-4b30-98a5-87500996b216")
+		)
+		(pin "36"
+			(uuid "ed18e9fc-a589-461e-b8ab-8b5f177712f4")
+		)
+		(pin "50"
+			(uuid "9d845549-2e76-4d6d-b23e-65a041aab744")
+		)
+		(pin "6"
+			(uuid "25739f57-1750-4539-9479-d40bd94ac74c")
+		)
+		(pin "32"
+			(uuid "68183247-e774-46fd-8f52-709ddbc005f2")
+		)
+		(pin "8"
+			(uuid "37987c72-ea0b-442d-a343-c593c4b70486")
+		)
+		(pin "9"
+			(uuid "76c4bf11-cd19-4afa-9418-fcc204ea35b3")
+		)
+		(pin "12"
+			(uuid "4c19c836-efa4-429c-9ac9-0281fb2daf56")
+		)
+		(pin "19"
+			(uuid "99e92c70-d189-4111-9efb-7ba7b65efac1")
+		)
+		(pin "3"
+			(uuid "2e3bc5d4-8af3-4961-b5b1-90a918dda678")
+		)
+		(pin "41"
+			(uuid "86c4185a-152c-4382-9ffd-3c24e83dfadb")
+		)
+		(pin "14"
+			(uuid "832a14be-e81c-46c1-961e-b9bb72719764")
+		)
+		(pin "16"
+			(uuid "b1e9c735-9e15-40fd-b737-3f5cb6b991c9")
+		)
+		(pin "22"
+			(uuid "8fda05b4-ddc9-4a92-ac60-8cecbfc37b8e")
+		)
+		(pin "10"
+			(uuid "08c46424-f326-4efd-8b49-c27f54f46fba")
+		)
+		(pin "20"
+			(uuid "4ac8465f-81be-4cd7-ac87-bb89676d0f41")
+		)
+		(pin "23"
+			(uuid "a25e986c-be11-4626-8574-05eae7ec12bd")
+		)
+		(pin "27"
+			(uuid "3c28bd26-ba7f-43eb-8024-8d0896436c3c")
+		)
+		(pin "26"
+			(uuid "f0652de6-449d-488c-8dea-3a25340df888")
+		)
+		(pin "28"
+			(uuid "024a59af-8dae-49db-b9c0-d486f6ef368a")
+		)
+		(pin "34"
+			(uuid "ff12fcf4-8066-4736-80fa-8fec7f3192d7")
+		)
+		(pin "5"
+			(uuid "da3430ef-76a9-423a-9094-e95b7d94eab5")
+		)
+		(pin "44"
+			(uuid "fc7de6a0-1bec-4f6d-844a-645600f790b1")
+		)
+		(pin "43"
+			(uuid "82f291b2-2742-450a-b1bf-7d5efecb7d7f")
+		)
+		(pin "45"
+			(uuid "f9cd1d41-a4c7-4af7-a5d8-4e3e489f2af5")
+		)
+		(pin "25"
+			(uuid "b86756c4-b6dd-4b6f-84b7-05114d2b92b8")
+		)
+		(pin "46"
+			(uuid "2b0ddc86-b936-4922-af3a-e1cebc16f9ca")
+		)
+		(pin "33"
+			(uuid "09f62866-12e3-4a06-8576-c32cde3c2363")
+		)
+		(pin "42"
+			(uuid "59f4cd45-0491-455c-a838-ae6c5472017b")
+		)
+		(pin "7"
+			(uuid "2e6483fa-3a47-4c5c-8dbe-3c3b70a191d3")
+		)
+		(pin "38"
+			(uuid "28db184f-f70e-4e63-821a-c61b966c2522")
+		)
+		(pin "11"
+			(uuid "063a5486-105b-491d-8f2e-d52f7da23f3c")
+		)
+		(instances
+			(project "digital_buffer_sim"
+				(path "/d0d2326e-a192-4b42-9e81-f9196c981f11"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2636,6 +2375,104 @@
 			(project ""
 				(path "/d0d2326e-a192-4b42-9e81-f9196c981f11"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 58.42 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef43dad7-808b-449b-82c1-4058a9fb3643")
+		(property "Reference" "V1"
+			(at 62.23 72.2601 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2"
+			(at 62.23 74.8001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2cf45fba-0008-4638-a500-d3bb088981ca")
+		)
+		(pin "2"
+			(uuid "266ad7a9-c379-4460-bc39-5fe87b96672f")
+		)
+		(instances
+			(project "digital_buffer_sim"
+				(path "/d0d2326e-a192-4b42-9e81-f9196c981f11"
+					(reference "V1")
 					(unit 1)
 				)
 			)
