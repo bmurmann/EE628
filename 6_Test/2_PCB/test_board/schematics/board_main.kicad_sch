@@ -3571,6 +3571,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 106.68) (xy 194.31 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "250f0081-a784-417c-a32b-a1d84c857af9")
+	)
+	(wire
+		(pts
 			(xy 130.81 46.99) (xy 260.35 46.99)
 		)
 		(stroke
@@ -3951,6 +3961,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 109.22) (xy 194.31 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "783d0fe8-d2f5-4455-92d0-4bf781fe804b")
+	)
+	(wire
+		(pts
 			(xy 172.72 90.17) (xy 170.18 90.17)
 		)
 		(stroke
@@ -3998,6 +4018,16 @@
 			(type default)
 		)
 		(uuid "7c9e7794-c14c-4f11-a3cb-f2082dcdc413")
+	)
+	(wire
+		(pts
+			(xy 121.92 121.92) (xy 194.31 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d9f7964-8071-404e-b8fc-63f94f32c76e")
 	)
 	(wire
 		(pts
@@ -4051,6 +4081,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 111.76) (xy 194.31 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "887d333a-e6d2-4344-bf49-ab5159786fc9")
+	)
+	(wire
+		(pts
 			(xy 170.18 95.25) (xy 190.5 95.25)
 		)
 		(stroke
@@ -4058,6 +4098,16 @@
 			(type default)
 		)
 		(uuid "88f20f27-60ab-4932-8cb2-60200d84e319")
+	)
+	(wire
+		(pts
+			(xy 121.92 124.46) (xy 194.31 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a7920d6-1067-4522-9b67-9a3e58c7bb69")
 	)
 	(wire
 		(pts
@@ -4381,6 +4431,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 119.38) (xy 194.31 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be4c9b3a-40e3-4f8e-827f-30a95d9552b5")
+	)
+	(wire
+		(pts
 			(xy 190.5 95.25) (xy 190.5 114.3)
 		)
 		(stroke
@@ -4619,9 +4679,9 @@
 		)
 		(uuid "6c63a4a6-c803-485b-a1f8-32eae5989ef1")
 	)
-	(text "Digital Discovery2\n\n\n"
+	(text "Digital Discovery outputs\n\n\n"
 		(exclude_from_sim no)
-		(at 332.74 115.57 0)
+		(at 369.57 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4629,7 +4689,7 @@
 		)
 		(uuid "ba3b68b0-1915-4b8d-8277-43212b9ba1ea")
 	)
-	(text "Digital Discovery1\n\n"
+	(text "Digital Discovery inputs\n"
 		(exclude_from_sim no)
 		(at 116.84 168.91 0)
 		(effects
@@ -4797,7 +4857,7 @@
 	)
 	(symbol
 		(lib_id "15x2Header:67996-130HLF")
-		(at 91.44 87.63 0)
+		(at 91.44 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4806,7 +4866,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f43a591-0501-4a84-8888-1f82e48330d2")
 		(property "Reference" "J?"
-			(at 105.41 123.1899 0)
+			(at 105.41 124.4599 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4815,7 +4875,7 @@
 			)
 		)
 		(property "Value" "67996-130HLF"
-			(at 105.41 125.7299 0)
+			(at 105.41 126.9999 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4824,7 +4884,7 @@
 			)
 		)
 		(property "Footprint" "67996-130HLF_AMP"
-			(at 91.44 87.63 0)
+			(at 91.44 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4834,7 +4894,7 @@
 			)
 		)
 		(property "Datasheet" "67996-130HLF"
-			(at 91.44 87.63 0)
+			(at 91.44 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4844,7 +4904,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 87.63 0)
+			(at 91.44 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
