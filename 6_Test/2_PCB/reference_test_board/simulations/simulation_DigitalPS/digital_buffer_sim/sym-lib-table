@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "jumper")(type "Legacy")(uri "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/symbols/jumper.lib")(options "")(descr ""))
+)
