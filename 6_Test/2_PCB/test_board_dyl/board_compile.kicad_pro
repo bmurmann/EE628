@@ -239,7 +239,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "digital_buffer_sim.kicad_pro",
+    "filename": "board_compile.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -371,14 +371,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": "digital_buffer_sim.wbk"
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -392,12 +384,20 @@
   },
   "sheets": [
     [
-      "d0d2326e-a192-4b42-9e81-f9196c981f11",
+      "4cbefe8f-73e8-46d2-9234-3a86fe7818b9",
       "Root"
     ],
     [
-      "5b03add3-3082-4b7c-ad6e-6aa80c104b80",
-      "BUFF"
+      "0b796fab-7f25-4ff5-afe3-7d632eac6f79",
+      "AnalogSupply"
+    ],
+    [
+      "b5a8c02e-9e64-4309-8a98-8dff572361ea",
+      "Buffer"
+    ],
+    [
+      "72b6b778-fa68-460f-88fe-197bf79e0213",
+      "DigitalSupply"
     ]
   ],
   "text_variables": {}
