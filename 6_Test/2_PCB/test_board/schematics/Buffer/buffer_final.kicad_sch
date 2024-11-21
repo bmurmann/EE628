@@ -2788,9 +2788,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R10")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -2861,9 +2861,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R19")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -2934,9 +2934,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R9")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -3007,9 +3007,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R12")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -3080,9 +3080,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R14")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -3153,9 +3153,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R20")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -3226,9 +3226,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R13")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -3244,7 +3244,7 @@
 		(dnp no)
 		(uuid "b0000d86-1d3e-4302-8395-2319c0f3030b")
 		(property "Reference" "R9"
-			(at 84.836 82.042 90)
+			(at 85.09 82.296 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3299,9 +3299,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R17")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -3372,9 +3372,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R18")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -3445,9 +3445,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R15")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -3518,9 +3518,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R11")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -3792,9 +3792,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "U7")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -3815,7 +3815,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f86dbe68-372d-46da-94fa-f93b90536574")
-		(property "Reference" "R?"
+		(property "Reference" "R32"
 			(at 84.836 108.712 90)
 			(effects
 				(font
@@ -3867,7 +3867,7 @@
 		(instances
 			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R?")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -3882,7 +3882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fbfb97ff-d384-4bb1-98ff-20672641de47")
-		(property "Reference" "R?"
+		(property "Reference" "R31"
 			(at 84.836 104.902 90)
 			(effects
 				(font
@@ -3934,7 +3934,7 @@
 		(instances
 			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R?")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -4005,17 +4005,12 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/49c5ff04-0c5f-41d0-9aa9-a7998c02a6ab"
-					(reference "R16")
+					(reference "R26")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
 		)
 	)
 )
