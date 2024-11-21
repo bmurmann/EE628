@@ -1118,9 +1118,9 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "C?")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -1145,7 +1145,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6k"
+		(property "Value" "4.7k"
 			(at 111.76 82.5499 0)
 			(effects
 				(font
@@ -1194,9 +1194,9 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R?")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -1267,9 +1267,9 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "C?")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -1343,9 +1343,9 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "C?")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -1424,9 +1424,9 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R?")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -1500,9 +1500,9 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R?")
+					(reference "R9")
 					(unit 1)
 				)
 			)
