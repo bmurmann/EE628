@@ -1,5 +1,0 @@
-.subckt POT in out wiper
-.param R=10k
-R1 in wiper {R}
-R2 wiper out {R}
-.ends POT

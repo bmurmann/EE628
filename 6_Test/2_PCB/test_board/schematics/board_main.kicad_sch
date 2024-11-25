@@ -3461,6 +3461,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 179.07) (xy 248.92 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03113d74-3ed7-436e-8157-6562eadf41a1")
+	)
+	(wire
+		(pts
 			(xy 288.29 152.4) (xy 336.55 152.4)
 		)
 		(stroke
@@ -3478,6 +3488,16 @@
 			(type default)
 		)
 		(uuid "06d8343f-73c5-4fdb-8c7c-937fc6d58b44")
+	)
+	(wire
+		(pts
+			(xy 254 181.61) (xy 254 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d9dc662-15c9-4b2b-a5f8-5f2f49b7709d")
 	)
 	(wire
 		(pts
@@ -3508,6 +3528,16 @@
 			(type default)
 		)
 		(uuid "15ba8e7b-5fe9-487d-a0b4-dc7d11d05c04")
+	)
+	(wire
+		(pts
+			(xy 129.54 242.57) (xy 254 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18135114-d47e-415b-a43f-41a463745786")
 	)
 	(wire
 		(pts
@@ -3798,6 +3828,16 @@
 			(type default)
 		)
 		(uuid "4fc254fa-129b-4c08-bb22-60317ed445aa")
+	)
+	(wire
+		(pts
+			(xy 129.54 236.22) (xy 248.92 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53fc4e2e-2c1b-49fc-af77-da443455c1b4")
 	)
 	(wire
 		(pts
@@ -4311,6 +4351,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 181.61) (xy 254 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b16c8834-3da8-4162-9f33-abe21c937a43")
+	)
+	(wire
+		(pts
 			(xy 229.87 167.64) (xy 229.87 190.5)
 		)
 		(stroke
@@ -4571,6 +4621,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 179.07) (xy 248.92 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5ea5834-2c9d-48ab-94b1-f34668338bbd")
+	)
+	(wire
+		(pts
 			(xy 140.97 58.42) (xy 130.81 58.42)
 		)
 		(stroke
@@ -4671,7 +4731,7 @@
 	)
 	(text "Analog Discovery"
 		(exclude_from_sim no)
-		(at 109.22 81.28 0)
+		(at 81.28 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4691,7 +4751,7 @@
 	)
 	(text "Digital Discovery inputs\n"
 		(exclude_from_sim no)
-		(at 116.84 168.91 0)
+		(at 95.25 158.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4857,7 +4917,7 @@
 	)
 	(symbol
 		(lib_id "15x2Header:67996-130HLF")
-		(at 91.44 88.9 0)
+		(at 68.58 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4866,7 +4926,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f43a591-0501-4a84-8888-1f82e48330d2")
 		(property "Reference" "J?"
-			(at 105.41 124.4599 0)
+			(at 82.55 106.6799 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4875,7 +4935,7 @@
 			)
 		)
 		(property "Value" "67996-130HLF"
-			(at 105.41 126.9999 0)
+			(at 82.55 109.2199 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4884,7 +4944,7 @@
 			)
 		)
 		(property "Footprint" "67996-130HLF_AMP"
-			(at 91.44 88.9 0)
+			(at 68.58 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4894,7 +4954,7 @@
 			)
 		)
 		(property "Datasheet" "67996-130HLF"
-			(at 91.44 88.9 0)
+			(at 68.58 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4904,7 +4964,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 88.9 0)
+			(at 68.58 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5013,7 +5073,7 @@
 	)
 	(symbol
 		(lib_id "15x2Header:67996-130HLF")
-		(at 91.44 170.18 0)
+		(at 68.58 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5022,7 +5082,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb5304ee-1afb-4027-93b8-ecd78db37359")
 		(property "Reference" "J?"
-			(at 105.41 205.7399 0)
+			(at 82.55 195.5799 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5031,7 +5091,7 @@
 			)
 		)
 		(property "Value" "67996-130HLF"
-			(at 105.41 208.2799 0)
+			(at 82.55 198.1199 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5040,7 +5100,7 @@
 			)
 		)
 		(property "Footprint" "67996-130HLF_AMP"
-			(at 91.44 170.18 0)
+			(at 68.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5050,7 +5110,7 @@
 			)
 		)
 		(property "Datasheet" "67996-130HLF"
-			(at 91.44 170.18 0)
+			(at 68.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5060,7 +5120,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 170.18 0)
+			(at 68.58 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5750,16 +5810,6 @@
 				(justify left)
 			)
 			(uuid "f801009b-3e99-4863-8f41-c5b840333e10")
-		)
-		(pin "GND" input
-			(at 265.43 185.42 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d2e33b9d-d6b0-4dda-955d-b4eb55b28509")
 		)
 		(pin "VCC" input
 			(at 265.43 143.51 180)
