@@ -1054,32 +1054,35 @@
 		(uuid "8c30f5d6-dff9-4f8e-824c-64351ff9e85b")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 138.43 110.49 0)
+		(lib_id "Device:R_US")
+		(at 114.3 109.22 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "37ba7426-1bd0-481e-a5f4-435ce3a8cde7")
-		(property "Reference" "C?"
-			(at 143.764 111.506 0)
+		(uuid "19e9aa6e-a04f-4081-ba90-5141abce8429")
+		(property "Reference" "R32"
+			(at 111.76 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
-			(at 144.018 109.474 0)
+		(property "Value" "4.7k"
+			(at 111.76 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.3952 114.3 0)
+		(property "Footprint" "ECE628_lib:resistor4.7k"
+			(at 113.284 109.474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1088,7 +1091,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 138.43 110.49 0)
+			(at 114.3 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1096,8 +1099,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 138.43 110.49 0)
+		(property "Description" "Resistor, US symbol"
+			(at 114.3 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1106,21 +1109,85 @@
 			)
 		)
 		(pin "2"
-			(uuid "dc569087-8e0b-4a2c-911c-0fab73dde0c9")
+			(uuid "dded08c3-798b-46ae-b03f-c4fff36dc2d1")
 		)
 		(pin "1"
-			(uuid "9866ce68-c34f-46d0-ab34-5c85e044c713")
+			(uuid "5102bcac-39f9-41e4-960e-3503a7a0148e")
 		)
 		(instances
-			(project "LDO_circuitry_final"
-				(path "/1d203505-0113-4179-87e1-d4f3bd3291d4"
-					(reference "C?")
+			(project "board_main"
+				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
+					(reference "R32")
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 149.86 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cf628f1-f377-42c8-b7c3-8ff79a62dba0")
+		(property "Reference" "C37"
+			(at 153.67 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 153.67 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+			(at 150.8252 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "57b73f4e-113a-4ef8-96cb-8f8283cd7980")
+		)
+		(pin "1"
+			(uuid "bdaa3a41-17a2-4dc0-9c30-748979edd14e")
+		)
+		(instances
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "C?")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -1145,7 +1212,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6k"
+		(property "Value" "4.7k"
 			(at 111.76 82.5499 0)
 			(effects
 				(font
@@ -1154,7 +1221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ECE628_lib:resistor4.7k"
 			(at 113.284 81.534 90)
 			(effects
 				(font
@@ -1194,82 +1261,9 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 149.86 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "61d3a4e3-e8ee-405c-8ecd-913210cbe3fe")
-		(property "Reference" "C?"
-			(at 155.448 111.506 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 155.702 109.474 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 150.8252 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 149.86 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "83f0f713-059e-4073-8e2d-a6cf1bcc85cd")
-		)
-		(pin "1"
-			(uuid "3035da3a-6d73-443b-9413-dcf7536a0328")
-		)
-		(instances
-			(project "LDO_circuitry_final"
-				(path "/1d203505-0113-4179-87e1-d4f3bd3291d4"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "LDO_circuitry_final"
-				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "C?")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -1283,10 +1277,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81d2eb4a-f28f-475e-a927-5dfb41d5cb24")
-		(property "Reference" "C?"
-			(at 127 102.8699 0)
+		(uuid "8ebb5768-5d8f-491d-a4bd-b15596585d7a")
+		(property "Reference" "C35"
+			(at 125.984 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1294,8 +1287,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
-			(at 127 105.4099 0)
+		(property "Value" "4.7u"
+			(at 125.984 104.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1303,7 +1296,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
 			(at 124.1552 107.95 0)
 			(effects
 				(font
@@ -1331,21 +1324,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "c8425100-f5e1-44a1-9517-51b06513c279")
+			(uuid "274b756f-9563-4b13-a675-9dda0902aa04")
 		)
 		(pin "1"
-			(uuid "18b5ba22-e3f5-46f0-8669-64f7fc23a3a3")
+			(uuid "31909581-0eac-42eb-815f-de6de03f05ae")
 		)
 		(instances
-			(project "LDO_circuitry_final"
-				(path "/1d203505-0113-4179-87e1-d4f3bd3291d4"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "C?")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -1379,7 +1366,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "POT_PV37W_MUR"
+		(property "Footprint" "ECE628_lib:potentiometer_10turn"
 			(at 114.3 105.41 0)
 			(effects
 				(font
@@ -1424,26 +1411,25 @@
 					(unit 1)
 				)
 			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R?")
+					(reference "R31")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 114.3 109.22 0)
-		(mirror y)
+		(lib_id "Device:C")
+		(at 138.43 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d9b555fe-bed5-4c04-9f97-1ce56b7d7f1a")
-		(property "Reference" "R?"
-			(at 111.76 107.9499 0)
+		(uuid "c968e8a6-0a2b-4aa2-a40f-8fa3d89ede52")
+		(property "Reference" "C36"
+			(at 141.224 108.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1451,8 +1437,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
-			(at 111.76 110.4899 0)
+		(property "Value" "4.7u"
+			(at 141.224 111.252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1460,8 +1446,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 113.284 109.474 90)
+		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+			(at 139.3952 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1470,7 +1456,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 109.22 0)
+			(at 138.43 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,8 +1464,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 114.3 109.22 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 138.43 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1488,21 +1474,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "101df4b5-f695-4317-a6c6-d60b610f0ca3")
+			(uuid "94402230-9907-4214-a196-dbede19a0636")
 		)
 		(pin "1"
-			(uuid "2c7f214d-bdc6-484e-aa32-876066271111")
+			(uuid "b98689c4-4238-42b6-a8c1-33c14aa421df")
 		)
 		(instances
-			(project "LDO_circuitry_final"
-				(path "/1d203505-0113-4179-87e1-d4f3bd3291d4"
-					(reference "R?")
-					(unit 1)
-				)
-			)
-			(project "LDO_circuitry_final"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R?")
+					(reference "C36")
 					(unit 1)
 				)
 			)

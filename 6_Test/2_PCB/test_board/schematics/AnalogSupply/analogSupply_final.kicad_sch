@@ -2464,12 +2464,6 @@
 		(uuid "1e06ad89-1519-4be9-9ce5-391fe077b291")
 	)
 	(junction
-		(at 71.12 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a765b30-4766-44ea-a3a7-861dd6d2ab67")
-	)
-	(junction
 		(at 74.93 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2524,12 +2518,6 @@
 		(uuid "722320a8-d0fd-4072-99a9-d0ed7e376255")
 	)
 	(junction
-		(at 134.62 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "851b0d7b-8145-408b-a6e0-373c2d120a00")
-	)
-	(junction
 		(at 166.37 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2558,6 +2546,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4334a54-6ef7-4228-88d3-d3fcdc07eec2")
+	)
+	(junction
+		(at 137.16 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdb68050-a0ce-4576-8d9f-b30d7fa65f96")
 	)
 	(junction
 		(at 127 44.45)
@@ -2623,17 +2617,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 44.45) (xy 72.39 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "143b1400-c06c-44cc-8e2e-08216c0e60e6")
-	)
-	(wire
-		(pts
-			(xy 134.62 138.43) (xy 158.75 138.43)
+			(xy 137.16 138.43) (xy 158.75 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2643,7 +2627,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 82.55) (xy 119.38 82.55)
+			(xy 119.38 82.55) (xy 137.16 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2663,7 +2647,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 82.55) (xy 134.62 86.36)
+			(xy 137.16 82.55) (xy 137.16 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2773,7 +2757,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 34.29) (xy 233.68 34.29)
+			(xy 72.39 31.75) (xy 233.68 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2833,17 +2817,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 64.77) (xy 124.46 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5039ff4b-989b-4ced-bf0a-db19c787a9cf")
-	)
-	(wire
-		(pts
-			(xy 124.46 64.77) (xy 124.46 72.39)
+			(xy 127 64.77) (xy 127 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2920,6 +2894,16 @@
 			(type default)
 		)
 		(uuid "5a8590aa-39af-4195-a86c-0e5b8719e510")
+	)
+	(wire
+		(pts
+			(xy 248.92 116.84) (xy 248.92 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b88489c-15bb-4294-bf16-3ed2f09b0c09")
 	)
 	(wire
 		(pts
@@ -3013,7 +2997,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 44.45) (xy 71.12 44.45)
+			(xy 66.04 44.45) (xy 72.39 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3093,7 +3077,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 34.29) (xy 233.68 80.01)
+			(xy 233.68 31.75) (xy 233.68 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3103,7 +3087,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 101.6) (xy 134.62 138.43)
+			(xy 137.16 101.6) (xy 137.16 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3113,7 +3097,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 80.01) (xy 134.62 82.55)
+			(xy 137.16 80.01) (xy 137.16 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3133,7 +3117,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 44.45) (xy 71.12 34.29)
+			(xy 72.39 44.45) (xy 72.39 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3283,7 +3267,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 119.38) (xy 248.92 138.43)
+			(xy 248.92 124.46) (xy 248.92 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3530,7 +3514,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RC0402JR-071KL"
+		(property "Value" "1k"
 			(at 161.29 77.4699 90)
 			(effects
 				(font
@@ -3617,7 +3601,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "R4")
 					(unit 1)
@@ -3644,7 +3628,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RC0402JR-071KL"
+		(property "Value" "1k"
 			(at 129.54 59.6899 90)
 			(effects
 				(font
@@ -3731,7 +3715,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "R1")
 					(unit 1)
@@ -3741,7 +3725,7 @@
 	)
 	(symbol
 		(lib_id "resistor4.7k:RC0402FR-074K7L")
-		(at 134.62 93.98 90)
+		(at 137.16 93.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3750,7 +3734,7 @@
 		(fields_autoplaced yes)
 		(uuid "127af5e2-c220-43b8-a18f-fc8a368a118f")
 		(property "Reference" "R?"
-			(at 137.16 92.7099 90)
+			(at 139.7 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3759,7 +3743,7 @@
 			)
 		)
 		(property "Value" "${SIM.PARAMS}"
-			(at 137.16 95.2499 90)
+			(at 139.7 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3768,7 +3752,7 @@
 			)
 		)
 		(property "Footprint" "RC0402FR-074K7L:RESC1005X40"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3762,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,7 +3771,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3796,7 +3780,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "311-4.7KLRTR-ND"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3806,7 +3790,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/RC0402FR-074K7L/Yageo/view-part/?ref=snap"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,7 +3800,7 @@
 			)
 		)
 		(property "Description_1" "\n4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film\n"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3826,7 +3810,7 @@
 			)
 		)
 		(property "Package" "1005 Panasonic Electronic Components"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3836,7 +3820,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/RC0402FR-074K7L/Yageo/view-part/?ref=eda"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3846,7 +3830,7 @@
 			)
 		)
 		(property "MF" "Yageo"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +3840,7 @@
 			)
 		)
 		(property "MP" "RC0402FR-074K7L"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3866,7 +3850,7 @@
 			)
 		)
 		(property "MANUFACTURER" "YAGEO"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,7 +3860,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,7 +3869,7 @@
 			)
 		)
 		(property "Sim.Type" "="
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3894,7 +3878,7 @@
 			)
 		)
 		(property "Sim.Params" "r=4.7k"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3903,7 +3887,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 134.62 93.98 0)
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,7 +3908,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "R3")
 					(unit 1)
@@ -3934,7 +3918,7 @@
 	)
 	(symbol
 		(lib_id "pot_10turn:PV37W103C01B00")
-		(at 134.62 72.39 0)
+		(at 137.16 72.39 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3943,23 +3927,23 @@
 		(dnp no)
 		(uuid "16114579-9116-4915-bf6d-7cb03434a927")
 		(property "Reference" "R?"
-			(at 135.8265 63.5 0)
+			(at 138.43 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PV37W103C01B00"
-			(at 135.8265 66.04 0)
+		(property "Value" "10k"
+			(at 138.43 67.818 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PV37W103C01B00:TRIM_PV37W103C01B00"
-			(at 134.62 72.39 0)
+		(property "Footprint" "ECE628_lib:potentiometer_10turn"
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3969,7 +3953,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3978,7 +3962,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3987,7 +3971,7 @@
 			)
 		)
 		(property "PARTREV" "08/19"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3997,7 +3981,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer recommendations"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4007,7 +3991,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.75 mm"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,7 +4001,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Bourns"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4027,7 +4011,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4036,7 +4020,7 @@
 			)
 		)
 		(property "Sim.Type" "POT"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4045,7 +4029,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4054,7 +4038,7 @@
 			)
 		)
 		(property "Sim.Params" "r=10k"
-			(at 134.62 72.39 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4078,7 +4062,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "R2")
 					(unit 1)
@@ -4105,7 +4089,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "CL05B104KP5NNNC"
+		(property "Value" "100n"
 			(at 252.73 90.1699 90)
 			(effects
 				(font
@@ -4114,7 +4098,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CAP_CL05_SAM"
+		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
 			(at 248.92 92.71 0)
 			(effects
 				(font
@@ -4192,7 +4176,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "C5")
 					(unit 1)
@@ -4226,7 +4210,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KS-6_ADI"
+		(property "Footprint" "opampADA4807Footprints:KS-6_ADI"
 			(at 176.53 106.68 0)
 			(effects
 				(font
@@ -4316,7 +4300,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "U3")
 					(unit 1)
@@ -4343,7 +4327,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "CL05B104KP5NNNC"
+		(property "Value" "100n"
 			(at 256.54 49.5299 90)
 			(effects
 				(font
@@ -4352,7 +4336,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CAP_CL05_SAM"
+		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
 			(at 252.73 52.07 0)
 			(effects
 				(font
@@ -4430,9 +4414,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "C7")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4457,7 +4441,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "CL05B104KP5NNNC"
+		(property "Value" "100n"
 			(at 241.3 101.5999 90)
 			(effects
 				(font
@@ -4466,7 +4450,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CAP_CL05_SAM"
+		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
 			(at 237.49 104.14 0)
 			(effects
 				(font
@@ -4544,9 +4528,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "C4")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -4616,7 +4600,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "#PWR07")
 					(unit 1)
@@ -4650,7 +4634,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DRV0006A"
+		(property "Footprint" "tps745Footprints:DRV0006A"
 			(at 92.71 54.61 0)
 			(effects
 				(font
@@ -4743,7 +4727,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "U1")
 					(unit 1)
@@ -4753,7 +4737,7 @@
 	)
 	(symbol
 		(lib_id "Cap100nF:CL05B104KP5NNNC")
-		(at 248.92 119.38 90)
+		(at 248.92 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4762,7 +4746,7 @@
 		(fields_autoplaced yes)
 		(uuid "60384d85-bd6b-4c8f-b5e0-fb1f153b7503")
 		(property "Reference" "C?"
-			(at 252.73 114.2999 90)
+			(at 252.73 119.3799 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4770,8 +4754,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "CL05B104KP5NNNC"
-			(at 252.73 116.8399 90)
+		(property "Value" "100n"
+			(at 252.73 121.9199 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4779,8 +4763,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CAP_CL05_SAM"
-			(at 248.92 119.38 0)
+		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+			(at 248.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4790,7 +4774,7 @@
 			)
 		)
 		(property "Datasheet" "CL05B104KP5NNNC"
-			(at 248.92 119.38 0)
+			(at 248.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4800,7 +4784,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 248.92 119.38 0)
+			(at 248.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4809,7 +4793,7 @@
 			)
 		)
 		(property "Sim.Device" "C"
-			(at 248.92 119.38 0)
+			(at 248.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4818,7 +4802,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 248.92 119.38 0)
+			(at 248.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4827,7 +4811,7 @@
 			)
 		)
 		(property "Sim.Params" "c=100n"
-			(at 248.92 119.38 0)
+			(at 248.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4836,7 +4820,7 @@
 			)
 		)
 		(property "Sim.Type" "="
-			(at 248.92 119.38 0)
+			(at 248.92 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4857,9 +4841,9 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -4929,7 +4913,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "#PWR06")
 					(unit 1)
@@ -4948,22 +4932,22 @@
 		(dnp no)
 		(uuid "87f81b3f-5dd6-47a6-ac2a-c01f7bfe4bbb")
 		(property "Reference" "R?"
-			(at 175.26 100.2665 0)
+			(at 161.29 93.472 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PV37W103C01B00"
-			(at 172.72 100.2665 0)
+		(property "Value" "10k"
+			(at 161.798 95.504 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PV37W103C01B00:TRIM_PV37W103C01B00"
+		(property "Footprint" "ECE628_lib:potentiometer_10turn"
 			(at 166.37 99.06 0)
 			(effects
 				(font
@@ -5083,7 +5067,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "R5")
 					(unit 1)
@@ -5099,10 +5083,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a6d89f9d-d986-492f-ba4b-b9ccda078be9")
 		(property "Reference" "C?"
-			(at 69.85 46.9899 90)
+			(at 67.31 46.736 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5110,8 +5093,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CL10A475KP8NNNC"
-			(at 69.85 49.5299 90)
+		(property "Value" "4.7u"
+			(at 67.056 50.292 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5119,7 +5102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
 			(at 66.04 44.45 0)
 			(effects
 				(font
@@ -5197,7 +5180,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "C2")
 					(unit 1)
@@ -5231,7 +5214,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IND_BLM18_0603_MUR"
+		(property "Footprint" "ferriteBead120OhmFootprints:IND_BLM18_0603_MUR"
 			(at 38.1 44.45 0)
 			(effects
 				(font
@@ -5309,7 +5292,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "L1")
 					(unit 1)
@@ -5328,22 +5311,22 @@
 		(dnp no)
 		(uuid "bfa2254a-2bec-4147-9a59-f298249ede60")
 		(property "Reference" "R?"
-			(at 175.26 126.9365 0)
+			(at 160.274 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PV37W103C01B00"
-			(at 172.72 126.9365 0)
+		(property "Value" "10k"
+			(at 160.528 122.936 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PV37W103C01B00:TRIM_PV37W103C01B00"
+		(property "Footprint" "ECE628_lib:potentiometer_10turn"
 			(at 166.37 125.73 0)
 			(effects
 				(font
@@ -5463,7 +5446,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "R6")
 					(unit 1)
@@ -5535,7 +5518,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "#PWR09")
 					(unit 1)
@@ -5569,7 +5552,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KS-6_ADI"
+		(property "Footprint" "opampADA4807Footprints:KS-6_ADI"
 			(at 176.53 80.01 0)
 			(effects
 				(font
@@ -5659,7 +5642,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "U2")
 					(unit 1)
@@ -5731,7 +5714,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "#PWR08")
 					(unit 1)
@@ -5803,7 +5786,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "#PWR05")
 					(unit 1)
@@ -5830,7 +5813,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CL10A475KP8NNNC"
+		(property "Value" "4.7u"
 			(at 226.06 49.5299 90)
 			(effects
 				(font
@@ -5839,7 +5822,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
 			(at 222.25 44.45 0)
 			(effects
 				(font
@@ -5917,7 +5900,7 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "C3")
 					(unit 1)
@@ -5944,7 +5927,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CL10A475KP8NNNC"
+		(property "Value" "4.7u"
 			(at 40.64 49.5299 90)
 			(effects
 				(font
@@ -5953,7 +5936,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
 			(at 36.83 44.45 0)
 			(effects
 				(font
@@ -6031,17 +6014,12 @@
 					(unit 1)
 				)
 			)
-			(project "board_main_sim"
+			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/0a919f49-2db5-4a49-acae-598537b168fb"
 					(reference "C1")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
 		)
 	)
 )
