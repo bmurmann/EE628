@@ -1,0 +1,12 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ECE628_lib")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/ECE628_lib.pretty")(options "")(descr ""))
+  (lib (name "74ALVCHFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/74ALVCHFootprints.pretty")(options "")(descr ""))
+  (lib (name "Cap4.7uFFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/Cap4.7uFFootprints.pretty")(options "")(descr ""))
+  (lib (name "cap100nFFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/cap100nFFootprints.pretty")(options "")(descr ""))
+  (lib (name "cap100pFFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/cap100pFFootprints.pretty")(options "")(descr ""))
+  (lib (name "ferriteBead120OhmFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/ferriteBead120OhmFootprints.pretty")(options "")(descr ""))
+  (lib (name "opampADA4807Footprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/opampADA4807Footprints.pretty")(options "")(descr ""))
+  (lib (name "resistor1kFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/resistor1kFootprints.pretty")(options "")(descr ""))
+  (lib (name "tps745Footprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/tps745Footprints.pretty")(options "")(descr ""))
+)
