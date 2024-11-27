@@ -2048,7 +2048,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 121.6152 82.55 0)
 			(effects
 				(font
@@ -2308,7 +2308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ECE628_lib:resistor4.7k"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 185.674 78.994 90)
 			(effects
 				(font
@@ -2522,7 +2522,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ECE628_lib:resistor4.7k"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 195.834 101.854 90)
 			(effects
 				(font

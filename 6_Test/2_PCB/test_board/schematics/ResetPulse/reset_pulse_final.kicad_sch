@@ -2663,7 +2663,7 @@
 		)
 		(uuid "2c18eb76-0279-4008-9734-5a709077785e")
 	)
-	(hierarchical_label "V_SUP"
+	(hierarchical_label "IOVDD"
 		(shape input)
 		(at 27.94 41.91 180)
 		(fields_autoplaced yes)
@@ -2793,7 +2793,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
+		(property "Footprint" "ECE628_lib:2x2Header"
 			(at 60.96 39.37 0)
 			(effects
 				(font
@@ -2982,7 +2982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 71.12 56.8452 0)
 			(effects
 				(font
@@ -3229,7 +3229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 53.34 46.6852 0)
 			(effects
 				(font
@@ -3298,7 +3298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 53.34 56.8452 0)
 			(effects
 				(font
@@ -3433,7 +3433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 71.12 46.6852 0)
 			(effects
 				(font
@@ -3503,7 +3503,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
+		(property "Footprint" "ECE628_lib:2x2Header"
 			(at 232.41 43.18 0)
 			(effects
 				(font

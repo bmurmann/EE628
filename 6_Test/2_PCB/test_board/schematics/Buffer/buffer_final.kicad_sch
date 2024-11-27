@@ -3001,7 +3001,7 @@
 		)
 		(uuid "592295dc-48b5-4a79-87ad-34acbf3955a4")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "IOVDD"
 		(shape input)
 		(at 255.27 49.53 90)
 		(fields_autoplaced yes)
@@ -3435,7 +3435,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 223.2152 81.28 0)
 			(effects
 				(font
@@ -3644,7 +3644,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 235.9152 119.38 0)
 			(effects
 				(font
@@ -3714,7 +3714,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 116.5352 119.38 0)
 			(effects
 				(font
@@ -4124,7 +4124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 108.9152 71.12 0)
 			(effects
 				(font
@@ -4477,7 +4477,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 103.8352 119.38 0)
 			(effects
 				(font
@@ -4547,7 +4547,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 235.9152 81.28 0)
 			(effects
 				(font
@@ -4616,7 +4616,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 96.2152 71.12 0)
 			(effects
 				(font
@@ -4823,7 +4823,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 223.2152 119.38 0)
 			(effects
 				(font

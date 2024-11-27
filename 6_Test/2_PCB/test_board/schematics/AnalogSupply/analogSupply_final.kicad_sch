@@ -3523,7 +3523,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RC0402N_YAG"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 158.75 82.55 0)
 			(effects
 				(font
@@ -3637,7 +3637,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RC0402N_YAG"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 127 64.77 0)
 			(effects
 				(font
@@ -3751,7 +3751,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RC0402FR-074K7L:RESC1005X40"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 137.16 93.98 0)
 			(effects
 				(font
@@ -4098,7 +4098,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 248.92 92.71 0)
 			(effects
 				(font
@@ -4336,7 +4336,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 252.73 52.07 0)
 			(effects
 				(font
@@ -4450,7 +4450,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 237.49 104.14 0)
 			(effects
 				(font
@@ -4763,7 +4763,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "cap100nFFootprints:CAP_CL05_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 248.92 124.46 0)
 			(effects
 				(font
@@ -5102,7 +5102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 66.04 44.45 0)
 			(effects
 				(font
@@ -5822,7 +5822,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 222.25 44.45 0)
 			(effects
 				(font
@@ -5936,7 +5936,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Cap4.7uFFootprints:CAP_0603_CL10A_1P6XP8_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 36.83 44.45 0)
 			(effects
 				(font
