@@ -4111,7 +4111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_PH1-07-UA_ADM"
+		(property "Footprint" "ECE628_lib:1x7Header"
 			(at 336.55 147.32 0)
 			(effects
 				(font
@@ -4196,7 +4196,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_PH1-07-UA_ADM"
+		(property "Footprint" "ECE628_lib:1x7Header"
 			(at 119.38 121.92 0)
 			(effects
 				(font
@@ -4347,7 +4347,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN9_PH1_620x79_ADM"
+		(property "Footprint" "ECE628_lib:1x9Header"
 			(at 120.65 200.66 0)
 			(effects
 				(font
@@ -4438,7 +4438,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_M20-99902_HRW"
+		(property "Footprint" "ECE628_lib:1x2Header"
 			(at 118.11 77.47 0)
 			(effects
 				(font
@@ -4869,16 +4869,6 @@
 				(justify left)
 			)
 			(uuid "6fdaba0b-1a53-481d-a31e-4785e6abd5ac")
-		)
-		(pin "VSS" input
-			(at 214.63 132.08 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "fa5a9a4b-ef39-4b2e-a347-f780562c314d")
 		)
 		(pin "AVSS" input
 			(at 201.93 132.08 270)

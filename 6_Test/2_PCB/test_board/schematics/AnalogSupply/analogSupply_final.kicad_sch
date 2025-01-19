@@ -514,8 +514,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 2.54 0)
+			(property "Reference" "U1"
+				(at 0 20.32 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -523,14 +523,14 @@
 				)
 			)
 			(property "Value" "TPS74501PDRVR"
-				(at 0 0 0)
+				(at 0 17.78 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "DRV0006A"
+			(property "Footprint" "tps745Footprints:DRV0006A_NV"
 				(at 0 0 0)
 				(effects
 					(font
@@ -559,12 +559,40 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "Sim.Library" "/home/maxwell/github-repos/sp-24-EE628/6_Test/2_PCB/test_board_1/TestBoardEDA/models/TPS74501P_TRANS.lib"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "TPS74501P_TRANS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=VOUT 2=FB 3=GND 4=EN 5=PG 6=VIN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
 				)
 			)
 			(property "ki_keywords" "TPS74501PDRVR"
@@ -576,7 +604,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DRV0006A DRV0006A_NV"
+			(property "ki_fp_filters" "DRV0006A_NV"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4634,7 +4662,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tps745Footprints:DRV0006A"
+		(property "Footprint" "tps745Footprints:DRV0006A_NV"
 			(at 92.71 54.61 0)
 			(effects
 				(font

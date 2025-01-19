@@ -7875,7 +7875,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_713080000-SD_12_M6p10_MOL"
+		(property "Footprint" "ECE628_lib:2x6Header"
 			(at 106.68 119.38 0)
 			(effects
 				(font
@@ -8257,7 +8257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_713080000-SD_12_M6p10_MOL"
+		(property "Footprint" "ECE628_lib:2x6Header"
 			(at 134.62 207.01 0)
 			(effects
 				(font
@@ -8972,7 +8972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_713080000-SD_12_M6p10_MOL"
+		(property "Footprint" "ECE628_lib:2x6Header"
 			(at 69.85 205.74 0)
 			(effects
 				(font
@@ -9547,7 +9547,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm_ThermalVias"
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm"
 			(at 229.87 151.13 0)
 			(effects
 				(font
@@ -10347,7 +10347,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "CONN6_M20-8760342_HRW"
+		(property "Footprint" "ECE628_lib:2x3Header"
 			(at 73.66 25.4 0)
 			(effects
 				(font
