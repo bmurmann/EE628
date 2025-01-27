@@ -9,4 +9,5 @@
   (lib (name "opampADA4807Footprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/opampADA4807Footprints.pretty")(options "")(descr ""))
   (lib (name "resistor1kFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/resistor1kFootprints.pretty")(options "")(descr ""))
   (lib (name "tps745Footprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/tps745Footprints.pretty")(options "")(descr ""))
+  (lib (name "22res_arrayFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/22res_arrayFootprints.pretty")(options "")(descr ""))
 )

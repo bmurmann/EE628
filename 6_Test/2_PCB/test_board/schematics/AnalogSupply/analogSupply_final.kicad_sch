@@ -3770,7 +3770,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "${SIM.PARAMS}"
+		(property "Value" "r=4.7k"
 			(at 139.7 95.2499 90)
 			(effects
 				(font
