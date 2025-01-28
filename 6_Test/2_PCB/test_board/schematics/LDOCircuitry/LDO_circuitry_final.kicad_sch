@@ -1063,7 +1063,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "19e9aa6e-a04f-4081-ba90-5141abce8429")
-		(property "Reference" "R32"
+		(property "Reference" "R18"
 			(at 111.76 107.9499 0)
 			(effects
 				(font
@@ -1117,7 +1117,7 @@
 		(instances
 			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R32")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -1263,7 +1263,7 @@
 			)
 			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R30")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -1413,7 +1413,7 @@
 			)
 			(project "board_main"
 				(path "/9c0580c5-7bd5-4e54-bf4c-826aa4ac3630/104c40d7-ae25-447b-8675-a765b7f78bca"
-					(reference "R31")
+					(reference "R17")
 					(unit 1)
 				)
 			)

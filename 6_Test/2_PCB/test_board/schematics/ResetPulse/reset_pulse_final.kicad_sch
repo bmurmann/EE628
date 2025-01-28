@@ -2793,7 +2793,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "ECE628_lib:2x2Header"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
 			(at 60.96 39.37 0)
 			(effects
 				(font
@@ -3503,7 +3503,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "ECE628_lib:2x2Header"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
 			(at 232.41 43.18 0)
 			(effects
 				(font

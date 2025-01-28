@@ -7875,7 +7875,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE628_lib:2x6Header"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
 			(at 106.68 119.38 0)
 			(effects
 				(font
@@ -8257,7 +8257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE628_lib:2x6Header"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
 			(at 134.62 207.01 0)
 			(effects
 				(font
@@ -8972,7 +8972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE628_lib:2x6Header"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
 			(at 69.85 205.74 0)
 			(effects
 				(font
@@ -10347,7 +10347,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "ECE628_lib:2x3Header"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
 			(at 73.66 25.4 0)
 			(effects
 				(font
