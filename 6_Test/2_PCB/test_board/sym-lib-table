@@ -27,4 +27,5 @@
   (lib (name "1x7Header")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/1x7Header.kicad_sym")(options "")(descr ""))
   (lib (name "1x9Header")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/1x9Header.kicad_sym")(options "")(descr ""))
   (lib (name "22res_array")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/22res_array.kicad_sym")(options "")(descr ""))
+  (lib (name "SN74LVC245APWR")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/symbols/SN74LVC245APWR.kicad_sym")(options "")(descr ""))
 )
