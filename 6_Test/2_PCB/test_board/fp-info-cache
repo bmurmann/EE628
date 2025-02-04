@@ -1,4 +1,11 @@
-23814608129821555
+23820021526859817
+22res_arrayFootprints
+RES_EXB2HV
+
+EXB-2HV220JV 
+0
+16
+16
 74ALVCHFootprints
 DL56
 
@@ -89067,6 +89074,27 @@ rotary encoder illuminated switch vertical
 0
 9
 8
+SN74LVC245APWRFootprints
+PW20
+
+SN74LVC245APWR 
+0
+20
+20
+SN74LVC245APWRFootprints
+PW20-L
+
+SN74LVC245APWR 
+0
+20
+20
+SN74LVC245APWRFootprints
+PW20-M
+
+SN74LVC245APWR 
+0
+20
+20
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -96795,13 +96823,6 @@ Varistor VF
 0
 2
 2
-bnc_mini_gnd
-CONN_1274571-1_TYCO
-
-1274571-1 
-0
-5
-5
 cap100nFFootprints
 CAP_CL05_SAM
 
