@@ -4633,6 +4633,17 @@
 			(pintype "power_in")
 			(uuid "afa653fc-4adc-4f5d-b734-6d6c90cfaabe")
 		)
+		(model "${KIPRJMOD}/TestBoardEDA/SN74LVC245APWR.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "ECE628_lib:bnc_mini_gnd"
 		(layer "F.Cu")
@@ -14728,7 +14739,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "f9159dc1-31b1-4cab-bf5a-0f1826eec67e")
 			(effects
@@ -14883,7 +14894,7 @@
 			(uuid "fc2fa7b6-3fbb-4583-8b1b-b8662bc9d89e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2d7a6e07-5cbf-4276-8f5f-e2fc36be6900")
 			(effects
@@ -28377,7 +28388,7 @@
 		)
 	)
 	(gr_text "CLK4"
-		(at 161.5 109 0)
+		(at 161.5 114 0)
 		(layer "F.SilkS")
 		(uuid "05f9ac7f-ff3d-4a54-bb7e-13fbdde2628b")
 		(effects
@@ -28533,7 +28544,7 @@
 		)
 	)
 	(gr_text "CLK6"
-		(at 161.5 114 0)
+		(at 161.5 109 0)
 		(layer "F.SilkS")
 		(uuid "19760c94-6579-453e-a52c-e114bfb3bfb3")
 		(effects
@@ -29259,7 +29270,7 @@
 		)
 	)
 	(gr_text "CLK3"
-		(at 161.5 106.5 0)
+		(at 161.5 101.5 0)
 		(layer "F.SilkS")
 		(uuid "991a1182-d1c4-4bf9-9be8-757d722bce69")
 		(effects
@@ -29414,7 +29425,7 @@
 		)
 	)
 	(gr_text "CLK1"
-		(at 161.5 101.5 0)
+		(at 161.5 106.5 0)
 		(layer "F.SilkS")
 		(uuid "aa9e652f-37ed-4792-a694-a90135709773")
 		(effects
