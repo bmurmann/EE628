@@ -1,4 +1,4 @@
-23820021526859817
+23821760392522543
 22res_arrayFootprints
 RES_EXB2HV
 
@@ -90754,6 +90754,13 @@ Logo WEEE
 0
 0
 0
+TermBlck_4posFootprints
+CONN4_1546551-4_TEC
+
+1546551-4 
+0
+4
+4
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
