@@ -12,4 +12,5 @@
   (lib (name "22res_arrayFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/22res_arrayFootprints.pretty")(options "")(descr ""))
   (lib (name "SN74LVC245APWRFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/SN74LVC245APWRFootprints.pretty")(options "")(descr ""))
   (lib (name "TermBlck_4posFootprints")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/TermBlck_4posFootprints.pretty")(options "")(descr ""))
+  (lib (name "logos")(type "KiCad")(uri "${KIPRJMOD}/TestBoardEDA/footprints/logos.pretty")(options "")(descr ""))
 )
