@@ -1,0 +1,66 @@
+### Footprint positions - created on 2025-02-21T12:27:37-1000 ###
+### Printed by KiCad version 8.0.6-8.0.6-0~ubuntu24.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                       Package                                   PosX       PosY       Rot  Side
+ADC1      ADC_Chip                  QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm   122.0000  -102.3000    0.0000  top
+ADC2      ADC_Socket                DIP-32_W15.24mm_Socket                114.2600   -87.3000    0.0000  top
+C1        4.7u                      C_0603_1608Metric                      90.5000   -78.7250  -90.0000  top
+C2        4.7u                      C_0603_1608Metric                      94.0000   -78.7250  -90.0000  top
+C6        100n                      C_0402_1005Metric                     107.5000   -76.5000    0.0000  top
+C8        4.7u                      C_0603_1608Metric                     131.5000   -69.0000  180.0000  top
+C9        4.7u                      C_0603_1608Metric                     141.5000   -69.0000   90.0000  top
+C10       100n                      C_0402_1005Metric                     143.5000   -69.5000   90.0000  top
+F1        Fiducial_0.5mm_Mask1.5mm  Fiducial_0.5mm_Mask1.5mm              122.0000   -61.0000    0.0000  top
+F2        Fiducial_0.5mm_Mask1.5mm  Fiducial_0.5mm_Mask1.5mm               70.5000   -92.5000    0.0000  top
+F3        Fiducial_0.5mm_Mask1.5mm  Fiducial_0.5mm_Mask1.5mm              171.5000  -116.0000    0.0000  top
+F4        Fiducial_0.5mm_Mask1.5mm  Fiducial_0.5mm_Mask1.5mm              128.5000   -61.0000    0.0000  top
+F5        Fiducial_0.5mm_Mask1.5mm  Fiducial_0.5mm_Mask1.5mm               70.5000   -97.5000    0.0000  top
+F6        Fiducial_0.5mm_Mask1.5mm  Fiducial_0.5mm_Mask1.5mm              171.5000  -120.5000    0.0000  top
+J1        PWR_Supply_Pins           PinHeader_1x02_P2.54mm_Vertical        79.0000   -84.2750  180.0000  top
+J2        Analog_Input_Pins         PinHeader_1x07_P2.54mm_Vertical        79.0000  -104.5400  180.0000  top
+J3        Digital_Input_Pins        PinHeader_1x09_P2.54mm_Vertical       167.5000  -121.1600  180.0000  top
+J4        Digital_Output_Pins       PinHeader_1x07_P2.54mm_Vertical       167.5000   -79.8400    0.0000  top
+J5        Chip_VDD_Jumpers          PinHeader_2x03_P2.54mm_Vertical       153.5400   -73.9600  -90.0000  top
+J6        BNC_Odd                   bnc_mini_gnd                           80.5000  -131.5000  -90.0000  top
+J7        BNC_Even                  bnc_mini_gnd                           80.5000  -116.5000  -90.0000  top
+J8        BNC_Jumpers               PinHeader_2x06_P2.54mm_Vertical        90.9600  -103.9200    0.0000  top
+J9        Analog_Input_Jumpers      PinHeader_2x06_P2.54mm_Vertical        91.0000   -85.3800    0.0000  top
+J10       Chip_AVSS_GND_Jumpers     PinHeader_2x06_P2.54mm_Vertical        91.0000  -122.6500    0.0000  top
+J11       Buffer_PWR_Jumper         PinHeader_1x02_P2.54mm_Vertical       160.0000   -74.2250    0.0000  top
+J12       Reset_PWR_Jumpers         PinHeader_2x02_P2.54mm_Vertical       167.2750  -133.7750  180.0000  top
+J13       Reset_Signal_Jumpers      PinHeader_2x02_P2.54mm_Vertical       114.2750  -134.7750  180.0000  top
+J14       1546551-4                 CONN4_1546551-4_TEC                    79.0000   -65.5000  -90.0000  top
+L1        BLM18PG121SN1D            IND_BLM18_0603_MUR                     93.0000   -76.0000  180.0000  top
+L2        BLM18PG121SN1D            IND_BLM18_0603_MUR                    138.5000   -69.5000  180.0000  top
+R1        1k                        R_0402_1005Metric                      98.5000   -79.0000   90.0000  top
+R2        10k                       potentiometer_10turn                  103.0000   -74.5000   90.0000  top
+R3        r=4.7k                    R_0402_1005Metric                      98.5000   -75.5000  -90.0000  top
+R4        1k                        R_0402_1005Metric                     103.5000   -79.5000   90.0000  top
+R5        10k                       potentiometer_10turn                  111.5000   -74.5000   90.0000  top
+R6        10k                       potentiometer_10turn                  119.5000   -74.5000   90.0000  top
+R7        1k                        R_0402_1005Metric                     142.5000   -75.5000  180.0000  top
+R8        10k                       potentiometer_10turn                  135.5000   -74.5000   90.0000  top
+R9        4.7k                      R_0402_1005Metric                     132.0000   -75.4900   90.0000  top
+R10       1k                        R_0402_1005Metric                     106.5100   -87.5000    0.0000  top
+R11       1k                        R_0402_1005Metric                     106.5100   -90.0000    0.0000  top
+R12       1k                        R_0402_1005Metric                     106.5100   -92.5000    0.0000  top
+R13       1k                        R_0402_1005Metric                     106.5100  -100.0000    0.0000  top
+R14       1k                        R_0402_1005Metric                     106.5000  -102.5000    0.0000  top
+R15       1k                        R_0402_1005Metric                     106.4900  -105.0000    0.0000  top
+R16       4.7k                      R_0402_1005Metric                     123.5000   -70.0000    0.0000  top
+R17       10k                       potentiometer_10turn                  127.5000   -74.5000   90.0000  top
+R18       4.7k                      R_0402_1005Metric                     130.5000   -80.0000  -90.0000  top
+R19       EXB-2HV220JV              RES_EXB2HV                            143.5000   -93.8928    0.0000  top
+R20       EXB-2HV220JV              RES_EXB2HV                            143.0856  -109.1394    0.0000  top
+R21       EXB-2HV220JV              RES_EXB2HV                            157.5856   -94.5188    0.0000  top
+R22       EXB-2HV220JV              RES_EXB2HV                            157.5000  -109.3928    0.0000  top
+U1        TPS74501PDRVR             DRV0006A_NV                            96.5000   -77.5000  180.0000  top
+U2        ADA4807-1AKSZ-R7          KS-6_ADI                              107.0000   -72.5000   90.0000  top
+U3        ADA4807-1AKSZ-R7          KS-6_ADI                              106.1112   -80.1500  180.0000  top
+U4        TPS74501PDRVR             DRV0006A_NV                           142.5250   -72.0000  180.0000  top
+U5        SN74HC74DR                flip_flop_D14                         151.5000  -122.5362  -90.0000  top
+U6        CD4001BM96                nor_gate_D14                          151.5000  -132.5000  -90.0000  top
+U7        SN74LVC245APWR            PW20                                  150.3356   -94.0000    0.0000  top
+U8        SN74LVC245APWR            PW20                                  150.0000  -108.8928    0.0000  top
+## End
