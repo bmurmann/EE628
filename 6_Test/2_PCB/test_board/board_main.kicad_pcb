@@ -126,7 +126,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "fabrication_outputs/")
 		)
 	)
 	(net 0 "")
