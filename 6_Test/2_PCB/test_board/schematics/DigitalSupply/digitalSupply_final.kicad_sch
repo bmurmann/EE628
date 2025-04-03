@@ -2662,7 +2662,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tps745Footprints:DRV0006A"
+		(property "Footprint" "tps745Footprints:DRV0006A_NV"
 			(at 152.4 81.28 0)
 			(effects
 				(font
