@@ -33,7 +33,7 @@ On first use, this downloads end extracts all the files (~20 GB or so), which wi
 
 6\. You will now see a terminal with the prompt `/foss/design`. This is your working directory where all your design data goes. You can also see this directory in your Linux terminal as `~/eda/designs`. Even if you update or uninstall the container, the files in the `foss` folder will stay on your machine.
 
-7\. The defult PDK of the tool container is SKY 130. Type `sak-pdk ihp-sg13g2` to switch to the IHP PDK that we will use in this course. To skip typing this command every time, create a `.designinit` text file in `/foss/design` with the following lines. See this link (https://github.com/iic-jku/IIC-OSIC-TOOLS?tab=readme-ov-file#2-installed-pdks) for further details.
+7\. The defult PDK of the tool container is SKY 130. Type `sak-pdk ihp-sg13g2` to switch to the IHP PDK that we will use in this course. To skip typing this command every time, create a `.designinit` text file in `/foss/design` with the following lines. See this [link](https://github.com/iic-jku/IIC-OSIC-TOOLS?tab=readme-ov-file#2-installed-pdks) for further details.
 ```
 export PDK=ihp-sg13g2
 export PDKPATH=$PDK_ROOT/$PDK
