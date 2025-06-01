@@ -42,4 +42,6 @@ export SPICE_USERINIT_DIR=$PDKPATH/libs.tech/ngspice
 export KLAYOUT_PATH=$PDKPATH/libs.tech/klayout:$PDKPATH/libs.tech/klayout/tech
 ```
 
-8\. Type `xschem` to see the schematic editor showing simulation test setups. Left click "NGSPICE", then right-click "descend schematic." You now see testbenches for various components. Left-click "dc_lv_nmos" then right-click "descend schematic." Click netlist, then simulate and CTRL-click "load waves" to see the simulation output.
+8\. Type `xschem` to launch the schematic editor. By default, this shows simulation test setups provided by the foundry. Left click "NGSPICE", then right-click "descend schematic." You now see testbenches for the various components that are availbale in the PDK. 
+
+9\. As an example, left-click "dc_lv_nmos" then right-click "descend schematic." Now click "IHP -> Create FET and BIP .save file" in the top menu to create an include file that is required for this particular simulation. Next, click "netlist," then "simulate" and CTRL-click "load waves" to see the simulation output.
