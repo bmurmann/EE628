@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -177,8 +176,6 @@ N 1650 -770 1650 -480 {
 lab=out1m}
 N 1230 -750 1230 -630 {
 lab=#net2}
-N 1170 -450 1170 -420 {
-lab=VSS}
 N 980 -770 980 -480 {
 lab=out1p}
 N 1390 -630 1470 -630 {
@@ -211,8 +208,8 @@ N 300 -950 300 -770 {
 lab=out1m}
 N 230 -770 300 -770 {
 lab=out1m}
-N 1170 -480 1170 -460 {
-lab=#net5}
+N 1170 -480 1170 -420 {
+lab=VSS}
 N 1390 -480 1390 -420 {
 lab=VSS}
 N 1650 -950 1650 -770 {
@@ -258,11 +255,11 @@ lab=dd}
 N 1700 -610 1740 -610 {
 lab=ps}
 N 1720 -570 1740 -570 {
-lab=#net6}
+lab=#net5}
 N 1720 -570 1720 -430 {
-lab=#net6}
+lab=#net5}
 N 1690 -430 1720 -430 {
-lab=#net6}
+lab=#net5}
 N 1580 -430 1610 -430 {
 lab=res}
 N 780 -770 980 -770 {
@@ -276,24 +273,24 @@ lab=dd}
 N 1940 -550 1960 -550 {
 lab=dd}
 N 2040 -550 2060 -550 {
-lab=dd}
+lab=dout}
 C {devices/title.sym} 170 0 0 0 {name=l1 author="Alex Montoya"}
 C {devices/ipin.sym} 90 -880 0 0 {name=p1 lab=pc}
 C {devices/ipin.sym} 90 -550 0 0 {name=p2 lab=vinp}
 C {devices/ipin.sym} 90 -440 0 0 {name=p3 lab=ps}
 C {devices/ipin.sym} 90 -260 0 0 {name=p4 lab=vinm}
 C {devices/iopin.sym} 90 -910 2 0 {name=p5 lab=vdda}
-C {sg13g2_pr/sg13_lv_nmos.sym} 250 -380 3 1 {name=M4
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 250 -380 1 0 {name=M4
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 250 -150 3 0 {name=M5
-L=0.13u
-W=6u
+l=0.13u
+w=6u
 ng=3
 m=1
 model=sg13_lv_pmos
@@ -306,83 +303,83 @@ C {devices/lab_wire.sym} 540 -260 0 0 {name=p17 sig_type=std_logic lab=vinm_samp
 C {devices/lab_wire.sym} 90 -90 0 0 {name=p24 sig_type=std_logic lab=ps}
 C {devices/iopin.sym} 90 -470 2 0 {name=p39 lab=vssa}
 C {sg13g2_stdcells/sg13g2_inv_1.sym} 170 -90 0 0 {name=x3 VDD=VDD VSS=VSS prefix=sg13g2_ }
-C {sg13g2_pr/cap_cmim.sym} 420 -140 0 0 {name=C1 model=cap_cmim W=5.77e-6 L=5.77e-6 MF=1 spiceprefix=X}
+C {sg13g2_pr/cap_cmim.sym} 420 -140 0 0 {name=C1 model=cap_cmim w=5.77e-6 l=5.77e-6 MF=1 spiceprefix=X}
 C {devices/lab_wire.sym} 420 -70 0 0 {name=p6 sig_type=std_logic lab=vssa}
 C {sg13g2_pr/sg13_lv_pmos.sym} 210 -820 0 0 {name=M1
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 400 -820 0 1 {name=M2
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 580 -820 0 0 {name=M3
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 800 -820 0 1 {name=M6
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 400 -730 2 0 {name=M7
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 400 -730 0 1 {name=M7
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 360 -640 2 1 {name=M8
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 360 -640 0 0 {name=M8
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 360 -550 2 1 {name=M9
-L=1u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 360 -550 0 0 {name=M9
+l=1u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 580 -730 2 1 {name=M10
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 580 -730 0 0 {name=M10
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 620 -640 2 0 {name=M11
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 620 -640 0 1 {name=M11
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 620 -550 2 0 {name=M12
-L=1u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 620 -550 0 1 {name=M12
+l=1u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -394,64 +391,64 @@ C {devices/lab_wire.sym} 380 -600 2 1 {name=p26 sig_type=std_logic lab=d1p}
 C {devices/lab_wire.sym} 600 -690 2 0 {name=p27 sig_type=std_logic lab=d2m}
 C {devices/lab_wire.sym} 600 -600 2 0 {name=p28 sig_type=std_logic lab=d1m}
 C {sg13g2_pr/sg13_lv_pmos.sym} 1000 -770 0 0 {name=M13
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 1190 -770 0 1 {name=M14
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 1370 -770 0 0 {name=M15
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} 1590 -770 0 1 {name=M16
-L=0.13u
-W=4u
+l=0.13u
+w=4u
 ng=1
 m=1
 model=sg13_lv_pmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 1190 -630 2 0 {name=M17
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 1190 -630 0 1 {name=M17
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 1370 -630 2 1 {name=M18
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 1370 -630 0 0 {name=M18
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 1150 -480 2 1 {name=M19
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 1150 -480 0 0 {name=M19
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 1410 -480 2 0 {name=M20
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} 1410 -480 0 1 {name=M20
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos

@@ -1,0 +1,42 @@
+** sch_path: /foss/designs/EE628/5_Design/3_Real_circuits/tb_idsm2_team1.sch
+**.subckt tb_idsm2_team1
+Vin vin GND dc {vin}
+Vssa vssa GND dc 0
+Vres res GND dc {vdd} pwl(0, {vdd}, {per/2}, {vdd}, {per/2+25p}, 0)
+Vclk clkin GND pulse({vdd}, 0, {per}, 100p, 100p, {0.5*per}, {per})
+Vddd VDD GND dc {vdd}
+Vssd VSS GND dc 0
+Vdda vdda GND dc {vdd}
+Vlo vlo GND dc {vlo}
+Vhi vhi GND dc {vhi}
+C1 dout GND 50f m=1
+x1 vhi vlo vdda vssa vin dout res clkin IDSM2_t1
+**** begin user architecture code
+
+
+.inc "../../4_Layout/Team 1/Team1_sim_from_LVS_netlist.spice"
+*.inc "../../4_Layout/Team 1/Team1_sim.spice"
+.param temp=27 per=20n N=16
+.param vlo=0.3 vhi=0.9 vdd=1.2 vin=0.6
+.option method=gear reltol=1e-5
+*.ic v(x1.x3.out1p)=0
+.tran 100p {per*N} uic
+.meas tran iavg_ana AVG i(Vdda)
+.meas tran iavg_dig AVG i(Vddd)
+
+.control
+  run
+  write tb_idsm2_team1.raw all
+.endc
+
+
+ .lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.inc /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VSS
+.end

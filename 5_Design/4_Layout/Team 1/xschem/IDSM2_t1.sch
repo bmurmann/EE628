@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -133,7 +132,7 @@ C {devices/lab_wire.sym} 340 -130 0 1 {name=p12 sig_type=std_logic lab=p1e}
 C {devices/lab_wire.sym} 340 -110 0 1 {name=p13 sig_type=std_logic lab=p1}
 C {devices/lab_wire.sym} 340 -90 0 1 {name=p14 sig_type=std_logic lab=p2}
 C {devices/lab_wire.sym} 340 -70 0 1 {name=p15 sig_type=std_logic lab=p2e}
-C {/foss/designs/layout/EE628_IDSM2/schematics/comp_t1.sym} 1010 -280 0 0 {name=x1}
-C {/foss/designs/layout/EE628_IDSM2/schematics/clk_generator_t1.sym} 170 -100 0 0 {name=x2}
-C {/foss/designs/layout/EE628_IDSM2/schematics/stage_t1.sym} 500 -290 0 0 {name=x3}
-C {/foss/designs/layout/EE628_IDSM2/schematics/stage_t1.sym} 750 -290 0 0 {name=x4}
+C {//foss/designs/EE628/5_Design/4_Layout/Team 1/xschem/comp_t1.sym} 1010 -280 0 0 {name=x1}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 1/xschem/clk_generator_t1.sym} 170 -100 0 0 {name=x2}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 1/xschem/stage_t1.sym} 500 -290 0 0 {name=x3}
+C {/foss/designs/EE628/5_Design/4_Layout/Team 1/xschem/stage_t1.sym} 750 -290 0 0 {name=x4}

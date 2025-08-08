@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -174,17 +173,17 @@ C {devices/lab_wire.sym} -1150 -310 0 0 {name=p14 sig_type=std_logic lab=pr}
 C {devices/lab_wire.sym} -720 -430 0 0 {name=p15 sig_type=std_logic lab=pse}
 C {devices/lab_wire.sym} -720 -670 0 0 {name=p9 sig_type=std_logic lab=pr}
 C {devices/lab_wire.sym} -510 -670 0 0 {name=p11 sig_type=std_logic lab=ps}
-C {sg13g2_pr/sg13_lv_nmos.sym} -330 -470 2 1 {name=Mn
-L=1.5u
-W=2.5u
+C {sg13g2_pr/sg13_lv_nmos.sym} -330 -470 0 0 {name=Mn
+l=1.5u
+w=2.5u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} -330 -570 0 0 {name=Mp
-L=1.5u
-W=10u
+l=1.5u
+w=10u
 ng=4
 m=1
 model=sg13_lv_pmos
@@ -201,17 +200,17 @@ C {devices/ipin.sym} -1220 -970 0 0 {name=p8 lab=pse}
 C {devices/ipin.sym} -1220 -930 0 0 {name=p12 lab=ps}
 C {devices/ipin.sym} -1220 -890 0 0 {name=p13 lab=pr}
 C {devices/lab_wire.sym} -530 -750 0 0 {name=p4 sig_type=std_logic lab=vx4}
-C {sg13g2_pr/sg13_lv_nmos.sym} -890 -290 2 1 {name=Mn3
-L=0.13u
-W=0.5u
+C {sg13g2_pr/sg13_lv_nmos.sym} -890 -290 0 0 {name=Mn3
+l=0.13u
+w=0.5u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} -350 -950 3 1 {name=Mn4
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} -350 -950 1 0 {name=Mn4
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -220,8 +219,8 @@ spiceprefix=X
 C {sg13g2_stdcells/sg13g2_inv_1.sym} -1070 -930 0 0 {name=x1 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {devices/lab_wire.sym} -980 -930 0 0 {name=p5 sig_type=std_logic lab=psb}
 C {sg13g2_pr/sg13_lv_pmos.sym} -1070 -420 3 0 {name=Mp1
-L=0.13u
-W=6u
+l=0.13u
+w=6u
 ng=3
 m=1
 model=sg13_lv_pmos
@@ -229,8 +228,8 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} -1070 -380 0 0 {name=p19 sig_type=std_logic lab=psb}
 C {sg13g2_pr/sg13_lv_nmos.sym} -1070 -630 3 1 {name=Mn5
-L=0.13u
-W=2u
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
@@ -238,41 +237,33 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} -1070 -670 0 0 {name=p10 sig_type=std_logic lab=ps}
 C {devices/lab_wire.sym} -1070 -510 0 0 {name=p20 sig_type=std_logic lab=vdda}
-C {sg13g2_pr/sg13_lv_nmos.sym} -670 -670 2 1 {name=Mn1
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} -670 -670 0 0 {name=Mn1
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} -460 -670 2 1 {name=Mn2
-L=0.13u
-W=2u
+C {sg13g2_pr/sg13_lv_nmos.sym} -460 -670 0 0 {name=Mn2
+l=0.13u
+w=2u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} -670 -430 2 1 {name=Mn6
-L=0.13u
-W=2u
-ng=1
-m=1
-model=sg13_lv_nmos
-spiceprefix=X
-}
-C {sg13g2_pr/sg13_lv_nmos.sym} -330 -160 2 1 {name=Mn7
-L=1.5u
-W=2.5u
+C {sg13g2_pr/sg13_lv_nmos.sym} -330 -160 0 0 {name=Mn7
+l=1.5u
+w=2.5u
 ng=1
 m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} -330 -260 0 0 {name=Mp2
-L=1.5u
-W=10u
+l=1.5u
+w=10u
 ng=4
 m=1
 model=sg13_lv_pmos
@@ -281,8 +272,8 @@ spiceprefix=X
 C {devices/lab_wire.sym} -520 -210 0 0 {name=p21 sig_type=std_logic lab=vmid}
 C {sg13g2_stdcells/sg13g2_and2_1.sym} -1060 -290 0 0 {name=x2 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {sg13g2_pr/sg13_lv_pmos.sym} -890 -770 0 0 {name=Mp3
-L=0.13u
-W=1.5u
+l=0.13u
+w=1.5u
 ng=1
 m=1
 model=sg13_lv_pmos
@@ -306,7 +297,15 @@ C {devices/lab_wire.sym} -560 -430 0 0 {name=p36 sig_type=std_logic lab=vssa}
 C {devices/lab_wire.sym} -350 -670 0 0 {name=p37 sig_type=std_logic lab=vssa}
 C {devices/iopin.sym} -1220 -840 2 0 {name=p22 lab=vhi}
 C {devices/iopin.sym} -1220 -210 2 0 {name=p23 lab=vlo}
-C {sg13g2_pr/cap_cmim.sym} -780 -520 1 0 {name=C1 model=cap_cmim W=5.77e-6 L=5.77e-6 MF=1 spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} -510 -520 1 0 {name=C2 model=cap_cmim W=8.16e-6 L=8.16e-6 MF=1 spiceprefix=X}
-C {sg13g2_pr/cap_cmim.sym} -350 -750 3 0 {name=C3 model=cap_cmim W=8.16e-6 L=8.16e-6 MF=1 spiceprefix=X}
+C {sg13g2_pr/cap_cmim.sym} -780 -520 1 0 {name=C1 model=cap_cmim w=5.77e-6 l=5.77e-6 MF=1 spiceprefix=X}
+C {sg13g2_pr/cap_cmim.sym} -510 -520 1 0 {name=C2 model=cap_cmim w=8.16e-6 l=8.16e-6 MF=1 spiceprefix=X}
+C {sg13g2_pr/cap_cmim.sym} -350 -750 3 0 {name=C3 model=cap_cmim w=8.16e-6 l=8.16e-6 MF=1 spiceprefix=X}
 C {devices/opin.sym} -130 -210 0 0 {name=p38 lab=vmid}
+C {sg13g2_pr/sg13_lv_nmos.sym} -670 -430 0 0 {name=Mn6
+l=0.13u
+w=2u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
